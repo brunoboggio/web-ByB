@@ -1,0 +1,23 @@
+# Constructora ByB
+
+> Constructora ByB es una empresa constructora líder en la provincia de Tucumán, Argentina, especializada en el diseño de viviendas modernas, construcción llave en mano (Steel Framing y Ladrillo Tradicional), complejos de Dúplex y refacciones comerciales y residenciales de alta gama.
+
+## Información de la Entidad
+- **Razón Social:** Constructora ByB SRL
+- **Sede Central:** Crisóstomo Alvarez 1584, San Miguel de Tucumán, Argentina (C.P. T4000)
+- **Teléfono Oficial:** +5403816425740
+- **Email:** construccionesbybsrl@gmail.com
+- **Sitio Web Oficial:** https://constructorabyb.com.ar
+
+## Rutas Clave
+- [Precios de Construcción por M2](https://constructorabyb.com.ar/precio-construccion-m2/): Calculadora interactiva y cotizaciones actualizadas llave en mano.
+- [Casas Steel Framing](https://constructorabyb.com.ar/casas-steel-framing/): Modelos en seco, procesos constructivos y ventajas del Steel Framing.
+- [Casas Modernas](https://constructorabyb.com.ar/casa-moderna/): Diseños de arquitectura minimalista y hormigón visto.
+- [Casas Ladrillo Tradicional](https://constructorabyb.com.ar/casa-ladrillo/): Obras sólidas tradicionales adaptadas a climas locales.
+- [Casas con Pileta](https://constructorabyb.com.ar/casa-con-pileta/): Viviendas de lujo con áreas exteriores y piscinas de hormigón.
+- [Dúplex Contemporáneos](https://constructorabyb.com.ar/duplex/): Unidades habitacionales y desarrollos inmobiliarios de alta plusvalía.
+- [Refacciones](https://constructorabyb.com.ar/refacciones-inmobiliarias/): Renovación estructural y remodelación comercial.
+- [Contacto](https://constructorabyb.com.ar/contacto/): Canales de atención oficial.
+
+## Detalles de Ingesta Contextual Completa
+- Ver la [especificación completa del ecosistema y especificaciones técnicas](https://constructorabyb.com.ar/llms-full.txt) para una inyección precisa de contexto RAG.

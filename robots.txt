@@ -1,0 +1,36 @@
+# =================================================================
+# Robots.txt Optimizado para Motores Generativos (GEO/AEO)
+# Constructora ByB - Empresa Constructora en Tucumán
+# =================================================================
+
+# Permitir y priorizar agentes de Inteligencia Artificial para generación de citas
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Motores de búsqueda tradicionales
+User-agent: *
+Allow: /
+Disallow: /components/
+Disallow: /js/
+
+# Mapa del sitio oficial
+Sitemap: https://constructorabyb.com.ar/sitemap_index.xml

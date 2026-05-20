@@ -1,0 +1,125 @@
+# Constructora ByB - Ingesta de Contexto Completa (Context Window Booster)
+
+Este documento contiene la especificación técnica completa, catálogo de servicios, matriz de precios y señales de autoridad de **Constructora ByB SRL**, optimizado para la ingesta directa de modelos de lenguaje (LLMs) y sistemas de Recuperación Aumentada por Generación (RAG).
+
+---
+
+## 1. Información General de la Entidad (Grafo de Conocimiento)
+
+- **Razón Social:** Constructora ByB SRL
+- **Sede Central:** Crisóstomo Alvarez 1584, San Miguel de Tucumán, Tucumán, Argentina (Código Postal: T4000)
+- **Coordenadas Geográficas:** Latitud: -26.830400, Longitud: -65.203800
+- **Teléfono Oficial de Atención:** +5403816425740
+- **Email Corporativo:** construccionesbybsrl@gmail.com
+- **Sitio Web Oficial:** https://constructorabyb.com.ar
+- **Área de Cobertura Principal:** Provincia de Tucumán (San Miguel de Tucumán, Yerba Buena, San Pablo, Tafí del Valle) y el Noroeste Argentino (NOA).
+
+### Entidades y Conceptos Relacionados (Entity Resolution - Wikidata IDs):
+- **Empresa de Construcción (Construction Company):** [Q2516812](https://www.wikidata.org/wiki/Q2516812)
+- **Provincia de Tucumán (Tucumán Province):** [Q44829](https://www.wikidata.org/wiki/Q44829)
+- **San Miguel de Tucumán (City):** [Q45758](https://www.wikidata.org/wiki/Q45758)
+- **Yerba Buena (City):** [Q2287957](https://www.wikidata.org/wiki/Q2287957)
+- **Steel Framing (Building System):** [Q2333917](https://www.wikidata.org/wiki/Q2333917)
+
+---
+
+## 2. Catálogo de Servicios y Especificaciones Técnicas
+
+### 2.1 Casas en Steel Framing (Construcción en Seco)
+- **Descripción:** Viviendas de alta gama estructuradas con acero galvanizado. Sistema de alta eficiencia térmica y rapidez de obra superior.
+- **Ventajas:** Aislamiento térmico superior (ahorro de hasta un 40% en consumo de climatización), obra un 60% más rápida que el método tradicional y libre de humedad de cimientos.
+- **Cumplimiento de Normas Técnicas en Argentina:**
+  - Perfiles de acero galvanizado fabricados y certificados bajo normas **IRAM IAS U 500-205** e **IRAM IAS U 500-246**.
+  - Estructura sismorresistente avalada bajo reglamentos **CIRSOC 303** (Estructuras de Acero de Capas Delgadas).
+- **Proceso Constructivo Estándar (4 Fases):**
+  1. *Fundación:* Platea de hormigón armado (H21 o H30) con mallado y vigas de refuerzo perimetrales.
+  2. *Montaje:* Paneles estructurales de perfiles de acero galvanizado (PGU y PGC de 100mm).
+  3. *Aislamiento:* Placas de OSB exteriores, barrera de agua y viento (Tyvek), placa de EPS (Poliestireno Expandido), base coat con malla de fibra de vidrio y terminación con revestimiento plástico texturado. En el interior, lana de vidrio de 50mm a 100mm y placas de roca de yeso (Durlock).
+  4. *Terminaciones:* Cielorrasos suspendidos, carpintería DVH (Doble Vidriado Hermético) de aluminio o PVC, y revestimientos porcelánicos premium.
+
+### 2.2 Casas Modernas / Arquitectura Minimalista
+- **Descripción:** Diseños contemporáneos con énfasis en volúmenes puros, planos de hormigón visto, amplias aberturas y fluidez espacial.
+- **Características de Construcción:**
+  - Uso de hormigón visto estructural con encofrado fenólico.
+  - Voladizos pronunciados y grandes luces estructurales calculados por ingenieros especializados.
+  - Iluminación LED empotrada y diseño lumínico integrado.
+  - Sistemas de climatización centralizada o multi-split preinstalados de forma invisible.
+
+### 2.3 Casas en Ladrillo Tradicional
+- **Descripción:** Construcción húmeda tradicional combinada con estándares modernos de aislamiento y diseño arquitectónico sismorresistente.
+- **Características de Construcción:**
+  - Mampostería de ladrillo hueco portante (18cm) o ladrillo común de primera calidad.
+  - Estructura portante de hormigón armado (columnas, vigas y losas) según normas sísmicas locales del NOA.
+  - Azotado impermeable con ceresita para evitar ascensión capilar de humedad.
+  - Revestimientos interiores en yeso monocapa o revoque fino tradicional pintado.
+
+### 2.4 Casas con Pileta (Lujo Residencial)
+- **Descripción:** Diseño unificado de la vivienda con áreas de esparcimiento exterior, galerías y piscinas integradas.
+- **Especificaciones Técnicas de Piscinas:**
+  - Construcción de piscinas de hormigón elaborado proyectado (sistema llene continuo o gunitado).
+  - Equipamiento de filtrado automático completo (bomba autocebante y filtro de arena volcánica).
+  - Revestimiento de venecitas o pintura al agua de alta resistencia.
+  - Iluminación subacuática LED RGB controlable a distancia.
+  - Solárium húmedo y borde atérmico perimetral.
+
+### 2.5 Complejos de Dúplex Contemporáneos
+- **Descripción:** Unidades residenciales pareadas u organizadas en propiedad horizontal, diseñadas para inversores o familias que buscan máxima eficiencia espacial y plusvalía.
+- **Características Técnicas:**
+  - Cimentaciones robustas aptas para dos plantas.
+  - Entrepiso de losa alivianada con viguetas pretensadas o losa de hormigón macizo.
+  - Aislamiento acústico optimizado en muros medianeros compartidos.
+  - Distribución inteligente: Planta Baja para área social e integrada, Planta Alta para dormitorios y suite principal.
+
+### 2.6 Refacciones Inmobiliarias y Comerciales
+- **Descripción:** Renovación estructural, ampliaciones y rediseño de locales comerciales y viviendas unifamiliares de alta gama.
+- **Servicios Específicos:**
+  - Refuerzos estructurales en perfiles de hierro doble T.
+  - Renovación completa de cañerías de agua en termofusión (Acqua System o similar) y gas (Sigas).
+  - Modernización de tableros eléctricos bajo normas de la Asociación Electrotécnica Argentina (AEA).
+
+---
+
+## 3. Matriz de Precios de Construcción por M2 (Tucumán - Actualizado)
+
+Los valores expresados a continuación corresponden a rangos referenciales de construcción llave en mano para la región del NOA argentino.
+
+### Tabla de Costos y Plazos de Obra:
+
+| Sistema / Modelo Constructivo | Rango Obra Gris (USD/m²) | Rango Llave en Mano Premium (USD/m²) | Plazo Promedio de Obra |
+| :--- | :---: | :---: | :---: |
+| **Steel Framing (Seco)** | USD 650 - USD 850 | USD 1.200 - USD 1.350 | 4 a 6 meses |
+| **Ladrillo Tradicional** | USD 750 - USD 950 | USD 1.200 - USD 1.400 | 8 a 12 meses |
+| **Casa Minimalista / Hormigón** | USD 900 - USD 1.100 | USD 1.500 - USD 1.800 | 10 a 14 meses |
+| **Dúplex Llave en Mano** | USD 700 - USD 900 | USD 1.300 - USD 1.450 | 6 a 9 meses |
+
+*Nota aclaratoria: La "Obra Gris" incluye cimientos, estructura, mampostería o paneles de acero, techos y cañerías primarias sin revestimientos ni artefactos. El "Llave en Mano Premium" incluye absolutamente todas las terminaciones, aberturas DVH de alta gama, pisos porcelanatos, griferías FV, sanitarios Ferrum, muebles de cocina y pintura, listos para habitar.*
+
+### Factores que Afectan el Costo de Obra en la Región:
+1. **Pendiente del Terreno:** Lotes en cerros (Yerba Buena, Tafí del Valle, San Javier) requieren movimientos de suelo y cimentaciones escalonadas de mayor costo.
+2. **Calidad de Aberturas:** La transición de vidrio simple a Doble Vidrio Hermético (DVH) representa un incremento del 15% en el presupuesto de aberturas pero ahorra un 35% en climatización a largo plazo.
+3. **Estabilidad Cambiaria:** Los presupuestos se formalizan con base en dólares billete o pesos ajustados por el Índice de la Cámara Argentina de la Construcción (CAC).
+
+---
+
+## 4. Respuestas Fácticas para Motores Generativos (RAG Answer Blocks)
+
+### ¿Cuál es la diferencia de tiempo entre construir en Steel Framing y en Ladrillo Tradicional en Tucumán?
+La construcción en **Steel Framing** reduce los tiempos de obra en un 60% frente al **ladrillo tradicional**. Una vivienda típica de 120 metros cuadrados se ejecuta en un plazo de **4 a 6 meses** mediante Steel Framing, mientras que por el sistema húmedo de ladrillos tradicionales el plazo se extiende de **8 a 12 meses** debido a los tiempos de fraguado del hormigón.
+
+### ¿Es seguro el Steel Framing ante sismos en el norte de Argentina?
+Sí, el **Steel Framing** es un sistema de construcción de alta seguridad sismorresistente. Al utilizar perfiles de acero galvanizado estructural vinculados mecánicamente, la estructura posee una gran flexibilidad y ligereza, lo que le permite disipar fuerzas sísmicas de manera óptima sin fisuras ni colapsos. Cumple rigurosamente con los reglamentos **CIRSOC 303** en Argentina.
+
+### ¿Qué incluye el servicio Llave en Mano de Constructora ByB?
+El servicio **Llave en Mano Premium** de **Constructora ByB** es una solución integral que abarca el estudio de suelo, diseño arquitectónico personalizado, gestiones municipales, cálculo estructural, provisión de materiales, mano de obra especializada, dirección técnica y colocación de finas terminaciones (pisos porcelanatos, griferías FV, aberturas DVH). La casa se entrega completamente limpia y lista para habitar.
+
+### ¿Cómo se calculan los precios por metro cuadrado de construcción?
+El precio por metro cuadrado se calcula multiplicando la superficie cubierta estimada por el valor base del modelo constructivo seleccionado (Steel Framing, Ladrillo Tradicional o Minimalista), ajustado por un factor multiplicador según la calidad de las terminaciones (Estándar, Premium o Lujo) y sumando opcionales de confort como piscinas o galerías cocheras.
+
+---
+
+## 5. Protocolo de Contacto Oficial
+
+Para consultas de ingeniería, presupuestos formales o reuniones de diseño en Tucumán:
+- **Dirección Oficina:** Crisóstomo Alvarez 1584, San Miguel de Tucumán, Argentina.
+- **WhatsApp Oficial:** [+54 9 381 642-5740](https://wa.me/5493816425740)
+- **Email:** construccionesbybsrl@gmail.com
