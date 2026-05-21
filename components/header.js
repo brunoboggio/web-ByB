@@ -32,14 +32,14 @@
         headerContainer.innerHTML = `
         <nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-7xl mx-auto">
             <div class="flex items-center gap-3">
-                <a href="${basePath}#inicio" class="flex items-center gap-2 group" aria-label="Constructora ByB">
+                <a href="${basePath}" class="flex items-center gap-2 group" aria-label="Constructora ByB">
                     <img src="${basePath}Logo%201.jpg" alt="Constructora ByB Logo" class="h-12 w-auto object-contain transition-transform group-hover:scale-105" />
                 </a>
             </div>
 
             <!-- Navegación de Escritorio -->
             <div class="hidden md:flex items-center gap-8">
-                <a class="desktop-nav-link text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors text-label-bold font-label-bold" href="${basePath}#inicio">Inicio</a>
+                <a class="desktop-nav-link text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors text-label-bold font-label-bold" href="${basePath}">Inicio</a>
                 
                 <!-- Menú Desplegable Servicios -->
                 <div class="relative group py-2">
@@ -170,7 +170,7 @@
 
         <!-- Menú Móvil Desplegable -->
         <div id="mobile-menu" class="hidden md:hidden border-t border-outline-variant/40 bg-surface-container-lowest px-margin-mobile py-6 flex flex-col gap-4 shadow-lg animate-fade-in">
-            <a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base block py-1" href="${basePath}#inicio">Inicio</a>
+            <a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base block py-1" href="${basePath}">Inicio</a>
             
             <!-- Submenú Móvil Servicios -->
             <div class="flex flex-col gap-2">
@@ -298,7 +298,7 @@
                 isActive = true;
             } else if (currentPath.includes('/contacto') && href && href.includes('contacto')) {
                 isActive = true;
-            } else if (href && href.endsWith('#inicio') && (currentPath === '/' || currentPath.endsWith('index.html')) && (!currentHash || currentHash === '#inicio')) {
+            } else if (href && (href === basePath || href === `${basePath}index.html`) && (currentPath === '/' || currentPath.endsWith('index.html') || currentPath.endsWith('/')) && (!currentHash || currentHash === '' || currentHash === '#inicio')) {
                 isActive = true;
             }
 
@@ -312,6 +312,23 @@
     };
 
     const initHeaderInteractions = (header) => {
+        // 0. Interceptar clicks en links de Inicio para scroll suave sin hash en la URL
+        const homeLinks = header.querySelectorAll(`a[href="${basePath}"]`);
+        homeLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                const currentPath = window.location.pathname;
+                const isHome = currentPath === '/' || currentPath.endsWith('index.html') || currentPath.endsWith('/');
+                if (isHome) {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    // Remover hash si existe
+                    if (window.location.hash) {
+                        history.pushState("", document.title, window.location.pathname + window.location.search);
+                    }
+                }
+            });
+        });
+
         // 1. Control de Glassmorphism en Header al hacer scroll
         const handleScroll = () => {
             if (window.scrollY > 50) {
