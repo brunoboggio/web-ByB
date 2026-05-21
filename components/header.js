@@ -47,7 +47,7 @@
                         Servicios
                         <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:rotate-180">expand_more</span>
                     </a>
-                    <div class="absolute top-full left-0 mt-1 w-64 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out bg-surface-container-lowest rounded-xl shadow-xl border border-outline-variant/40 p-2 z-50 flex flex-col gap-1">
+                    <div class="absolute top-full left-0 mt-1 w-64 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out bg-surface-container-lowest rounded-xl shadow-xl border border-outline-variant/40 p-2 z-50 flex flex-col gap-1 before:absolute before:-top-6 before:left-0 before:w-full before:h-6 before:content-['']">
                         <a href="${basePath}casas-steel-framing/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center justify-between group/item">
                             <span class="flex items-center gap-2">
                                 <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">precision_manufacturing</span>
@@ -89,14 +89,13 @@
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">grid_view</span>
                             Todos los Modelos
                         </a>
-                        <a href="${basePath}precio-construccion-m2/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center gap-2">
+                        <a href="${basePath}contacto/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">calculate</span>
                             Cotizador de Proyectos
                         </a>
                     </div>
                 </div>
 
-                <a class="desktop-nav-link text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors text-label-bold font-label-bold" href="${basePath}precio-construccion-m2/">Calculadora</a>
                 <a class="desktop-nav-link text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors text-label-bold font-label-bold" href="${basePath}credito-hipotecario/">Crédito Hipotecario</a>
                 
                 <!-- Menú Desplegable Blog -->
@@ -105,7 +104,7 @@
                         Blog
                         <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:rotate-180">expand_more</span>
                     </a>
-                    <div class="absolute top-full left-0 mt-1 w-64 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out bg-surface-container-lowest rounded-xl shadow-xl border border-outline-variant/40 p-2 z-50 flex flex-col gap-1">
+                    <div class="absolute top-full left-0 mt-1 w-64 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out bg-surface-container-lowest rounded-xl shadow-xl border border-outline-variant/40 p-2 z-50 flex flex-col gap-1 before:absolute before:-top-6 before:left-0 before:w-full before:h-6 before:content-['']">
                         <a href="${basePath}mejores-tipos-de-techos/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center justify-between group/item">
                             <span class="flex items-center gap-2">
                                 <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">roofing</span>
@@ -120,6 +119,24 @@
                             </span>
                             <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
                         </a>
+                        <a href="${basePath}calculos-de-estructura/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center justify-between group/item">
+                            <span class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">engineering</span>
+                                Cálculos de Estructura
+                            </span>
+                            <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
+                        </a>
+                        <a href="${basePath}empieza-diseno-de-tu-casa/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center justify-between group/item">
+                            <span class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">architecture</span>
+                                Diseña tu casa
+                            </span>
+                            <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
+                        </a>
+                        <a href="${basePath}contacto/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center gap-2">
+                            <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">calculate</span>
+                            Calculadora de Presupuestos
+                        </a>
                     </div>
                 </div>
 
@@ -133,7 +150,7 @@
                     <span class="material-symbols-outlined hidden dark:block text-inverse-primary">light_mode</span>
                 </button>
 
-                <a href="${basePath}precio-construccion-m2/" class="bg-primary text-on-primary px-5 py-2.5 font-label-bold text-label-bold rounded-DEFAULT hover:bg-primary-container transition-colors border-b-2 border-primary-container flex items-center gap-2 shadow-sm hover:shadow">
+                <a href="${basePath}contacto/" class="bg-primary text-on-primary px-5 py-2.5 font-label-bold text-label-bold rounded-DEFAULT hover:bg-primary-container transition-colors border-b-2 border-primary-container flex items-center gap-2 shadow-sm hover:shadow">
                     <span class="material-symbols-outlined text-sm">request_quote</span>
                     Presupuesto
                 </a>
@@ -203,14 +220,13 @@
                         <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">grid_view</span>
                         Todos los Modelos
                     </a>
-                    <a class="text-on-surface-variant font-label-bold text-sm flex items-center gap-2 py-1" href="${basePath}precio-construccion-m2/">
+                    <a class="text-on-surface-variant font-label-bold text-sm flex items-center gap-2 py-1" href="${basePath}contacto/">
                         <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">calculate</span>
                         Cotizador de Proyectos
                     </a>
                 </div>
             </div>
 
-            <a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base block py-1" href="${basePath}precio-construccion-m2/">Calculadora de Presupuestos</a>
             <a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base block py-1" href="${basePath}credito-hipotecario/">Crédito Hipotecario</a>
             
             <!-- Submenú Móvil Blog -->
@@ -234,11 +250,29 @@
                         </span>
                         <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
                     </a>
+                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}calculos-de-estructura/">
+                        <span class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">engineering</span>
+                            Cálculos de Estructura
+                        </span>
+                        <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
+                    </a>
+                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}empieza-diseno-de-tu-casa/">
+                        <span class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">architecture</span>
+                            Diseña tu casa
+                        </span>
+                        <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
+                    </a>
+                    <a class="text-on-surface font-label-bold text-sm flex items-center gap-2 py-1" href="${basePath}contacto/">
+                        <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">calculate</span>
+                        Calculadora de Presupuestos
+                    </a>
                 </div>
             </div>
 
             <a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base block py-1" href="${basePath}contacto/">Contacto</a>
-            <a href="${basePath}precio-construccion-m2/" class="mt-2 bg-primary text-on-primary text-center py-3 font-label-bold rounded-DEFAULT block shadow">
+            <a href="${basePath}contacto/" class="mt-2 bg-primary text-on-primary text-center py-3 font-label-bold rounded-DEFAULT block shadow">
                 Solicitar Presupuesto
             </a>
         </div>
@@ -257,11 +291,9 @@
             if (currentPath.includes('/casa-moderna') || currentPath.includes('/casas-steel-framing') || currentPath.includes('/casa-con-pileta') || currentPath.includes('/duplex') || currentPath.includes('/casa-ladrillo') || currentPath.includes('/refacciones-inmobiliarias')) {
                 // Si estamos en una página de servicio, resaltamos el botón "Servicios"
                 if (href && href.includes('#servicios')) isActive = true;
-            } else if (currentPath.includes('/mejores-tipos-de-techos') || currentPath.includes('/tipos-de-suelos')) {
-                // Si estamos en la página de tipos de techos o de suelos, resaltamos el botón "Blog"
+            } else if (currentPath.includes('/mejores-tipos-de-techos') || currentPath.includes('/tipos-de-suelos') || currentPath.includes('/calculos-de-estructura') || currentPath.includes('/empieza-diseno-de-tu-casa') || currentPath.includes('/precio-construccion-m2')) {
+                // Si estamos en la página de tipos de techos, de suelos o la calculadora, resaltamos el botón "Blog"
                 if (link.textContent.includes('Blog')) isActive = true;
-            } else if (currentPath.includes('/precio-construccion-m2') && href && href.includes('precio-construccion-m2')) {
-                isActive = true;
             } else if (currentPath.includes('/credito-hipotecario') && href && href.includes('credito-hipotecario')) {
                 isActive = true;
             } else if (currentPath.includes('/contacto') && href && href.includes('contacto')) {
