@@ -86,7 +86,7 @@
                     </div>
 
                     <!-- Interfaz de Mapa Digital Estilizado -->
-                    <div class="bg-surface-container-lowest rounded-xl overflow-hidden h-[450px] border border-outline/20 shadow-2xl relative flex flex-col justify-between" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqZCKsEQuYk1WQTCRX5bdkXLEjM__n6zhSPE9GuYyodLTOIzxXeNGVwptYj4wg5EsKLLEBhDd9I-PI4oEULA6ThYmSH6IGCYa65t9revCZMVspfXNnJy9IsOOpjglUbfJH6UnHV-gGBSTWhmwCe_KA2s6oIC_KV3O4EF0htqYZ3GAQqy2tCIgn-m_A1DAr-GNOYLQ6OJO8C_kA3d6nIDXH2ouX2VzUIIYjW3BsYU3cryUrdBss81t0BI8gLltIPFNOj6lnfQk9_IQN'); background-size: cover; background-position: center;">
+                    <div class="bg-surface-container-lowest rounded-xl overflow-hidden h-[450px] border border-outline/20 shadow-2xl relative flex flex-col justify-between" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqZCKsEQuYk1WQTCRX5bdkXLEjM__n6zhSPE9GuYyodLTOIzxXeNGVwptYj4wg5EsKLLEBhDd9I-PI4oEULA6ThYmSH6IGCYa65t9revCZMVspfXNnJy9IsOOpjglUbfJH6UnHV-gGBSTWhmwCe_KA2s6oIC_KV3O4EF0htqYZ3GAQqy2tCIgn-m_A1DAr-GNOYLQ6OJO8C_kA3d6nIDXH2ouX2VzUIIYjW3BsYU3cryUrdBss81t0BI8gLltIPFNOj6lnfQk9_IQN=w800-rw'); background-size: cover; background-position: center;">
                         
                         <div class="p-4 bg-gradient-to-b from-black/60 to-transparent text-white">
                             <span class="font-label-bold text-xs uppercase tracking-wider opacity-90 block">Ubicación Estratégica</span>
