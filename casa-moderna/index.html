@@ -2,7 +2,7 @@
 <html lang="es" class="light scroll-smooth">
 
 <head>
-    <link rel="icon" type="image/jpeg" href="../Logo%201.jpg" />
+    <link rel="icon" type="image/jpeg" href="../Logo%201.webp" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -84,113 +84,13 @@
     <!-- Fuentes y Recursos -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600&family=Metropolis:wght@400;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600&family=Metropolis:wght@400;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600&family=Metropolis:wght@400;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet"/></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/></noscript>
 
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        // Paleta unificada de ultra-alta fidelidad para máxima elegancia y soporte estricto de componentes
-                        "surface-container": "#e8eeff",
-                        "tertiary-container": "#30363c",
-                        "on-surface-variant": "#43474e",
-                        "outline": "#74777f",
-                        "tertiary": "#1b2127",
-                        "outline-variant": "#c4c6cf",
-                        "tertiary-fixed-dim": "#c1c7cf",
-                        "surface-variant": "#dde2f3",
-                        "on-tertiary-container": "#989fa6",
-                        "error-container": "#ffdad6",
-                        "secondary-container": "#d5e0f7",
-                        "on-primary-fixed-variant": "#2d476f",
-                        "on-error-container": "#93000a",
-                        "secondary-fixed": "#d8e3fa",
-                        "secondary-fixed-dim": "#bcc7dd",
-                        "background": "#f9f9ff",
-                        "on-surface": "#161c27",
-                        "surface-container-lowest": "#ffffff",
-                        "inverse-primary": "#adc7f7",
-                        "surface-bright": "#f9f9ff",
-                        "surface-container-highest": "#dde2f3",
-                        "on-primary": "#ffffff",
-                        "on-secondary-fixed-variant": "#3c475a",
-                        "primary": "#002045", // Azul Marino Premium de la marca principal
-                        "on-primary-container": "#86a0cd",
-                        "error": "#ba1a1a",
-                        "on-tertiary": "#ffffff",
-                        "primary-fixed-dim": "#adc7f7",
-                        "surface-container-high": "#e3e8f9",
-                        "inverse-surface": "#2a303d",
-                        "on-secondary": "#ffffff",
-                        "inverse-on-surface": "#ecf0ff",
-                        "on-tertiary-fixed-variant": "#41474e",
-                        "surface": "#f9f9ff",
-                        "primary-container": "#1a365d",
-                        "primary-fixed": "#d6e3ff",
-                        "on-secondary-container": "#586377",
-                        "on-tertiary-fixed": "#161c22",
-                        "surface-dim": "#d4daea",
-                        "tertiary-fixed": "#dde3eb",
-                        "on-error": "#ffffff",
-                        "on-primary-fixed": "#001b3c",
-                        "surface-container-low": "#f1f3ff",
-                        "on-secondary-fixed": "#111c2c",
-                        "surface-tint": "#455f88",
-                        "secondary": "#545f72",
-                        "on-background": "#161c27",
-                        // Tonos adicionales de acento arquitectónico
-                        "accent-gold": "#c5a880"
-                    },
-                    borderRadius: {
-                        DEFAULT: "0.125rem",
-                        lg: "0.25rem",
-                        xl: "0.5rem",
-                        "2xl": "1rem",
-                        full: "0.75rem"
-                    },
-                    spacing: {
-                        "max-width": "1280px",
-                        "gutter": "24px",
-                        "base": "8px",
-                        "margin-mobile": "16px",
-                        "section-gap": "120px",
-                        "margin-desktop": "64px",
-                        "container-max": "1280px"
-                    },
-                    fontFamily: {
-                        "label-bold": ["Geist", "sans-serif"],
-                        "headline-lg-mobile": ["Metropolis", "sans-serif"],
-                        "headline-lg": ["Metropolis", "sans-serif"],
-                        "headline-xl": ["Metropolis", "sans-serif"],
-                        "body-md": ["Hanken Grotesk", "Manrope", "sans-serif"],
-                        "body-lg": ["Hanken Grotesk", "Manrope", "sans-serif"],
-                        "headline-md": ["Metropolis", "sans-serif"],
-                        "headline-sm": ["Metropolis", "sans-serif"],
-                        "label-caps": ["Metropolis", "sans-serif"]
-                    },
-                    fontSize: {
-                        "label-bold": ["14px", { lineHeight: "1", letterSpacing: "0.05em", fontWeight: "600" }],
-                        "headline-lg-mobile": ["28px", { lineHeight: "1.2", fontWeight: "700" }],
-                        "headline-lg": ["40px", { lineHeight: "1.15", letterSpacing: "-0.02em", fontWeight: "700" }],
-                        "headline-xl": ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "800" }],
-                        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
-                        "body-lg": ["18px", { lineHeight: "1.65", fontWeight: "400" }],
-                        "headline-md": ["28px", { lineHeight: "1.25", letterSpacing: "-0.01em", fontWeight: "700" }],
-                        "headline-sm": ["20px", { lineHeight: "1.3", fontWeight: "600" }],
-                        "label-caps": ["12px", { lineHeight: "1", letterSpacing: "0.1em", fontWeight: "700" }]
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="../css/tailwind.min.css">
     <style>
         /* Ajustes de tipografía e iconos globales */
         .material-symbols-outlined {
@@ -298,6 +198,9 @@
             color: #a4abb5;
         }
     </style>
+
+    <!-- Preload Hero Image -->
+    <link rel="preload" as="image" href="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ4jYda77u1UUuPk1xxxFZvv2nips4tmeCJcEC3Fzuze8BzUMYz5LW_mdbd0DZ6Eew3kue8GioZneGgKxVe7_rG6DveU0m-pWYj3xA_htpWeBsPTzX825bWxpxKP2MI0yy9uGg8s8kKf3t7ZeNxdZ7TcqSFoDigpU3X7TTS5uljAwvP9IvZNuDmee4PCkE88VwmkBp9GNMkv6TZ-LGjD3vFpMsvK-zANAmJ4k-qQd34IIRPnxGHncfueh7tqJ4wLjnzqOHnIukS9I"/>
 </head>
 
 <body
@@ -493,7 +396,7 @@
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10 pointer-events-none">
                         </div>
-                        <img alt="Detalle Arquitectónico ByB"
+                        <img loading="lazy" alt="Detalle Arquitectónico ByB"
                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                             data-alt="A close-up vertical architectural photograph of a contemporary two-story home."
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqVc78XceZFgGItiEySbqDVxCYEjWNbN7Jr8CrLND_VbODXvM2jP56tUVrR7zXsbgaWgSt65fd_ELhq7imjnxSrMypqieZ1TfFEliDyHsrPmNQEDJCJ9H6tGLpIGUxT_w_M1CFA3sjLTMG__FbTrR84AvRB2ofOcNPloeN3Ms7m_oiwCnU3yVRULyumGMtJJuU-rfjGpSuosO65UoTX7miZAXvvZH4eSNfEfNVudbv8EqonufAYJ7nHRpppLxRVmVxoEiurVOff8c" />
@@ -744,7 +647,7 @@
                 <!-- Img 1 (Grande) -->
                 <div
                     class="sm:col-span-2 sm:row-span-2 group overflow-hidden relative rounded-2xl shadow-md border border-white/10 bg-surface-container">
-                    <img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                    <img loading="lazy" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                         data-alt="An expansive panoramic view of a massive luxury contemporary mansion with an infinity pool."
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm0MryIYYSPnUwtNufnKLgoAAJ4UTtYY7m8LnBO8jA2Rt4SBvrHGIWe58-Lk0PaiR0LxK1sYMTsY7jiOiUy9QA51np45qPp8k35wJEuReQ7bwHSKz2KHh5g_yrGniVJWPCIfJoCt1Qakf7w8ACDJIfYfoGz9aJ9XP378rbC23N7M8yzdvfZfVlzuEo_JL1AcJPc5h9MGwEJusWERLzRq51tPn2rGAZd6XkUs_RonjkobEDoKSsKhBtWLJrtMTUTBfll28by0pl7b0" />
                     <div
@@ -759,7 +662,7 @@
                 <!-- Img 2 -->
                 <div
                     class="group overflow-hidden relative rounded-2xl shadow-md border border-white/10 bg-surface-container">
-                    <img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                    <img loading="lazy" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                         data-alt="A modern minimalist house exterior with sharp geometric shapes."
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6Hoq_1aaZ3vuQYLWjFfp5DWrDtYksqOXPOFfrTN4czqJtd0xKX2MSwgnhLPFiPPh7CN3Zhf_OGyJ3inM_gA73SJ0XLEMW46HQvfkwt4imyfQnhtJTZj5l84dpy7SES0Gxh397MKoAGqk1Z03GOnRa8o6qgs9SvjddlT1zR5pK_yTHTYRFJAe96abdw4XmAJUtmEHF28COKoaYY66BRfQG7RvNHTQrhScERmCqpe5_CU8M78wzhBQePQgSSJQHmODa7xyutQDtGeQ" />
                     <div
@@ -771,7 +674,7 @@
                 <!-- Img 3 -->
                 <div
                     class="group overflow-hidden relative rounded-2xl shadow-md border border-white/10 bg-surface-container">
-                    <img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                    <img loading="lazy" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                         data-alt="A night view of a modern residence featuring extensive use of floor-to-ceiling glass."
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2gvh40_w2bRP2BpeTwnE0pgvahAv66BIyysvrwRSqZii-Lr-C91TrK1unRaR7d1yCXfJNRCxG3ALeTRUj9HIy8f0yyJvKXOT-5DaC0l3s-xjgHsB-HrYwK9fMznXoasctC61pA6lww8jWT8u6sfApe08ZUlPwRFxl4ZOSfrhuPrPmO6X-P-ToXqGYuZRtxxsvgTNl7dI7T_78_DWqB0HHHRLw3zE1eE7m9f_ykkM921iGq1dWeU4fFbODcYAvzGM-ymYHAco6qMc" />
                     <div
@@ -783,7 +686,7 @@
                 <!-- Img 4 (Vertical) -->
                 <div
                     class="sm:row-span-2 group overflow-hidden relative rounded-2xl shadow-md border border-white/10 bg-surface-container">
-                    <img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                    <img loading="lazy" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                         data-alt="An interior view of a contemporary living room with high ceilings."
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI2dkA9xy7fpz7gAMPodlusl_VkZzJ2LzZBzS-r1vcgD7e4KORWtE1qy3tEiicgkdHbJ8_mt6lk1kizm6le5-F2Bc9DO08eN0qqf-5MdgCEWiENEznWTdKnWcqVmmbqj074xJxOY4dODDVg3AMhjHybBB7JjZ9TX9OqyQUSF3Kq6O_Bj6ZZS-TFGP1Cm-ZYqqndFrSVCpcrYMu4Vlda8kKGJ5iBOrhQbgo3_QYSqfdMxTl3_9mca58sGrT_kiEDoS5OGRdXXH9E1M" />
                     <div
@@ -797,7 +700,7 @@
                 <!-- Img 5 -->
                 <div
                     class="group overflow-hidden relative rounded-2xl shadow-md border border-white/10 bg-surface-container">
-                    <img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                    <img loading="lazy" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                         data-alt="A modern suburban home with asymmetric roof lines."
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuBU8xgumT6Ftn3aNUU2a5GiYS3u8-B_yKM-T7uxxLjRHXjxl8BLPbgok1OyJiOvQz_AfiyFwIgbm9T_IABUhDnBR41WzU3NiDulzUpzLG3M8dVzwhAkJa9AjL4iFknTPTnI43p3qV1Wz8u5CjKMZMCSo1EFcf-1rOOlaiEr7aMRKyYdYJ8KPZFOtW5giuQHI8DE9OGllLT1bLdPSmNWtcgpdA9o6nR50mfB-0CMesZf6oXXU-zOo3vH-QA_k4sbJgE-wNDDt__472M" />
                     <div
@@ -809,7 +712,7 @@
                 <!-- Img 6 -->
                 <div
                     class="group overflow-hidden relative rounded-2xl shadow-md border border-white/10 bg-surface-container">
-                    <img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                    <img loading="lazy" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                         data-alt="An ultra-modern house exterior featuring a cantilevered upper floor."
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHDkp9VV_IVQ63L5vu7HZXJonaulLhorr1_VMAwrOwu3-nEfespJxlM8OvDvffLyB3xgBJB42NuvUd-tYCwjyNAl1DcKjJJ9FHLcu8HalJtxaagV54N0y9pNYOXpQ72m0iOTRZQtfKl4Rsx5YT_OLAZML7Z4cUShDpdD3WCoBYFBWpkPlLKKus0TwVjK4o5Je1ZVuV14chkv4bhSwRc9dzGn7YAm2o127m8AwHYNmwE_DyvQHn6oF4o20FxHacVuonhNBQTsJDWAg" />
                     <div
@@ -838,7 +741,7 @@
                     class="group bg-surface-container-lowest dark:bg-[#121822] overflow-hidden rounded-2xl border border-outline-variant/40 dark:border-white/5 hover:shadow-xl transition-all duration-400 flex flex-col justify-between premium-card">
                     <div>
                         <div class="aspect-video overflow-hidden relative">
-                            <img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                            <img loading="lazy" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                                 data-alt="A charming small modern house featuring a minimalist design."
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDlL3S2RF6DTtfJE7R-tfhUKx3wU0MrWI3kbdTFkmih1zHvRQklc4x67mmMgtvuJQVVhFTLZo52peZRYMNtynXo2fpfwRNXNAO5cCwVq_qW4JbFYiNe4ipO51jtW7kPnUmdYiP3NViC6TJ1Ib9Qw1quWHEamKkoVDOj9A7sjN4hMxEA30MQ1UbUtvHVoumGRnQ7fvqHXlHY2sJUaPWLxMIfzIzJy72S9OfvcSYvEKHbrFgZS5SCDVA8Sxe2wYjg9NDWQMQx8O98GU" />
                             <span
@@ -872,7 +775,7 @@
                     class="group bg-surface-container-lowest dark:bg-[#121822] overflow-hidden rounded-2xl border border-outline-variant/40 dark:border-white/5 hover:shadow-xl transition-all duration-400 flex flex-col justify-between premium-card">
                     <div>
                         <div class="aspect-video overflow-hidden relative">
-                            <img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                            <img loading="lazy" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                                 data-alt="A clean, technological visualization of solar panels integrated into the roof."
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNOiBC1wsrlS1fKEY4Oub86fGnaUYEFRffP0AeR24ok_zSPhbDbUydnYT9CJDmbvaduYbu5qVzb_Aj4E8qiuTkVmvaDmf3gE9gzJSZ0LMyabc2U1pwxwXxk-lIjNEMm8t3pPF2F1fdVMBdLTQAI5GgHwL_fXpay8Q91vpvYyxdi8_VpG_BEuTEfVS-G0bn0M69EWJsjHjL17pCuusnDCBnRQBTJvM7nX8C69M1foXtoDj-yPaiCnzgg9RdqBZUQvwUdBR_5ePs08w" />
                             <span
@@ -906,7 +809,7 @@
                     class="group bg-surface-container-lowest dark:bg-[#121822] overflow-hidden rounded-2xl border border-outline-variant/40 dark:border-white/5 hover:shadow-xl transition-all duration-400 flex flex-col justify-between premium-card">
                     <div>
                         <div class="aspect-video overflow-hidden relative">
-                            <img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                            <img loading="lazy" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                                 data-alt="A professional construction site showing a modern home under development."
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPJMP0YFzxPRUjr4u-7P9bg-X9XMmcKADLYlpUrgJ1ogUYPMQgag9pTSeYozbDoTgcWFdwlUaJQo0N2tWUsr9kISQs4Iwx_KY9MZVIpQRQ34-QgpQHNkcpUlQx7WrYCy0OGaK_LlBWt01L6EH58EPlY2uGnUHZrUGMRaWSBfzrc_-C8H5ItZUJUldjODGOJ7776sPRSQcgii6Kj48HXyLchj9w7MYaDjbMWeyJ2NLJefcG-6ahlq269TXAvFH5akOYXh8-XC_fPB0" />
                             <span

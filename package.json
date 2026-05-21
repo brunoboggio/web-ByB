@@ -1,0 +1,19 @@
+{
+  "name": "constructora-byb",
+  "version": "1.0.0",
+  "description": "Sitio web de Constructora ByB",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "tailwindcss -i css/input.css -o css/tailwind.min.css --minify",
+    "watch:css": "tailwindcss -i css/input.css -o css/tailwind.min.css --watch",
+    "optimize-images": "node scripts/optimize-images.js",
+    "optimize-html": "node scripts/optimize-html.js",
+    "build": "npm run build:css && npm run optimize-images && npm run optimize-html"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/container-queries": "^0.1.1",
+    "sharp": "^0.33.2"
+  }
+}

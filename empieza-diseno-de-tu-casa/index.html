@@ -2,7 +2,7 @@
 <html lang="es" class="light scroll-smooth">
 
 <head>
-    <link rel="icon" type="image/jpeg" href="../Logo%201.jpg" />
+    <link rel="icon" type="image/jpeg" href="../Logo%201.webp" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -110,112 +110,15 @@
 
     <!-- Fuentes y Recursos -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600&family=Metropolis:wght@400;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://lh3.googleusercontent.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600&family=Metropolis:wght@400;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600&family=Metropolis:wght@400;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet"/></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/></noscript>
 
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "surface-container": "#e8eeff",
-                        "tertiary-container": "#30363c",
-                        "on-surface-variant": "#43474e",
-                        "outline": "#74777f",
-                        "tertiary": "#1b2127",
-                        "outline-variant": "#c4c6cf",
-                        "tertiary-fixed-dim": "#c1c7cf",
-                        "surface-variant": "#dde2f3",
-                        "on-tertiary-container": "#989fa6",
-                        "error-container": "#ffdad6",
-                        "secondary-container": "#d5e0f7",
-                        "on-primary-fixed-variant": "#2d476f",
-                        "on-error-container": "#93000a",
-                        "secondary-fixed": "#d8e3fa",
-                        "secondary-fixed-dim": "#bcc7dd",
-                        "background": "#f9f9ff", 
-                        "on-surface": "#161c27",
-                        "surface-container-lowest": "#ffffff",
-                        "inverse-primary": "#adc7f7",
-                        "surface-bright": "#f9f9ff",
-                        "surface-container-highest": "#dde2f3",
-                        "on-primary": "#ffffff",
-                        "on-secondary-fixed-variant": "#3c475a",
-                        "primary": "#002045", 
-                        "on-primary-container": "#86a0cd",
-                        "error": "#ba1a1a",
-                        "on-tertiary": "#ffffff",
-                        "primary-fixed-dim": "#adc7f7",
-                        "surface-container-high": "#e3e8f9",
-                        "inverse-surface": "#2a303d",
-                        "on-secondary": "#ffffff",
-                        "inverse-on-surface": "#ecf0ff",
-                        "on-tertiary-fixed-variant": "#41474e",
-                        "surface": "#f9f9ff",
-                        "primary-container": "#1a365d",
-                        "primary-fixed": "#d6e3ff",
-                        "on-secondary-container": "#586377",
-                        "on-tertiary-fixed": "#161c22",
-                        "surface-dim": "#d4daea",
-                        "tertiary-fixed": "#dde3eb",
-                        "on-error": "#ffffff",
-                        "on-primary-fixed": "#001b3c",
-                        "surface-container-low": "#f1f3ff",
-                        "on-secondary-fixed": "#111c2c",
-                        "surface-tint": "#455f88",
-                        "secondary": "#545f72",
-                        "on-background": "#161c27",
-                        "accent-gold": "#c5a880"
-                    },
-                    borderRadius: {
-                        DEFAULT: "0.125rem",
-                        lg: "0.25rem",
-                        xl: "0.5rem",
-                        "2xl": "1rem",
-                        full: "0.75rem"
-                    },
-                    spacing: {
-                        "max-width": "1280px",
-                        "gutter": "24px",
-                        "base": "8px",
-                        "margin-mobile": "16px",
-                        "section-gap": "120px",
-                        "margin-desktop": "64px",
-                        "container-max": "1280px"
-                    },
-                    fontFamily: {
-                        "label-bold": ["Geist", "sans-serif"],
-                        "headline-lg-mobile": ["Metropolis", "sans-serif"],
-                        "headline-lg": ["Metropolis", "sans-serif"],
-                        "headline-xl": ["Metropolis", "sans-serif"],
-                        "body-md": ["Hanken Grotesk", "Manrope", "sans-serif"],
-                        "body-lg": ["Hanken Grotesk", "Manrope", "sans-serif"],
-                        "headline-md": ["Metropolis", "sans-serif"],
-                        "headline-sm": ["Metropolis", "sans-serif"],
-                        "label-caps": ["Metropolis", "sans-serif"]
-                    },
-                    fontSize: {
-                        "label-bold": ["14px", { lineHeight: "1", letterSpacing: "0.05em", fontWeight: "600" }],
-                        "headline-lg-mobile": ["28px", { lineHeight: "1.2", fontWeight: "700" }],
-                        "headline-lg": ["40px", { lineHeight: "1.15", letterSpacing: "-0.02em", fontWeight: "700" }],
-                        "headline-xl": ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "800" }],
-                        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
-                        "body-lg": ["18px", { lineHeight: "1.65", fontWeight: "400" }],
-                        "headline-md": ["28px", { lineHeight: "1.25", letterSpacing: "-0.01em", fontWeight: "700" }],
-                        "headline-sm": ["20px", { lineHeight: "1.3", fontWeight: "600" }],
-                        "label-caps": ["12px", { lineHeight: "1", letterSpacing: "0.1em", fontWeight: "700" }]
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="../css/tailwind.min.css">
     <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -336,6 +239,9 @@
             background-color: #1a365d;
         }
     </style>
+
+    <!-- Preload Hero Image -->
+    <link rel="preload" as="image" href="img/hero_diseno.webp"/>
 </head>
 
 <body
@@ -377,7 +283,7 @@
             <div class="absolute inset-0 z-0">
                 <img alt="Planos arquitectónicos modernos y render 3D de vivienda premium"
                     class="w-full h-full object-cover scale-105"
-                    src="img/hero_diseno.png" />
+                    src="img/hero_diseno.webp" />
                 <div
                     class="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/75 to-transparent dark:from-black/95 dark:via-black/80 dark:to-black/35">
                 </div>
@@ -688,7 +594,7 @@
                 <!-- Tarjeta 1: Moderno -->
                 <div class="gallery-item moderno bg-surface-container-lowest dark:bg-[#121822] rounded-2xl overflow-hidden border border-outline-variant/20 dark:border-white/5 shadow-sm premium-card cursor-pointer group" onclick="openLightbox('img/gallery_moderna.png', 'Vivienda Moderna Minimalista', 'Diseño de dos plantas con grandes paños vidriados, piscina integrada y combinación de texturas de hormigón y madera.')">
                     <div class="relative h-64 overflow-hidden">
-                        <img src="img/gallery_moderna.png" alt="Diseño Casa Moderna Minimalista" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <img loading="lazy" src="img/gallery_moderna.webp" alt="Diseño Casa Moderna Minimalista" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                         <span class="absolute top-4 left-4 bg-primary/90 dark:bg-inverse-primary/95 text-on-primary dark:text-primary text-[10px] font-label-caps px-2 py-0.5 rounded shadow">Moderno</span>
                     </div>
                     <div class="p-4">
@@ -700,7 +606,7 @@
                 <!-- Tarjeta 2: Steel -->
                 <div class="gallery-item steel bg-surface-container-lowest dark:bg-[#121822] rounded-2xl overflow-hidden border border-outline-variant/20 dark:border-white/5 shadow-sm premium-card cursor-pointer group" onclick="openLightbox('img/gallery_steel.png', 'Residencia en Steel Framing', 'Diseño de estilo industrial contemporáneo, aprovechando la flexibilidad y velocidad del sistema steel framing.')">
                     <div class="relative h-64 overflow-hidden">
-                        <img src="img/gallery_steel.png" alt="Diseño Casa Steel Framing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <img loading="lazy" src="img/gallery_steel.webp" alt="Diseño Casa Steel Framing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                         <span class="absolute top-4 left-4 bg-primary/90 dark:bg-inverse-primary/95 text-on-primary dark:text-primary text-[10px] font-label-caps px-2 py-0.5 rounded shadow">Steel Framing</span>
                     </div>
                     <div class="p-4">
@@ -712,7 +618,7 @@
                 <!-- Tarjeta 3: Tradicional -->
                 <div class="gallery-item tradicional bg-surface-container-lowest dark:bg-[#121822] rounded-2xl overflow-hidden border border-outline-variant/20 dark:border-white/5 shadow-sm premium-card cursor-pointer group" onclick="openLightbox('img/gallery_tradicional.png', 'Casa de Campo Tradicional', 'Ladrillo visto y maderas nobles. Un diseño cálido ideal para countries y quintas.')">
                     <div class="relative h-64 overflow-hidden">
-                        <img src="img/gallery_tradicional.png" alt="Diseño Casa Tradicional Campo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <img loading="lazy" src="img/gallery_tradicional.webp" alt="Diseño Casa Tradicional Campo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                         <span class="absolute top-4 left-4 bg-primary/90 dark:bg-inverse-primary/95 text-on-primary dark:text-primary text-[10px] font-label-caps px-2 py-0.5 rounded shadow">Tradicional</span>
                     </div>
                     <div class="p-4">
@@ -724,7 +630,7 @@
                 <!-- Tarjeta 4: Duplex -->
                 <div class="gallery-item duplex bg-surface-container-lowest dark:bg-[#121822] rounded-2xl overflow-hidden border border-outline-variant/20 dark:border-white/5 shadow-sm premium-card cursor-pointer group" onclick="openLightbox('img/gallery_duplex.png', 'Dúplex Optimizado', 'Viviendas agrupadas en espejo para optimizar el suelo y la rentabilidad del inversor.')">
                     <div class="relative h-64 overflow-hidden">
-                        <img src="img/gallery_duplex.png" alt="Diseño Dúplex Inversor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <img loading="lazy" src="img/gallery_duplex.webp" alt="Diseño Dúplex Inversor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                         <span class="absolute top-4 left-4 bg-primary/90 dark:bg-inverse-primary/95 text-on-primary dark:text-primary text-[10px] font-label-caps px-2 py-0.5 rounded shadow">Dúplex</span>
                     </div>
                     <div class="p-4">
@@ -808,7 +714,7 @@
 
                     <div class="relative">
                         <div class="absolute -inset-4 border-2 border-primary/10 dark:border-inverse-primary/10 rounded-xl transform translate-x-4 translate-y-4 transition-transform hover:translate-x-2 hover:translate-y-2 duration-300"></div>
-                        <img alt="Plano e interfaz interactiva de diseño de casas de Constructora ByB" class="rounded-xl w-full h-[450px] object-cover shadow-2xl relative z-10 hover:scale-[1.01] transition-transform duration-500" src="img/blueprint_interactive.png" />
+                        <img loading="lazy" alt="Plano e interfaz interactiva de diseño de casas de Constructora ByB" class="rounded-xl w-full h-[450px] object-cover shadow-2xl relative z-10 hover:scale-[1.01] transition-transform duration-500" src="img/blueprint_interactive.webp" />
                     </div>
 
                 </div>

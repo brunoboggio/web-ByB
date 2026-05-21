@@ -13,3 +13,7 @@ yarn-error.log*
 # Logs
 logs/
 *.log
+
+# Backups
+_original_assets_backup/
+
