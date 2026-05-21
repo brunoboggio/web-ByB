@@ -188,20 +188,29 @@
     <!-- TopNavBar -->
     <header id="main-header">
         <noscript>
-            <nav>
-                <a href="/">Inicio</a>
-                <a href="/#servicios">Servicios</a>
-                <a href="/casas-steel-framing/">Casas Steel Framing</a>
-                <a href="/casa-moderna/">Casas Modernas</a>
-                <a href="/duplex/">Dúplex Modernos</a>
-                <a href="/casa-con-pileta/">Casas con Pileta</a>
-                <a href="/casa-ladrillo/">Casas de Ladrillo Visto</a>
-                <a href="/refacciones-inmobiliarias/">Refacciones del Hogar</a>
-                <a href="/contacto/">Cotizador de Proyectos</a>
-                <a href="/contacto/">Contacto</a>
+            <nav class="flex flex-wrap justify-between items-center px-4 md:px-8 h-20 max-w-7xl mx-auto bg-surface-container-lowest border-b border-outline-variant/60">
+                <div class="flex items-center gap-3">
+                    <a href="./" class="flex items-center gap-2">
+                        <img src="Logo%201.webp" alt="Constructora ByB Logo" class="h-12 w-auto object-contain" />
+                    </a>
+                </div>
+                <div class="flex flex-wrap items-center gap-4 text-sm font-semibold">
+                    <a href="./" class="text-on-surface-variant hover:text-primary">Inicio</a>
+                    <a href="casas-steel-framing/" class="text-on-surface-variant hover:text-primary">Steel Framing</a>
+                    <a href="casa-moderna/" class="text-on-surface-variant hover:text-primary">Casas Modernas</a>
+                    <a href="duplex/" class="text-on-surface-variant hover:text-primary">Dúplex</a>
+                    <a href="casa-con-pileta/" class="text-on-surface-variant hover:text-primary">Casas con Pileta</a>
+                    <a href="casa-ladrillo/" class="text-on-surface-variant hover:text-primary">Casas de Ladrillo</a>
+                    <a href="refacciones-inmobiliarias/" class="text-on-surface-variant hover:text-primary">Refacciones</a>
+                    <a href="credito-hipotecario/" class="text-on-surface-variant hover:text-primary">Crédito Hipotecario</a>
+                    <a href="mejores-tipos-de-techos/" class="text-on-surface-variant hover:text-primary">Techos</a>
+                    <a href="tipos-de-suelos/" class="text-on-surface-variant hover:text-primary">Suelos</a>
+                    <a href="calculos-de-estructura/" class="text-on-surface-variant hover:text-primary">Estructura</a>
+                    <a href="empieza-diseno-de-tu-casa/" class="text-on-surface-variant hover:text-primary">Diseño</a>
+                    <a href="contacto/" class="text-on-surface-variant hover:text-primary">Contacto</a>
+                </div>
             </nav>
-        </noscript>
-    </header>
+        </noscript></header>
 
 
     <!-- Hero Section -->
@@ -287,7 +296,7 @@
                 
                 <div class="relative">
                     <div class="absolute -inset-4 border-2 border-primary/10 dark:border-inverse-primary/10 rounded-xl transform translate-x-4 translate-y-4 transition-transform hover:translate-x-2 hover:translate-y-2 duration-300"></div>
-                    <img alt="Exterior de casa moderna construida por ByB" class="rounded-xl w-full h-[550px] object-cover shadow-2xl relative z-10 hover:scale-[1.01] transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMBcZANJm3oeoVAGJIs-woKOe6eQrLsVE-YNFXkIIoVQiBuOkivEIz6S2x1llkHH1a6JpuNpnQP2muFMPXYZAXo2vpUALvnSsD46p-cf8YD1qu3Fav3rqbFsWRQzm1H5ZGHBas_rR__iHTFvOIYYp_Sa3FYU2Gmd5E87Lyju84JFH6f4gRzC1ZkW3Xkc8_2q9ODc3F6MA3APtXlOkmZ3qbr6wmUrjHJXHEdXMPOWwxb1k3ELSIfpvaaSNP79OQHk7GqfWNLg4I2h9W=w1200-rw"/>
+                    <img loading="lazy" alt="Exterior de casa moderna construida por ByB" class="rounded-xl w-full h-[550px] object-cover shadow-2xl relative z-10 hover:scale-[1.01] transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMBcZANJm3oeoVAGJIs-woKOe6eQrLsVE-YNFXkIIoVQiBuOkivEIz6S2x1llkHH1a6JpuNpnQP2muFMPXYZAXo2vpUALvnSsD46p-cf8YD1qu3Fav3rqbFsWRQzm1H5ZGHBas_rR__iHTFvOIYYp_Sa3FYU2Gmd5E87Lyju84JFH6f4gRzC1ZkW3Xkc8_2q9ODc3F6MA3APtXlOkmZ3qbr6wmUrjHJXHEdXMPOWwxb1k3ELSIfpvaaSNP79OQHk7GqfWNLg4I2h9W=w800-rw"/>
                     
                     <!-- Floating badge overlay -->
                     <div class="absolute bottom-6 left-6 z-20 bg-surface-container-lowest/95 backdrop-blur-md p-4 rounded-lg shadow-xl border border-outline-variant/30 max-w-xs">
@@ -668,17 +677,36 @@
     <!-- Contenedor del Pie de Página / Contacto Universal -->
     <div id="main-footer">
         <noscript>
-            <footer>
-                <p>Constructora ByB SRL - Crisóstomo Alvarez 1584, San Miguel de Tucumán</p>
-                <ul>
-                    <li><a href="/#nosotros">Quiénes Somos</a></li>
-                    <li><a href="/#servicios">Modelos y Servicios</a></li>
-                    <li><a href="/contacto/">Cotizador Online</a></li>
-                    <li><a href="/contacto/">Contactar Asesor</a></li>
-                </ul>
+            <footer class="bg-tertiary text-on-tertiary p-8 text-sm">
+                <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <p class="font-bold text-base mb-2">Constructora ByB SRL</p>
+                        <p>Crisóstomo Alvarez 1584, San Miguel de Tucumán, Tucumán, Argentina</p>
+                        <p>Teléfono: <a href="tel:03816425740" class="underline">0381 642-5740</a></p>
+                        <p>Email: <a href="mailto:construccionesbybsrl@gmail.com" class="underline">construccionesbybsrl@gmail.com</a></p>
+                        <p>Horarios: Lunes a Viernes de 9:00 a 18:00 hs</p>
+                    </div>
+                    <div>
+                        <p class="font-bold text-base mb-2">Enlaces Rápidos</p>
+                        <ul class="space-y-1">
+                            <li><a href="./" class="underline">Inicio</a></li>
+                            <li><a href="#nosotros" class="underline">Quiénes Somos</a></li>
+                            <li><a href="#servicios" class="underline">Modelos y Servicios</a></li>
+                            <li><a href="credito-hipotecario/" class="underline">Crédito Hipotecario</a></li>
+                            <li><a href="contacto/" class="underline">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-bold text-base mb-2">Páginas Legales</p>
+                        <ul class="space-y-1">
+                            <li><a href="politica-privacidad/" class="underline">Políticas de Privacidad</a></li>
+                            <li><a href="politica-privacidad/#cookies" class="underline">Políticas de Cookies</a></li>
+                            <li><a href="aviso-legal/" class="underline">Aviso Legal</a></li>
+                        </ul>
+                    </div>
+                </div>
             </footer>
-        </noscript>
-    </div>
+        </noscript></div>
 
     <!-- Lógica JavaScript Dinámica & Controladores Web -->
     <script>
