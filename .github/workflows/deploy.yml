@@ -19,6 +19,8 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
+        port: 21
+        timeout: 60000
         server-dir: ./
         exclude: |
           **/.git*
@@ -29,6 +31,11 @@ jobs:
           **/skills/**
           **/run-watcher.bat
           **/desktop.ini
+          package.json
+          package-lock.json
+          tailwind.config.js
+          scripts/**
+          css/input.css
           **/*.jpg
           **/*.png
           !**/Logo 1.jpg
