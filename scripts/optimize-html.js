@@ -8,7 +8,8 @@ const EXCLUDED_DIRS = [
   '.git',
   '.github',
   '_original_assets_backup',
-  'scripts'
+  'scripts',
+  '.antigravity'
 ];
 
 // Helper to check if file is HTML
@@ -72,15 +73,31 @@ function optimizeHtmlFile(filePath) {
   // 2. Replace local image extensions with .webp
   content = replaceLocalImages(content);
 
+  // Correct favicon type from image/jpeg to image/webp for .webp links
+  content = content.replace(/(<link\s+[^>]*type=["'])image\/jpeg(["'][^>]*href=["'][^"']+\.webp["'])/gi, '$1image/webp$2');
+  content = content.replace(/(<link\s+[^>]*href=["'][^"']+\.webp["'][^>]*type=["'])image\/jpeg(["'])/gi, '$1image/webp$2');
+
+
+  // Reset previously optimized (possibly nested/broken) font links to clean up any nested noscript tags
+  const cleanFontsRegex = /<link\s+href="(https:\/\/fonts\.googleapis\.com\/css2?[^"]+)"\s+rel="preload"\s+as="style"\s+onload="[^"]*"\s*\/?>\s*<noscript>(?:<link\s+[^>]*\s*\/?>\s*|<noscript>)*<link\s+href="\1"\s+rel="stylesheet"\s*\/?>(?:\s*<\/noscript>)+/gi;
+  content = content.replace(cleanFontsRegex, '<link href="$1" rel="stylesheet"/>');
+
   // 3. Optimize Google Fonts and Material Symbols stylesheet tags (making them non-blocking)
   const fontsRegex = /<link\s+href="(https:\/\/fonts\.googleapis\.com\/css2?[^"]+)"\s+rel="stylesheet"\s*\/?>/gi;
-  content = content.replace(fontsRegex, (match, url) => {
+  content = content.replace(fontsRegex, (match, url, offset) => {
+    // Check if this match is wrapped inside <noscript>
+    const before = content.substring(0, offset);
+    const lastOpenNoscript = before.lastIndexOf('<noscript>');
+    const lastCloseNoscript = before.lastIndexOf('</noscript>');
+    if (lastOpenNoscript > lastCloseNoscript) {
+      return match;
+    }
     console.log(`  -> Optimized font stylesheet loading for: ${url.substring(0, 50)}...`);
     return `<link href="${url}" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/>\n    <noscript><link href="${url}" rel="stylesheet"/></noscript>`;
   });
 
   // 4. Preconnect to Google User Content domain (lh3.googleusercontent.com)
-  if (!content.includes('lh3.googleusercontent.com') || !content.includes('rel="preconnect"')) {
+  if (content.includes('lh3.googleusercontent.com') && !content.includes('href="https://lh3.googleusercontent.com"')) {
     const preconnectGstaticRegex = /<link\s+rel="preconnect"\s+href="https:\/\/fonts\.gstatic\.com"\s*(?:crossorigin)?\s*\/?>/gi;
     const replacement = `<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>\n    <link rel="preconnect" href="https://lh3.googleusercontent.com"/>`;
     if (preconnectGstaticRegex.test(content)) {
@@ -125,12 +142,21 @@ function optimizeHtmlFile(filePath) {
 
   // Inject preloads right before </head>
   if (heroPreloadUrl) {
-    const preloadTag = `\n    <!-- Preload Hero Image -->\n    <link rel="preload" as="image" href="${heroPreloadUrl}"/>`;
+    const preloadTag = `\n    <!-- Preload Hero Image -->\n    <link rel="preload" as="image" href="${heroPreloadUrl}" fetchpriority="high"/>`;
     if (!content.includes(heroPreloadUrl) || !content.includes('rel="preload" as="image"')) {
       content = content.replace('</head>', `${preloadTag}\n</head>`);
       console.log(`  -> Injected hero image preload tag in head`);
     }
   }
+
+  // Ensure all image preloads have fetchpriority="high" for optimal LCP
+  content = content.replace(/<link\s+([^>]*rel=["']preload["'][^>]*as=["']image["'][^>]*)\/?>/gi, (match, attrs) => {
+    if (!attrs.includes('fetchpriority=')) {
+      const cleanAttrs = attrs.trim().replace(/\/$/, '').trim();
+      return `<link ${cleanAttrs} fetchpriority="high"/>`;
+    }
+    return match;
+  });
 
   fs.writeFileSync(filePath, content, 'utf8');
 }

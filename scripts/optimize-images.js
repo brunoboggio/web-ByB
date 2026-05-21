@@ -13,7 +13,8 @@ const EXCLUDED_DIRS = [
   '.github',
   '_original_assets_backup',
   'scripts',
-  'css'
+  'css',
+  '.antigravity'
 ];
 
 // Helper to check if file is an image we want to optimize

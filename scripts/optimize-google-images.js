@@ -7,7 +7,8 @@ const EXCLUDED_DIRS = [
   '.git',
   '.github',
   '_original_assets_backup',
-  'scripts'
+  'scripts',
+  '.antigravity'
 ];
 
 function processFile(filePath) {
