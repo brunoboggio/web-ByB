@@ -55,6 +55,13 @@
                             </span>
                             <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
                         </a>
+                        <a href="${basePath}construccion-en-seco/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center justify-between group/item">
+                            <span class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">grid_on</span>
+                                Construcción en Seco
+                            </span>
+                            <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
+                        </a>
                         <a href="${basePath}casa-moderna/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center justify-between group/item">
                             <span class="flex items-center gap-2">
                                 <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">villa</span>
@@ -200,6 +207,13 @@
                         </span>
                         <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
                     </a>
+                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}construccion-en-seco/">
+                        <span class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">grid_on</span>
+                            Construcción en Seco
+                        </span>
+                        <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
+                    </a>
                     <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}casa-moderna/">
                         <span class="flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">villa</span>
@@ -316,7 +330,7 @@
             let isActive = false;
 
             // Lógica de detección de página activa mejorada
-            if (currentPath.includes('/casa-moderna') || currentPath.includes('/casas-steel-framing') || currentPath.includes('/casa-con-pileta') || currentPath.includes('/casa-country') || currentPath.includes('/duplex') || currentPath.includes('/casa-ladrillo') || currentPath.includes('/refacciones-inmobiliarias')) {
+            if (currentPath.includes('/casa-moderna') || currentPath.includes('/casas-steel-framing') || currentPath.includes('/construccion-en-seco') || currentPath.includes('/casa-con-pileta') || currentPath.includes('/casa-country') || currentPath.includes('/duplex') || currentPath.includes('/casa-ladrillo') || currentPath.includes('/refacciones-inmobiliarias')) {
                 // Si estamos en una página de servicio, resaltamos el botón "Servicios"
                 if (href && href.includes('#servicios')) isActive = true;
             } else if (currentPath.includes('/construccion-casas') || currentPath.includes('/mejores-tipos-de-techos') || currentPath.includes('/tipos-de-suelos') || currentPath.includes('/calculos-de-estructura') || currentPath.includes('/empieza-diseno-de-tu-casa') || currentPath.includes('/precio-construccion-m2')) {
