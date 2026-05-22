@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es" class="light scroll-smooth">
 
 <head>
@@ -177,9 +177,12 @@
     <script>
         // Restaurar modo oscuro/claro inmediatamente para prevenir destellos visuales (FOUC)
         const htmlRoot = document.documentElement;
-        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        if (localStorage.getItem('theme') === 'dark') {
             htmlRoot.classList.add('dark');
             htmlRoot.classList.remove('light');
+        } else {
+            htmlRoot.classList.remove('dark');
+            htmlRoot.classList.add('light');
         }
     </script>
 
@@ -249,9 +252,9 @@
                 
                 <!-- Columna Izquierda: Sticky Navigation Sidebar -->
                 <aside class="hidden lg:block lg:col-span-1 sticky top-28 bg-surface-container-low/70 dark:bg-[#121822] p-6 rounded-2xl border border-outline-variant/30 dark:border-white/5 shadow-sm">
-                    <h3 class="font-label-caps text-xs text-primary dark:text-inverse-primary mb-6 tracking-widest border-b border-outline-variant/40 pb-3 uppercase">
+                    <h2 class="font-label-caps text-xs text-primary dark:text-inverse-primary mb-6 tracking-widest border-b border-outline-variant/40 pb-3 uppercase">
                         SECCIONES
-                    </h3>
+                    </h2>
                     <ul id="sidebar-menu" class="space-y-4">
                         <li>
                             <a href="#responsable" class="sidebar-link block text-xs font-label-bold text-primary dark:text-inverse-primary hover:text-primary transition-all flex items-center gap-2 border-l-2 border-primary pl-3">

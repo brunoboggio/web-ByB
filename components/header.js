@@ -16,9 +16,12 @@
 
     // Restaurar preferencia de tema oscuro/claro inmediatamente para evitar destellos
     const htmlRoot = document.documentElement;
-    if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (localStorage.getItem('theme') === 'dark') {
         htmlRoot.classList.add('dark');
         htmlRoot.classList.remove('light');
+    } else {
+        htmlRoot.classList.remove('dark');
+        htmlRoot.classList.add('light');
     }
 
     const renderHeader = () => {
