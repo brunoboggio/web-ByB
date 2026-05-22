@@ -147,7 +147,7 @@
                     <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors font-body-md text-sm flex items-center gap-2" href="${basePath}#nosotros"><span class="w-1.5 h-1.5 bg-outline-variant rounded-full"></span> Quiénes Somos</a></li>
                     <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors font-body-md text-sm flex items-center gap-2" href="${basePath}#servicios"><span class="w-1.5 h-1.5 bg-outline-variant rounded-full"></span> Modelos y Servicios</a></li>
                     <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors font-body-md text-sm flex items-center gap-2" href="${basePath}credito-hipotecario/"><span class="w-1.5 h-1.5 bg-outline-variant rounded-full"></span> Crédito Hipotecario</a></li>
-                    <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors font-body-md text-sm flex items-center gap-2" href="${basePath}contacto/"><span class="w-1.5 h-1.5 bg-outline-variant rounded-full"></span> Cotizador Online</a></li>
+                    <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors font-body-md text-sm flex items-center gap-2" href="${basePath}precio-construccion-m2/"><span class="w-1.5 h-1.5 bg-outline-variant rounded-full"></span> Cotizador Online</a></li>
                     <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors font-body-md text-sm flex items-center gap-2" href="${basePath}contacto/"><span class="w-1.5 h-1.5 bg-outline-variant rounded-full"></span> Contactar Asesor</a></li>
                 </ul>
             </div>

@@ -73,6 +73,13 @@
                                 Casas con Pileta
                             </span>
                         </a>
+                        <a href="${basePath}casa-country/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center justify-between group/item">
+                            <span class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">cottage</span>
+                                Casas de Country
+                            </span>
+                            <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
+                        </a>
                         <a href="${basePath}casa-ladrillo/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center justify-between group/item">
                             <span class="flex items-center gap-2">
                                 <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">holiday_village</span>
@@ -89,7 +96,7 @@
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">grid_view</span>
                             Todos los Modelos
                         </a>
-                        <a href="${basePath}contacto/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center gap-2">
+                        <a href="${basePath}precio-construccion-m2/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">calculate</span>
                             Cotizador de Proyectos
                         </a>
@@ -105,6 +112,13 @@
                         <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:rotate-180">expand_more</span>
                     </a>
                     <div class="absolute top-full left-0 mt-1 w-64 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-out bg-surface-container-lowest rounded-xl shadow-xl border border-outline-variant/40 p-2 z-50 flex flex-col gap-1 before:absolute before:-top-6 before:left-0 before:w-full before:h-6 before:content-['']">
+                        <a href="${basePath}construccion-casas/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center justify-between group/item">
+                            <span class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">foundation</span>
+                                Construcción de Casas
+                            </span>
+                            <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
+                        </a>
                         <a href="${basePath}mejores-tipos-de-techos/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center justify-between group/item">
                             <span class="flex items-center gap-2">
                                 <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">roofing</span>
@@ -133,7 +147,7 @@
                             </span>
                             <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
                         </a>
-                        <a href="${basePath}contacto/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center gap-2">
+                        <a href="${basePath}precio-construccion-m2/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">calculate</span>
                             Calculadora de Presupuestos
                         </a>
@@ -204,6 +218,13 @@
                             Casas con Pileta
                         </span>
                     </a>
+                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}casa-country/">
+                        <span class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">cottage</span>
+                            Casas de Country
+                        </span>
+                        <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
+                    </a>
                     <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}casa-ladrillo/">
                         <span class="flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">holiday_village</span>
@@ -220,7 +241,7 @@
                         <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">grid_view</span>
                         Todos los Modelos
                     </a>
-                    <a class="text-on-surface-variant font-label-bold text-sm flex items-center gap-2 py-1" href="${basePath}contacto/">
+                    <a class="text-on-surface-variant font-label-bold text-sm flex items-center gap-2 py-1" href="${basePath}precio-construccion-m2/">
                         <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">calculate</span>
                         Cotizador de Proyectos
                     </a>
@@ -236,6 +257,13 @@
                     <span class="material-symbols-outlined text-xl transition-transform duration-200">expand_more</span>
                 </button>
                 <div id="mobile-blog-submenu" class="hidden flex flex-col gap-3 pl-4 border-l-2 border-outline-variant/30 mt-1">
+                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}construccion-casas/">
+                        <span class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">foundation</span>
+                            Construcción de Casas
+                        </span>
+                        <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
+                    </a>
                     <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}mejores-tipos-de-techos/">
                         <span class="flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">roofing</span>
@@ -264,7 +292,7 @@
                         </span>
                         <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
                     </a>
-                    <a class="text-on-surface font-label-bold text-sm flex items-center gap-2 py-1" href="${basePath}contacto/">
+                    <a class="text-on-surface font-label-bold text-sm flex items-center gap-2 py-1" href="${basePath}precio-construccion-m2/">
                         <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">calculate</span>
                         Calculadora de Presupuestos
                     </a>
@@ -288,10 +316,10 @@
             let isActive = false;
 
             // Lógica de detección de página activa mejorada
-            if (currentPath.includes('/casa-moderna') || currentPath.includes('/casas-steel-framing') || currentPath.includes('/casa-con-pileta') || currentPath.includes('/duplex') || currentPath.includes('/casa-ladrillo') || currentPath.includes('/refacciones-inmobiliarias')) {
+            if (currentPath.includes('/casa-moderna') || currentPath.includes('/casas-steel-framing') || currentPath.includes('/casa-con-pileta') || currentPath.includes('/casa-country') || currentPath.includes('/duplex') || currentPath.includes('/casa-ladrillo') || currentPath.includes('/refacciones-inmobiliarias')) {
                 // Si estamos en una página de servicio, resaltamos el botón "Servicios"
                 if (href && href.includes('#servicios')) isActive = true;
-            } else if (currentPath.includes('/mejores-tipos-de-techos') || currentPath.includes('/tipos-de-suelos') || currentPath.includes('/calculos-de-estructura') || currentPath.includes('/empieza-diseno-de-tu-casa') || currentPath.includes('/precio-construccion-m2')) {
+            } else if (currentPath.includes('/construccion-casas') || currentPath.includes('/mejores-tipos-de-techos') || currentPath.includes('/tipos-de-suelos') || currentPath.includes('/calculos-de-estructura') || currentPath.includes('/empieza-diseno-de-tu-casa') || currentPath.includes('/precio-construccion-m2')) {
                 // Si estamos en la página de tipos de techos, de suelos o la calculadora, resaltamos el botón "Blog"
                 if (link.textContent.includes('Blog')) isActive = true;
             } else if (currentPath.includes('/credito-hipotecario') && href && href.includes('credito-hipotecario')) {
