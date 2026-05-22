@@ -23,7 +23,7 @@
     <meta property="og:url" content="https://constructorabyb.com.ar/construccion-casas/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_AR" />
-    <meta property="og:image" content="https://constructorabyb.com.ar/construccion-casas/hero.png" />
+    <meta property="og:image" content="https://constructorabyb.com.ar/construccion-casas/hero.webp" />
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -236,7 +236,7 @@
     </style>
 
     <!-- Preload Hero Image -->
-    <link rel="preload" as="image" href="./hero.png" fetchpriority="high" />
+    <link rel="preload" as="image" href="./hero.webp" fetchpriority="high" />
 </head>
 
 <body
@@ -309,7 +309,7 @@
                 </div>
                 <div class="lg:col-span-6 relative">
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/30 aspect-[4/3] w-full">
-                        <img src="./hero.png" alt="Construcción de casa de diseño moderno llave en mano" class="w-full h-full object-cover" />
+                        <img src="./hero.webp" alt="Construcción de casa de diseño moderno llave en mano" class="w-full h-full object-cover" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex items-end p-6">
                             <div class="text-white space-y-1">
                                 <p class="text-sm font-bold">Residencia Altas Cumbres, Yerba Buena</p>
@@ -399,7 +399,7 @@
 
                     <div class="lg:col-span-6">
                         <div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] border border-outline-variant/30 group">
-                            <img id="style-image" src="./interior.png" alt="Interior moderno de casa construida llave en mano" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            <img id="style-image" src="./interior.webp" alt="Interior moderno de casa construida llave en mano" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
                                 <div>
                                     <span id="style-image-label-1" class="text-white text-sm font-bold block">Interiores Integrados</span>
@@ -431,7 +431,7 @@
                     <!-- Contenedor del plano interactivo -->
                     <div class="lg:col-span-7 relative bg-surface-container-lowest border border-outline-variant/40 dark:border-white/5 rounded-2xl shadow-xl overflow-hidden p-4 md:p-8">
                         <div class="relative w-full aspect-[4/3] bg-blueprint border border-outline-variant/20 rounded-lg overflow-hidden">
-                            <img src="./plano_arquitectura.png" alt="Plano de arquitectura interactivo de una tipología" class="w-full h-full object-contain opacity-90 dark:opacity-80" />
+                            <img src="./plano_arquitectura.webp" alt="Plano de arquitectura interactivo de una tipología" class="w-full h-full object-contain opacity-90 dark:opacity-80" />
 
                             <!-- Hotspot 1: Platea antisísmica (Bottom-Left) -->
                             <div onclick="showHotspotInfo('platea')" class="absolute bottom-[20%] left-[25%] w-8 h-8 bg-primary dark:bg-inverse-primary text-on-primary dark:text-primary rounded-full cursor-pointer flex items-center justify-center hover:scale-125 transition-transform z-20 shadow-lg border-2 border-white dark:border-primary">
@@ -724,7 +724,7 @@
                 timeframe: "6 a 8 meses",
                 imgLabel1: "Interiores Integrados",
                 imgLabel2: "Concepto abierto con visuales puras.",
-                imageSrc: "./interior.png" // using available image
+                imageSrc: "./interior.webp" // using available image
             },
             clasico: {
                 title: "Ladrillo Visto & Estilo Tradicional",
@@ -738,7 +738,7 @@
                 timeframe: "8 a 10 meses",
                 imgLabel1: "Materiales Nobles",
                 imgLabel2: "Ambientes cálidos, acogedores y sólidos.",
-                imageSrc: "./interior.png" // fallback to available image
+                imageSrc: "./interior.webp" // fallback to available image
             },
             rustico: {
                 title: "Country, Rústico & Steel Framing",
@@ -752,7 +752,7 @@
                 timeframe: "4 a 6 meses",
                 imgLabel1: "Rapidez & Sustentabilidad",
                 imgLabel2: "Aislamiento superior y menor tiempo de obra.",
-                imageSrc: "./interior.png" // fallback to available image
+                imageSrc: "./interior.webp" // fallback to available image
             }
         };
 
@@ -949,8 +949,8 @@
         // Inicializar cálculos
         calculateTotal();
     </script>
-    <script src="../components/header.js"></script>
-    <script src="../components/footer.js"></script>
+    <script src="../components/header.js?v=1.1"></script>
+    <script src="../components/footer.js?v=1.1"></script>
 </body>
 
 </html>
