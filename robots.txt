@@ -31,6 +31,8 @@ User-agent: *
 Allow: /
 Disallow: /components/
 Disallow: /js/
+Disallow: /aviso-legal/
+Disallow: /politica-privacidad/
 
 # Mapa del sitio oficial
 Sitemap: https://constructorabyb.com.ar/sitemap_index.xml
