@@ -369,8 +369,7 @@
         const homeLinks = header.querySelectorAll(`a[href="${basePath}"]`);
         homeLinks.forEach(link => {
             link.addEventListener('click', (e) => {
-                const currentPath = window.location.pathname;
-                const isHome = currentPath === '/' || currentPath.endsWith('index.html') || currentPath.endsWith('/');
+                const isHome = basePath === './' || basePath === '';
                 if (isHome) {
                     e.preventDefault();
                     window.scrollTo({ top: 0, behavior: 'smooth' });
