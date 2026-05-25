@@ -362,6 +362,10 @@ function optimizeHtmlFile(filePath) {
   // 7. Consolidate and resolve global entity of Constructora ByB
   content = injectGlobalEntitySchema(content);
 
+  // 8. Cache-busting for header and footer components
+  content = content.replace(/(components\/header\.js\?v=)[0-9.]+/g, '$11.2');
+  content = content.replace(/(components\/footer\.js\?v=)[0-9.]+/g, '$11.2');
+
   fs.writeFileSync(filePath, content, 'utf8');
 }
 
