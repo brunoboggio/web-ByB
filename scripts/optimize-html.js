@@ -149,6 +149,7 @@ function injectNoscriptFallbacks(content, prefix) {
                 <div class="flex flex-wrap items-center gap-4 text-sm font-semibold">
                     <a href="${prefix || './'}" class="text-on-surface-variant hover:text-primary">Inicio</a>
                     <a href="${prefix}casas-steel-framing/" class="text-on-surface-variant hover:text-primary">Steel Framing</a>
+                    <a href="${prefix}construccion-en-seco/" class="text-on-surface-variant hover:text-primary">Construcción en Seco</a>
                     <a href="${prefix}casa-moderna/" class="text-on-surface-variant hover:text-primary">Casas Modernas</a>
                     <a href="${prefix}duplex/" class="text-on-surface-variant hover:text-primary">Dúplex</a>
                     <a href="${prefix}casa-con-pileta/" class="text-on-surface-variant hover:text-primary">Casas con Pileta</a>

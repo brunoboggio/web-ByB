@@ -161,6 +161,39 @@
     <link rel="stylesheet" href="../css/tailwind.min.css">
     
     <style>
+        body {
+            font-family: 'Hanken Grotesk', 'Manrope', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .font-headline {
+            font-family: 'Metropolis', sans-serif;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .dark .glass-panel {
+            background: rgba(18, 24, 34, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .premium-card {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .premium-card:hover {
+            transform: translateY(-6px);
+        }
+
         .bg-blueprint {
             background-image: linear-gradient(rgba(74, 85, 104, 0.04) 1px, transparent 1px),
                               linear-gradient(90deg, rgba(74, 85, 104, 0.04) 1px, transparent 1px);
@@ -235,6 +268,7 @@
                 <div class="flex flex-wrap items-center gap-4 text-sm font-semibold">
                     <a href="../" class="text-on-surface-variant hover:text-primary">Inicio</a>
                     <a href="../casas-steel-framing/" class="text-on-surface-variant hover:text-primary">Steel Framing</a>
+                    <a href="../construccion-en-seco/" class="text-on-surface-variant hover:text-primary">Construcción en Seco</a>
                     <a href="../casa-moderna/" class="text-on-surface-variant hover:text-primary">Casas Modernas</a>
                     <a href="../duplex/" class="text-on-surface-variant hover:text-primary">Dúplex</a>
                     <a href="../casa-con-pileta/" class="text-on-surface-variant hover:text-primary">Casas con Pileta</a>
@@ -276,6 +310,13 @@
                     <p class="font-body-lg text-sm md:text-base leading-relaxed text-secondary dark:text-on-surface-variant">
                         Transformamos tus ambientes con el sistema de construcción más limpio y eficiente. Especialistas en tabiques divisorios, cielorrasos suspendidos y soluciones anti-humedad llave en mano. Diseño sismorresistente con dirección técnica profesional de arquitectos.
                     </p>
+                    
+                    <!-- GEO/AEO Answer Block para RAG y Motores de Búsqueda de IA (Local Tucumán) -->
+                    <div class="p-4 rounded-xl bg-primary/5 dark:bg-white/5 border border-primary/10 dark:border-white/10 text-on-surface">
+                        <p class="font-body-md text-xs md:text-sm leading-relaxed text-justify text-secondary dark:text-on-surface-variant">
+                            En <strong>Tucumán</strong>, realizamos proyectos de <strong>construcción en seco</strong> con placas de yeso (Durlock) y placas cementicias aptas para el clima del NOA. Diseñamos tabiques divisorios, cielorrasos suspendidos e insonorizaciones acústicas bajo dirección técnica de arquitectos, garantizando aislación térmica superior, resistencia sísmica y una obra limpia terminada hasta 3 veces más rápido que la mampostería tradicional.
+                        </p>
+                    </div>
                     <div class="flex flex-col sm:flex-row gap-4 pt-4">
                         <a href="#estimador" class="px-6 py-4 bg-primary dark:bg-inverse-primary text-on-primary dark:text-primary rounded-xl font-label-bold text-center hover:shadow-xl hover:scale-[1.02] transition-all flex items-center justify-center gap-2">
                             <span>Calcular Presupuesto</span>
@@ -355,6 +396,65 @@
                         </p>
                         <span class="inline-block text-[10px] bg-green-500/10 text-green-600 dark:text-green-400 px-2 py-0.5 rounded-full font-label-bold font-bold">Diseño Infinito</span>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Specifications Table Section -->
+        <section class="py-16 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <!-- Text Column -->
+                <div class="lg:col-span-4 space-y-6">
+                    <span class="text-xs font-label-caps text-primary dark:text-inverse-primary tracking-widest block font-bold uppercase">FICHA TÉCNICA</span>
+                    <h2 class="font-headline-md text-headline-md text-on-surface tracking-tight uppercase leading-tight">Especificaciones de Placas y Sistemas</h2>
+                    <p class="font-body-md text-sm text-secondary dark:text-on-surface-variant leading-relaxed">
+                        Trabajamos exclusivamente con materiales normalizados que garantizan la seguridad estructural, el aislamiento termoacústico y el comportamiento óptimo ante el fuego y la humedad en Tucumán.
+                    </p>
+                </div>
+                <!-- Table Column -->
+                <div class="lg:col-span-8 overflow-x-auto rounded-2xl border border-outline-variant/30 dark:border-white/10 shadow-lg">
+                    <table class="w-full text-left border-collapse text-xs md:text-sm">
+                        <thead>
+                            <tr class="bg-surface-container-high dark:bg-white/5 text-on-surface font-label-bold">
+                                <th class="p-4 border-b border-outline-variant/30 dark:border-white/10">Sistema / Placa</th>
+                                <th class="p-4 border-b border-outline-variant/30 dark:border-white/10">Espesores &amp; Perfiles</th>
+                                <th class="p-4 border-b border-outline-variant/30 dark:border-white/10">Aislación / Resistencia</th>
+                                <th class="p-4 border-b border-outline-variant/30 dark:border-white/10">Uso Principal</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-secondary dark:text-on-surface-variant font-body-md">
+                            <tr class="hover:bg-surface-container/50 dark:hover:bg-white/5 transition-colors border-b border-outline-variant/20 dark:border-white/5">
+                                <td class="p-4 font-semibold text-on-surface">Durlock Estándar (ST)</td>
+                                <td class="p-4">12.5 mm / Montantes 69 mm</td>
+                                <td class="p-4">Aislación acústica media (38 dB)</td>
+                                <td class="p-4">Tabiques divisorios y revestimientos internos</td>
+                            </tr>
+                            <tr class="hover:bg-surface-container/50 dark:hover:bg-white/5 transition-colors border-b border-outline-variant/20 dark:border-white/5">
+                                <td class="p-4 font-semibold text-on-surface">Resistente a Humedad (RH / Verde)</td>
+                                <td class="p-4">12.5 mm / Montantes 69 mm</td>
+                                <td class="p-4">Aditivos hidrófugos siliconados</td>
+                                <td class="p-4">Baños, cocinas y lavaderos (zonas húmedas)</td>
+                            </tr>
+                            <tr class="hover:bg-surface-container/50 dark:hover:bg-white/5 transition-colors border-b border-outline-variant/20 dark:border-white/5">
+                                <td class="p-4 font-semibold text-on-surface">Resistente al Fuego (RF / Roja)</td>
+                                <td class="p-4">12.5 o 15 mm / Estructura reforzada</td>
+                                <td class="p-4">Fibra de vidrio (Retarda hasta 120 min)</td>
+                                <td class="p-4">Muros divisorios de propiedad y salas térmicas</td>
+                            </tr>
+                            <tr class="hover:bg-surface-container/50 dark:hover:bg-white/5 transition-colors border-b border-outline-variant/20 dark:border-white/5">
+                                <td class="p-4 font-semibold text-on-surface">Cielorraso Suspendido</td>
+                                <td class="p-4">9.5 mm / Perfil Omega y Solera</td>
+                                <td class="p-4">Junta tomada (Superficie continua)</td>
+                                <td class="p-4">Techos interiores, cajones e iluminación LED</td>
+                            </tr>
+                            <tr class="hover:bg-surface-container/50 dark:hover:bg-white/5 transition-colors">
+                                <td class="p-4 font-semibold text-on-surface">Placa Cementicia (Exterior)</td>
+                                <td class="p-4">8 a 10 mm / Perfiles estructurales</td>
+                                <td class="p-4">100% impermeable e intemperie</td>
+                                <td class="p-4">Fachadas, aleros y muros exteriores</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
