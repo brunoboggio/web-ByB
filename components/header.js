@@ -117,7 +117,7 @@
                 
                 <!-- Menú Desplegable Blog -->
                 <div class="relative group py-2">
-                    <a href="#" class="desktop-nav-link text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors text-label-bold font-label-bold flex items-center gap-1">
+                    <a href="${basePath}blog/" class="desktop-nav-link text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors text-label-bold font-label-bold flex items-center gap-1">
                         Blog
                         <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:rotate-180">expand_more</span>
                     </a>
@@ -274,6 +274,10 @@
                     <span class="material-symbols-outlined text-xl transition-transform duration-200">expand_more</span>
                 </button>
                 <div id="mobile-blog-submenu" class="hidden flex flex-col gap-3 pl-4 border-l-2 border-outline-variant/30 mt-1">
+                    <a class="text-on-surface font-label-bold text-sm flex items-center gap-2 py-1" href="${basePath}blog/">
+                        <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">article</span>
+                        Ver todo el Blog
+                    </a>
                     <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}construccion-casas/">
                         <span class="flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">foundation</span>
@@ -336,8 +340,8 @@
             if (currentPath.includes('/casa-moderna') || currentPath.includes('/casas-steel-framing') || currentPath.includes('/construccion-en-seco') || currentPath.includes('/casa-con-pileta') || currentPath.includes('/casa-country') || currentPath.includes('/duplex') || currentPath.includes('/casa-ladrillo') || currentPath.includes('/refacciones-inmobiliarias')) {
                 // Si estamos en una página de servicio, resaltamos el botón "Servicios"
                 if (href && href.includes('#servicios')) isActive = true;
-            } else if (currentPath.includes('/construccion-casas') || currentPath.includes('/mejores-tipos-de-techos') || currentPath.includes('/tipos-de-suelos') || currentPath.includes('/calculos-de-estructura') || currentPath.includes('/empieza-diseno-de-tu-casa') || currentPath.includes('/precio-construccion-m2')) {
-                // Si estamos en la página de tipos de techos, de suelos o la calculadora, resaltamos el botón "Blog"
+            } else if (currentPath.includes('/blog') || currentPath.includes('/construccion-casas') || currentPath.includes('/mejores-tipos-de-techos') || currentPath.includes('/tipos-de-suelos') || currentPath.includes('/calculos-de-estructura') || currentPath.includes('/empieza-diseno-de-tu-casa') || currentPath.includes('/precio-construccion-m2')) {
+                // Si estamos en el blog o un artículo del blog, resaltamos el botón "Blog"
                 if (link.textContent.includes('Blog')) isActive = true;
             } else if (currentPath.includes('/credito-hipotecario') && href && href.includes('credito-hipotecario')) {
                 isActive = true;
