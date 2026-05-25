@@ -198,10 +198,12 @@
             
             <!-- Submenú Móvil Servicios -->
             <div class="flex flex-col gap-2">
-                <button id="mobile-services-btn" class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base flex items-center justify-between py-1 w-full text-left">
-                    <span>Servicios</span>
-                    <span class="material-symbols-outlined text-xl transition-transform duration-200">expand_more</span>
-                </button>
+                <div class="flex items-center justify-between py-1 w-full">
+                    <a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base" href="${basePath}#servicios">Servicios</a>
+                    <button id="mobile-services-btn" class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors p-1" aria-label="Desplegar menú servicios">
+                        <span class="material-symbols-outlined text-xl transition-transform duration-200">expand_more</span>
+                    </button>
+                </div>
                 <div id="mobile-services-submenu" class="hidden flex flex-col gap-3 pl-4 border-l-2 border-outline-variant/30 mt-1">
                     <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}casas-steel-framing/">
                         <span class="flex items-center gap-2">
@@ -264,15 +266,17 @@
                     </a>
                 </div>
             </div>
-
+ 
             <a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base block py-1" href="${basePath}credito-hipotecario/">Crédito Hipotecario</a>
             
             <!-- Submenú Móvil Blog -->
             <div class="flex flex-col gap-2">
-                <button id="mobile-blog-btn" class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base flex items-center justify-between py-1 w-full text-left">
-                    <span>Blog</span>
-                    <span class="material-symbols-outlined text-xl transition-transform duration-200">expand_more</span>
-                </button>
+                <div class="flex items-center justify-between py-1 w-full">
+                    <a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base" href="${basePath}blog/">Blog</a>
+                    <button id="mobile-blog-btn" class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors p-1" aria-label="Desplegar menú blog">
+                        <span class="material-symbols-outlined text-xl transition-transform duration-200">expand_more</span>
+                    </button>
+                </div>
                 <div id="mobile-blog-submenu" class="hidden flex flex-col gap-3 pl-4 border-l-2 border-outline-variant/30 mt-1">
                     <a class="text-on-surface font-label-bold text-sm flex items-center gap-2 py-1" href="${basePath}blog/">
                         <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">article</span>
