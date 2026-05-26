@@ -89,7 +89,7 @@ const globalOrgSchema = {
       "sameAs": "https://www.wikidata.org/wiki/Q2287957"
     }
   ],
-  "telephone": "+5403816425740",
+  "telephone": "+5493813604822",
   "email": "construccionesbybsrl@gmail.com",
   "openingHoursSpecification": [
     {
@@ -172,7 +172,7 @@ function injectNoscriptFallbacks(content, prefix) {
                     <div>
                         <p class="font-bold text-base mb-2">Constructora ByB SRL</p>
                         <p>Crisóstomo Alvarez 1584, San Miguel de Tucumán, Tucumán, Argentina</p>
-                        <p>Teléfono: <a href="tel:03816425740" class="underline">0381 642-5740</a></p>
+                        <p>Teléfono: <a href="tel:03813604822" class="underline">0381 360-4822</a></p>
                         <p>Email: <a href="mailto:construccionesbybsrl@gmail.com" class="underline">construccionesbybsrl@gmail.com</a></p>
                         <p>Horarios: Lunes a Viernes de 9:00 a 18:00 hs</p>
                     </div>

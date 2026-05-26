@@ -50,7 +50,7 @@
                                 </div>
                                 <div>
                                     <span class="block text-xs text-on-tertiary-container uppercase font-label-bold">Teléfono Directo</span>
-                                    <a href="tel:03816425740" class="hover:underline">0381 642-5740</a>
+                                    <a href="tel:03813604822" class="hover:underline">0381 360-4822</a>
                                 </div>
                             </li>
                             <li class="flex items-center gap-4">
@@ -74,11 +74,11 @@
                         </ul>
 
                         <div class="flex flex-wrap gap-4">
-                            <a href="tel:03816425740" class="bg-surface-container-lowest text-tertiary px-8 py-3.5 font-label-bold text-label-bold rounded-DEFAULT hover:bg-surface-variant transition-colors shadow-lg inline-flex items-center gap-2">
+                            <a href="tel:03813604822" class="bg-surface-container-lowest text-tertiary px-8 py-3.5 font-label-bold text-label-bold rounded-DEFAULT hover:bg-surface-variant transition-colors shadow-lg inline-flex items-center gap-2">
                                 <span class="material-symbols-outlined text-base">call</span>
                                 Llamar Ahora
                             </a>
-                            <a href="https://wa.me/5493816425740?text=Hola%20Constructora%20ByB,%20deseo%20consultar%20sobre%20un%20proyecto%20de%20construcción" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 text-white px-6 py-3.5 font-label-bold text-label-bold rounded-DEFAULT hover:bg-emerald-700 transition-colors shadow-lg inline-flex items-center gap-2">
+                            <a href="https://wa.me/5493813604822?text=Hola%20Constructora%20ByB,%20deseo%20consultar%20sobre%20un%20proyecto%20de%20construcción" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 text-white px-6 py-3.5 font-label-bold text-label-bold rounded-DEFAULT hover:bg-emerald-700 transition-colors shadow-lg inline-flex items-center gap-2">
                                 <span class="material-symbols-outlined text-base">chat</span>
                                 WhatsApp
                             </a>
