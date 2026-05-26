@@ -143,7 +143,7 @@ function injectNoscriptFallbacks(content, prefix) {
             <nav class="flex flex-wrap justify-between items-center px-4 md:px-8 h-20 max-w-7xl mx-auto bg-surface-container-lowest border-b border-outline-variant/60">
                 <div class="flex items-center gap-3">
                     <a href="${prefix || './'}" class="flex items-center gap-2">
-                        <img src="${prefix}Logo%201.webp" alt="Constructora ByB Logo" class="h-12 w-auto object-contain" />
+                        <img src="${prefix}Logo.webp" alt="Constructora ByB Logo" class="h-12 w-auto object-contain" />
                     </a>
                 </div>
                 <div class="flex flex-wrap items-center gap-4 text-sm font-semibold">

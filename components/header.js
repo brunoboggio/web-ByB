@@ -36,7 +36,7 @@
         <nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-7xl mx-auto">
             <div class="flex items-center gap-3">
                 <a href="${basePath}" class="flex items-center gap-2 group" aria-label="Constructora ByB">
-                    <img src="${basePath}Logo%201.webp" alt="Constructora ByB Logo" class="h-12 w-auto object-contain transition-transform group-hover:scale-105" />
+                    <img src="${basePath}Logo.webp" alt="Constructora ByB Logo" class="h-12 w-auto object-contain transition-transform group-hover:scale-105" />
                 </a>
             </div>
 
