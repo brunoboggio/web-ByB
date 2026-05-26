@@ -182,25 +182,25 @@
 
             <!-- Botón Menú Móvil -->
             <div class="flex items-center gap-2 md:hidden">
-                <button id="mobile-theme-toggle" class="p-2 rounded-lg text-on-surface-variant" aria-label="Alternar modo">
+                <button id="mobile-theme-toggle" class="p-3 rounded-lg text-on-surface-variant" aria-label="Alternar modo">
                     <span class="material-symbols-outlined dark:hidden">dark_mode</span>
                     <span class="material-symbols-outlined hidden dark:block text-inverse-primary">light_mode</span>
                 </button>
-                <button id="mobile-menu-btn" class="p-2 text-on-surface" aria-label="Abrir menú">
+                <button id="mobile-menu-btn" class="p-3 min-h-[44px] min-w-[44px] flex items-center justify-center text-on-surface" aria-label="Abrir menú">
                     <span class="material-symbols-outlined text-2xl">menu</span>
                 </button>
             </div>
         </nav>
 
         <!-- Menú Móvil Desplegable -->
-        <div id="mobile-menu" class="hidden md:hidden border-t border-outline-variant/40 bg-surface-container-lowest px-margin-mobile py-6 flex flex-col gap-4 shadow-lg animate-fade-in">
+        <div id="mobile-menu" class="hidden md:hidden border-t border-outline-variant/40 bg-surface-container-lowest px-margin-mobile py-6 flex flex-col gap-4 shadow-lg animate-fade-in max-h-[calc(100vh-5rem)] overflow-y-auto">
             <a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base block py-1" href="${basePath}">Inicio</a>
             
             <!-- Submenú Móvil Servicios -->
             <div class="flex flex-col gap-2">
                 <div class="flex items-center justify-between py-1 w-full">
                     <a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base" href="${basePath}#servicios">Servicios</a>
-                    <button id="mobile-services-btn" class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors p-1" aria-label="Desplegar menú servicios">
+                    <button id="mobile-services-btn" class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors p-2 min-h-[44px] min-w-[44px] flex items-center justify-center" aria-label="Desplegar menú servicios">
                         <span class="material-symbols-outlined text-xl transition-transform duration-200">expand_more</span>
                     </button>
                 </div>
@@ -273,7 +273,7 @@
             <div class="flex flex-col gap-2">
                 <div class="flex items-center justify-between py-1 w-full">
                     <a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base" href="${basePath}blog/">Blog</a>
-                    <button id="mobile-blog-btn" class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors p-1" aria-label="Desplegar menú blog">
+                    <button id="mobile-blog-btn" class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors p-2 min-h-[44px] min-w-[44px] flex items-center justify-center" aria-label="Desplegar menú blog">
                         <span class="material-symbols-outlined text-xl transition-transform duration-200">expand_more</span>
                     </button>
                 </div>
@@ -401,6 +401,11 @@
         if (mobileMenuBtn && mobileMenu) {
             mobileMenuBtn.onclick = () => {
                 mobileMenu.classList.toggle('hidden');
+                if (mobileMenu.classList.contains('hidden')) {
+                    document.body.style.overflow = '';
+                } else {
+                    document.body.style.overflow = 'hidden';
+                }
                 const icon = mobileMenuBtn.querySelector('span');
                 if (icon) {
                     icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
@@ -440,9 +445,20 @@
             mobileLinks.forEach(link => {
                 link.onclick = () => {
                     mobileMenu.classList.add('hidden');
+                    document.body.style.overflow = '';
                     const icon = mobileMenuBtn.querySelector('span');
                     if (icon) icon.textContent = 'menu';
                 };
+            });
+
+            // Close mobile menu on outside click
+            document.addEventListener('click', (e) => {
+                if (mobileMenu && !mobileMenu.classList.contains('hidden') && !mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                    mobileMenu.classList.add('hidden');
+                    document.body.style.overflow = '';
+                    const icon = mobileMenuBtn.querySelector('span');
+                    if (icon) icon.textContent = 'menu';
+                }
             });
         }
 
