@@ -143,7 +143,7 @@ function injectNoscriptFallbacks(content, prefix) {
             <nav class="flex flex-wrap justify-between items-center px-4 md:px-8 h-20 max-w-7xl mx-auto bg-surface-container-lowest border-b border-outline-variant/60">
                 <div class="flex items-center gap-3">
                     <a href="${prefix || './'}" class="flex items-center gap-2">
-                        <img src="${prefix}Logo.webp" alt="Constructora ByB Logo" class="h-12 w-auto object-contain" />
+                        <img src="${prefix}Logo.webp" alt="Constructora ByB Logo" class="h-12 w-auto object-contain" width="48" height="48" />
                     </a>
                 </div>
                 <div class="flex flex-wrap items-center gap-4 text-sm font-semibold">
@@ -323,14 +323,17 @@ function optimizeHtmlFile(filePath) {
   content = content.replace(/<img\s+([^>]*src=["']([^"']+)["'][^>]*)>/gi, (match, attrs, src) => {
     imgCounter++;
     
-    // If we didn't find a background hero image, use the first <img> tag as the hero
-    if (imgCounter === 1 && !heroPreloadUrl) {
+    const isLogo = src.includes('Logo.webp');
+    const isHighPriority = attrs.includes('fetchpriority="high"');
+
+    // If we didn't find a background hero image, use the first non-logo <img> tag as the hero
+    if (!heroPreloadUrl && !isLogo && imgCounter <= 2) {
       heroPreloadUrl = src;
       console.log(`  -> Found hero img tag for preloading: ${heroPreloadUrl}`);
     }
 
-    // Add loading="lazy" to all images except the first one (above the fold)
-    if (imgCounter > 1 && !attrs.includes('loading=')) {
+    // Add loading="lazy" to all images except the logo, first image, and high priority hero images
+    if (imgCounter > 1 && !attrs.includes('loading=') && !isLogo && !isHighPriority) {
       // Append loading="lazy" inside the img attributes
       return `<img loading="lazy" ${attrs}>`;
     }
