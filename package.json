@@ -8,7 +8,9 @@
     "watch:css": "tailwindcss -i css/input.css -o css/tailwind.min.css --watch",
     "optimize-images": "node scripts/optimize-images.js",
     "optimize-html": "node scripts/optimize-html.js",
-    "build": "npm run build:css && npm run optimize-images && node scripts/optimize-google-images.js && npm run optimize-html"
+    "generate-srcsets": "node scripts/generate-srcsets.js",
+    "download-google-images": "node scripts/download-and-optimize-google-images.js",
+    "build": "npm run build:css && npm run generate-srcsets && npm run download-google-images && npm run optimize-images && node scripts/optimize-google-images.js && npm run optimize-html"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.1",

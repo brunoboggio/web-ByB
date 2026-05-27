@@ -1,0 +1,77 @@
+# ============================================================
+# Constructora ByB - Apache .htaccess Performance Optimization
+# ============================================================
+
+# 1. Caché de largo plazo para assets estáticos (1 año)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  
+  # Imágenes: 1 año
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png  "access plus 1 year"
+  ExpiresByType image/gif  "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  
+  # CSS y JavaScript: 1 año (usar cache-busting con ?v= o nombres con hash)
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  
+  # Fuentes: 1 año
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff  "access plus 1 year"
+  ExpiresByType font/ttf   "access plus 1 year"
+  
+  # HTML: sin caché (siempre fresco)
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# 2. Cache-Control headers
+<IfModule mod_headers.c>
+  # Assets inmutables: 1 año, immutable
+  <FilesMatch "\.(webp|jpg|jpeg|png|gif|svg|ico|woff2|woff|ttf)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  
+  # CSS y JS con versionado: 1 año
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  
+  # HTML: no cache
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+  
+  # Seguridad: quitar X-Powered-By
+  Header unset X-Powered-By
+  Header always set X-Content-Type-Options nosniff
+</IfModule>
+
+# 3. Compresión Gzip / Brotli
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE font/woff2
+  AddOutputFilterByType DEFLATE font/woff
+</IfModule>
+
+# 4. Redireccion www → non-www (opcional, activar si aplica)
+# <IfModule mod_rewrite.c>
+#   RewriteEngine On
+#   RewriteCond %{HTTP_HOST} ^www\.constructorabyb\.com\.ar [NC]
+#   RewriteRule ^ https://constructorabyb.com.ar%{REQUEST_URI} [R=301,L]
+# </IfModule>
+
+# 5. Forzar HTTPS
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>

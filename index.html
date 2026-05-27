@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es" class="light scroll-smooth">
 <head>
-    <link rel="icon" type="image/webp" href="Logo%201.webp" />
+    <link rel="icon" type="image/webp" href="Logo-48w.webp" />
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
@@ -107,12 +107,12 @@
 
     <!-- Fuentes y Recursos -->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link rel="preconnect" href="https://lh3.googleusercontent.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600&family=Metropolis:wght@400;700;800&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
     <noscript><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600&family=Metropolis:wght@400;700;800&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet"/></noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/></noscript>
+    <!-- Material Symbols SUBSETADO: solo íconos usados (~15KB vs ~1MB completo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0&icon_names=architecture,arrow_downward,arrow_forward,bar_chart,call,cancel,chat,check,check_circle,chevron_right,close,construction,dark_mode,email,expand_more,explore,group,handshake,home,keyboard_arrow_right,light_mode,location_on,menu,phone,search,shield,star,support_agent,tune,verified,visibility&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0&icon_names=architecture,arrow_downward,arrow_forward,bar_chart,call,cancel,chat,check,check_circle,chevron_right,close,construction,dark_mode,email,expand_more,explore,group,handshake,home,keyboard_arrow_right,light_mode,location_on,menu,phone,search,shield,star,support_agent,tune,verified,visibility&display=swap" rel="stylesheet"/></noscript>
     
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="css/tailwind.min.css" media="print" onload="this.media='all'">
@@ -170,12 +170,11 @@
             border-bottom-color: #adc7f7;
         }
     </style>
-
-    <!-- Preload Hero Image -->
-    <link rel="preload" as="image" href="https://lh3.googleusercontent.com/aida-public/AB6AXuANcRehKX9SWaqrkO9y-2GakMt8vC3zfHRB-XlMgTgNH8bALgXaN1NzetPkSCdcad02K0-uZFWvz3OUNgp8uEZ7XOOLKx0U5IsKwpINdgKZQgqZEbgi7kJHWhVu2YsEdu6hisdLh7_TphwlxhXAKQcYF7s-EQWK2E9PsuF6xCstYNeLOlmXXxn4YWBPeYVH6FXP_yNo9zZj0GFcTwfR5jv8syBmkTFQkX4KymNNa57RgYd1jxn4ykbkgmx3WuuJpst0ml6hAzqysz-i=w1200-rw" fetchpriority="high"/>
+    <!-- Preload Hero Image (local, optimizada: 14KB vs 312KB de Google) -->
+    <link rel="preload" as="image" href="/img/hero-bg-1200w.webp" imagesrcset="/img/hero-bg-800w.webp 800w, /img/hero-bg-1200w.webp 1200w, /img/hero-bg-1600w.webp 1600w" imagesizes="100vw" fetchpriority="high"/>
     <!-- Load components as non-blocking deferred scripts -->
-    <script src="./components/header.js?v=1.2" defer></script>
-    <script src="./components/footer.js?v=1.2" defer></script>
+    <script src="./components/header.min.js?v=1.3" defer></script>
+    <script src="./components/footer.min.js?v=1.3" defer></script>
 </head>
 <body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden transition-colors duration-300">
 
@@ -225,7 +224,19 @@
 
 
     <!-- Hero Section -->
-    <section id="inicio" class="relative w-full min-h-[819px] flex items-center mt-20 overflow-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANcRehKX9SWaqrkO9y-2GakMt8vC3zfHRB-XlMgTgNH8bALgXaN1NzetPkSCdcad02K0-uZFWvz3OUNgp8uEZ7XOOLKx0U5IsKwpINdgKZQgqZEbgi7kJHWhVu2YsEdu6hisdLh7_TphwlxhXAKQcYF7s-EQWK2E9PsuF6xCstYNeLOlmXXxn4YWBPeYVH6FXP_yNo9zZj0GFcTwfR5jv8syBmkTFQkX4KymNNa57RgYd1jxn4ykbkgmx3WuuJpst0ml6hAzqysz-i=w1200-rw'); background-size: cover; background-position: center;">
+    <section id="inicio" class="relative w-full min-h-[819px] flex items-center mt-20 overflow-hidden" >
+        <!-- Hero Image como <img> real: permite al navegador detectar LCP y hacer preload correcto -->
+        <img
+            src="/img/hero-bg-1200w.webp"
+            srcset="/img/hero-bg-800w.webp 800w, /img/hero-bg-1200w.webp 1200w, /img/hero-bg-1600w.webp 1600w"
+            sizes="100vw"
+            fetchpriority="high"
+            decoding="async"
+            width="1200"
+            height="819"
+            alt="Casa moderna construida por Constructora ByB en Tucumán"
+            class="absolute inset-0 w-full h-full object-cover"
+        />
         <div class="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/50 to-transparent dark:from-black/85 dark:via-black/60"></div>
         
         <div class="relative z-10 max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop w-full">
@@ -307,7 +318,17 @@
                 
                 <div class="relative">
                     <div class="absolute -inset-4 border-2 border-primary/10 dark:border-inverse-primary/10 rounded-xl transform translate-x-4 translate-y-4 transition-transform hover:translate-x-2 hover:translate-y-2 duration-300"></div>
-                    <img loading="lazy" alt="Exterior de casa moderna construida por ByB" class="rounded-xl w-full h-[550px] object-cover shadow-2xl relative z-10 hover:scale-[1.01] transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMBcZANJm3oeoVAGJIs-woKOe6eQrLsVE-YNFXkIIoVQiBuOkivEIz6S2x1llkHH1a6JpuNpnQP2muFMPXYZAXo2vpUALvnSsD46p-cf8YD1qu3Fav3rqbFsWRQzm1H5ZGHBas_rR__iHTFvOIYYp_Sa3FYU2Gmd5E87Lyju84JFH6f4gRzC1ZkW3Xkc8_2q9ODc3F6MA3APtXlOkmZ3qbr6wmUrjHJXHEdXMPOWwxb1k3ELSIfpvaaSNP79OQHk7GqfWNLg4I2h9W=w800-rw"/>
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        alt="Exterior de casa moderna construida por ByB en Tucumán"
+                        class="rounded-xl w-full h-[550px] object-cover shadow-2xl relative z-10 hover:scale-[1.01] transition-transform duration-500"
+                        src="/img/nosotros-600w.webp"
+                        srcset="/img/nosotros-600w.webp 600w, /img/nosotros-900w.webp 900w"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        width="900"
+                        height="550"
+                    />
                     
                     <!-- Floating badge overlay -->
                     <div class="absolute bottom-6 left-6 z-20 bg-surface-container-lowest/95 backdrop-blur-md p-4 rounded-lg shadow-xl border border-outline-variant/30 max-w-xs">
@@ -362,7 +383,17 @@
                 <!-- Card Steel Framing (Destacada y Más Importante) -->
                 <div class="service-card md:col-span-2 bg-gradient-to-br from-primary/10 via-surface-container-lowest to-surface-container-lowest border-2 border-primary/50 dark:border-inverse-primary/40 flex flex-col md:flex-row group hover:border-primary dark:hover:border-inverse-primary transition-all duration-300 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="moderno">
                     <a href="./casas-steel-framing/" class="h-64 md:h-auto md:w-5/12 overflow-hidden relative flex-shrink-0 block">
-                        <img fetchpriority="high" fetchpriority="high" alt="Casas Steel Framing en Tucumán" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="./casas-steel-framing/hero.webp"/>
+                        <img
+                            loading="lazy"
+                            decoding="async"
+                            alt="Casas Steel Framing en Tucumán"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            src="./casas-steel-framing/hero-800w.webp"
+                            srcset="./casas-steel-framing/hero-400w.webp 400w, ./casas-steel-framing/hero-800w.webp 800w, ./casas-steel-framing/hero-1200w.webp 1200w"
+                            sizes="(max-width: 768px) 100vw, 42vw"
+                            width="800"
+                            height="640"
+                        />
                         <span class="absolute top-3 right-3 bg-primary text-on-primary text-xs font-label-bold px-3 py-1.5 rounded-full shadow-lg border border-primary/20">
                             SISTEMA EFICIENTE
                         </span>
@@ -389,7 +420,7 @@
                 <!-- Card 1 -->
                 <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 transition-all duration-300 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="residencial">
                     <a href="./casa-ladrillo/" class="h-56 overflow-hidden relative block">
-                        <img loading="lazy" alt="Construcción de Casa de Ladrillo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFGuphCI4PbMjFxSFlSlYU9GQt0PZGRHYnhXzu5v0cVKQZuzVqN11XItwa4UvyHH7poH8nJu6CWPRhoE4egpVHuxPZ3F-9SHB7wchMUFWUY1FQUYgsP1Fd6RGXKrzV_HFS9ermH-_yQq7V65Y2HL7cntbVyoeg_XJOqfmH5UVCPYRIQ7Z0QcvyVEWgYzUdwK12hRW_UCdr2T77d11bQI7vALSQ_gZ_v5HDzJa5AYTpAnXRVeejQRopHM7u3NuRbEMBTqDxhwWGrT8z=w800-rw"/>
+                        <img loading="lazy" decoding="async" alt="Construcción de Casa de Ladrillo en Tucumán" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/img/casa-ladrillo-card-400w.webp" srcset="/img/casa-ladrillo-card-400w.webp 400w, /img/casa-ladrillo-card-800w.webp 800w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" width="400" height="224"/>
                         <span class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs text-xs font-label-bold px-2.5 py-1 rounded text-primary border border-outline-variant/30">
                             Tradicional
                         </span>
@@ -411,7 +442,7 @@
                 <!-- Card 2 -->
                 <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 transition-all duration-300 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="moderno">
                     <a href="./duplex/" class="h-56 overflow-hidden relative block">
-                        <img loading="lazy" alt="Arquitectura de Duplex Moderno" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM7xiLUd2H9dk9Zg1oZNgxJw6foo22IZl9mnlAbPlzPipG3xXI5FACkobU3ur4u12aDowFFrkrMB_537NpMkRK-VMR9eCKslIwqS6XtwIlrISwenGX334auf4LJG6Fz3IWExee9VYMpolkLArp7zxte3WO5f-hdI2lLEC4iqWY15tZrQozCG2GxT83VWErRQZXiyf1E3ZSXMZqFbSoRPM8MGe2endEvNdirR3J2BnXJGV_l_44R_bGaX6EQqgrUFrdun9h2GenOgw1=w800-rw"/>
+                        <img loading="lazy" decoding="async" alt="Arquitectura de Dúplex Moderno en Tucumán" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/img/duplex-card-400w.webp" srcset="/img/duplex-card-400w.webp 400w, /img/duplex-card-800w.webp 800w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" width="400" height="224"/>
                         <span class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs text-xs font-label-bold px-2.5 py-1 rounded text-primary border border-outline-variant/30">
                             Inversión
                         </span>
@@ -433,7 +464,7 @@
                 <!-- Card 3 -->
                 <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 transition-all duration-300 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="residencial">
                     <a href="./casa-con-pileta/" class="h-56 overflow-hidden relative block">
-                        <img loading="lazy" alt="Diseño de Casa con Pileta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArMwylSj3oE6ZfaEXXzQoYjGs4sZ8iczTv2E52oj61aB8eDumedVMbgIAlSO-Ux2-pKYOTYSm8ZLlH0ZqOpNwn7eKrNzSWKEAkuWmimJsCS49SyDyQduLk7lI9GlOhK-SdSvDtIqDykdiKKlYw2O6lvbRW5OBpEXc1dW5oKHGD34nT09R9tu3qyXq3655pIrF7J85o0cb-Z4VQCaWaMmTEFivHLomqZNITpoWy3Xetc8OWdsk7Um9KDVpMRFHuLdAVRHA4kvKOpvo8=w800-rw"/>
+                        <img loading="lazy" decoding="async" alt="Diseño de Casa con Pileta en Tucumán" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/img/casa-pileta-card-400w.webp" srcset="/img/casa-pileta-card-400w.webp 400w, /img/casa-pileta-card-800w.webp 800w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" width="400" height="224"/>
                         <span class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs text-xs font-label-bold px-2.5 py-1 rounded text-primary border border-outline-variant/30">
                             Premium
                         </span>
@@ -455,7 +486,7 @@
                 <!-- Card 4 -->
                 <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 transition-all duration-300 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="residencial">
                     <a href="./contacto/" class="h-56 overflow-hidden relative block">
-                        <img loading="lazy" alt="Construcción de Cabaña Simil Tronco" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAttQBVMj_pvKZLeiiBoCgnlXDWY8tKHAbxTZoycHgn5DSaO9aoHQjKGwGYvXN2l01H0miDvOFaAWxuQwL_w9VhZjXftNGcn-zqvyaaZ8arFvtLqMIWzjWI-sD6cgdizHb7cJaPDEyvkFW-XZ1QyUiOP_75cPnr3V4ioNASWwqs05uYqn1kT9ZjHEuODOdvB1y5-RLpDDIY7v9p9bp7MJbSYp9SHwWtbVZ8TekVxUblJ4_exnV2Eg5BB5HxaToyIznpcEi9ugiaj1Sm=w800-rw"/>
+                        <img loading="lazy" decoding="async" alt="Construcción de Cabaña Símil Tronco en Tucumán" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/img/cabana-card-400w.webp" srcset="/img/cabana-card-400w.webp 400w, /img/cabana-card-800w.webp 800w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" width="400" height="224"/>
                         <span class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs text-xs font-label-bold px-2.5 py-1 rounded text-primary border border-outline-variant/30">
                             Ecológico
                         </span>
@@ -477,7 +508,7 @@
                 <!-- Card 5 -->
                 <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 transition-all duration-300 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="moderno">
                     <a href="./casa-moderna/" class="h-56 overflow-hidden relative block">
-                        <img loading="lazy" alt="Arquitectura de Casa Moderna Minimalista" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf_-EYOgF75q5CMRwQM860qnc_qGQl12TSQKnbdMzimNJuMgzR7YNYrEln5_hnLvq-p4d0NSMAjJbh1iQhbhJnhMJ29tETTWwtPVjNs0wZpM6FvZiyKRQcfW6pdMD04y93vh3-M7-BGA1vDI9lKGhcIZ1dSTdFZGtKcUQk-fvyDQEzChFLvXoJ8wCC8D6A0a5Z26ytol1TjVPvvdlscr-_9DCxlRK2r4b0A4C7ew_dU-VsqVo383J6m1pjaPmNN-MugRUIIwif3sSm=w800-rw"/>
+                        <img loading="lazy" decoding="async" alt="Arquitectura de Casa Moderna Minimalista en Tucumán" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/img/casa-moderna-card-400w.webp" srcset="/img/casa-moderna-card-400w.webp 400w, /img/casa-moderna-card-800w.webp 800w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" width="400" height="224"/>
                         <span class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs text-xs font-label-bold px-2.5 py-1 rounded text-primary border border-outline-variant/30">
                             Vanguardia
                         </span>
@@ -499,7 +530,7 @@
                 <!-- Card: Casa Country -->
                 <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 transition-all duration-300 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="residencial">
                     <a href="./casa-country/" class="h-56 overflow-hidden relative block">
-                        <img fetchpriority="high" fetchpriority="high" alt="Diseño y Construcción de Casas de Country" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="./casa-country/hero.webp"/>
+                        <img loading="lazy" decoding="async" alt="Diseño y Construcción de Casas de Country en Tucumán" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="./casa-country/hero-400w.webp" srcset="./casa-country/hero-400w.webp 400w, ./casa-country/hero-800w.webp 800w, ./casa-country/hero-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" width="400" height="224"/>
                         <span class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs text-xs font-label-bold px-2.5 py-1 rounded text-primary border border-outline-variant/30">
                             Exclusivo
                         </span>
@@ -521,7 +552,7 @@
                 <!-- Card 6 -->
                 <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 transition-all duration-300 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="refacciones">
                     <a href="./refacciones-inmobiliarias/" class="h-56 overflow-hidden relative block">
-                        <img loading="lazy" alt="Servicio de Refacciones Inmobiliarias" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLqbCEOraLjyI112LEAfBLgwdyMiaZt0pbsq_SbdQ1mPXNa5hlIVTtpgQJNU6Hh4jggskXzOIJpIN-Uy3MCXYTvNDO0gpqUt5_YPXuWYNShDGgsOTaC3fzSwjJYj76V17jXUp9tRsl8-ZYOrKQSFfD6xHVsfT18pfsaJZpzIUtX_hho3PIO4-dGnhqP0c_0weuu-_EZLyrXGnqvy1GXFyWN_p3QH9bEW3ah2X2m78RXylpLJl31g3j8GJMF7X8mix1kgvaEC8gJ4wm=w800-rw"/>
+                        <img loading="lazy" decoding="async" alt="Servicio de Refacciones Inmobiliarias en Tucumán" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/img/refacciones-card-400w.webp" srcset="/img/refacciones-card-400w.webp 400w, /img/refacciones-card-800w.webp 800w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" width="400" height="224"/>
                         <span class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs text-xs font-label-bold px-2.5 py-1 rounded text-primary border border-outline-variant/30">
                             Llave en Mano
                         </span>

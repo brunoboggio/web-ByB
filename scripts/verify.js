@@ -1,0 +1,18 @@
+const fs = require('fs');
+const html = fs.readFileSync('index.html', 'utf8');
+const googleUrls = (html.match(/lh3\.googleusercontent\.com/g) || []).length;
+const localImgs = (html.match(/src="\/img\//g) || []).length;
+const srcsets = (html.match(/srcset=/g) || []).length;
+const heroImg = html.includes('/img/hero-bg-1200w.webp') ? 'SI' : 'NO';
+const heroBg = html.includes('background-image: url') ? 'PROBLEMA - TODAVIA EXISTE' : 'OK - eliminado';
+const subsetFont = html.includes('icon_names=') ? 'SI' : 'NO';
+const favicon = html.includes('Logo-48w.webp') ? 'SI' : 'NO';
+console.log('=== RESUMEN DE CAMBIOS EN index.html ===');
+console.log('URLs Google restantes:', googleUrls);
+console.log('Imagenes locales /img/:', localImgs);
+console.log('Imagenes con srcset:', srcsets);
+console.log('Hero como img real:', heroImg);
+console.log('background-image del hero:', heroBg);
+console.log('Material Symbols subsetado:', subsetFont);
+console.log('Favicon optimizado:', favicon);
+console.log('Tamano del HTML:', (fs.statSync('index.html').size / 1024).toFixed(1), 'KB');
