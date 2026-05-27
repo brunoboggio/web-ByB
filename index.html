@@ -115,7 +115,8 @@
     <noscript><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/></noscript>
     
     <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="css/tailwind.min.css">
+    <link rel="stylesheet" href="css/tailwind.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/tailwind.min.css"></noscript>
     <style>
         .bg-blueprint {
             background-image: linear-gradient(rgba(74, 85, 104, 0.05) 1px, transparent 1px),
@@ -400,7 +401,7 @@
                         <p class="font-body-md text-on-surface-variant text-sm mb-6 flex-grow leading-relaxed">
                             Construir tu propia casa de ladrillos desde cero tiene grandes ventajas. Permite total libertad para estructurar los ambientes, garantiza una inercia térmica excepcional, solidez acústica y un valor de reventa sobresaliente a lo largo del tiempo.
                         </p>
-                        <a href="./casa-ladrillo/" class="bg-tertiary text-on-tertiary w-full py-2.5 font-label-bold text-label-bold rounded hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2 text-xs tracking-wider">
+                        <a href="./casa-ladrillo/" aria-label="Ver modelo de Casa de Ladrillo" class="bg-tertiary text-on-tertiary w-full py-2.5 font-label-bold text-label-bold rounded hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2 text-xs tracking-wider">
                             <span class="material-symbols-outlined text-sm">explore</span>
                             VER MODELO
                         </a>
@@ -422,7 +423,7 @@
                         <p class="font-body-md text-on-surface-variant text-sm mb-6 flex-grow leading-relaxed">
                             Ideal para maximizar el rendimiento del suelo urbano. Diseños de líneas puras, distribución inteligente en dos plantas y excelente luminosidad. Una alternativa de alta demanda tanto para vivienda propia como para renta inmobiliaria.
                         </p>
-                        <a href="./duplex/" class="bg-tertiary text-on-tertiary w-full py-2.5 font-label-bold text-label-bold rounded hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2 text-xs tracking-wider">
+                        <a href="./duplex/" aria-label="Ver modelo de Dúplex Moderno" class="bg-tertiary text-on-tertiary w-full py-2.5 font-label-bold text-label-bold rounded hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2 text-xs tracking-wider">
                             <span class="material-symbols-outlined text-sm">explore</span>
                             VER MODELO
                         </a>
@@ -444,7 +445,7 @@
                         <p class="font-body-md text-on-surface-variant text-sm mb-6 flex-grow leading-relaxed">
                             Integramos armónicamente el espacio interior con áreas de esparcimiento exterior. Solariums de diseño, sistemas de filtrado automatizados y paisajismo funcional para disfrutar de un oasis privado todo el año en su propio hogar.
                         </p>
-                        <a href="./casa-con-pileta/" class="bg-tertiary text-on-tertiary w-full py-2.5 font-label-bold text-label-bold rounded hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2 text-xs tracking-wider">
+                        <a href="./casa-con-pileta/" aria-label="Ver modelo de Casa con Pileta" class="bg-tertiary text-on-tertiary w-full py-2.5 font-label-bold text-label-bold rounded hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2 text-xs tracking-wider">
                             <span class="material-symbols-outlined text-sm">explore</span>
                             VER MODELO
                         </a>
@@ -466,7 +467,7 @@
                         <p class="font-body-md text-on-surface-variant text-sm mb-6 flex-grow leading-relaxed">
                             Combina la calidez rústica de la madera con la máxima durabilidad y bajo mantenimiento de los revestimientos de última generación. Perfecta para casas de fin de semana en zonas turísticas de Tucumán como Tafí del Valle o Raco.
                         </p>
-                        <a href="./contacto/" class="bg-tertiary text-on-tertiary w-full py-2.5 font-label-bold text-label-bold rounded hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2 text-xs tracking-wider">
+                        <a href="./contacto/" aria-label="Consultar asesor sobre Cabaña Símil Tronco" class="bg-tertiary text-on-tertiary w-full py-2.5 font-label-bold text-label-bold rounded hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2 text-xs tracking-wider">
                             <span class="material-symbols-outlined text-sm">chat</span>
                             CONSULTAR ASESOR
                         </a>
@@ -488,7 +489,7 @@
                         <p class="font-body-md text-on-surface-variant text-sm mb-6 flex-grow leading-relaxed">
                             Volúmenes puros, grandes paños vidriados, hormigón visto y máxima integración espacial. Diseños eficientes orientados al confort térmico y lumínico, optimizando cada metro cuadrado para reflejar un estilo de vida contemporáneo.
                         </p>
-                        <a href="./casa-moderna/" class="bg-tertiary text-on-tertiary w-full py-2.5 font-label-bold text-label-bold rounded hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2 text-xs tracking-wider">
+                        <a href="./casa-moderna/" aria-label="Ver modelo de Casa Moderna Minimalista" class="bg-tertiary text-on-tertiary w-full py-2.5 font-label-bold text-label-bold rounded hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2 text-xs tracking-wider">
                             <span class="material-symbols-outlined text-sm">explore</span>
                             VER MODELO
                         </a>
@@ -510,7 +511,7 @@
                         <p class="font-body-md text-on-surface-variant text-sm mb-6 flex-grow leading-relaxed">
                             Construcción premium llave en mano en barrios cerrados de Tucumán. Diseños arquitectónicos exclusivos, integrados al paisaje natural y optimizados para el confort térmico y la eficiencia.
                         </p>
-                        <a href="./casa-country/" class="bg-tertiary text-on-tertiary w-full py-2.5 font-label-bold text-label-bold rounded hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2 text-xs tracking-wider">
+                        <a href="./casa-country/" aria-label="Ver detalles de Casas de Country" class="bg-tertiary text-on-tertiary w-full py-2.5 font-label-bold text-label-bold rounded hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2 text-xs tracking-wider">
                             <span class="material-symbols-outlined text-sm">explore</span>
                             VER DETALLES
                         </a>
@@ -532,7 +533,7 @@
                         <p class="font-body-md text-on-surface-variant text-sm mb-6 flex-grow leading-relaxed">
                             Potenciamos el valor de su propiedad mediante remodelaciones y ampliaciones estructurales. Actualización de instalaciones eléctricas, sanitarias, cambio de cubiertas y modernización estética completa con finos acabados.
                         </p>
-                        <a href="./refacciones-inmobiliarias/" class="bg-tertiary text-on-tertiary w-full py-2.5 font-label-bold text-label-bold rounded hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2 text-xs tracking-wider">
+                        <a href="./refacciones-inmobiliarias/" aria-label="Ver detalles de Refacciones Inmobiliarias" class="bg-tertiary text-on-tertiary w-full py-2.5 font-label-bold text-label-bold rounded hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-2 text-xs tracking-wider">
                             <span class="material-symbols-outlined text-sm">explore</span>
                             VER DETALLES
                         </a>
