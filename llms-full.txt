@@ -87,7 +87,7 @@ Los valores expresados a continuación corresponden a rangos referenciales de co
 
 | Sistema / Modelo Constructivo | Rango Obra Gris (USD/m²) | Rango Llave en Mano Premium (USD/m²) | Plazo Promedio de Obra |
 | :--- | :---: | :---: | :---: |
-| **Steel Framing (Seco)** | USD 650 - USD 850 | USD 1.200 - USD 1.350 | 4 a 6 meses |
+| **Steel Framing (Seco)** | USD 650 - USD 850 | USD 1.100 - USD 1.250 | 4 a 6 meses |
 | **Ladrillo Tradicional** | USD 750 - USD 950 | USD 1.200 - USD 1.400 | 8 a 12 meses |
 | **Casa Minimalista / Hormigón** | USD 900 - USD 1.100 | USD 1.500 - USD 1.800 | 10 a 14 meses |
 | **Dúplex Llave en Mano** | USD 700 - USD 900 | USD 1.300 - USD 1.450 | 6 a 9 meses |
