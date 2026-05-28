@@ -102,14 +102,7 @@
                                 Refacciones del Hogar
                             </span>
                         </a>
-                        <a href="${basePath}#servicios" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center gap-2">
-                            <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">grid_view</span>
-                            Todos los Modelos
-                        </a>
-                        <a href="${basePath}precio-construccion-m2/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center gap-2">
-                            <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">calculate</span>
-                            Cotizador de Proyectos
-                        </a>
+
                     </div>
                 </div>
 
@@ -256,14 +249,7 @@
                             Refacciones del Hogar
                         </span>
                     </a>
-                    <a class="text-on-surface-variant font-label-bold text-sm flex items-center gap-2 py-1" href="${basePath}#servicios">
-                        <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">grid_view</span>
-                        Todos los Modelos
-                    </a>
-                    <a class="text-on-surface-variant font-label-bold text-sm flex items-center gap-2 py-1" href="${basePath}precio-construccion-m2/">
-                        <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">calculate</span>
-                        Cotizador de Proyectos
-                    </a>
+
                 </div>
             </div>
  
