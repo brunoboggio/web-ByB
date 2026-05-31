@@ -154,13 +154,6 @@
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">calculate</span>
                             Calculadora de Presupuestos
                         </a>
-                        <a href="${basePath}entrepisos-de-madera/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center justify-between group/item">
-                            <span class="flex items-center gap-2">
-                                <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">layers</span>
-                                Entrepisos de Madera
-                            </span>
-                            <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
-                        </a>
                     </div>
                 </div>
 
@@ -313,13 +306,6 @@
                     <a class="text-on-surface font-label-bold text-sm flex items-center gap-2 py-1" href="${basePath}precio-construccion-m2/">
                         <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">calculate</span>
                         Calculadora de Presupuestos
-                    </a>
-                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}entrepisos-de-madera/">
-                        <span class="flex items-center gap-2">
-                            <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">layers</span>
-                            Entrepisos de Madera
-                        </span>
-                        <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
                     </a>
                 </div>
             </div>
