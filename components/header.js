@@ -154,6 +154,13 @@
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">calculate</span>
                             Calculadora de Presupuestos
                         </a>
+                        <a href="${basePath}entrepisos-de-madera/" class="px-3 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-container-low hover:text-primary dark:hover:text-inverse-primary transition-all flex items-center justify-between group/item">
+                            <span class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">layers</span>
+                                Entrepisos de Madera
+                            </span>
+                            <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
+                        </a>
                     </div>
                 </div>
 
@@ -307,6 +314,13 @@
                         <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">calculate</span>
                         Calculadora de Presupuestos
                     </a>
+                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}entrepisos-de-madera/">
+                        <span class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">layers</span>
+                            Entrepisos de Madera
+                        </span>
+                        <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
+                    </a>
                 </div>
             </div>
 
@@ -330,7 +344,7 @@
             if (currentPath.includes('/casa-moderna') || currentPath.includes('/casas-steel-framing') || currentPath.includes('/construccion-en-seco') || currentPath.includes('/casa-con-pileta') || currentPath.includes('/casa-country') || currentPath.includes('/duplex') || currentPath.includes('/casa-ladrillo') || currentPath.includes('/refacciones-inmobiliarias')) {
                 // Si estamos en una página de servicio, resaltamos el botón "Servicios"
                 if (href && href.includes('#servicios')) isActive = true;
-            } else if (currentPath.includes('/blog') || currentPath.includes('/construccion-casas') || currentPath.includes('/mejores-tipos-de-techos') || currentPath.includes('/tipos-de-suelos') || currentPath.includes('/calculos-de-estructura') || currentPath.includes('/empieza-diseno-de-tu-casa') || currentPath.includes('/precio-construccion-m2')) {
+            } else if (currentPath.includes('/blog') || currentPath.includes('/construccion-casas') || currentPath.includes('/mejores-tipos-de-techos') || currentPath.includes('/tipos-de-suelos') || currentPath.includes('/calculos-de-estructura') || currentPath.includes('/empieza-diseno-de-tu-casa') || currentPath.includes('/precio-construccion-m2') || currentPath.includes('/entrepisos-de-madera') || currentPath.includes('/levantan-los-pisos-ceramicos')) {
                 // Si estamos en el blog o un artículo del blog, resaltamos el botón "Blog"
                 if (link.textContent.includes('Blog')) isActive = true;
             } else if (currentPath.includes('/credito-hipotecario') && href && href.includes('credito-hipotecario')) {
