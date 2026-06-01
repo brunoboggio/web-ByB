@@ -324,21 +324,46 @@ function optimizeHtmlFile(filePath) {
     imgCounter++;
     
     const isLogo = src.includes('Logo.webp');
-    const isHighPriority = attrs.includes('fetchpriority="high"');
-
-    // If we didn't find a background hero image, use the first non-logo <img> tag as the hero
-    if (!heroPreloadUrl && !isLogo && imgCounter <= 2) {
-      heroPreloadUrl = src;
-      console.log(`  -> Found hero img tag for preloading: ${heroPreloadUrl}`);
+    
+    // Determine if it is the hero/LCP image
+    let isHero = false;
+    if (!isLogo) {
+      if (heroPreloadUrl && src === heroPreloadUrl) {
+        isHero = true;
+      } else if (!heroPreloadUrl && imgCounter <= 2) {
+        // Fallback: first non-logo image is the hero
+        heroPreloadUrl = src;
+        isHero = true;
+        console.log(`  -> Found hero img tag for preloading (fallback): ${heroPreloadUrl}`);
+      }
     }
 
-    // Add loading="lazy" to all images except the logo, first image, and high priority hero images
-    if (imgCounter > 1 && !attrs.includes('loading=') && !isLogo && !isHighPriority) {
-      // Append loading="lazy" inside the img attributes
-      return `<img loading="lazy" ${attrs}>`;
+    // Clean up all existing fetchpriority and loading attributes to avoid duplicates or incorrect priorities
+    let cleanAttrs = attrs
+      .replace(/\bfetchpriority=(?:["'][^"']*["']|\S+)/gi, '')
+      .replace(/\bloading=(?:["'][^"']*["']|\S+)/gi, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+    let hasTrailingSlash = false;
+    if (cleanAttrs.endsWith('/')) {
+      hasTrailingSlash = true;
+      cleanAttrs = cleanAttrs.slice(0, -1).trim();
+    }
+
+    let newAttrs = '';
+    if (isLogo) {
+      // Keep logos eager-loaded but without high priority (to preserve LCP and layout shift)
+      newAttrs = cleanAttrs;
+    } else if (isHero) {
+      // Hero image is LCP, so it should be eager-loaded and high priority
+      newAttrs = `fetchpriority="high" ${cleanAttrs}`;
+    } else {
+      // All other images are secondary and must be lazy-loaded
+      newAttrs = `loading="lazy" ${cleanAttrs}`;
     }
     
-    return match;
+    return `<img ${newAttrs}${hasTrailingSlash ? ' /' : ''}>`;
   });
 
   // Inject preloads right before </head>
