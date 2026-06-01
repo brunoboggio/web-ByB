@@ -24,7 +24,7 @@
     let basePath = './';
     for (let script of scripts) {
         const src = script.getAttribute('src');
-        if (src && src.includes('components/header.js')) {
+        if (src && src.includes('components/header')) {
             const parts = src.split('components/header.js');
             if (parts.length > 0 && parts[0] !== '') {
                 basePath = parts[0];
@@ -55,7 +55,7 @@
         <nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-7xl mx-auto">
             <div class="flex items-center gap-3">
                 <a href="${basePath}" class="flex items-center gap-2 group" aria-label="Constructora ByB">
-                    <img src="${basePath}Logo.webp" alt="Constructora ByB Logo" class="h-12 w-auto object-contain transition-transform group-hover:scale-105" />
+                    <img src="${basePath}Logo-48w.webp" alt="Constructora ByB Logo" class="h-12 w-auto object-contain transition-transform group-hover:scale-105" srcset="${basePath}Logo-48w.webp 1x, ${basePath}Logo-96w.webp 2x" width="48" height="48" />
                 </a>
             </div>
 

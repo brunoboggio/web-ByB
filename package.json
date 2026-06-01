@@ -10,12 +10,15 @@
     "optimize-html": "node scripts/optimize-html.js",
     "generate-srcsets": "node scripts/generate-srcsets.js",
     "download-google-images": "node scripts/download-and-optimize-google-images.js",
-    "build": "npm run build:css && npm run generate-srcsets && npm run download-google-images && npm run optimize-images && node scripts/optimize-google-images.js && npm run optimize-html"
+    "fix-performance": "node scripts/fix-performance.js",
+    "minify-components": "node scripts/minify-components.js",
+    "build": "npm run build:css && npm run generate-srcsets && npm run download-google-images && npm run optimize-images && node scripts/optimize-google-images.js && npm run optimize-html && npm run fix-performance && npm run minify-components"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.1",
-    "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/container-queries": "^0.1.1",
-    "sharp": "^0.33.2"
+    "@tailwindcss/forms": "^0.5.7",
+    "sharp": "^0.33.2",
+    "tailwindcss": "^3.4.1",
+    "terser": "^5.48.0"
   }
 }
