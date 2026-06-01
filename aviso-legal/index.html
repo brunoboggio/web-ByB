@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es" class="light scroll-smooth">
 
 <head>
     <link rel="icon" type="image/webp" href="../Logo.webp" />
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
     <!-- SEO Profesional -->
     <title>Aviso Legal | Constructora ByB</title>
@@ -174,7 +174,12 @@
         .dark .glass-header {
             background-color: rgba(18, 24, 34, 0.85);
         }
-    </style>
+            /* === FIX: Prevent horizontal overflow and zoom-out on mobile === */
+        html { overflow-x: hidden !important; max-width: 100vw !important; }
+        body { overflow-x: hidden !important; max-width: 100vw !important; }
+        section.relative, main.relative, div.relative { overflow-x: clip !important; }
+        .text-outline-bg { max-width: 100% !important; overflow: hidden !important; }
+        /* === END FIX === */</style>
     <script>
         // Restaurar modo oscuro/claro inmediatamente para prevenir destellos visuales (FOUC)
         const htmlRoot = document.documentElement;

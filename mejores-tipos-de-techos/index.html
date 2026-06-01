@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es" class="light scroll-smooth">
 
 <head>
     <link rel="icon" type="image/webp" href="../Logo.webp" />
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
     <!-- SEO Profesional -->
     <title>Tipos de Techos para Casas: Guía | ByB</title>
@@ -287,7 +287,12 @@
         .dark .text-on-surface-variant {
             color: #a4abb5;
         }
-    </style>
+            /* === FIX: Prevent horizontal overflow and zoom-out on mobile === */
+        html { overflow-x: hidden !important; max-width: 100vw !important; }
+        body { overflow-x: hidden !important; max-width: 100vw !important; }
+        section.relative, main.relative, div.relative { overflow-x: clip !important; }
+        .text-outline-bg { max-width: 100% !important; overflow: hidden !important; }
+        /* === END FIX === */</style>
 
     <!-- Preload Hero Image -->
     <link rel="preload" as="image" href="https://lh3.googleusercontent.com/aida-public/AB6AXuBU8xgumT6Ftn3aNUU2a5GiYS3u8-B_yKM-T7uxxLjRHXjxl8BLPbgok1OyJiOvQz_AfiyFwIgbm9T_IABUhDnBR41WzU3NiDulzUpzLG3M8dVzwhAkJa9AjL4iFknTPTnI43p3qV1Wz8u5CjKMZMCSo1EFcf-1rOOlaiEr7aMRKyYdYJ8KPZFOtW5giuQHI8DE9OGllLT1bLdPSmNWtcgpdA9o6nR50mfB-0CMesZf6oXXU-zOo3vH-QA_k4sbJgE-wNDDt__472M=w1200-rw" fetchpriority="high"/>
