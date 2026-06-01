@@ -5,8 +5,8 @@
     let basePath = './';
     for (let script of scripts) {
         const src = script.getAttribute('src');
-        if (src && src.includes('components/footer.js')) {
-            const parts = src.split('components/footer.js');
+        if (src && src.includes('components/footer')) {
+            const parts = src.split(/components\/footer(?:\.min)?\.js/);
             if (parts.length > 0 && parts[0] !== '') {
                 basePath = parts[0];
             }
