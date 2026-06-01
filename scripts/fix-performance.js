@@ -100,16 +100,16 @@ walkHtml(ROOT, (filePath) => {
   // Re-apply because regex .test() advances lastIndex
   content = content.replace(OLD_MATERIAL_PATTERN, MATERIAL_SYMBOLS_SUBSETTED);
 
-  // --- Fix 2: Switch header.js → header.min.js and footer.js → footer.min.js ---
+  // --- Fix 2: Switch header.js/header.min.js to header.min.js?v=1.5 and footer.js/footer.min.js to footer.min.js?v=1.5 ---
   // Handles both depth=1 (../components/) and depth=2 (../../components/)
   content = content
-    .replace(/((?:\.\.\/)+components\/)header\.js(\?v=)[0-9.]+/g, '$1header.min.js$21.4')
-    .replace(/((?:\.\.\/)+components\/)footer\.js(\?v=)[0-9.]+/g, '$1footer.min.js$21.4');
+    .replace(/((?:\.\.\/)+components\/)header(?:\.min)?\.js\?v=[0-9.]+/g, '$1header.min.js?v=1.5')
+    .replace(/((?:\.\.\/)+components\/)footer(?:\.min)?\.js\?v=[0-9.]+/g, '$1footer.min.js?v=1.5');
 
   // Also update root-level references (./components/)
   content = content
-    .replace(/(\.\/components\/)header\.js(\?v=)[0-9.]+/g, '$1header.min.js$21.4')
-    .replace(/(\.\/components\/)footer\.js(\?v=)[0-9.]+/g, '$1footer.min.js$21.4');
+    .replace(/(\.\/components\/)header(?:\.min)?\.js\?v=[0-9.]+/g, '$1header.min.js?v=1.5')
+    .replace(/(\.\/components\/)footer(?:\.min)?\.js\?v=[0-9.]+/g, '$1footer.min.js?v=1.5');
 
   // --- Fix 5: Remove Manrope from font requests (only on pages that have it) ---
   // Removes "family=Manrope:wght@..." from Google Fonts URL concatenations
