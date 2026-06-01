@@ -1,5 +1,24 @@
 // Header Compartido / Navegación Dinámica Universal para Constructora ByB
 (function() {
+    // Inject custom CSS to fix mobile horizontal overflow and prevent zoom out issues globally
+    const overflowStyle = document.createElement('style');
+    overflowStyle.textContent = `
+        html, body {
+            overflow-x: hidden !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        body {
+            position: relative;
+        }
+        .text-outline-bg {
+            max-width: 100vw !important;
+            overflow: hidden !important;
+        }
+    `;
+    document.head.appendChild(overflowStyle);
+
     // Determinar dinámicamente el path base según la ubicación del script actual
     const scripts = document.getElementsByTagName('script');
     let basePath = './';
