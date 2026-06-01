@@ -25,9 +25,9 @@
     for (let script of scripts) {
         const src = script.getAttribute('src');
         if (src && src.includes('components/header')) {
-            const parts = src.split(/components\/header(?:\.min)?\.js/);
-            if (parts.length > 0 && parts[0] !== '') {
-                basePath = parts[0];
+            const idx = src.indexOf('components/header');
+            if (idx > 0) {
+                basePath = src.substring(0, idx);
             }
             break;
         }

@@ -6,9 +6,9 @@
     for (let script of scripts) {
         const src = script.getAttribute('src');
         if (src && src.includes('components/footer')) {
-            const parts = src.split(/components\/footer(?:\.min)?\.js/);
-            if (parts.length > 0 && parts[0] !== '') {
-                basePath = parts[0];
+            const idx = src.indexOf('components/footer');
+            if (idx > 0) {
+                basePath = src.substring(0, idx);
             }
             break;
         }
