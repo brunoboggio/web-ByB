@@ -51,6 +51,12 @@
   # HSTS: Force browsers to always use HTTPS (eliminates HTTP→HTTPS redirect round-trip)
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 
+  # Preload critical resources via HTTP headers (faster than HTML <link> — arrives before parsing)
+  <FilesMatch "index\.html$">
+    Header add Link "</img/hero-bg-1200w.webp>; rel=preload; as=image; type=image/webp; fetchpriority=high"
+    Header add Link "</css/tailwind.min.css>; rel=preload; as=style"
+  </FilesMatch>
+
 </IfModule>
 
 # 3. Compresión Gzip / Brotli

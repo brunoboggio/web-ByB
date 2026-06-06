@@ -116,8 +116,7 @@
     <noscript><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=ac_unit,account_balance_wallet,add,air,analytics,architecture,arrow_back,arrow_downward,arrow_drop_down,arrow_forward,article,aspect_ratio,assignment_turned_in,bathtub,bed,bolt,border_color,border_outer,broken_image,build,cabin,calculate,calendar_month,calendar_today,call,camera_alt,chair,change_history,chat,chat_bubble,check,check_circle,chevron_left,chevron_right,cleaning_services,close,compare_arrows,construction,cottage,countertops,dark_mode,dashboard_customize,deck,delete_sweep,description,design_services,diamond,diversity_3,domain,done,door_open,eco,edit_calendar,energy_savings_leaf,engineering,expand_more,explore,face_nod,fact_check,filter_drama,folder_open,forest,format_paint,foundation,garage,gavel,graphic_eq,grid_on,grid_view,holiday_village,home,home_repair_service,home_work,house,humidity_percentage,info,insights,key,kitchen,landscape,layers,layers_clear,light_mode,line_style,list_alt,local_fire_department,location_on,lock,mail,menu,monetization_on,nature_people,nest_thermostat_sensor,opacity_off,outdoor_grill,palette,payments,phone,photo_size_select_large,photo_size_select_small,plumbing,pool,precision_manufacturing,privacy_tip,quiz,request_quote,restart_alt,restore,roofing,rounded_corner,savings,schedule,search,security,send,shield,shield_with_house,solar_power,space_bar,space_dashboard,speed,splitscreen,star,store,straighten,style,support_agent,swap_horiz,task_alt,thermostat,thumb_up,thumbs_up_down,timer,trending_down,trending_up,tune,update,verified,verified_user,view_in_ar,view_quilt,view_stream,villa,visibility,wall,warning,water_damage,water_drop,water_drop_off,water_lux,wb_sunny,whatsapp,window&display=swap" rel="stylesheet"/></noscript>
     
     <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="css/tailwind.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="css/tailwind.min.css"></noscript>
+    <link rel="stylesheet" href="css/tailwind.min.css">
     <style>
         .bg-blueprint {
             background-image: linear-gradient(rgba(74, 85, 104, 0.05) 1px, transparent 1px),
@@ -174,14 +173,23 @@
         html { overflow-x: hidden !important; max-width: 100vw !important; }
         body { overflow-x: hidden !important; max-width: 100vw !important; }
         .text-outline-bg { max-width: 100% !important; overflow: hidden !important; }
-        /* === END FIX === */</style>
+        /* === END FIX === */
+        /* === CRITICAL: Hero section render styles (avoids render delay) === */
+        #inicio { position: relative; width: 100%; min-height: 819px; display: flex; align-items: center; margin-top: 5rem; overflow: hidden; }
+        #inicio > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+        #inicio > div:first-of-type { position: absolute; inset: 0; }
+        /* === Compositable transitions: limit to GPU-friendly properties === */
+        .service-card { transition: box-shadow 0.3s ease, border-color 0.3s ease !important; }
+        .service-card:hover { box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 8px 10px -6px rgba(0,0,0,.1); }
+        .faq-btn { transition: color 0.15s ease !important; }
+        /* === END CRITICAL === */</style>
     <!-- Preload Hero Image (local, optimizada: 14KB vs 312KB de Google) -->
     <link rel="preload" as="image" href="img/hero-bg-1200w.webp" imagesrcset="img/hero-bg-800w.webp 800w, img/hero-bg-1200w.webp 1200w, img/hero-bg-1600w.webp 1600w" imagesizes="100vw" fetchpriority="high"/>
     <!-- Load components as non-blocking deferred scripts -->
     <script src="./components/header.min.js?v=1.5" defer></script>
     <script src="./components/footer.min.js?v=1.5" defer></script>
 </head>
-<body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden transition-colors duration-300">
+<body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden">
 
 
 
@@ -231,7 +239,7 @@
     <!-- Hero Section -->
     <section id="inicio" class="relative w-full min-h-[819px] flex items-center mt-20 overflow-hidden" >
         <!-- Hero Image como <img> real: permite al navegador detectar LCP y hacer preload correcto -->
-        <img fetchpriority="high" src="img/hero-bg-1200w.webp" srcset="img/hero-bg-800w.webp 800w, img/hero-bg-1200w.webp 1200w, img/hero-bg-1600w.webp 1600w" sizes="100vw" decoding="async" width="1200" height="819" alt="Casa moderna construida por Constructora ByB en Tucumán" class="absolute inset-0 w-full h-full object-cover" />
+        <img fetchpriority="high" src="img/hero-bg-1200w.webp" srcset="img/hero-bg-800w.webp 800w, img/hero-bg-1200w.webp 1200w, img/hero-bg-1600w.webp 1600w" sizes="100vw" width="1200" height="819" alt="Casa moderna construida por Constructora ByB en Tucumán" class="absolute inset-0 w-full h-full object-cover" />
         <div class="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/50 to-transparent dark:from-black/85 dark:via-black/60"></div>
         
         <div class="relative z-10 max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop w-full">
@@ -281,7 +289,7 @@
     </section>
 
     <!-- Who We Are Section -->
-    <section id="nosotros" class="py-section-gap relative overflow-hidden bg-surface-container-lowest transition-colors">
+    <section id="nosotros" class="py-section-gap relative overflow-hidden bg-surface-container-lowest">
         <div class="text-outline-bg top-10 left-[-5%] opacity-15 dark:opacity-5">WHO<br/>WE<br/>ARE</div>
         <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
@@ -331,7 +339,7 @@
     </section>
 
     <!-- Interactive Services & Projects Section -->
-    <section id="servicios" class="py-section-gap bg-surface bg-blueprint relative border-t border-outline/10 transition-colors">
+    <section id="servicios" class="py-section-gap bg-surface bg-blueprint relative border-t border-outline/10">
         <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
             
             <div class="text-center max-w-3xl mx-auto mb-12">
@@ -366,7 +374,7 @@
             <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Card Steel Framing (Destacada y Más Importante) -->
-                <div class="service-card md:col-span-2 bg-gradient-to-br from-primary/10 via-surface-container-lowest to-surface-container-lowest border-2 border-primary/50 dark:border-inverse-primary/40 flex flex-col md:flex-row group hover:border-primary dark:hover:border-inverse-primary transition-all duration-300 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="moderno">
+                <div class="service-card md:col-span-2 bg-gradient-to-br from-primary/10 via-surface-container-lowest to-surface-container-lowest border-2 border-primary/50 dark:border-inverse-primary/40 flex flex-col md:flex-row group hover:border-primary dark:hover:border-inverse-primary rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="moderno">
                     <a href="./casas-steel-framing/" class="h-64 md:h-auto md:w-5/12 overflow-hidden relative flex-shrink-0 block">
                         <img loading="lazy" decoding="async" alt="Casas Steel Framing en Tucumán" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="./casas-steel-framing/hero-800w.webp" srcset="./casas-steel-framing/hero-400w.webp 400w, ./casas-steel-framing/hero-800w.webp 800w, ./casas-steel-framing/hero-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, 42vw" width="800" height="640" />
                         <span class="absolute top-3 right-3 bg-primary text-on-primary text-xs font-label-bold px-3 py-1.5 rounded-full shadow-lg border border-primary/20">
@@ -393,7 +401,7 @@
                 </div>
 
                 <!-- Card 1 -->
-                <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 transition-all duration-300 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="residencial">
+                <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="residencial">
                     <a href="./casa-ladrillo/" class="h-56 overflow-hidden relative block">
                         <img loading="lazy" decoding="async" alt="Construcción de Casa de Ladrillo en Tucumán" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/casa-ladrillo-card-400w.webp" srcset="img/casa-ladrillo-card-400w.webp 400w, img/casa-ladrillo-card-800w.webp 800w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" width="400" height="224" />
                         <span class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs text-xs font-label-bold px-2.5 py-1 rounded text-primary border border-outline-variant/30">
@@ -415,7 +423,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 transition-all duration-300 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="moderno">
+                <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="moderno">
                     <a href="./duplex/" class="h-56 overflow-hidden relative block">
                         <img loading="lazy" decoding="async" alt="Arquitectura de Dúplex Moderno en Tucumán" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/duplex-card-400w.webp" srcset="img/duplex-card-400w.webp 400w, img/duplex-card-800w.webp 800w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" width="400" height="224" />
                         <span class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs text-xs font-label-bold px-2.5 py-1 rounded text-primary border border-outline-variant/30">
@@ -437,7 +445,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 transition-all duration-300 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="residencial">
+                <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="residencial">
                     <a href="./casa-con-pileta/" class="h-56 overflow-hidden relative block">
                         <img loading="lazy" decoding="async" alt="Diseño de Casa con Pileta en Tucumán" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/casa-pileta-card-400w.webp" srcset="img/casa-pileta-card-400w.webp 400w, img/casa-pileta-card-800w.webp 800w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" width="400" height="224" />
                         <span class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs text-xs font-label-bold px-2.5 py-1 rounded text-primary border border-outline-variant/30">
@@ -459,7 +467,7 @@
                 </div>
 
                 <!-- Card 4 -->
-                <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 transition-all duration-300 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="residencial">
+                <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="residencial">
                     <a href="./contacto/" class="h-56 overflow-hidden relative block">
                         <img loading="lazy" decoding="async" alt="Construcción de Cabaña Símil Tronco en Tucumán" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/cabana-card-400w.webp" srcset="img/cabana-card-400w.webp 400w, img/cabana-card-800w.webp 800w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" width="400" height="224" />
                         <span class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs text-xs font-label-bold px-2.5 py-1 rounded text-primary border border-outline-variant/30">
@@ -481,7 +489,7 @@
                 </div>
 
                 <!-- Card 5 -->
-                <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 transition-all duration-300 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="moderno">
+                <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="moderno">
                     <a href="./casa-moderna/" class="h-56 overflow-hidden relative block">
                         <img loading="lazy" decoding="async" alt="Arquitectura de Casa Moderna Minimalista en Tucumán" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/casa-moderna-card-400w.webp" srcset="img/casa-moderna-card-400w.webp 400w, img/casa-moderna-card-800w.webp 800w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" width="400" height="224" />
                         <span class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs text-xs font-label-bold px-2.5 py-1 rounded text-primary border border-outline-variant/30">
@@ -503,7 +511,7 @@
                 </div>
 
                 <!-- Card: Casa Country -->
-                <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 transition-all duration-300 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="residencial">
+                <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="residencial">
                     <a href="./casa-country/" class="h-56 overflow-hidden relative block">
                         <img loading="lazy" decoding="async" alt="Diseño y Construcción de Casas de Country en Tucumán" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="./casa-country/hero-400w.webp" srcset="./casa-country/hero-400w.webp 400w, ./casa-country/hero-800w.webp 800w, ./casa-country/hero-1200w.webp 1200w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" width="400" height="224" />
                         <span class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs text-xs font-label-bold px-2.5 py-1 rounded text-primary border border-outline-variant/30">
@@ -525,7 +533,7 @@
                 </div>
 
                 <!-- Card 6 -->
-                <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 transition-all duration-300 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="refacciones">
+                <div class="service-card bg-surface-container-lowest border border-outline/20 flex flex-col group hover:border-primary/50 dark:hover:border-inverse-primary/50 rounded-xl overflow-hidden shadow-xs hover:shadow-xl" data-category="refacciones">
                     <a href="./refacciones-inmobiliarias/" class="h-56 overflow-hidden relative block">
                         <img loading="lazy" decoding="async" alt="Servicio de Refacciones Inmobiliarias en Tucumán" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="img/refacciones-card-400w.webp" srcset="img/refacciones-card-400w.webp 400w, img/refacciones-card-800w.webp 800w" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" width="400" height="224" />
                         <span class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-xs text-xs font-label-bold px-2.5 py-1 rounded text-primary border border-outline-variant/30">
@@ -553,7 +561,7 @@
 
 
     <!-- Componente Dinámico Premium: Reseñas / Testimonios -->
-    <section id="testimonios" class="py-section-gap bg-surface-container-lowest relative transition-colors">
+    <section id="testimonios" class="py-section-gap bg-surface-container-lowest relative">
         <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <span class="text-xs font-label-bold text-primary dark:text-inverse-primary px-3 py-1 bg-primary/10 dark:bg-inverse-primary/10 rounded-full mb-3 inline-block uppercase tracking-widest">
@@ -649,7 +657,7 @@
     </section>
 
     <!-- Componente Dinámico Premium: Acordeón FAQ (Optimizado SEO Snippets) -->
-    <section id="faq" class="py-20 bg-surface border-t border-outline-variant/30 transition-colors">
+    <section id="faq" class="py-20 bg-surface border-t border-outline-variant/30">
         <div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop">
             <div class="text-center mb-12">
                 <span class="text-xs font-label-bold text-primary dark:text-inverse-primary px-3 py-1 bg-primary/10 dark:bg-inverse-primary/10 rounded-full mb-3 inline-block uppercase tracking-widest">
