@@ -51,7 +51,6 @@ const globalOrgSchema = {
   "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuANcRehKX9SWaqrkO9y-2GakMt8vC3zfHRB-XlMgTgNH8bALgXaN1NzetPkSCdcad02K0-uZFWvz3OUNgp8uEZ7XOOLKx0U5IsKwpINdgKZQgqZEbgi7kJHWhVu2YsEdu6hisdLh7_TphwlxhXAKQcYF7s-EQWK2E9PsuF6xCstYNeLOlmXXxn4YWBPeYVH6FXP_yNo9zZj0GFcTwfR5jv8syBmkTFQkX4KymNNa57RgYd1jxn4ykbkgmx3WuuJpst0ml6hAzqysz-i",
   "description": "Empresa constructora líder en Tucumán con más de 10 años de experiencia. Especialistas en diseño, arquitectura y construcción llave en mano de casas modernas, steel framing, dúplex y refacciones residenciales.",
   "sameAs": [
-    "https://www.wikidata.org/wiki/Q2516812",
     "https://maps.google.com/?q=Crisostomo+Alvarez+1584+San+Miguel+de+Tucuman",
     "https://www.facebook.com/constructorabyb",
     "https://www.instagram.com/constructorabyb"
@@ -222,14 +221,19 @@ function injectGlobalEntitySchema(content) {
       const parsed = JSON.parse(rawJson.trim());
       if (parsed && Array.isArray(parsed["@graph"])) {
         const graph = parsed["@graph"];
-        const hasOrg = graph.some(item => item["@id"] === "https://constructorabyb.com.ar/#organization");
-        if (!hasOrg) {
+        const orgIndex = graph.findIndex(item => item["@id"] === "https://constructorabyb.com.ar/#organization");
+        
+        if (orgIndex !== -1) {
+          graph[orgIndex] = globalOrgSchema;
+          console.log(`  -> Updated existing organization schema in JSON-LD @graph`);
+        } else {
           graph.push(globalOrgSchema);
-          const formattedJson = JSON.stringify(parsed, null, 2);
-          const indentedJson = formattedJson.split('\n').map(line => '    ' + line).join('\n');
           console.log(`  -> Injected global organization schema into JSON-LD @graph`);
-          return `<script type="application/ld+json">\n${indentedJson}\n    </script>`;
         }
+        
+        const formattedJson = JSON.stringify(parsed, null, 2);
+        const indentedJson = formattedJson.split('\n').map(line => '    ' + line).join('\n');
+        return `<script type="application/ld+json">\n${indentedJson}\n    </script>`;
       }
     } catch (e) {
       console.warn(`  -> Failed to parse/update JSON-LD script block: ${e.message}`);

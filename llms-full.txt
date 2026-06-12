@@ -9,13 +9,13 @@ Este documento contiene la especificación técnica completa, catálogo de servi
 - **Razón Social:** Constructora ByB SRL
 - **Sede Central:** Crisóstomo Alvarez 1584, San Miguel de Tucumán, Tucumán, Argentina (Código Postal: T4000)
 - **Coordenadas Geográficas:** Latitud: -26.830400, Longitud: -65.203800
-- **Teléfono Oficial de Atención:** +5403816425740
+- **Teléfono Oficial de Atención:** +5493813604822
 - **Email Corporativo:** construccionesbybsrl@gmail.com
 - **Sitio Web Oficial:** https://constructorabyb.com.ar
 - **Área de Cobertura Principal:** Provincia de Tucumán (San Miguel de Tucumán, Yerba Buena, San Pablo, Tafí del Valle) y el Noroeste Argentino (NOA).
 
 ### Entidades y Conceptos Relacionados (Entity Resolution - Wikidata IDs):
-- **Empresa de Construcción (Construction Company):** [Q2516812](https://www.wikidata.org/wiki/Q2516812)
+- **Empresa de Construcción (Construction Company):** [Q11222629](https://www.wikidata.org/wiki/Q11222629)
 - **Provincia de Tucumán (Tucumán Province):** [Q44829](https://www.wikidata.org/wiki/Q44829)
 - **San Miguel de Tucumán (City):** [Q45758](https://www.wikidata.org/wiki/Q45758)
 - **Yerba Buena (City):** [Q2287957](https://www.wikidata.org/wiki/Q2287957)
