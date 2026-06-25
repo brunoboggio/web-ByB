@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es" class="light scroll-smooth">
 
 <head>
@@ -731,64 +731,6 @@
             </div>
         </section>
 
-        <!-- Interactive Widget: Cotizador Rápido de Reformas en Seco -->
-        <section class="py-section-gap bg-surface bg-blueprint border-y border-outline-variant/30 dark:border-white/5 relative">
-            <div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop bg-surface-container-lowest p-8 md:p-12 rounded-3xl border border-outline-variant/40 dark:border-white/5 shadow-2xl relative z-10">
-                <div class="text-center mb-8">
-                    <span class="text-xs font-label-caps text-primary dark:text-inverse-primary tracking-widest block mb-2 uppercase">COTIZACIÓN INSTANTÁNEA</span>
-                    <h3 class="font-headline-md text-2xl md:text-3xl font-bold text-on-surface uppercase">Calculadora de Reformas en Seco</h3>
-                    <p class="text-on-surface-variant text-sm mt-2">Estima el valor de tu proyecto en pocos clics y consúltanos para formalizar tu presupuesto.</p>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-8 items-center">
-                    <div class="space-y-6">
-                        <!-- Tipo de Proyecto -->
-                        <div>
-                            <label for="project-type" class="block text-xs font-label-bold text-on-surface uppercase mb-2">Tipo de Trabajo</label>
-                            <select id="project-type" onchange="calculateReform()" class="w-full p-3 rounded-xl border border-outline-variant/60 dark:border-white/10 bg-surface dark:bg-tertiary text-on-surface text-sm focus:ring-primary focus:border-primary">
-                                <option value="tabique" data-price="95">Tabiques Divisorios Interiores (Durlock)</option>
-                                <option value="cielorraso" data-price="80">Cielorraso Suspendido Juntas Cerradas</option>
-                                <option value="ampliacion" data-price="1100">Ampliación de Habitación (Estructura Steel + Revestimiento)</option>
-                                <option value="revestimiento" data-price="70">Revestimiento Antihumedad sobre Paredes</option>
-                            </select>
-                        </div>
-
-                        <!-- Metros Cuadrados -->
-                        <div>
-                            <div class="flex justify-between items-center mb-2">
-                                <label for="reform-m2" class="text-xs font-label-bold text-on-surface uppercase">Superficie Estimada (m²)</label>
-                                <span class="font-bold text-primary dark:text-inverse-primary text-sm"><span id="m2-val-display">30</span> m²</span>
-                            </div>
-                            <input type="range" id="reform-m2" min="5" max="150" value="30" step="5" oninput="updateM2Slider(this.value)" class="w-full h-2 bg-secondary-container rounded-lg appearance-none cursor-pointer accent-primary dark:accent-inverse-primary"/>
-                            <div class="flex justify-between text-[10px] text-secondary mt-1">
-                                <span>5 m²</span>
-                                <span>75 m²</span>
-                                <span>150 m²</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Resultado de la Estimación -->
-                    <div class="bg-surface-container-low/60 p-6 md:p-8 rounded-2xl border border-outline-variant/30 text-center flex flex-col justify-between h-full">
-                        <div>
-                            <span class="text-xs font-label-caps text-secondary block mb-1">Rango Estimado Llave en Mano</span>
-                            <span class="block font-headline-xl text-3xl md:text-4xl text-primary dark:text-inverse-primary font-black mt-2">
-                                USD <span id="reform-total">2.850</span>
-                            </span>
-                            <p class="text-[11px] text-secondary mt-2">Materiales premium y mano de obra profesional especializada en Tucumán.</p>
-                        </div>
-
-                        <div class="mt-6">
-                            <a id="whatsapp-calc-btn" href="#" target="_blank" rel="noopener noreferrer" class="bg-emerald-700 text-white w-full py-3.5 font-label-bold text-label-bold rounded-DEFAULT hover:bg-emerald-800 transition-colors flex items-center justify-center gap-2 shadow-lg">
-                                <span class="material-symbols-outlined text-base">chat</span>
-                                Enviar Cotización por WhatsApp
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Section: Preguntas Frecuentes (FAQ Accordion) -->
         <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
             <div class="text-center max-w-2xl mx-auto mb-12">
@@ -1022,28 +964,6 @@
             document.getElementById('layer-material').innerText = layerData.material;
         }
 
-        // Reform Calculator Logic
-        function updateM2Slider(val) {
-            document.getElementById('m2-val-display').innerText = val;
-            calculateReform();
-        }
-
-        function calculateReform() {
-            const select = document.getElementById('project-type');
-            const selectedOption = select.options[select.selectedIndex];
-            const pricePerM2 = parseFloat(selectedOption.getAttribute('data-price'));
-            const m2 = parseInt(document.getElementById('reform-m2').value);
-
-            const total = Math.round(m2 * pricePerM2);
-            document.getElementById('reform-total').innerText = total.toLocaleString('es-AR');
-
-            // Update WhatsApp CTA text dynamically
-            const whatsappBtn = document.getElementById('whatsapp-calc-btn');
-            const typeName = selectedOption.text.split(' (')[0];
-            const message = encodeURIComponent(`Hola Constructora ByB, utilicé la calculadora rápida del sitio. Quiero consultar por un presupuesto para: ${typeName} de ${m2}m² (Estimación web: USD ${total.toLocaleString('es-AR')}). ¿Podrían asesorarme?`);
-            whatsappBtn.href = `https://wa.me/5493813604822?text=${message}`;
-        }
-
         // Toggle FAQ accordion
         function toggleFaq(id) {
             const ans = document.getElementById(`faq-ans-${id}`);
@@ -1056,9 +976,6 @@
                 icon.textContent = "add";
             }
         }
-
-        // Initialize Calculator
-        calculateReform();
     </script>
 
     <!-- Componentes de Interfaz Dinámicos -->
