@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es" class="light scroll-smooth">
 
 <head>
@@ -598,96 +598,28 @@
             </div>
         </section>
 
-        <!-- Interactive Budget Calculator -->
+        <!-- Interactive Budget Calculator Link -->
         <section id="cotizador" class="py-20 bg-surface-container-low dark:bg-[#10151e] border-y border-outline-variant/30 dark:border-white/5 relative overflow-hidden bg-blueprint">
             <div class="max-w-4xl mx-auto px-6 md:px-8">
-                <div class="text-center max-w-2xl mx-auto mb-16">
-                    <span class="text-xs font-label-caps text-primary dark:text-inverse-primary tracking-widest block mb-3 font-bold">PRESUPUESTO AL INSTANTE</span>
-                    <h2 class="font-headline-md text-3xl md:text-4xl text-on-surface font-black uppercase tracking-tight">
-                        Simulador de Presupuesto por m²
+                <div class="bg-surface-container-lowest dark:bg-[#121822] rounded-3xl border border-outline-variant/40 dark:border-white/5 p-8 md:p-12 shadow-2xl flex flex-col items-center text-center relative overflow-hidden">
+                    <!-- Background accent decorative glows -->
+                    <div class="absolute -top-24 -left-24 w-48 h-48 rounded-full bg-primary/10 dark:bg-inverse-primary/5 blur-3xl pointer-events-none"></div>
+                    <div class="absolute -bottom-24 -right-24 w-48 h-48 rounded-full bg-primary/10 dark:bg-inverse-primary/5 blur-3xl pointer-events-none"></div>
+                    
+                    <span class="text-xs font-label-caps text-primary dark:text-inverse-primary tracking-widest block mb-4 font-bold uppercase">PRESUPUESTO AL INSTANTE</span>
+                    
+                    <h2 class="font-headline-md text-3xl md:text-4xl text-on-surface font-black uppercase tracking-tight max-w-2xl leading-tight">
+                        Calculá tu Presupuesto por m²
                     </h2>
-                    <p class="text-secondary dark:text-on-surface-variant text-sm md:text-base mt-3">
-                        Calcula un valor estimado aproximado para tu obra colocado con materiales y mano de obra profesional en Tucumán.
+                    
+                    <p class="text-secondary dark:text-on-surface-variant text-sm md:text-base mt-4 max-w-xl leading-relaxed">
+                        Conocé los costos de referencia actualizados al instante para la colocación de placas de yeso, cielorrasos y revestimientos antihumedad en Tucumán.
                     </p>
-                </div>
-
-                <!-- Calculator Container -->
-                <div class="bg-surface-container-lowest dark:bg-[#121822] rounded-3xl border border-outline-variant/40 dark:border-white/5 p-8 md:p-12 shadow-2xl grid md:grid-cols-12 gap-8 items-stretch">
-                    <!-- Left: Inputs -->
-                    <div class="md:col-span-7 space-y-6 flex flex-col justify-between">
-                        <!-- Step 1: Work Type -->
-                        <div>
-                            <label class="block text-xs font-label-bold text-on-surface uppercase tracking-wider mb-2">1. Selecciona el Tipo de Trabajo</label>
-                            <select id="calc-work-type" onchange="calculateBudget()" class="w-full rounded-xl border-outline-variant bg-surface-container-lowest dark:bg-[#121822] text-sm text-on-surface focus:ring-primary focus:border-primary p-3">
-                                <option value="tabique" data-price="35">Tabique divisorio estándar de yeso (Durlock) - USD 35/m²</option>
-                                <option value="cielorraso" data-price="28">Cielorraso suspendido de junta tomada - USD 28/m²</option>
-                                <option value="revestimiento" data-price="24">Revestimiento antihumedad sobre pared existente - USD 24/m²</option>
-                                <option value="exterior" data-price="55">Muro de exterior con placa cementicia (Superboard) - USD 55/m²</option>
-                            </select>
-                        </div>
-
-                        <!-- Step 2: Dimensions -->
-                        <div>
-                            <div class="flex justify-between items-center mb-2">
-                                <label class="block text-xs font-label-bold text-on-surface uppercase tracking-wider">2. Cantidad de metros cuadrados (m²)</label>
-                                <span id="calc-m2-val" class="font-bold text-primary dark:text-inverse-primary text-sm font-headline">30 m²</span>
-                            </div>
-                            <input type="range" id="calc-m2-range" min="5" max="250" value="30" oninput="updateM2Slider(this.value)" class="w-full h-2 bg-surface-container rounded-lg appearance-none cursor-pointer accent-primary dark:accent-inverse-primary">
-                            <div class="flex justify-between text-[10px] text-secondary mt-1">
-                                <span>5 m²</span>
-                                <span>120 m²</span>
-                                <span>250 m²</span>
-                            </div>
-                        </div>
-
-                        <!-- Step 3: Add-ons -->
-                        <div>
-                            <label class="block text-xs font-label-bold text-on-surface uppercase tracking-wider mb-3">3. Adiciones Premium (Opcional)</label>
-                            <div class="grid grid-cols-1 gap-2.5">
-                                <label class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low dark:bg-white/5 cursor-pointer hover:bg-surface-container-high transition-colors select-none text-sm font-body-md">
-                                    <input type="checkbox" id="extra-insulation" onchange="calculateBudget()" class="rounded text-primary border-outline-variant focus:ring-primary">
-                                    <span>Aislamiento acústico de lana de vidrio reforzado (+USD 6/m²)</span>
-                                </label>
-                                <label class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low dark:bg-white/5 cursor-pointer hover:bg-surface-container-high transition-colors select-none text-sm font-body-md">
-                                    <input type="checkbox" id="extra-placa" onchange="calculateBudget()" class="rounded text-primary border-outline-variant focus:ring-primary">
-                                    <span>Cambiar a placas de alta densidad o corta-fuego (+USD 8/m²)</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right: Results Panel -->
-                    <div class="md:col-span-5 bg-primary dark:bg-primary-container text-white rounded-2xl p-8 flex flex-col justify-between items-center text-center shadow-xl border border-white/10">
-                        <div class="w-full">
-                            <span class="text-[10px] font-label-caps text-inverse-primary tracking-widest block mb-4 uppercase">Presupuesto Estimado</span>
-                            <div class="relative inline-flex items-center justify-center mb-6">
-                                <span class="text-4xl md:text-5xl font-black text-white font-headline" id="calc-total">USD 1.050</span>
-                            </div>
-                            
-                            <div class="border-t border-white/10 pt-4 text-left space-y-2 text-xs text-white/80">
-                                <div class="flex justify-between">
-                                    <span>Tipo de obra:</span>
-                                    <span id="break-type" class="font-bold text-white">Tabique divisorio</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span>Superficie:</span>
-                                    <span id="break-m2" class="font-bold text-white">30 m²</span>
-                                </div>
-                                <div class="flex justify-between">
-                                    <span>Lana de vidrio:</span>
-                                    <span id="break-insulation" class="font-bold text-white">No</span>
-                                </div>
-                                <div class="flex justify-between text-xs text-white/60 mt-1">
-                                    <span>*Precios de referencia con colocación e IVA incluidos.</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <a href="#" id="calc-whatsapp-btn" target="_blank" rel="noopener noreferrer" class="mt-6 w-full bg-emerald-700 hover:bg-emerald-800 text-white font-label-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 transition-all shadow-lg text-sm">
-                            <svg class="w-5 h-5 fill-current text-white" viewBox="0 0 24 24">
-                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.882-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.577-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-                            </svg>
-                            Confirmar Presupuesto
+                    
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4 w-full justify-center">
+                        <a href="https://constructorabyb.com.ar/precio-construccion-m2/" class="bg-primary dark:bg-inverse-primary text-white dark:text-primary-container px-8 py-4 font-label-bold text-sm rounded-xl flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 transition-all shadow-lg hover:shadow-xl font-bold uppercase tracking-wider">
+                            <span class="material-symbols-outlined text-base">calculate</span>
+                            Ver Precios de Construcción
                         </a>
                     </div>
                 </div>
@@ -912,61 +844,6 @@
                 });
             }
 
-            // --- LÓGICA DEL CALCULADOR DE PRESUPUESTO ---
-            window.updateM2Slider = function(val) {
-                const label = document.getElementById('calc-m2-val');
-                if (label) label.innerText = `${val} m²`;
-                calculateBudget();
-            };
-
-            window.calculateBudget = function() {
-                const selectElem = document.getElementById('calc-work-type');
-                const m2Range = document.getElementById('calc-m2-range');
-                const totalLabel = document.getElementById('calc-total');
-                const breakType = document.getElementById('break-type');
-                const breakM2 = document.getElementById('break-m2');
-                const breakInsulation = document.getElementById('break-insulation');
-                const extraInsulation = document.getElementById('extra-insulation');
-                const extraPlaca = document.getElementById('extra-placa');
-                const whatsappBtn = document.getElementById('calc-whatsapp-btn');
-
-                if (!selectElem || !m2Range || !totalLabel) return;
-
-                const unitPrice = parseFloat(selectElem.options[selectElem.selectedIndex].getAttribute('data-price'));
-                const m2 = parseInt(m2Range.value);
-
-                let pricePerM2 = unitPrice;
-
-                // Sumar opcionales
-                const insulationChecked = extraInsulation ? extraInsulation.checked : false;
-                const placaChecked = extraPlaca ? extraPlaca.checked : false;
-
-                if (insulationChecked) pricePerM2 += 6;
-                if (placaChecked) pricePerM2 += 8;
-
-                const total = pricePerM2 * m2;
-
-                // Actualizar interfaz
-                totalLabel.innerText = `USD ${total.toLocaleString('es-AR')}`;
-                
-                if (breakM2) breakM2.innerText = `${m2} m²`;
-                
-                const workName = selectElem.options[selectElem.selectedIndex].text.split(' - ')[0];
-                if (breakType) breakType.innerText = workName;
-                if (breakInsulation) breakInsulation.innerText = insulationChecked ? "Sí (Lana Vidrio)" : "No";
-
-                // Formatear link de WhatsApp
-                const message = `Hola Constructora ByB, he realizado la simulación de presupuesto en su sitio web para Construcción en Seco y me gustaría solicitar una cotización formal. Detalles del simulador:
-- Obra seleccionada: ${workName}
-- Superficie total: ${m2} m²
-- Aislación de lana de vidrio adicional: ${insulationChecked ? 'Sí' : 'No'}
-- Placas especiales de alta densidad / ignífugas: ${placaChecked ? 'Sí' : 'No'}
-- Estimado simulado: USD ${total.toLocaleString('es-AR')}`;
-
-                if (whatsappBtn) {
-                    whatsappBtn.href = `https://wa.me/5493813604822?text=${encodeURIComponent(message)}`;
-                }
-            };
 
             // --- LÓGICA DE ACORDEÓN DE PREGUNTAS FRECUENTES (FAQs) ---
             document.querySelectorAll('.faq-btn').forEach(btn => {
@@ -993,8 +870,6 @@
                 });
             });
 
-            // Inicializar cálculos presupuestarios al cargar
-            calculateBudget();
         });
     </script>
 
