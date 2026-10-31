@@ -90,3 +90,71 @@
   RewriteCond %{HTTPS} off
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 </IfModule>
+
+# 6. Redirecciones 301: Consolidación de Canibalizaciones y Poda de URLs Zombi (GSC)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # --- A. Canibalizaciones y Subpáginas Podadas ---
+  RewriteRule ^construccion-en-seco/sistema-construccion-en-seco(/.*)?$ /construccion-en-seco/ [R=301,L]
+  RewriteRule ^casas-steel-framing/sistema(/.*)?$ /casas-steel-framing/ [R=301,L]
+  RewriteRule ^casas-steel-framing/ahorro-energetico(/.*)?$ /casas-steel-framing/ventajas-desventajas/ [R=301,L]
+  RewriteRule ^construccion-en-seco/pros-y-contras(/.*)?$ /casas-steel-framing/ventajas-desventajas/ [R=301,L]
+
+  # --- B. URLs Zombi 404 con Tráfico Residual en GSC ---
+  # Cluster Cabaña de Troncos -> Catálogo de Casas
+  RewriteRule ^cabana-tronco(/.*)?$ /construccion-casas/ [R=301,L]
+
+  # Instalaciones y Estructura -> Páginas Técnicas
+  RewriteRule ^instalacion-sanitaria(/.*)?$ /refacciones-inmobiliarias/ [R=301,L]
+  RewriteRule ^estructura-casa(/.*)?$ /calculos-de-estructura/ [R=301,L]
+  RewriteRule ^entender-planos-de-obra(/.*)?$ /empieza-diseno-de-tu-casa/ [R=301,L]
+  RewriteRule ^sistemas-constructivos(/.*)?$ /construccion-en-seco/ [R=301,L]
+  RewriteRule ^mezcla-para-revocar-una-pared(/.*)?$ /blog/ [R=301,L]
+
+  # Subpáginas huérfanas de Casas Modernas
+  RewriteRule ^casa-moderna/(materiales|tiempo-construccion|5-errores|eficiente-energeticamente|planos|ventajas)(/.*)?$ /casa-moderna/ [R=301,L]
+
+  # Subpáginas huérfanas de Casas de Ladrillo
+  RewriteRule ^casa-ladrillo/(resistentes-desastres|tipo-ladrillo|construye-toda-la-vida|eficientes-energeticamente|ladrillos-ecologicos|mantener-tu-casa-de-ladrillo)(/.*)?$ /casa-ladrillo/ [R=301,L]
+  RewriteRule ^color-de-ladrillo(/.*)?$ /casa-ladrillo/ [R=301,L]
+
+  # Construcción Industrializada y Paneles -> Steel Framing
+  RewriteRule ^casas-conteiners(/.*)?$ /casas-steel-framing/ [R=301,L]
+  RewriteRule ^paneles-sip(/.*)?$ /casas-steel-framing/ [R=301,L]
+  RewriteRule ^certificado-energetico(/.*)?$ /casas-steel-framing/ [R=301,L]
+  RewriteRule ^climas-extremos(/.*)?$ /casas-steel-framing/ [R=301,L]
+  RewriteRule ^sistemas-de-refrigeracion-ecologicos(/.*)?$ /casas-steel-framing/ [R=301,L]
+
+  # Refacciones, Humedad y Grietas -> Refacciones Inmobiliarias
+  RewriteRule ^arreglar-grietas-en-la-pared(/.*)?$ /refacciones-inmobiliarias/ [R=301,L]
+  RewriteRule ^impermeabilizar-paredes-exteriores(/.*)?$ /refacciones-inmobiliarias/ [R=301,L]
+  RewriteRule ^tipos-de-encimeras(/.*)?$ /refacciones-inmobiliarias/reformas-cocinas/ [R=301,L]
+  RewriteRule ^tipos-de-ventana(/.*)?$ /refacciones-inmobiliarias/ [R=301,L]
+  RewriteRule ^disenar-banos-modernos(/.*)?$ /refacciones-inmobiliarias/reformas-cocinas/ [R=301,L]
+  RewriteRule ^insonorizar-habitacion(/.*)?$ /construccion-en-seco/ [R=301,L]
+  RewriteRule ^aislamientos-termicos(/.*)?$ /casas-steel-framing/ventajas-desventajas/ [R=301,L]
+
+  # Casas de Campo y Rústicas -> Casas Country
+  RewriteRule ^casa-americana(/.*)?$ /casa-country/ [R=301,L]
+  RewriteRule ^casas-rusticas(/.*)?$ /casa-country/ [R=301,L]
+  RewriteRule ^disenos-de-casas-de-campo(/.*)?$ /casa-country/ [R=301,L]
+  RewriteRule ^casas-de-campo-modernas(/.*)?$ /casa-country/ [R=301,L]
+
+  # Techos y Piletas
+  RewriteRule ^techo-verde(/.*)?$ /mejores-tipos-de-techos/ [R=301,L]
+  RewriteRule ^techos-solares(/.*)?$ /mejores-tipos-de-techos/ [R=301,L]
+  RewriteRule ^calefaccion-solar-pasiva(/.*)?$ /mejores-tipos-de-techos/ [R=301,L]
+  RewriteRule ^construir-pileta-climatizada(/.*)?$ /blog/construir-pileta-hormigon-vs-fibra-tucuman/ [R=301,L]
+
+  # Genéricos e Institucionales
+  RewriteRule ^viviendas(/.*)?$ /construccion-casas/ [R=301,L]
+  RewriteRule ^mi-casa-en-tucuman(/.*)?$ / [R=301,L]
+  RewriteRule ^contratista-general(/.*)?$ / [R=301,L]
+
+  # --- C. Corrección de Typos y Rutas Históricas Indexadas por Error ---
+  RewriteRule ^cases-steel-framing(/.*)?$ /casas-steel-framing/ [R=301,L]
+  RewriteRule ^mejores-techos-de-chapa(/.*)?$ /mejores-tipos-de-techos/ [R=301,L]
+  RewriteRule ^mejores-techos-de-techos(/.*)?$ /mejores-tipos-de-techos/ [R=301,L]
+  RewriteRule ^levantan-los-ceramicos-pisos(/.*)?$ /levantan-los-pisos-ceramicos/ [R=301,L]
+</IfModule>

@@ -205,132 +205,133 @@
         </nav>
 
         <!-- Menú Móvil Desplegable -->
-        <div id="mobile-menu" class="hidden md:hidden border-t border-outline-variant/40 bg-surface-container-lowest px-margin-mobile py-6 flex flex-col gap-4 shadow-lg animate-fade-in max-h-[calc(100vh-5rem)] overflow-y-auto">
-            <a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base block py-1" href="${basePath}">Inicio</a>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-outline-variant/40 bg-surface-container-lowest px-margin-mobile py-4 flex flex-col gap-1 shadow-lg animate-fade-in max-h-[calc(100dvh-5rem)] overflow-y-auto">
+            <a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base min-h-[44px] py-2.5 px-3 rounded-lg flex items-center justify-between active:bg-surface-container-high" href="${basePath}"><span>Inicio</span></a>
             
             <!-- Submenú Móvil Servicios -->
-            <div class="flex flex-col gap-2">
-                <div class="flex items-center justify-between py-1 w-full">
-                    <a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base" href="${basePath}#servicios">Servicios</a>
-                    <button id="mobile-services-btn" class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors p-2 min-h-[44px] min-w-[44px] flex items-center justify-center" aria-label="Desplegar menú servicios">
-                        <span class="material-symbols-outlined text-xl transition-transform duration-200">expand_more</span>
-                    </button>
-                </div>
-                <div id="mobile-services-submenu" class="hidden flex flex-col gap-3 pl-4 border-l-2 border-outline-variant/30 mt-1">
-                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}casas-steel-framing/">
+            <div class="flex flex-col">
+                <button id="mobile-services-btn" type="button" class="w-full text-left text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary font-label-bold text-base min-h-[44px] py-2.5 px-3 rounded-lg flex items-center justify-between active:bg-surface-container-high transition-colors" aria-expanded="false" aria-label="Desplegar menú servicios">
+                    <span>Servicios</span>
+                    <span class="material-symbols-outlined text-xl transition-transform duration-200">expand_more</span>
+                </button>
+                <div id="mobile-services-submenu" class="hidden flex flex-col gap-1 pl-3 border-l-2 border-outline-variant/30 my-1">
+                    <a class="text-on-surface font-label-bold text-sm min-h-[44px] py-2.5 px-3 rounded-lg flex items-center justify-between active:bg-surface-container-high transition-colors" href="${basePath}#servicios">
+                        <span class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">dashboard</span>
+                            Ver todos los servicios
+                        </span>
+                    </a>
+                    <a class="text-on-surface font-label-bold text-sm min-h-[44px] py-2.5 px-3 rounded-lg flex items-center justify-between active:bg-surface-container-high transition-colors" href="${basePath}casas-steel-framing/">
                         <span class="flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">precision_manufacturing</span>
                             Casas Steel Framing
                         </span>
                         <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
                     </a>
-                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}construccion-en-seco/">
+                    <a class="text-on-surface font-label-bold text-sm min-h-[44px] py-2.5 px-3 rounded-lg flex items-center justify-between active:bg-surface-container-high transition-colors" href="${basePath}construccion-en-seco/">
                         <span class="flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">grid_on</span>
                             Construcción en Seco
                         </span>
                         <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
                     </a>
-                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}casa-moderna/">
+                    <a class="text-on-surface font-label-bold text-sm min-h-[44px] py-2.5 px-3 rounded-lg flex items-center justify-between active:bg-surface-container-high transition-colors" href="${basePath}casa-moderna/">
                         <span class="flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">villa</span>
                             Casas Modernas
                         </span>
                     </a>
-                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}duplex/">
+                    <a class="text-on-surface font-label-bold text-sm min-h-[44px] py-2.5 px-3 rounded-lg flex items-center justify-between active:bg-surface-container-high transition-colors" href="${basePath}duplex/">
                         <span class="flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">layers</span>
                             Dúplex Modernos
                         </span>
                     </a>
-                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}casa-con-pileta/">
+                    <a class="text-on-surface font-label-bold text-sm min-h-[44px] py-2.5 px-3 rounded-lg flex items-center justify-between active:bg-surface-container-high transition-colors" href="${basePath}casa-con-pileta/">
                         <span class="flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">pool</span>
                             Casas con Pileta
                         </span>
                     </a>
-                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}casa-country/">
+                    <a class="text-on-surface font-label-bold text-sm min-h-[44px] py-2.5 px-3 rounded-lg flex items-center justify-between active:bg-surface-container-high transition-colors" href="${basePath}casa-country/">
                         <span class="flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">cottage</span>
                             Casas de Country
                         </span>
                         <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
                     </a>
-                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}casa-ladrillo/">
+                    <a class="text-on-surface font-label-bold text-sm min-h-[44px] py-2.5 px-3 rounded-lg flex items-center justify-between active:bg-surface-container-high transition-colors" href="${basePath}casa-ladrillo/">
                         <span class="flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">holiday_village</span>
                             Casas de Ladrillo Visto
                         </span>
                     </a>
-                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}refacciones-inmobiliarias/">
+                    <a class="text-on-surface font-label-bold text-sm min-h-[44px] py-2.5 px-3 rounded-lg flex items-center justify-between active:bg-surface-container-high transition-colors" href="${basePath}refacciones-inmobiliarias/">
                         <span class="flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">home_repair_service</span>
                             Refacciones del Hogar
                         </span>
                     </a>
-
                 </div>
             </div>
  
-            <a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base block py-1" href="${basePath}credito-hipotecario/">Crédito Hipotecario</a>
+            <a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base min-h-[44px] py-2.5 px-3 rounded-lg flex items-center justify-between active:bg-surface-container-high" href="${basePath}credito-hipotecario/"><span>Crédito Hipotecario</span></a>
             
             <!-- Submenú Móvil Blog -->
-            <div class="flex flex-col gap-2">
-                <div class="flex items-center justify-between py-1 w-full">
-                    <a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base" href="${basePath}blog/">Blog</a>
-                    <button id="mobile-blog-btn" class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors p-2 min-h-[44px] min-w-[44px] flex items-center justify-center" aria-label="Desplegar menú blog">
-                        <span class="material-symbols-outlined text-xl transition-transform duration-200">expand_more</span>
-                    </button>
-                </div>
-                <div id="mobile-blog-submenu" class="hidden flex flex-col gap-3 pl-4 border-l-2 border-outline-variant/30 mt-1">
-                    <a class="text-on-surface font-label-bold text-sm flex items-center gap-2 py-1" href="${basePath}blog/">
+            <div class="flex flex-col">
+                <button id="mobile-blog-btn" type="button" class="w-full text-left text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary font-label-bold text-base min-h-[44px] py-2.5 px-3 rounded-lg flex items-center justify-between active:bg-surface-container-high transition-colors" aria-expanded="false" aria-label="Desplegar menú blog">
+                    <span>Blog</span>
+                    <span class="material-symbols-outlined text-xl transition-transform duration-200">expand_more</span>
+                </button>
+                <div id="mobile-blog-submenu" class="hidden flex flex-col gap-1 pl-3 border-l-2 border-outline-variant/30 my-1">
+                    <a class="text-on-surface font-label-bold text-sm min-h-[44px] py-2.5 px-3 rounded-lg flex items-center gap-2 active:bg-surface-container-high transition-colors" href="${basePath}blog/">
                         <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">article</span>
                         Ver todo el Blog
                     </a>
-                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}construccion-casas/">
+                    <a class="text-on-surface font-label-bold text-sm min-h-[44px] py-2.5 px-3 rounded-lg flex items-center justify-between active:bg-surface-container-high transition-colors" href="${basePath}construccion-casas/">
                         <span class="flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">foundation</span>
                             Construcción de Casas
                         </span>
                         <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
                     </a>
-                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}mejores-tipos-de-techos/">
+                    <a class="text-on-surface font-label-bold text-sm min-h-[44px] py-2.5 px-3 rounded-lg flex items-center justify-between active:bg-surface-container-high transition-colors" href="${basePath}mejores-tipos-de-techos/">
                         <span class="flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">roofing</span>
                             Tipos de Techos
                         </span>
                         <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
                     </a>
-                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}tipos-de-suelos/">
+                    <a class="text-on-surface font-label-bold text-sm min-h-[44px] py-2.5 px-3 rounded-lg flex items-center justify-between active:bg-surface-container-high transition-colors" href="${basePath}tipos-de-suelos/">
                         <span class="flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">landscape</span>
                             Tipos de Suelos
                         </span>
                         <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
                     </a>
-                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}calculos-de-estructura/">
+                    <a class="text-on-surface font-label-bold text-sm min-h-[44px] py-2.5 px-3 rounded-lg flex items-center justify-between active:bg-surface-container-high transition-colors" href="${basePath}calculos-de-estructura/">
                         <span class="flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">engineering</span>
                             Cálculos de Estructura
                         </span>
                         <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
                     </a>
-                    <a class="text-on-surface font-label-bold text-sm flex items-center justify-between py-1" href="${basePath}empieza-diseno-de-tu-casa/">
+                    <a class="text-on-surface font-label-bold text-sm min-h-[44px] py-2.5 px-3 rounded-lg flex items-center justify-between active:bg-surface-container-high transition-colors" href="${basePath}empieza-diseno-de-tu-casa/">
                         <span class="flex items-center gap-2">
                             <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">architecture</span>
                             Diseña tu casa
                         </span>
                         <span class="text-[10px] bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Nuevo</span>
                     </a>
-                    <a class="text-on-surface font-label-bold text-sm flex items-center gap-2 py-1" href="${basePath}precio-construccion-m2/">
+                    <a class="text-on-surface font-label-bold text-sm min-h-[44px] py-2.5 px-3 rounded-lg flex items-center gap-2 active:bg-surface-container-high transition-colors" href="${basePath}precio-construccion-m2/">
                         <span class="material-symbols-outlined text-base text-primary dark:text-inverse-primary">calculate</span>
                         Calculadora de Presupuestos
                     </a>
                 </div>
             </div>
 
-            <a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base block py-1" href="${basePath}contacto/">Contacto</a>
-            <a href="${basePath}contacto/" class="mt-2 bg-primary text-on-primary text-center py-3 font-label-bold rounded-DEFAULT block shadow">
+            <a class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors font-label-bold text-base min-h-[44px] py-2.5 px-3 rounded-lg flex items-center justify-between active:bg-surface-container-high" href="${basePath}contacto/"><span>Contacto</span></a>
+            <a href="${basePath}contacto/" class="mt-2 bg-primary text-on-primary text-center min-h-[44px] py-3 px-4 font-label-bold rounded-DEFAULT flex items-center justify-center shadow active:bg-primary-container transition-colors">
                 Solicitar Presupuesto
             </a>
         </div>
@@ -404,17 +405,29 @@
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         if (mobileMenuBtn && mobileMenu) {
-            mobileMenuBtn.onclick = () => {
-                mobileMenu.classList.toggle('hidden');
-                if (mobileMenu.classList.contains('hidden')) {
-                    document.body.style.overflow = '';
-                } else {
+            const setMobileMenuState = (isOpen) => {
+                if (isOpen) {
+                    mobileMenu.classList.remove('hidden');
                     document.body.style.overflow = 'hidden';
+                    document.documentElement.style.overflow = 'hidden';
+                    document.body.style.touchAction = 'none';
+                    mobileMenu.style.touchAction = 'pan-y';
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    document.body.style.overflow = '';
+                    document.documentElement.style.overflow = '';
+                    document.body.style.touchAction = '';
+                    mobileMenu.style.touchAction = '';
                 }
                 const icon = mobileMenuBtn.querySelector('span');
                 if (icon) {
-                    icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+                    icon.textContent = isOpen ? 'close' : 'menu';
                 }
+            };
+
+            mobileMenuBtn.onclick = () => {
+                const willOpen = mobileMenu.classList.contains('hidden');
+                setMobileMenuState(willOpen);
             };
 
             // Control del submenú de servicios en versión móvil
@@ -423,10 +436,11 @@
             if (mobileServicesBtn && mobileServicesSubmenu) {
                 mobileServicesBtn.onclick = (e) => {
                     e.stopPropagation();
-                    mobileServicesSubmenu.classList.toggle('hidden');
+                    const isHidden = mobileServicesSubmenu.classList.toggle('hidden');
+                    mobileServicesBtn.setAttribute('aria-expanded', String(!isHidden));
                     const icon = mobileServicesBtn.querySelector('.material-symbols-outlined');
                     if (icon) {
-                        icon.classList.toggle('rotate-180');
+                        icon.classList.toggle('rotate-180', !isHidden);
                     }
                 };
             }
@@ -437,10 +451,11 @@
             if (mobileBlogBtn && mobileBlogSubmenu) {
                 mobileBlogBtn.onclick = (e) => {
                     e.stopPropagation();
-                    mobileBlogSubmenu.classList.toggle('hidden');
+                    const isHidden = mobileBlogSubmenu.classList.toggle('hidden');
+                    mobileBlogBtn.setAttribute('aria-expanded', String(!isHidden));
                     const icon = mobileBlogBtn.querySelector('.material-symbols-outlined');
                     if (icon) {
-                        icon.classList.toggle('rotate-180');
+                        icon.classList.toggle('rotate-180', !isHidden);
                     }
                 };
             }
@@ -449,20 +464,14 @@
             const mobileLinks = mobileMenu.querySelectorAll('a');
             mobileLinks.forEach(link => {
                 link.onclick = () => {
-                    mobileMenu.classList.add('hidden');
-                    document.body.style.overflow = '';
-                    const icon = mobileMenuBtn.querySelector('span');
-                    if (icon) icon.textContent = 'menu';
+                    setMobileMenuState(false);
                 };
             });
 
             // Close mobile menu on outside click
             document.addEventListener('click', (e) => {
                 if (mobileMenu && !mobileMenu.classList.contains('hidden') && !mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
-                    mobileMenu.classList.add('hidden');
-                    document.body.style.overflow = '';
-                    const icon = mobileMenuBtn.querySelector('span');
-                    if (icon) icon.textContent = 'menu';
+                    setMobileMenuState(false);
                 }
             });
         }

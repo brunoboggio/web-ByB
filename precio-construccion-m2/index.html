@@ -356,7 +356,7 @@
         <div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop py-12 relative z-10">
             <section id="calculadora-seccion" class="scroll-mt-28">
                 <!-- Calculadora Premium Card -->
-                <div class="bg-surface-container-lowest rounded-2xl shadow-2xl border border-outline-variant/60 p-8 md:p-12 animate-fade-in">
+                <div class="bg-surface-container-lowest rounded-2xl shadow-2xl border border-outline-variant/60 p-4 sm:p-6 md:p-12 animate-fade-in">
                 <form id="calc-form" class="space-y-8" onsubmit="return false;">
                     
                     <!-- Fila 1: Modelo -->
@@ -365,7 +365,7 @@
                             <span class="w-6 h-6 rounded-full bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary flex items-center justify-center text-xs">1</span>
                             Seleccione el Modelo Base
                         </label>
-                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
                             <label class="border-2 border-outline-variant/50 rounded-xl p-4 text-center cursor-pointer hover:border-primary transition-all flex flex-col justify-between items-center bg-surface hover:bg-surface-variant/20 has-[:checked]:border-primary has-[:checked]:bg-primary/5 dark:has-[:checked]:border-inverse-primary dark:has-[:checked]:bg-inverse-primary/10 group">
                                 <input type="radio" name="calc-model" value="1200" checked class="sr-only"/>
                                 <span class="material-symbols-outlined text-outline group-hover:text-primary dark:group-hover:text-inverse-primary text-2xl mb-2 transition-colors">home</span>
@@ -390,7 +390,7 @@
                                 <span class="font-label-bold text-xs block text-on-surface mb-1">Cabaña Tronco</span>
                                 <span class="text-[10px] text-on-surface-variant block opacity-80">Desde USD 1,050/m²</span>
                             </label>
-                            <label class="border-2 border-outline-variant/50 rounded-xl p-4 text-center cursor-pointer hover:border-primary transition-all flex flex-col justify-between items-center bg-surface hover:bg-surface-variant/20 has-[:checked]:border-primary has-[:checked]:bg-primary/5 dark:has-[:checked]:border-inverse-primary dark:has-[:checked]:bg-inverse-primary/10 group">
+                            <label class="col-span-2 sm:col-span-1 border-2 border-outline-variant/50 rounded-xl p-4 text-center cursor-pointer hover:border-primary transition-all flex flex-col justify-between items-center bg-surface hover:bg-surface-variant/20 has-[:checked]:border-primary has-[:checked]:bg-primary/5 dark:has-[:checked]:border-inverse-primary dark:has-[:checked]:bg-inverse-primary/10 group">
                                 <input type="radio" name="calc-model" value="1100" class="sr-only"/>
                                 <span class="material-symbols-outlined text-outline group-hover:text-primary dark:group-hover:text-inverse-primary text-2xl mb-2 transition-colors">precision_manufacturing</span>
                                 <span class="font-label-bold text-xs block text-on-surface mb-1">Steel Framing</span>
@@ -410,7 +410,13 @@
                                 <span id="sqm-display">120</span> m²
                             </span>
                         </div>
-                        <input type="range" id="calc-sqm" min="50" max="400" step="5" value="120" class="w-full h-2.5 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary dark:accent-inverse-primary"/>
+                        <div class="flex items-center gap-3">
+                            <button type="button" id="sqm-dec-btn" class="w-11 h-11 min-w-[44px] min-h-[44px] rounded-lg bg-surface-container-low hover:bg-surface-container-high dark:bg-tertiary active:scale-95 text-on-surface flex items-center justify-center font-bold text-xl border border-outline-variant/40 transition-all select-none" aria-label="Disminuir 5 m²">−</button>
+                            <div class="flex-grow">
+                                <input type="range" id="calc-sqm" min="50" max="400" step="5" value="120" class="w-full h-2.5 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary dark:accent-inverse-primary"/>
+                            </div>
+                            <button type="button" id="sqm-inc-btn" class="w-11 h-11 min-w-[44px] min-h-[44px] rounded-lg bg-surface-container-low hover:bg-surface-container-high dark:bg-tertiary active:scale-95 text-on-surface flex items-center justify-center font-bold text-xl border border-outline-variant/40 transition-all select-none" aria-label="Aumentar 5 m²">+</button>
+                        </div>
                         <div class="flex justify-between text-xs text-on-surface-variant mt-2 font-label-bold px-1">
                             <span>50 m²</span>
                             <span>150 m²</span>
@@ -481,15 +487,15 @@
                             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                                 <div>
                                     <label for="est-name" class="block text-xs font-label-bold text-on-surface-variant mb-1">Nombre y Apellido</label>
-                                    <input type="text" id="est-name" placeholder="Ej. Juan Pérez" required class="w-full rounded-lg border-outline-variant bg-surface-container-lowest text-on-surface p-3 text-sm focus:ring-primary"/>
+                                    <input type="text" id="est-name" placeholder="Ej. Juan Pérez" autocomplete="name" required class="w-full rounded-lg border-outline-variant bg-surface-container-lowest text-on-surface p-3 text-base md:text-sm focus:ring-primary"/>
                                 </div>
                                 <div>
                                     <label for="est-phone" class="block text-xs font-label-bold text-on-surface-variant mb-1">Teléfono / WhatsApp</label>
-                                    <input type="tel" id="est-phone" placeholder="Ej. +54 9 381..." required class="w-full rounded-lg border-outline-variant bg-surface-container-lowest text-on-surface p-3 text-sm focus:ring-primary"/>
+                                    <input type="tel" id="est-phone" placeholder="Ej. +54 9 381..." inputmode="tel" autocomplete="tel" required class="w-full rounded-lg border-outline-variant bg-surface-container-lowest text-on-surface p-3 text-base md:text-sm focus:ring-primary"/>
                                 </div>
                                 <div>
                                     <label for="est-email" class="block text-xs font-label-bold text-on-surface-variant mb-1">Correo Electrónico</label>
-                                    <input type="email" id="est-email" placeholder="ejemplo@correo.com" required class="w-full rounded-lg border-outline-variant bg-surface-container-lowest text-on-surface p-3 text-sm focus:ring-primary"/>
+                                    <input type="email" id="est-email" placeholder="ejemplo@correo.com" inputmode="email" autocomplete="email" required class="w-full rounded-lg border-outline-variant bg-surface-container-lowest text-on-surface p-3 text-base md:text-sm focus:ring-primary"/>
                                 </div>
                             </div>
                             <button type="button" id="confirm-submit-est" class="mt-5 w-full bg-tertiary text-on-tertiary py-3.5 rounded-lg font-label-bold text-xs tracking-wider uppercase hover:bg-primary transition-colors shadow">
@@ -521,45 +527,46 @@
                     <p class="text-on-surface-variant text-sm mt-3 font-body-md">Valores estimados de referencia actualizados bajo el índice de la Cámara Argentina de la Construcción (CAC) para obras llave en mano en Tucumán.</p>
                 </div>
                 
+                <div class="sm:hidden text-xs text-on-surface-variant mb-2 flex items-center gap-1"><span class="material-symbols-outlined text-sm">swipe</span> Deslizá horizontalmente para comparar</div>
                 <div class="overflow-x-auto rounded-2xl border border-outline-variant/40 shadow-xl bg-surface-container-lowest">
                     <table class="w-full border-collapse text-left text-sm">
                         <thead>
                             <tr class="bg-surface-container-low dark:bg-tertiary border-b border-outline-variant/40">
-                                <th class="p-5 font-label-bold text-on-surface uppercase tracking-wider text-xs">Sistema Constructivo</th>
-                                <th class="p-5 font-label-bold text-on-surface uppercase tracking-wider text-xs">Rango Estimado por M2</th>
-                                <th class="p-5 font-label-bold text-on-surface uppercase tracking-wider text-xs">Plazo Promedio de Obra</th>
+                                <th class="p-3 sm:p-5 font-label-bold text-on-surface uppercase tracking-wider text-xs">Sistema Constructivo</th>
+                                <th class="p-3 sm:p-5 font-label-bold text-on-surface uppercase tracking-wider text-xs">Rango Estimado por M2</th>
+                                <th class="p-3 sm:p-5 font-label-bold text-on-surface uppercase tracking-wider text-xs">Plazo Promedio de Obra</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-outline-variant/30 font-body-md">
                             <tr class="hover:bg-surface-variant/10 transition-colors">
-                                <td class="p-5 font-semibold text-on-surface flex items-center gap-3">
+                                <td class="p-3 sm:p-5 text-xs sm:text-sm font-semibold text-on-surface flex items-center gap-2 sm:gap-3">
                                     <span class="w-8 h-8 rounded-lg bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary flex items-center justify-center">
                                         <span class="material-symbols-outlined text-base">precision_manufacturing</span>
                                     </span>
                                     Steel Framing (Seco)
                                 </td>
-                                <td class="p-5 text-on-surface-variant font-medium">USD 1,100 - USD 1,250</td>
-                                <td class="p-5 text-on-surface-variant">4 a 6 meses</td>
+                                <td class="p-3 sm:p-5 text-xs sm:text-sm text-on-surface-variant font-medium">USD 1,100 - USD 1,250</td>
+                                <td class="p-3 sm:p-5 text-xs sm:text-sm text-on-surface-variant">4 a 6 meses</td>
                             </tr>
                             <tr class="hover:bg-surface-variant/10 transition-colors">
-                                <td class="p-5 font-semibold text-on-surface flex items-center gap-3">
+                                <td class="p-3 sm:p-5 text-xs sm:text-sm font-semibold text-on-surface flex items-center gap-2 sm:gap-3">
                                     <span class="w-8 h-8 rounded-lg bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary flex items-center justify-center">
                                         <span class="material-symbols-outlined text-base">home</span>
                                     </span>
                                     Construcción Tradicional (Ladrillo)
                                 </td>
-                                <td class="p-5 text-on-surface-variant font-medium">USD 1,200 - USD 1,400</td>
-                                <td class="p-5 text-on-surface-variant">8 a 12 meses</td>
+                                <td class="p-3 sm:p-5 text-xs sm:text-sm text-on-surface-variant font-medium">USD 1,200 - USD 1,400</td>
+                                <td class="p-3 sm:p-5 text-xs sm:text-sm text-on-surface-variant">8 a 12 meses</td>
                             </tr>
                             <tr class="hover:bg-surface-variant/10 transition-colors">
-                                <td class="p-5 font-semibold text-on-surface flex items-center gap-3">
+                                <td class="p-3 sm:p-5 text-xs sm:text-sm font-semibold text-on-surface flex items-center gap-2 sm:gap-3">
                                     <span class="w-8 h-8 rounded-lg bg-primary/10 dark:bg-inverse-primary/10 text-primary dark:text-inverse-primary flex items-center justify-center">
                                         <span class="material-symbols-outlined text-base">domain</span>
                                     </span>
                                     Dúplex Llave en Mano
                                 </td>
-                                <td class="p-5 text-on-surface-variant font-medium">USD 1,300 - USD 1,450</td>
-                                <td class="p-5 text-on-surface-variant">6 a 9 meses</td>
+                                <td class="p-3 sm:p-5 text-xs sm:text-sm text-on-surface-variant font-medium">USD 1,300 - USD 1,450</td>
+                                <td class="p-3 sm:p-5 text-xs sm:text-sm text-on-surface-variant">6 a 9 meses</td>
                             </tr>
                         </tbody>
                     </table>
@@ -756,6 +763,27 @@
             if (poolCheck) poolCheck.addEventListener('change', calculateEstimate);
             if (garageCheck) garageCheck.addEventListener('change', calculateEstimate);
 
+            const sqmDecBtn = document.getElementById('sqm-dec-btn');
+            const sqmIncBtn = document.getElementById('sqm-inc-btn');
+            if (sqmDecBtn && sqmInput) {
+                sqmDecBtn.addEventListener('click', () => {
+                    const current = parseInt(sqmInput.value, 10) || 120;
+                    if (current > 50) {
+                        sqmInput.value = Math.max(50, current - 5);
+                        sqmInput.dispatchEvent(new Event('input'));
+                    }
+                });
+            }
+            if (sqmIncBtn && sqmInput) {
+                sqmIncBtn.addEventListener('click', () => {
+                    const current = parseInt(sqmInput.value, 10) || 120;
+                    if (current < 400) {
+                        sqmInput.value = Math.min(400, current + 5);
+                        sqmInput.dispatchEvent(new Event('input'));
+                    }
+                });
+            }
+
             // 6. Análisis automático de window.location.search (?model=...)
             const urlParams = new URLSearchParams(window.location.search);
             const modelParam = urlParams.get('model');
@@ -863,12 +891,12 @@
     <!-- Botón Flotante de WhatsApp -->
     <a href="https://wa.me/5493813604822?text=Hola%20Constructora%20ByB%2C%20quiero%20consultar%20sobre%20el%20precio%20de%20construcci%C3%B3n%20por%20m2"
         target="_blank" rel="noopener noreferrer"
-        class="fixed bottom-6 right-6 z-40 bg-emerald-700 text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300 border border-white/10 group"
+        class="fixed bottom-6 right-6 z-40 bg-emerald-700 text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 mb-[env(safe-area-inset-bottom,0px)] transition-all duration-300 border border-white/10 group"
         aria-label="Contactar por WhatsApp">
         <svg class="w-6 h-6 fill-current group-hover:rotate-12 transition-transform duration-300" viewBox="0 0 24 24">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.882-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.577-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
         </svg>
-        <span class="absolute right-16 bg-surface-container-lowest text-on-surface text-xs font-label-bold px-3 py-2 rounded-lg shadow-xl border border-outline-variant/40 dark:border-white/10 whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200">
+        <span class="hidden md:block absolute right-16 bg-surface-container-lowest text-on-surface text-xs font-label-bold px-3 py-2 rounded-lg shadow-xl border border-outline-variant/40 dark:border-white/10 whitespace-nowrap opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200">
             Contactar por WhatsApp
         </span>
     </a>
