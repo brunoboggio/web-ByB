@@ -29,6 +29,8 @@ Allow: /
 # Motores de búsqueda tradicionales
 User-agent: *
 Allow: /
+Allow: /components/*.js
+Allow: /components/*.css
 Disallow: /components/
 Disallow: /js/
 Disallow: /aviso-legal/

@@ -95,7 +95,15 @@
               "closes": "18:00"
             }
           ],
-          "priceRange": "$$$"
+          "priceRange": "$$$",
+          "knowsAbout": [
+            "Steel Framing",
+            "Construcción en Seco",
+            "Casas Llave en Mano",
+            "Arquitectura Residencial",
+            "Cálculo Estructural",
+            "Dúplex y Viviendas Unifamiliares"
+          ]
         },
         {
           "@type": "WebSite",
@@ -193,6 +201,17 @@
     <!-- Load components as non-blocking deferred scripts -->
     <script src="./components/header.min.js?v=1.5" defer></script>
     <script src="./components/footer.min.js?v=1.5" defer></script>
+    <!-- Speculation Rules API para prerender de páginas clave -->
+    <script type="speculationrules">
+    {
+      "prerender": [
+        {
+          "source": "list",
+          "urls": ["/casas-steel-framing/", "/precio-construccion-m2/", "/contacto/"]
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden">
 
@@ -303,7 +322,7 @@
                         Sobre Nosotros
                     </span>
                     <h2 class="font-headline-lg text-headline-lg text-on-surface mb-6 uppercase tracking-tight">
-                        EMPRESA CONSTRUCTORA EN<br/>TUCUMAN
+                        EMPRESA CONSTRUCTORA EN <br/>TUCUMAN
                     </h2>
                     <p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
                         <strong>Constructora ByB es una empresa constructora líder en San Miguel de Tucumán con más de 10 años de trayectoria.</strong> Especialistas en el diseño y edificación llave en mano de viviendas residenciales, construimos casas modernas en Steel Framing y sistema tradicional bajo normas sismorresistentes, garantizando máxima eficiencia térmica y plazos predecibles.
