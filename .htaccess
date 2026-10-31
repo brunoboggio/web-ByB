@@ -50,12 +50,18 @@
   Header always set X-Content-Type-Options nosniff
   # HSTS: Force browsers to always use HTTPS (eliminates HTTP→HTTPS redirect round-trip)
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
 
   # Preload critical resources via HTTP headers (faster than HTML <link> — arrives before parsing)
   <FilesMatch "index\.html$">
-    Header add Link "</img/hero-bg-1200w.webp>; rel=preload; as=image; type=image/webp; fetchpriority=high"
     Header add Link "</css/tailwind.min.css>; rel=preload; as=style"
   </FilesMatch>
+
+  <If "%{REQUEST_URI} =~ m#^/(index\.html)?$#">
+    Header add Link "</img/hero-bg-1200w.webp>; rel=preload; as=image; type=image/webp; fetchpriority=high"
+  </If>
 
 </IfModule>
 
