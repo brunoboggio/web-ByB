@@ -176,7 +176,7 @@
     <noscript><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=360,ac_unit,add,analytics,architecture,arrow_back,arrow_forward,aspect_ratio,calculate,check,check_circle,close,compare_arrows,construction,dark_mode,done,eco,engineering,expand_more,explore,fact_check,foundation,grid_on,help,home,home_repair_service,home_work,info,layers,light_mode,lock,menu,navigation,pause,play_arrow,precision_manufacturing,restart_alt,shield,speed,splitscreen,sync,thermostat,touch_app,verified,view_in_ar,visibility,visibility_off,warning,water_drop,wb_sunny,whatsapp&display=swap" rel="stylesheet" /></noscript>
 
     <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="../../css/tailwind.min.css?v=2.1" />
+    <link rel="stylesheet" href="../../css/tailwind.min.css?v=2.2" />
 
     <style>
         .material-symbols-outlined {
@@ -501,7 +501,7 @@
                                         <line x1="8" y1="11" x2="14" y2="11"></line>
                                     </svg>
                                 </button>
-                                <input id="zoom-slider" type="range" min="50" max="220" value="100" step="1" class="w-12 sm:w-20 md:w-24 h-1.5 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-primary" aria-label="Nivel de zoom interactivo" style="pointer-events: auto !important; cursor: pointer;" />
+                                <input id="zoom-slider" type="range" min="20" max="250" value="100" step="1" class="w-12 sm:w-20 md:w-24 h-1.5 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-primary" aria-label="Nivel de zoom interactivo" style="pointer-events: auto !important; cursor: pointer;" />
                                 <button id="btn-zoom-in" title="Acercar Zoom (+)" class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg hover:bg-white/10 flex items-center justify-center text-slate-300 hover:text-white transition-all active:scale-90" aria-label="Acercar Zoom" style="pointer-events: auto !important; cursor: pointer;">
                                     <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-none stroke-current" viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                         <circle cx="11" cy="11" r="8"></circle>
@@ -1880,7 +1880,7 @@
         scene.background = new THREE.Color(0x060a12);
 
         // Cámara calibrada con FOV 36° para encuadre arquitectónico imponente
-        const camera = new THREE.PerspectiveCamera(36, container.clientWidth / container.clientHeight, 0.1, 50);
+        const camera = new THREE.PerspectiveCamera(36, container.clientWidth / container.clientHeight, 0.1, 100);
         camera.position.set(2.35, 1.15, 2.55);
 
         const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false, powerPreference: 'high-performance' });
@@ -1905,6 +1905,8 @@
         controls.dampingFactor = 0.05;
         controls.maxPolarAngle = Math.PI / 2 + 0.05;
         controls.enableZoom = false; // Desactivado nativo para usar el motor de zoom suave con inercia e interpolación
+        controls.minDistance = 1.2;
+        controls.maxDistance = 16.0;
         controls.target.set(0, 0, 0);
 
         // Iluminación arquitectónica de alto contraste con sombras nítidas PCF Soft de 2048x2048
@@ -2292,8 +2294,8 @@
         let isAutoRotating = false;
 
         // Variables de Zoom Amortiguado con Inercia
-        const minCamDistance = 1.6;
-        const maxCamDistance = 5.5;
+        const minCamDistance = 1.5;
+        const maxCamDistance = 16.0;
         let defaultCamDistance = 3.65;
         let targetDistance = defaultCamDistance;
         let currentDistance = defaultCamDistance;
@@ -2319,16 +2321,15 @@
         const zoomValLabel = document.getElementById('zoom-val-label');
 
         function updateZoomUI() {
-            const progress = THREE.MathUtils.clamp((maxCamDistance - targetDistance) / (maxCamDistance - minCamDistance), 0, 1);
-            const pct = Math.round(50 + progress * 170);
-            if (zoomSlider) zoomSlider.value = pct;
+            const pct = Math.round((defaultCamDistance / targetDistance) * 100);
+            if (zoomSlider) zoomSlider.value = THREE.MathUtils.clamp(pct, 20, 250);
             if (zoomValLabel) zoomValLabel.innerText = `${pct}%`;
         }
 
         function setZoomFromPercent(pct) {
-            const progress = THREE.MathUtils.clamp((pct - 50) / 170, 0, 1);
-            targetDistance = maxCamDistance - progress * (maxCamDistance - minCamDistance);
-            if (zoomValLabel) zoomValLabel.innerText = `${Math.round(pct)}%`;
+            const safePct = THREE.MathUtils.clamp(pct, 20, 250);
+            targetDistance = THREE.MathUtils.clamp(defaultCamDistance / (safePct / 100), minCamDistance, maxCamDistance);
+            if (zoomValLabel) zoomValLabel.innerText = `${Math.round(safePct)}%`;
         }
 
         if (zoomSlider) {
@@ -2339,14 +2340,14 @@
 
         if (btnZoomIn) {
             btnZoomIn.onclick = () => {
-                targetDistance = Math.max(minCamDistance, targetDistance - 0.40);
+                targetDistance = Math.max(minCamDistance, targetDistance / 1.22);
                 updateZoomUI();
             };
         }
 
         if (btnZoomOut) {
             btnZoomOut.onclick = () => {
-                targetDistance = Math.min(maxCamDistance, targetDistance + 0.40);
+                targetDistance = Math.min(maxCamDistance, targetDistance * 1.22);
                 updateZoomUI();
             };
         }
@@ -2354,7 +2355,7 @@
         // Intercepción del evento wheel en el canvas con amortiguación e inercia fluida
         container.addEventListener('wheel', (e) => {
             e.preventDefault();
-            const zoomDelta = e.deltaY * 0.0022;
+            const zoomDelta = e.deltaY * 0.0018 * Math.max(1, targetDistance * 0.35);
             targetDistance = THREE.MathUtils.clamp(targetDistance + zoomDelta, minCamDistance, maxCamDistance);
             updateZoomUI();
         }, { passive: false });
@@ -2482,6 +2483,12 @@
             if (sliderValLabel) sliderValLabel.innerText = `${Math.round(targetExplosionPercent * 100)}%`;
             if (btnExplodeText) btnExplodeText.innerText = isExploded ? "Unir Capas" : "Despiezar";
             if (btnSliderExplodeText) btnSliderExplodeText.innerText = isExploded ? "Unir Capas" : "Separar al 85%";
+
+            // Encuadre inteligente: si se despieza y la cámara está demasiado cerca, alejar suavemente
+            if (isExploded && targetDistance < defaultCamDistance * 1.15) {
+                targetDistance = defaultCamDistance * 1.25;
+                updateZoomUI();
+            }
         }
 
         function onExplosionSliderChange(val) {
@@ -2490,6 +2497,12 @@
             isExploded = targetExplosionPercent > 0.05;
             if (btnExplodeText) btnExplodeText.innerText = isExploded ? "Unir Capas" : "Despiezar";
             if (btnSliderExplodeText) btnSliderExplodeText.innerText = isExploded ? "Unir Capas" : "Separar al 85%";
+
+            // Si se supera el 40% de despiece y la cámara está muy cerca, alejar suavemente para abarcar todo el conjunto
+            if (targetExplosionPercent > 0.40 && targetDistance < defaultCamDistance * 1.15) {
+                targetDistance = defaultCamDistance * 1.25;
+                updateZoomUI();
+            }
         }
 
         if (explosionSlider) {
