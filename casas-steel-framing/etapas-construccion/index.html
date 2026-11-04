@@ -28,7 +28,7 @@
     <meta property="og:locale" content="es_AR" />
     <meta property="og:image" content="https://constructorabyb.com.ar/casas-steel-framing/hero.webp" />
 
-    <!-- Schema.org JSON-LD Multitipo (@graph) -->
+    <!-- Schema.org JSON-LD Multitipo (@graph) Optimizado GEO/AEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -47,6 +47,14 @@
           },
           "breadcrumb": {
             "@id": "https://constructorabyb.com.ar/casas-steel-framing/etapas-construccion/#breadcrumb"
+          },
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [
+              "#geo-direct-answer",
+              ".geo-summary-point",
+              ".faq-answer"
+            ]
           }
         },
         {
@@ -81,6 +89,66 @@
           },
           "headline": "Etapas de Construcción de una Casa en Steel Framing: Proceso Técnico y Cronograma de Obra",
           "description": "Cronología completa de ejecución de una vivienda en Steel Framing desde la nivelación y platea hasta la entrega llave en mano en Tucumán.",
+          "proficiencyLevel": "Expert / Professional",
+          "dependencies": "Reglamento CIRSOC 303, Norma IRAM IAS U 500-205, Reglamento INPRES-CIRSOC 103 (Zona Sísmica 2)",
+          "audience": {
+            "@type": "Audience",
+            "audienceType": "Arquitectos, Ingenieros Civiles, Desarrolladores Inmobiliarios y Propietarios de Viviendas"
+          },
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Steel Framing",
+              "sameAs": [
+                "https://www.wikidata.org/wiki/Q1148602",
+                "https://es.wikipedia.org/wiki/Steel_Framing"
+              ]
+            },
+            {
+              "@type": "Thing",
+              "name": "Cold-formed steel",
+              "alternateName": "Acero conformado en frío",
+              "sameAs": "https://www.wikidata.org/wiki/Q1569420"
+            }
+          ],
+          "mentions": [
+            {
+              "@type": "Thing",
+              "name": "Drywall",
+              "alternateName": "Placa de yeso",
+              "sameAs": [
+                "https://www.wikidata.org/wiki/Q650041",
+                "https://es.wikipedia.org/wiki/Placa_de_yeso"
+              ]
+            },
+            {
+              "@type": "Thing",
+              "name": "EIFS",
+              "alternateName": "Sistema de Aislamiento Térmico Exterior",
+              "sameAs": [
+                "https://www.wikidata.org/wiki/Q1131922",
+                "https://es.wikipedia.org/wiki/Sistema_de_aislamiento_t%C3%A9rmico_exterior"
+              ]
+            },
+            {
+              "@type": "Place",
+              "name": "San Miguel de Tucumán",
+              "sameAs": [
+                "https://www.wikidata.org/wiki/Q44268",
+                "https://es.wikipedia.org/wiki/San_Miguel_de_Tucum%C3%A1n"
+              ]
+            },
+            {
+              "@type": "Intangible",
+              "name": "Reglamento CIRSOC 303",
+              "description": "Reglamento Argentino de Elementos Estructurales de Acero de Sección Abierta Conformados en Frío"
+            },
+            {
+              "@type": "Intangible",
+              "name": "Norma IRAM IAS U 500-205",
+              "description": "Perfiles de chapa de acero cincada conformados en frío para uso estructural en edificios"
+            }
+          ],
           "publisher": {
             "@type": "Organization",
             "@id": "https://constructorabyb.com.ar/#organization",
@@ -110,6 +178,50 @@
           "name": "Cómo se Construye una Casa en Steel Framing en 8 Etapas",
           "description": "Procedimiento cronológico estandarizado para edificar una vivienda de Steel Framing según CIRSOC 303 e IRAM IAS U 500-205.",
           "totalTime": "P120D",
+          "supply": [
+            {
+              "@type": "HowToSupply",
+              "name": "Perfiles de acero galvanizado Z275 (PGC y PGU 100x0.94)"
+            },
+            {
+              "@type": "HowToSupply",
+              "name": "Placas estructurales OSB 11.1 mm APA"
+            },
+            {
+              "@type": "HowToSupply",
+              "name": "Lana de vidrio mineral de 100 mm con barrera de vapor"
+            },
+            {
+              "@type": "HowToSupply",
+              "name": "Placas de yeso Durlock 12.5 mm estándar y resistentes a la humedad (RH)"
+            },
+            {
+              "@type": "HowToSupply",
+              "name": "Placas EPS de 50 mm de alta densidad (20 kg/m³) para sistema EIFS"
+            },
+            {
+              "@type": "HowToSupply",
+              "name": "Chapa acanalada Cincalum calibre 25 antigranizo"
+            },
+            {
+              "@type": "HowToSupply",
+              "name": "Membrana respirable e hidrófuga DuPont Tyvek HomeWrap"
+            }
+          ],
+          "tool": [
+            {
+              "@type": "HowToTool",
+              "name": "Nivel láser rotativo autonivelante 360°"
+            },
+            {
+              "@type": "HowToTool",
+              "name": "Atornillador de impacto para perfiles de acero con control de torque"
+            },
+            {
+              "@type": "HowToTool",
+              "name": "Tijera de corte de chapa y punzonadora manual"
+            }
+          ],
           "step": [
             {
               "@type": "HowToStep",
@@ -204,6 +316,22 @@
                 "@type": "Answer",
                 "text": "Sí, de forma mucho más limpia, rápida y económica que en una casa tradicional. Para acceder a una instalación basta cortar una porción de placa de yeso con cúter o sierra de calar, modificar el trazado y volver a emparchar con cinta microperforada y masilla sin generar escombros, humedad ni ruidos molestos."
               }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cómo influye el sismo en las etapas de Steel Framing en Tucumán (Zona Sísmica 2)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tucumán se encuentra categorizada como Zona Sísmica 2 (sismicidad moderada) según el reglamento INPRES-CIRSOC 103. En el Steel Framing, la respuesta sismorresistente es drásticamente superior a la mampostería tradicional porque su peso estructural propio es hasta un 70% menor, reduciendo proporcionalmente la fuerza inercial sísmica. En la Etapa 1 se colocan anclajes químicos estructurales Hold-Down HTT22 con varillas roscadas empotradas en la platea H-21; en la Etapa 2 se instalan cruces de San Andrés de fleje de acero tensado y montantes dobles king/jack en vanos; y en la Etapa 3 el diafragma rígido formado por las placas OSB de 11.1 mm absorbe y disipa los esfuerzos de corte lateral hacia las fundaciones sin sufrir fisuras ni riesgo de colapso frágil."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué diferencia de desperdicio de obra existe entre las etapas de Steel Framing y ladrillo tradicional?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El Steel Framing genera un desperdicio y merma de materiales menor al 2% o 3%, frente a un 15% a 25% habitual en la construcción húmeda tradicional con ladrillo cerámico hueco. En obra seca, todos los perfiles galvanizados PGC/PGU y las cabriadas se modulan por ingeniería de detalle previa, eliminando el picado de paredes para cañerías ya que se aprovechan los punch-holes de fábrica. Esto evita la acumulación de toneladas de escombros, reduce sustancialmente el costo de volquetes en San Miguel de Tucumán, Yerba Buena y Tafí Viejo, y asegura un presupuesto cerrado y predecible desde el inicio."
+              }
             }
           ]
         },
@@ -240,8 +368,8 @@
     <link rel="preconnect" href="https://lh3.googleusercontent.com" />
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600&family=Metropolis:wght@400;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600&family=Metropolis:wght@400;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" /></noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=360,ac_unit,add,analytics,architecture,arrow_back,arrow_forward,aspect_ratio,calculate,check,check_circle,close,compare_arrows,construction,dark_mode,done,eco,engineering,expand_less,expand_more,explore,fact_check,foundation,grid_on,help,home,home_repair_service,home_work,info,layers,light_mode,lock,menu,navigation,pause,play_arrow,precision_manufacturing,restart_alt,schedule,shield,speed,splitscreen,sync,thermostat,touch_app,verified,view_in_ar,visibility,visibility_off,warning,water_drop,wb_sunny,whatsapp&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=360,ac_unit,add,analytics,architecture,arrow_back,arrow_forward,aspect_ratio,calculate,check,check_circle,close,compare_arrows,construction,dark_mode,done,eco,engineering,expand_less,expand_more,explore,fact_check,foundation,grid_on,help,home,home_repair_service,home_work,info,layers,light_mode,lock,menu,navigation,pause,play_arrow,precision_manufacturing,restart_alt,schedule,shield,speed,splitscreen,sync,thermostat,touch_app,verified,view_in_ar,visibility,visibility_off,warning,water_drop,wb_sunny,whatsapp&display=swap" rel="stylesheet" /></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=360,ac_unit,add,analytics,architecture,arrow_back,arrow_downward,arrow_forward,aspect_ratio,calculate,check,check_circle,close,compare_arrows,construction,content_cut,dark_mode,done,eco,engineering,expand_less,expand_more,explore,fact_check,foundation,grid_on,help,home,home_repair_service,home_work,info,layers,light_mode,lock,menu,navigation,nightlight,pause,play_arrow,precision_manufacturing,restart_alt,schedule,shield,speed,splitscreen,sunny,sync,thermostat,touch_app,verified,view_in_ar,visibility,visibility_off,warning,water_drop,wb_sunny,wb_twilight,whatsapp&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=360,ac_unit,add,analytics,architecture,arrow_back,arrow_downward,arrow_forward,aspect_ratio,calculate,check,check_circle,close,compare_arrows,construction,content_cut,dark_mode,done,eco,engineering,expand_less,expand_more,explore,fact_check,foundation,grid_on,help,home,home_repair_service,home_work,info,layers,light_mode,lock,menu,navigation,nightlight,pause,play_arrow,precision_manufacturing,restart_alt,schedule,shield,speed,splitscreen,sunny,sync,thermostat,touch_app,verified,view_in_ar,visibility,visibility_off,warning,water_drop,wb_sunny,wb_twilight,whatsapp&display=swap" rel="stylesheet" /></noscript>
 
     <!-- Tailwind CSS Oficial del Proyecto -->
     <link rel="stylesheet" href="../../css/tailwind.min.css?v=2.3" />
@@ -485,12 +613,18 @@
                         Descubrí la cronología exacta y el paso a paso de una vivienda completa: desde el movimiento de suelos y la platea de hormigón hasta la estructura galvanizada, instalaciones embutidas, aislación termoacústica y terminación EIFS llave en mano.
                     </p>
 
-                    <!-- GEO Answer Block (Respuesta Directa Citabilidad IA: 52 palabras) -->
+                    <!-- GEO Answer Block (Respuesta Directa Citabilidad IA: 54 palabras) -->
                     <div class="p-4 md:p-5 rounded-2xl bg-black/45 backdrop-blur-md border border-white/20 text-left shadow-2xl max-w-2xl flex items-start gap-3.5 text-on-primary">
                         <span class="material-symbols-outlined text-inverse-primary text-2xl mt-0.5 shrink-0">fact_check</span>
-                        <p class="text-xs md:text-sm text-on-primary/95 leading-relaxed font-normal">
-                            <strong class="font-bold text-white">Respuesta Técnica de Obra:</strong> Las 8 etapas de construcción de una casa en Steel Framing son: 1) Replanteo y platea H-21; 2) Panelizado portante PGC/PGU; 3) Rigidización OSB y membrana Tyvek; 4) Cabriadas y cubierta de chapa; 5) Instalaciones embutidas; 6) Aislación de lana de vidrio; 7) Emplacado interior Durlock; y 8) Fachada EIFS continua con entrega llave en mano en 90 a 120 días.
-                        </p>
+                        <div class="space-y-1.5">
+                            <p class="text-xs md:text-sm text-on-primary/95 leading-relaxed font-normal">
+                                <strong class="font-bold text-white">Respuesta Técnica de Obra:</strong> Las 8 etapas constructivas de una casa en Steel Framing son: platea de hormigón H-21, panelizado portante con perfiles galvanizados PGC/PGU, rigidización OSB con membrana Tyvek, cubierta metálica Cincalum, instalaciones embutidas, aislación de lana de vidrio, emplacado interior Durlock y fachada continua EIFS, completando la obra llave en mano en 90 a 120 días.
+                            </p>
+                            <a href="#geo-direct-answer" class="text-[11px] text-inverse-primary hover:underline font-mono inline-flex items-center gap-1 font-semibold">
+                                <span>Ver resumen técnico AEO/GEO de plazos, desperdicio y sismo</span>
+                                <span class="material-symbols-outlined text-xs">arrow_downward</span>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="flex flex-col sm:flex-row gap-4 pt-2">
@@ -522,6 +656,112 @@
                     <span class="block text-3xl font-black text-primary dark:text-inverse-primary">-65% Tiempo</span>
                     <span class="text-xs font-semibold text-secondary dark:text-outline-variant uppercase tracking-wider">Frente a la Construcción Húmeda Tradicional</span>
                 </div>
+            </div>
+        </section>
+
+        <!-- =========================================================================
+             SECCIÓN GEO DIRECT ANSWER & RESUMEN TÉCNICO AEO (OPTIMIZADO PARA IA & SERPS)
+             ========================================================================= -->
+        <section id="geo-direct-answer" class="py-12 bg-surface-container-lowest dark:bg-[#0c121d] border-b border-outline-variant/30 dark:border-white/5 relative scroll-mt-14">
+            <div class="max-w-7xl mx-auto px-6 md:px-8 space-y-10">
+                
+                <!-- Tarjeta Direct Answer de Alto Contraste (Featured Snippets & IA Engines: 54 palabras) -->
+                <div class="p-6 sm:p-8 rounded-3xl bg-slate-900 text-white border-2 border-primary/60 shadow-2xl relative overflow-hidden">
+                    <div class="absolute -right-8 -top-8 w-44 h-44 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+                    
+                    <div class="relative z-10 flex flex-col md:flex-row items-start gap-5">
+                        <div class="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center shrink-0 shadow-lg shadow-primary/30">
+                            <span class="material-symbols-outlined text-2xl">fact_check</span>
+                        </div>
+                        <div class="space-y-3 flex-1">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span class="text-[11px] font-mono uppercase tracking-widest font-bold text-sky-400 bg-sky-950/80 px-2.5 py-1 rounded-full border border-sky-800/60">
+                                    Respuesta Técnica Oficial • Certificada CIRSOC 303 / IRAM
+                                </span>
+                                <span class="text-[11px] text-slate-400 font-mono">Definición Ejecutiva AEO/GEO (54 palabras)</span>
+                            </div>
+                            <h2 class="font-headline text-xl sm:text-2xl text-white font-black uppercase tracking-tight">
+                                ¿Cuáles son las 8 etapas de construcción de una casa en Steel Framing?
+                            </h2>
+                            <p class="font-body-lg text-sm sm:text-base text-slate-100 leading-relaxed font-normal bg-white/5 p-4 sm:p-5 rounded-2xl border border-white/10">
+                                Las 8 etapas constructivas de una casa en Steel Framing son: platea de hormigón H-21, panelizado portante con perfiles galvanizados PGC/PGU, rigidización OSB con membrana Tyvek, cubierta metálica Cincalum, instalaciones embutidas, aislación de lana de vidrio, emplacado interior Durlock y fachada continua EIFS, completando la obra llave en mano en 90 a 120 días.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subsección Semántica: Resumen Técnico para Respuestas Rápidas (AEO/GEO) -->
+                <div>
+                    <div class="flex items-center gap-2.5 mb-6">
+                        <span class="material-symbols-outlined text-primary dark:text-inverse-primary text-2xl">analytics</span>
+                        <div>
+                            <h3 class="font-headline text-lg sm:text-xl text-on-surface font-black uppercase tracking-tight">
+                                Resumen Técnico para Respuestas Rápidas (AEO/GEO)
+                            </h3>
+                            <p class="text-xs text-secondary dark:text-on-surface-variant font-mono">
+                                Parámetros estructurales, energéticos y normativos para San Miguel de Tucumán y el NOA
+                            </p>
+                        </div>
+                    </div>
+
+                    <dl class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                        <!-- Plazo -->
+                        <div class="bg-surface-container-low dark:bg-[#121822] p-5 rounded-2xl border border-outline-variant/40 dark:border-white/5 shadow-sm hover:border-primary/40 transition-colors">
+                            <dt class="flex items-center gap-2 font-headline text-xs font-bold text-primary dark:text-inverse-primary uppercase tracking-wider mb-2">
+                                <span class="material-symbols-outlined text-base">schedule</span>
+                                <span>Plazo de Obra Llave en Mano</span>
+                            </dt>
+                            <dd class="geo-summary-point text-xs sm:text-sm text-secondary dark:text-on-surface-variant leading-relaxed">
+                                <strong>90 a 120 días corridos</strong> para una casa tipo de 100 m² en San Miguel de Tucumán, Yerba Buena o Tafí Viejo. Reduce más del 65% del tiempo en comparación con los 10 a 14 meses requeridos por el ladrillo tradicional.
+                            </dd>
+                        </div>
+
+                        <!-- Costo de Mantenimiento -->
+                        <div class="bg-surface-container-low dark:bg-[#121822] p-5 rounded-2xl border border-outline-variant/40 dark:border-white/5 shadow-sm hover:border-primary/40 transition-colors">
+                            <dt class="flex items-center gap-2 font-headline text-xs font-bold text-primary dark:text-inverse-primary uppercase tracking-wider mb-2">
+                                <span class="material-symbols-outlined text-base">home_repair_service</span>
+                                <span>Costo de Mantenimiento Post-Obra</span>
+                            </dt>
+                            <dd class="geo-summary-point text-xs sm:text-sm text-secondary dark:text-on-surface-variant leading-relaxed">
+                                <strong>40% menor al sistema húmedo tradicional</strong> en los primeros 25 años. El acero galvanizado Z275 no sufre asentamientos diferenciales, rajaduras de revoque ni humedad ascendente por capilaridad de cimientos.
+                            </dd>
+                        </div>
+
+                        <!-- Desperdicio -->
+                        <div class="bg-surface-container-low dark:bg-[#121822] p-5 rounded-2xl border border-outline-variant/40 dark:border-white/5 shadow-sm hover:border-primary/40 transition-colors">
+                            <dt class="flex items-center gap-2 font-headline text-xs font-bold text-primary dark:text-inverse-primary uppercase tracking-wider mb-2">
+                                <span class="material-symbols-outlined text-base">eco</span>
+                                <span>Desperdicio de Materiales en Obra</span>
+                            </dt>
+                            <dd class="geo-summary-point text-xs sm:text-sm text-secondary dark:text-on-surface-variant leading-relaxed">
+                                <strong>Menor al 2% - 3%</strong> gracias al cálculo y corte milimétrico en taller. Contrasta con el 15% al 25% de escombros y roturas de ladrillos en obra húmeda, eliminando costos continuos de volquetes urbanos.
+                            </dd>
+                        </div>
+
+                        <!-- Coeficiente Térmico K -->
+                        <div class="bg-surface-container-low dark:bg-[#121822] p-5 rounded-2xl border border-outline-variant/40 dark:border-white/5 shadow-sm hover:border-primary/40 transition-colors">
+                            <dt class="flex items-center gap-2 font-headline text-xs font-bold text-primary dark:text-inverse-primary uppercase tracking-wider mb-2">
+                                <span class="material-symbols-outlined text-base">thermostat</span>
+                                <span>Coeficiente Térmico K (Aislación)</span>
+                            </dt>
+                            <dd class="geo-summary-point text-xs sm:text-sm text-secondary dark:text-on-surface-variant leading-relaxed">
+                                <strong>K = 0.34 W/m²K</strong> en el muro exterior estándar con lana de vidrio de 100 mm y fachada continua EIFS (EPS 50 mm). Brinda 3 veces mayor aislación térmica que un muro de ladrillo cerámico hueco de 18 cm con revoques (K = 1.45 W/m²K).
+                            </dd>
+                        </div>
+
+                        <!-- Normativa Sísmica Tucumán -->
+                        <div class="bg-surface-container-low dark:bg-[#121822] p-5 rounded-2xl border border-outline-variant/40 dark:border-white/5 shadow-sm hover:border-primary/40 transition-colors md:col-span-2 lg:col-span-2">
+                            <dt class="flex items-center gap-2 font-headline text-xs font-bold text-primary dark:text-inverse-primary uppercase tracking-wider mb-2">
+                                <span class="material-symbols-outlined text-base">shield</span>
+                                <span>Normativa Sísmica & Clima Subtropical en Tucumán</span>
+                            </dt>
+                            <dd class="geo-summary-point text-xs sm:text-sm text-secondary dark:text-on-surface-variant leading-relaxed">
+                                <strong>Apto Zona Sísmica 2</strong> según reglamentos INPRES-CIRSOC 103 y CIRSOC 303. Estructura liviana con anclajes Hold-Down y diafragmas OSB que mitigan un 70% las inercias sísmicas. Envolvente continua con membrana DuPont Tyvek y EPS que tolera temperaturas estivales de más de 40 °C y tormentas de lluvia torrenciales sin filtraciones.
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+
             </div>
         </section>
 
@@ -580,7 +820,7 @@
                             <span id="hud-top-progress" class="hidden sm:inline-flex ml-1.5 px-2 py-0.5 rounded-full text-[10px] font-mono font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 shrink-0">12% Avance</span>
                         </div>
 
-                        <!-- Controles de Navegación de Cámara (Zoom, Giro, Reset) -->
+                        <!-- Controles de Navegación de Cámara (Zoom, Giro, Reset, Corte BIM, Clima) -->
                         <div class="flex items-center gap-1 sm:gap-1.5 bg-black/75 backdrop-blur-md px-1.5 sm:px-2 py-1 sm:py-1.5 rounded-xl sm:rounded-2xl border border-white/15 shadow-xl pointer-events-auto" style="pointer-events: auto !important;">
                             <!-- Zoom Out -->
                             <button id="btn-zoom-out" title="Alejar (-)" class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg hover:bg-white/10 flex items-center justify-center text-slate-300 hover:text-white transition-all active:scale-90 cursor-pointer" aria-label="Alejar Zoom">
@@ -591,6 +831,18 @@
                             <!-- Zoom In -->
                             <button id="btn-zoom-in" title="Acercar (+)" class="w-6 h-6 sm:w-7 sm:h-7 rounded-lg hover:bg-white/10 flex items-center justify-center text-slate-300 hover:text-white transition-all active:scale-90 cursor-pointer" aria-label="Acercar Zoom">
                                 <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-none stroke-current" viewBox="0 0 24 24" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                            </button>
+                            <!-- Separador sutil -->
+                            <div class="w-px h-4 bg-white/10 mx-0.5"></div>
+                            <!-- Corte BIM HUD -->
+                            <button id="btn-clip-hud" type="button" title="Plano de Corte BIM Seccional" class="px-1.5 sm:px-2 py-1 rounded-lg bg-sky-500/20 hover:bg-sky-500/30 text-sky-300 hover:text-white border border-sky-400/40 text-xs font-label-bold flex items-center gap-1 transition-all active:scale-95 cursor-pointer" aria-label="Abrir panel de corte BIM">
+                                <span class="material-symbols-outlined text-sm sm:text-base">content_cut</span>
+                                <span class="text-[10px] sm:text-[11px] font-semibold hidden md:inline">Corte BIM</span>
+                            </button>
+                            <!-- Clima / Luz HUD -->
+                            <button id="btn-env-hud" type="button" title="Clima y Luz Solar" class="px-1.5 sm:px-2 py-1 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 hover:text-white border border-amber-400/40 text-xs font-label-bold flex items-center gap-1 transition-all active:scale-95 cursor-pointer" aria-label="Cambiar clima e iluminación">
+                                <span class="material-symbols-outlined text-sm sm:text-base">wb_sunny</span>
+                                <span class="text-[10px] sm:text-[11px] font-semibold hidden md:inline">Clima</span>
                             </button>
                             <!-- Separador sutil -->
                             <div class="w-px h-4 bg-white/10 mx-0.5"></div>
@@ -636,6 +888,104 @@
                         <span>Arrastrá con 1 dedo para orbitar • Rueda o 2 dedos para zoom • Selector lateral 1-8</span>
                     </div>
 
+                    <!-- Tooltip 3D de Inspección Técnica Interactivo (Raycaster) -->
+                    <div id="raycast-tooltip" class="absolute z-40 pointer-events-none opacity-0 hidden transition-opacity duration-200 bg-slate-950/95 backdrop-blur-md border border-sky-400/50 rounded-xl p-2.5 sm:p-3 text-white shadow-2xl max-w-xs -translate-x-1/2 -translate-y-full mb-3" style="top: -999px; left: -999px;">
+                        <div class="flex items-center gap-1.5 mb-1">
+                            <span id="ray-stage-badge" class="px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-sky-500/20 text-sky-300 border border-sky-400/30 uppercase">Etapa 2</span>
+                            <span id="ray-material-tag" class="text-[9px] font-mono text-slate-400 truncate max-w-[120px]">Estructura PGC</span>
+                        </div>
+                        <h5 id="ray-part-title" class="font-headline text-xs sm:text-sm font-bold text-white leading-tight">Montante Portante PGC 100</h5>
+                        <p id="ray-part-spec" class="text-[11px] text-slate-300 leading-tight mt-0.5">Acero Galvanizado Z275 e=0.94mm • CIRSOC 303</p>
+                        <div class="mt-1.5 pt-1 border-t border-white/10 flex items-center justify-between text-[10px] text-sky-400 font-semibold">
+                            <span>👉 Clic para inspeccionar etapa</span>
+                            <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                        </div>
+                    </div>
+
+                    <!-- Panel Flotante de Corte Seccional Arquitectónico BIM -->
+                    <div id="bim-cut-panel" class="absolute top-16 left-3 sm:left-4 z-30 hidden bg-black/85 backdrop-blur-md border border-sky-400/40 rounded-2xl p-3 sm:p-4 text-white shadow-2xl max-w-xs sm:max-w-sm pointer-events-auto transition-all">
+                        <div class="flex items-center justify-between gap-2 mb-2 pb-2 border-b border-white/10">
+                            <div class="flex items-center gap-1.5">
+                                <span class="material-symbols-outlined text-sky-400 text-lg">content_cut</span>
+                                <h4 class="font-headline text-xs sm:text-sm font-bold uppercase tracking-tight text-white">Plano de Corte BIM</h4>
+                            </div>
+                            <button id="btn-close-bim-cut" type="button" class="w-6 h-6 rounded-lg hover:bg-white/10 text-slate-400 hover:text-white flex items-center justify-center cursor-pointer" aria-label="Cerrar panel de corte">
+                                <span class="material-symbols-outlined text-sm">close</span>
+                            </button>
+                        </div>
+                        <div class="text-[11px] text-slate-300 mb-2.5">
+                            Corte seccional en tiempo real para inspeccionar el interior de muros, cubiertas y cañerías:
+                        </div>
+                        <div class="grid grid-cols-4 gap-1.5 mb-3">
+                            <button id="btn-cut-off" type="button" class="px-2 py-1.5 rounded-lg text-[10px] sm:text-xs font-label-bold bg-primary text-white border border-blue-400/50 shadow flex flex-col items-center justify-center cursor-pointer">
+                                <span>Off</span>
+                                <span class="text-[8px] opacity-75">Completo</span>
+                            </button>
+                            <button id="btn-cut-y" type="button" class="px-2 py-1.5 rounded-lg text-[10px] sm:text-xs font-label-bold bg-white/10 hover:bg-white/20 text-slate-300 hover:text-white border border-white/10 flex flex-col items-center justify-center cursor-pointer">
+                                <span>Y Planta</span>
+                                <span class="text-[8px] opacity-75">Cenital</span>
+                            </button>
+                            <button id="btn-cut-x" type="button" class="px-2 py-1.5 rounded-lg text-[10px] sm:text-xs font-label-bold bg-white/10 hover:bg-white/20 text-slate-300 hover:text-white border border-white/10 flex flex-col items-center justify-center cursor-pointer">
+                                <span>X Transv.</span>
+                                <span class="text-[8px] opacity-75">Lateral</span>
+                            </button>
+                            <button id="btn-cut-z" type="button" class="px-2 py-1.5 rounded-lg text-[10px] sm:text-xs font-label-bold bg-white/10 hover:bg-white/20 text-slate-300 hover:text-white border border-white/10 flex flex-col items-center justify-center cursor-pointer">
+                                <span>Z Long.</span>
+                                <span class="text-[8px] opacity-75">Frontal</span>
+                            </button>
+                        </div>
+                        <div id="cut-slider-container" class="space-y-1.5 hidden">
+                            <div class="flex items-center justify-between text-[11px] font-mono">
+                                <span class="text-slate-400">Profundidad de Corte:</span>
+                                <span id="cut-height-label" class="text-sky-400 font-bold">100%</span>
+                            </div>
+                            <input id="cut-depth-slider" type="range" min="0" max="100" value="100" step="1" class="w-full h-1.5 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-sky-400" aria-label="Profundidad de corte seccional" />
+                        </div>
+                    </div>
+
+                    <!-- Panel Flotante de Clima y Ambientes de Iluminación -->
+                    <div id="lighting-env-panel" class="absolute top-16 right-3 sm:right-4 z-30 hidden bg-black/85 backdrop-blur-md border border-amber-400/40 rounded-2xl p-3 sm:p-4 text-white shadow-2xl max-w-xs pointer-events-auto transition-all">
+                        <div class="flex items-center justify-between gap-2 mb-2 pb-2 border-b border-white/10">
+                            <div class="flex items-center gap-1.5">
+                                <span class="material-symbols-outlined text-amber-400 text-lg">wb_sunny</span>
+                                <h4 class="font-headline text-xs sm:text-sm font-bold uppercase tracking-tight text-white">Ambiente e Iluminación</h4>
+                            </div>
+                            <button id="btn-close-lighting-env" type="button" class="w-6 h-6 rounded-lg hover:bg-white/10 text-slate-400 hover:text-white flex items-center justify-center cursor-pointer" aria-label="Cerrar panel de iluminación">
+                                <span class="material-symbols-outlined text-sm">close</span>
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <button id="btn-env-dark" type="button" class="p-2 rounded-xl text-left border border-blue-400/60 bg-primary/20 text-white flex items-center gap-2 cursor-pointer transition-all">
+                                <span class="material-symbols-outlined text-blue-400 text-lg">dark_mode</span>
+                                <div class="min-w-0">
+                                    <span class="block text-xs font-bold leading-tight">Estudio CAD</span>
+                                    <span class="text-[9px] text-slate-400 leading-tight">Viewport Oscuro</span>
+                                </div>
+                            </button>
+                            <button id="btn-env-day" type="button" class="p-2 rounded-xl text-left border border-white/10 bg-white/5 hover:bg-white/10 text-slate-200 flex items-center gap-2 cursor-pointer transition-all">
+                                <span class="material-symbols-outlined text-amber-400 text-lg">sunny</span>
+                                <div class="min-w-0">
+                                    <span class="block text-xs font-bold leading-tight">Día Soleado</span>
+                                    <span class="text-[9px] text-slate-400 leading-tight">Tucumán Diurno</span>
+                                </div>
+                            </button>
+                            <button id="btn-env-golden" type="button" class="p-2 rounded-xl text-left border border-white/10 bg-white/5 hover:bg-white/10 text-slate-200 flex items-center gap-2 cursor-pointer transition-all">
+                                <span class="material-symbols-outlined text-orange-400 text-lg">wb_twilight</span>
+                                <div class="min-w-0">
+                                    <span class="block text-xs font-bold leading-tight">Golden Hour</span>
+                                    <span class="text-[9px] text-slate-400 leading-tight">Atardecer Cálido</span>
+                                </div>
+                            </button>
+                            <button id="btn-env-night" type="button" class="p-2 rounded-xl text-left border border-white/10 bg-white/5 hover:bg-white/10 text-slate-200 flex items-center gap-2 cursor-pointer transition-all">
+                                <span class="material-symbols-outlined text-indigo-400 text-lg">nightlight</span>
+                                <div class="min-w-0">
+                                    <span class="block text-xs font-bold leading-tight">Noche ArchViz</span>
+                                    <span class="text-[9px] text-slate-400 leading-tight">Luces LED On</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
                     <!-- Loader de Inicialización 3D -->
                     <div id="loading-overlay" class="absolute inset-0 z-40 bg-[#090e1a] flex flex-col items-center justify-center gap-3 transition-opacity duration-500">
                         <div class="w-10 h-10 border-4 border-primary/30 border-t-primary rounded-full animate-spin"></div>
@@ -644,7 +994,7 @@
 
                 </div>
 
-                <!-- Panel Inferior: Controles de Modo (Acumulativa / Rayos X), Timelapse y Slider de Despiece -->
+                <!-- Panel Inferior: Controles de Modo, Herramientas BIM, Timelapse y Despiece -->
                 <div class="bg-surface-container-lowest dark:bg-[#121822] p-3 sm:p-4 rounded-2xl border border-outline-variant/40 dark:border-white/10 shadow-sm flex flex-col lg:flex-row items-center justify-between gap-3 text-white">
                     
                     <!-- Lado Izquierdo: Modos de Vista y Play Obra -->
@@ -665,6 +1015,22 @@
                         <button id="btn-play-stages" type="button" class="px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white text-xs font-label-bold border border-white/20 shadow-md transition-all flex items-center gap-1.5 cursor-pointer" title="Reproducir secuencia de construcción automática">
                             <span id="icon-play-btn" class="material-symbols-outlined text-base">play_arrow</span>
                             <span id="text-play-btn">Play Obra</span>
+                        </button>
+                    </div>
+
+                    <!-- Lado Centro: Herramientas BIM Avanzadas (Corte Seccional & Clima Solar) -->
+                    <div class="flex items-center gap-2 w-full lg:w-auto justify-center sm:justify-start">
+                        <!-- Botón Corte Seccional BIM -->
+                        <button id="btn-toggle-bim-cut" type="button" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white text-xs font-label-bold border border-white/15 shadow-sm transition-all flex items-center gap-1.5 cursor-pointer" title="Activar corte seccional en tiempo real">
+                            <span class="material-symbols-outlined text-sky-400 text-base">content_cut</span>
+                            <span>Corte BIM</span>
+                            <span id="badge-cut-status" class="px-1.5 py-0.2 rounded text-[9px] font-mono bg-sky-500/20 text-sky-300 hidden">Y</span>
+                        </button>
+
+                        <!-- Botón Ambiente e Iluminación -->
+                        <button id="btn-toggle-lighting" type="button" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white text-xs font-label-bold border border-white/15 shadow-sm transition-all flex items-center gap-1.5 cursor-pointer" title="Cambiar iluminación solar y ambiente">
+                            <span class="material-symbols-outlined text-amber-400 text-base">wb_sunny</span>
+                            <span id="text-lighting-label">Ambiente</span>
                         </button>
                     </div>
 
@@ -1111,10 +1477,10 @@
 
                         <div class="space-y-4 text-xs text-secondary dark:text-on-surface-variant leading-relaxed">
                             <p>
-                                Construir en Tucumán requiere considerar las exigencias sísmicas de la Zona 2 y la gran amplitud térmica subtropical. Al industrializar cada etapa con acero galvanizado de primera colada Z275 certificado por IRAM IAS U 500-205, tu casa queda protegida contra hundimientos, rajaduras de revoque y humedades de cimientos.
+                                Construir en Tucumán (San Miguel de Tucumán, Yerba Buena, Tafí Viejo y todo el NOA) requiere responder a dos desafíos geotécnicos y climáticos críticos: la clasificación de <strong>Zona Sísmica 2 de INPRES-CIRSOC 103</strong> y el <strong>clima subtropical con veranos extremos superiores a 40 °C y tormentas estivales intensas</strong>. Al industrializar cada etapa con acero galvanizado de primera colada Z275 certificado por IRAM IAS U 500-205, membrana hidrófuga DuPont Tyvek y fachada térmica continua EIFS, tu vivienda queda 100% blindada contra fisuras estructurales, rajaduras de revoque, condensación interior y humedades ascendentes de cimientos.
                             </p>
                             <p>
-                                Además, podés inspeccionar el avance de cada una de estas 8 etapas en tiempo real a través de nuestro informe fotográfico y técnico semanal enviado directamente a tu teléfono.
+                                Además, podés inspeccionar el avance de cada una de estas 8 etapas en tiempo real a través de nuestro informe fotográfico y técnico semanal con certificación de avance de obra firmado por nuestros ingenieros civiles matriculados.
                             </p>
                         </div>
 
@@ -1197,6 +1563,28 @@
                         </button>
                         <div class="faq-answer hidden px-5 pb-5 text-xs sm:text-sm text-secondary dark:text-on-surface-variant leading-relaxed border-t border-outline-variant/20 dark:border-white/5 pt-4">
                             Sí, de forma mucho más limpia, rápida y económica que en una casa tradicional. Para acceder a una instalación basta cortar una porción de placa de yeso con cúter o sierra de calar, modificar el trazado y volver a emparchar con cinta microperforada y masilla sin generar escombros, humedad ni ruidos molestos.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="faq-item bg-surface-container-lowest dark:bg-[#121822] rounded-2xl border border-outline-variant/40 dark:border-white/10 shadow-sm overflow-hidden transition-all duration-300">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex items-center justify-between gap-4 font-headline text-xs sm:text-sm font-bold text-on-surface uppercase tracking-tight">
+                            <span>¿Cómo influye el sismo en las etapas de Steel Framing en Tucumán (Zona Sísmica 2)?</span>
+                            <span class="material-symbols-outlined text-primary dark:text-inverse-primary text-xl transition-transform duration-300">expand_more</span>
+                        </button>
+                        <div class="faq-answer hidden px-5 pb-5 text-xs sm:text-sm text-secondary dark:text-on-surface-variant leading-relaxed border-t border-outline-variant/20 dark:border-white/5 pt-4">
+                            Tucumán se encuentra categorizada como Zona Sísmica 2 (sismicidad moderada) según el reglamento INPRES-CIRSOC 103. En el Steel Framing, la respuesta sismorresistente es drásticamente superior a la mampostería tradicional porque su peso estructural propio es hasta un 70% menor, reduciendo proporcionalmente la fuerza inercial sísmica. En la <strong>Etapa 1</strong> se colocan anclajes químicos estructurales Hold-Down HTT22 con varillas roscadas empotradas en la platea H-21; en la <strong>Etapa 2</strong> se instalan cruces de San Andrés de fleje de acero tensado y montantes dobles king/jack en vanos; y en la <strong>Etapa 3</strong> el diafragma rígido formado por las placas OSB de 11.1 mm absorbe y disipa los esfuerzos de corte lateral hacia las fundaciones sin sufrir fisuras ni riesgo de colapso frágil.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 7 -->
+                    <div class="faq-item bg-surface-container-lowest dark:bg-[#121822] rounded-2xl border border-outline-variant/40 dark:border-white/10 shadow-sm overflow-hidden transition-all duration-300">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex items-center justify-between gap-4 font-headline text-xs sm:text-sm font-bold text-on-surface uppercase tracking-tight">
+                            <span>¿Qué diferencia de desperdicio de obra existe entre las etapas de Steel Framing y ladrillo tradicional?</span>
+                            <span class="material-symbols-outlined text-primary dark:text-inverse-primary text-xl transition-transform duration-300">expand_more</span>
+                        </button>
+                        <div class="faq-answer hidden px-5 pb-5 text-xs sm:text-sm text-secondary dark:text-on-surface-variant leading-relaxed border-t border-outline-variant/20 dark:border-white/5 pt-4">
+                            El Steel Framing genera un desperdicio y merma de materiales menor al 2% o 3%, frente a un 15% a 25% habitual en la construcción húmeda tradicional con ladrillo cerámico hueco. En obra seca, todos los perfiles galvanizados PGC/PGU y las cabriadas se modulan por ingeniería de detalle previa, eliminando el picado de paredes para cañerías ya que se aprovechan los punch-holes de fábrica. Esto evita la acumulación de toneladas de escombros, reduce sustancialmente el costo de volquetes en San Miguel de Tucumán, Yerba Buena y Tafí Viejo, y asegura un presupuesto cerrado y predecible desde el inicio.
                         </div>
                     </div>
 
@@ -1395,8 +1783,8 @@
                 progress: 12,
                 crew: "1 Oficial + 3 Ayudantes",
                 norm: "CIRSOC 201 / IRAM 1666",
-                focusCam: { x: -5.4, y: 2.8, z: 6.8 },
-                target: { x: -1.6, y: 0.3, z: 1.5 },
+                focusCam: { x: -11.5, y: 7.2, z: 12.5 },
+                target: { x: 0.0, y: 1.9, z: 0.0 },
                 desc: "Se realiza el replanteo milimétrico con estación total y nivel láser, excavación de suelo vegetal y aporte de tosca seleccionada compactada por capas al 98% Proctor Modificado. Se embuten las cañerías cloacales primarias de PVC 110 mm con codos a 90° hacia el núcleo húmedo, se coloca el film de polietileno de 200 micrones, doble malla electrosoldada ADN 420 Q-188 con separadores y se cuela hormigón elaborado H-21 con 8 anclajes químicos Hold-Down HTT22.",
                 quality: "En Tucumán (Zona Sísmica 2), la platea actúa como un diafragma rígido monolítico indeformable. Constructora ByB ensaya probetas de compresión a 7, 14 y 28 días y ejecuta prueba hidráulica estanca en cañerías antes del llenado.",
                 materials: "Hormigón elaborado H-21 con piedra partida, malla electrosoldada ADN 420 Q-188, polietileno 200 μm, cañerías PVC junta elástica 110/63 mm, anclajes Hold-Down HTT22 con varilla B7 y resina epoxi.",
@@ -1412,8 +1800,8 @@
                 progress: 28,
                 crew: "1 Oficial Armador + 2 Montadores",
                 norm: "CIRSOC 303 / IRAM IAS U 500-205",
-                focusCam: { x: -5.0, y: 3.5, z: 7.0 },
-                target: { x: -1.2, y: 1.8, z: 1.2 },
+                focusCam: { x: 11.2, y: 6.8, z: 12.6 },
+                target: { x: 0.0, y: 1.9, z: 0.0 },
                 desc: "Montaje e izado de paneles portantes perimetrales e interiores modulados cada 0.40 m según cálculo estructural. Soleras PGU 100 fijadas con anclajes mecánicos cada 0.60 m, montantes dobles King/Jack studs en vanos de puertas y ventanas, dinteles viga-cajón reticulados, flejes de cruces de San Andrés pretensados a 45° y tímpanos triangulares completos que cierran ambos frentes.",
                 quality: "Cada perfil cuenta con timbrado de trazabilidad IRAM Z275 (275 g/m² de zinc) que previene la corrosión por más de 100 años. La modulación estricta a 40 cm garantiza coincidencia axial de cargas con las cabriadas superiores.",
                 materials: "Perfiles de acero conformado en frío PGC y PGU 100x40x12x0.94 mm galvanizado Z275, tornillos autorroscantes hexagonales T1 punta mecha, flejes de arriostramiento y anclajes químicos.",
@@ -1429,8 +1817,8 @@
                 progress: 42,
                 crew: "1 Oficial + 2 Ayudantes",
                 norm: "IRAM IAS U 500-205 / IRAM 11.559",
-                focusCam: { x: -6.8, y: 3.2, z: 5.2 },
-                target: { x: -2.4, y: 1.8, z: 0.5 },
+                focusCam: { x: -11.8, y: 6.6, z: 12.2 },
+                target: { x: 0.0, y: 1.9, z: 0.0 },
                 desc: "Emplacado exterior con paneles de OSB estructural de 11.1 mm (norma APA) trabados y fijados con tornillos T2 cada 15 cm en bordes y 30 cm al centro, generando un diafragma rígido que absorbe esfuerzos de corte por viento y sismo. Luego se recubre con membrana DuPont Tyvek HomeWrap con solapes de 15 cm termosellados con cinta Tyvek Tape.",
                 quality: "La membrana Tyvek es 100% impermeable a la lluvia torrencial pero permeable al vapor, permitiendo que la vivienda 'respire' e impidiendo el paso de ráfagas de aire frío hacia el interior.",
                 materials: "Tableros OSB estructurales APA de 11.1 mm, membrana respirable hidrófuga no tejida de polietileno de alta densidad (HDPE), tornillos T2 punta broca y cinta autoadhesiva Tyvek Tape.",
@@ -1446,8 +1834,8 @@
                 progress: 55,
                 crew: "1 Oficial Zinguería + 2 Ayudantes",
                 norm: "CIRSOC 303 / CIRSOC 102",
-                focusCam: { x: 5.8, y: 5.8, z: 7.2 },
-                target: { x: 0.0, y: 3.2, z: 0.0 },
+                focusCam: { x: 11.5, y: 7.6, z: 12.4 },
+                target: { x: 0.0, y: 1.9, z: 0.0 },
                 desc: "Montaje e izado de cabriadas reticuladas Howe de acero galvanizado moduladas en coincidencia axial con los montantes de muros. Fijación de correas de perfil Omega galvanizado apoyadas directamente sobre los cordones superiores, colocación de manta aislante térmica aluminizada de doble foil y montaje de chapas acanaladas/trapezoidales Cincalum C-25 prepintadas gris grafito con cumbrera ventilada y cenefas.",
                 quality: "Estructura calculada según CIRSOC 102 para resistir ráfagas de viento de hasta 140 km/h habituales en tormentas del norte argentino. Fijaciones con tornillos autoperforantes y arandelas de EPDM que garantizan estanqueidad total.",
                 materials: "Cabriadas en perfiles PGC/PGU Z275, correas Omega galvanizadas de 0.89 mm, aislación térmica con foil de aluminio, chapa prepintada Gris Grafito Cincalum C-25 y cumbrera plegada.",
@@ -1463,8 +1851,8 @@
                 progress: 68,
                 crew: "1 Instalador Matriculado + 1 Electricista",
                 norm: "AEA 90364 / NAG-200 / IRAM",
-                focusCam: { x: -2.2, y: 2.2, z: 4.8 },
-                target: { x: -1.2, y: 1.4, z: 1.5 },
+                focusCam: { x: -11.2, y: 6.8, z: 12.5 },
+                target: { x: 0.0, y: 1.9, z: 0.0 },
                 desc: "Tendido de cañerías por los orificios troquelados de fábrica (punch-holes) sin debilitar la estructura: agua fría y caliente en PP-R termofusión verde con aislación de espuma, cañería de gas epoxi con accesorios Sigas, y circuitos eléctricos independientes para iluminación, tomas y aire acondicionado con caños corrugados ignífugos y cajas metálicas normalizadas.",
                 quality: "Cada pase por perfil metálico cuenta con pasacables plásticos que evitan el contacto galvánico y roces por vibración. Se realiza prueba de presión hidráulica a 10 bar por 24 horas continuas con manómetro.",
                 materials: "Cañerías PP-R termofusión bicapa con protección UV, accesorios de bronce con insertos, caños de gas Sigas Thermofusión con revestimiento de polietileno amarillo, cajas octogonales/rectangulares y tablero seccional con disyuntor diferencial.",
@@ -1480,8 +1868,8 @@
                 progress: 78,
                 crew: "1 Oficial + 1 Ayudante",
                 norm: "IRAM 11.605 / IRAM 11.559",
-                focusCam: { x: -3.5, y: 2.5, z: 5.5 },
-                target: { x: -1.8, y: 1.6, z: 1.8 },
+                focusCam: { x: 11.4, y: 6.6, z: 12.6 },
+                target: { x: 0.0, y: 1.9, z: 0.0 },
                 desc: "Colocación continua y a presión de colchonetas de lana de vidrio mineral de 100 mm de espesor en el interior de todos los tabiques exteriores, medianeros y cielorrasos suspendidos. Luego se sella la cara interior caliente con un film de polietileno de 200 micrones como barrera de vapor continua fijada con cintas butílicas herméticas.",
                 quality: "Eliminación absoluta de puentes térmicos y reducción del coeficiente de transmitancia térmica K a valores inferiores a 0.35 W/m²K, superando en un 300% el aislamiento de una pared de ladrillos tradicional.",
                 materials: "Lana de vidrio mineral Isover de 100 mm (densidad 14 kg/m³), film de polietileno de 200 micrones virgen clase A, cintas adhesivas herméticas para sellado de encuentros y solapes de vapor.",
@@ -1497,8 +1885,8 @@
                 progress: 88,
                 crew: "2 Oficiales Durlockeros + 1 Yesero",
                 norm: "IRAM 11.643 / IRAM 11.556",
-                focusCam: { x: 4.2, y: 2.4, z: 5.2 },
-                target: { x: 1.0, y: 1.2, z: 0.8 },
+                focusCam: { x: -11.5, y: 6.7, z: 12.5 },
+                target: { x: 0.0, y: 1.9, z: 0.0 },
                 desc: "Fijación de placas de yeso Durlock de 12.5 mm: placas estándar ST en living y dormitorios, y placas verdes RH resistentes a humedad en baño y cocina. Tomado de juntas con cinta microperforada y masilla de secado controlado en 4 manos (nivel de terminación Q4). Colocación de cielorrasos suspendidos y piso interior de porcelanato rectificado de gran formato con zócalos.",
                 quality: "Paredes perfectamente lisas al tacto, a plomo milimétrico y libres de grietas. Las placas de yeso aportan resistencia al fuego Clase RE2 y una cámara de aire acústica superior a 48 dB.",
                 materials: "Placas Durlock Standard 12.5 mm, Durlock RH Verde 12.5 mm, tornillos T2 fosfatizados autorroscantes, cinta microperforada de papel, masilla para juntas Durlock Listo para Usar y porcelanato esmaltado 60x120.",
@@ -1514,8 +1902,8 @@
                 progress: 100,
                 crew: "2 Oficiales Fachadistas + 1 Carpintero",
                 norm: "IRAM 1738 / CIRSOC 303",
-                focusCam: { x: 7.5, y: 4.2, z: 8.5 },
-                target: { x: 0.5, y: 2.0, z: 0.5 },
+                focusCam: { x: 11.5, y: 6.8, z: 12.8 },
+                target: { x: 0.0, y: 1.9, z: 0.0 },
                 desc: "Instalación del sistema de aislación térmica exterior EIFS (External Insulation and Finish System): placas de EPS Isopor de 50 mm fijadas con rosetas mecánicas, capa de Base Coat cementicio elastomérico con malla de fibra de vidrio azul eléctrico de 160 g/m² embutida y revestimiento plástico texturado acrílico tipo Travertino/Revear color arena contemporáneo. Montaje de carpinterías de aluminio negro anodizado A30 New con vidrios DVH 4/12/4, puerta principal maciza y vereda perimetral.",
                 quality: "La fachada EIFS genera una envolvente térmica continua sin puentes térmicos. Las carpinterías con DVH reducen el ruido exterior un 80% y garantizan la máxima eficiencia energética Clase A.",
                 materials: "Planchas de EPS Tipo F autoextinguible 50 mm 20 kg/m³, Base Coat cementicio elastomérico, malla 160 g/m², revestimiento plástico texturado tipo Travertino/Revear y carpinterías de aluminio negro con DVH 4/12/4.",
@@ -2022,7 +2410,7 @@
         scene.background = new THREE.Color(0x060a12);
 
         const camera = new THREE.PerspectiveCamera(38, container.clientWidth / container.clientHeight, 0.1, 120);
-        camera.position.set(7.5, 4.5, 8.5);
+        camera.position.set(11.5, 6.8, 12.8);
 
         const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false, powerPreference: 'high-performance' });
         renderer.setSize(container.clientWidth, container.clientHeight);
@@ -2031,6 +2419,7 @@
         renderer.toneMappingExposure = 1.18;
         renderer.shadowMap.enabled = true;
         renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+        renderer.localClippingEnabled = true;
 
         const maxAniso = renderer.capabilities ? renderer.capabilities.getMaxAnisotropy() : 16;
         const pmremGenerator = new THREE.PMREMGenerator(renderer);
@@ -2047,8 +2436,8 @@
         controls.enableZoom = false; // Gestionado de forma amortiguada por wheel y pinch de 2 dedos
         controls.touches = { ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.NONE };
         controls.minDistance = 2.5;
-        controls.maxDistance = 25.0;
-        controls.target.set(0, 1.8, 0);
+        controls.maxDistance = 35.0;
+        controls.target.set(0, 1.9, 0);
 
         const hemiLight = new THREE.HemisphereLight(0xdbeafe, 0x1e293b, 0.55);
         scene.add(hemiLight);
@@ -2056,13 +2445,16 @@
         const ambientLight = new THREE.AmbientLight(0xffffff, 0.35);
         scene.add(ambientLight);
 
+        const isMobileDevice = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || (window.innerWidth < 768);
+        const shadowMapRes = isMobileDevice ? 2048 : 4096;
+
         const mainSunLight = new THREE.DirectionalLight(0xfffbeb, 3.2);
         mainSunLight.position.set(12.0, 18.0, 14.0);
         mainSunLight.castShadow = true;
-        mainSunLight.shadow.mapSize.width = 2048;
-        mainSunLight.shadow.mapSize.height = 2048;
+        mainSunLight.shadow.mapSize.width = shadowMapRes;
+        mainSunLight.shadow.mapSize.height = shadowMapRes;
         mainSunLight.shadow.bias = -0.0001;
-        mainSunLight.shadow.normalBias = 0.03;
+        mainSunLight.shadow.normalBias = 0.025;
         mainSunLight.shadow.camera.near = 1;
         mainSunLight.shadow.camera.far = 42;
         mainSunLight.shadow.camera.left = -10;
@@ -2110,19 +2502,66 @@
         texTile.repeat.set(4, 3);
         const texWoodDoor = createProceduralTexture('wood_door', 2048, maxAniso);
 
+        // Materiales Físicos PBR Avanzados para Calidad Fotorrealista ArchViz
         const matTosca = new THREE.MeshStandardMaterial({ map: texTosca, roughness: 0.95, metalness: 0.05 });
         const matPE = new THREE.MeshStandardMaterial({ color: 0x09090b, roughness: 0.35, metalness: 0.1 });
         const matConcrete = new THREE.MeshStandardMaterial({ map: texConcrete, roughness: 0.78, metalness: 0.15 });
-        const matSteel = new THREE.MeshStandardMaterial({ map: texSteel, roughness: 0.22, metalness: 0.90 });
+
+        // Acero Galvanizado Z275 con micro-capa de clearcoat reflectante
+        const matSteel = new THREE.MeshPhysicalMaterial({
+            map: texSteel,
+            roughness: 0.18,
+            metalness: 0.94,
+            clearcoat: 0.38,
+            clearcoatRoughness: 0.22,
+            reflectivity: 0.88
+        });
+
         const matOSB = new THREE.MeshStandardMaterial({ map: texOSB, roughness: 0.78, metalness: 0.04 });
-        const matTyvek = new THREE.MeshStandardMaterial({ map: texTyvek, roughness: 0.60, metalness: 0.08 });
-        const matRoof = new THREE.MeshStandardMaterial({ map: texRoof, roughness: 0.46, metalness: 0.62 });
+
+        // Membrana Tyvek con barniz polimérico impermeable
+        const matTyvek = new THREE.MeshPhysicalMaterial({
+            map: texTyvek,
+            roughness: 0.55,
+            metalness: 0.06,
+            clearcoat: 0.72,
+            clearcoatRoughness: 0.30
+        });
+
+        // Chapa Cincalum prepintada con acabado horneado brillante
+        const matRoof = new THREE.MeshPhysicalMaterial({
+            map: texRoof,
+            roughness: 0.38,
+            metalness: 0.78,
+            clearcoat: 0.55,
+            clearcoatRoughness: 0.22
+        });
+
         const matAlumFoil = new THREE.MeshStandardMaterial({ color: 0xe2e8f0, roughness: 0.15, metalness: 0.95 });
-        const matWool = new THREE.MeshStandardMaterial({ map: texWool, roughness: 0.95, metalness: 0.02 });
+
+        // Lana de vidrio mineral con efecto de retroesparcimiento aterciopelado (Sheen)
+        const matWool = new THREE.MeshPhysicalMaterial({
+            map: texWool,
+            roughness: 0.92,
+            metalness: 0.02,
+            sheen: 0.85,
+            sheenRoughness: 0.65,
+            sheenColor: new THREE.Color(0xfef08a)
+        });
+
         const matGypsum = new THREE.MeshStandardMaterial({ map: texGypsum, roughness: 0.80, metalness: 0.05 });
         const matGypsumRH = new THREE.MeshStandardMaterial({ map: texGypsumRH, roughness: 0.80, metalness: 0.05 });
         const matEIFS = new THREE.MeshStandardMaterial({ map: texEIFS, roughness: 0.92, metalness: 0.02, color: 0xd6c7b0 });
-        const matTile = new THREE.MeshStandardMaterial({ map: texTile, roughness: 0.22, metalness: 0.25 });
+
+        // Porcelanato rectificado con capa esmaltada brillante
+        const matTile = new THREE.MeshPhysicalMaterial({
+            map: texTile,
+            roughness: 0.18,
+            metalness: 0.22,
+            clearcoat: 0.35,
+            clearcoatRoughness: 0.15
+        });
+
         const matDoorWood = new THREE.MeshStandardMaterial({ map: texWoodDoor, roughness: 0.35, metalness: 0.1 });
 
         const matPVC = new THREE.MeshStandardMaterial({ color: 0xc2410c, roughness: 0.35, metalness: 0.15 });
@@ -2132,16 +2571,50 @@
         const matElecBox = new THREE.MeshStandardMaterial({ color: 0x94a3b8, roughness: 0.28, metalness: 0.85 });
 
         const matAlumBlack = new THREE.MeshStandardMaterial({ color: 0x090d16, roughness: 0.25, metalness: 0.88 });
+
+        // Cristales DVH 4/12/4 con refracción física exacta (IOR 1.52) y capa reflectante
         const matDVHGlass = new THREE.MeshPhysicalMaterial({
-            color: 0x60a5fa,
+            color: 0x93c5fd,
             roughness: 0.04,
-            metalness: 0.15,
-            transmission: 0.65,
+            metalness: 0.12,
+            transmission: 0.72,
             transparent: true,
-            opacity: 0.85,
+            opacity: 0.88,
             ior: 1.52,
-            reflectivity: 0.9
+            reflectivity: 0.95,
+            clearcoat: 1.0,
+            clearcoatRoughness: 0.05
         });
+
+        // Contornos Técnicos CAD / BIM (THREE.EdgesGeometry)
+        const cadEdgeSteel = new THREE.LineBasicMaterial({ color: 0x38bdf8, transparent: true, opacity: 0.32, depthTest: true });
+        const cadEdgeDark = new THREE.LineBasicMaterial({ color: 0x0f172a, transparent: true, opacity: 0.38, depthTest: true });
+        const cadEdgeGold = new THREE.LineBasicMaterial({ color: 0xfbbf24, transparent: true, opacity: 0.40, depthTest: true });
+        const cadEdgeBlue = new THREE.LineBasicMaterial({ color: 0x2563eb, transparent: true, opacity: 0.45, depthTest: true });
+        const cadEdgeWhite = new THREE.LineBasicMaterial({ color: 0xe2e8f0, transparent: true, opacity: 0.30, depthTest: true });
+
+        function addCadEdges(mesh, mat = cadEdgeSteel, angle = 24) {
+            if (!mesh || !mesh.geometry) return null;
+            try {
+                const edgesGeom = new THREE.EdgesGeometry(mesh.geometry, angle);
+                const line = new THREE.LineSegments(edgesGeom, mat);
+                line.raycast = () => {}; // Evita interferir con el Raycaster de piezas
+                mesh.add(line);
+                return line;
+            } catch (e) {
+                return null;
+            }
+        }
+
+        // Registro de Piezas para Raycaster Interactivo y Contornos CAD
+        function registerBimPart(mesh, name, spec, stageId, edgeMat = null, edgeAngle = 24) {
+            if (!mesh) return mesh;
+            mesh.userData.partInfo = { name, spec, stageId };
+            if (edgeMat) {
+                addCadEdges(mesh, edgeMat, edgeAngle);
+            }
+            return mesh;
+        }
 
         const houseRoot = new THREE.Group();
         scene.add(houseRoot);
@@ -2255,11 +2728,13 @@
         const toscaMesh = new THREE.Mesh(toscaBaseGeo, matTosca);
         toscaMesh.position.y = -0.14;
         toscaMesh.receiveShadow = true;
+        registerBimPart(toscaMesh, "Tosca Seleccionada Compactada", "Base estabilizada compactada al 98% Proctor Modificado", 0);
         g1.add(toscaMesh);
 
         const peGeo = new THREE.BoxGeometry(houseWidth + 0.3, 0.012, houseLength + 0.3);
         const peMesh = new THREE.Mesh(peGeo, matPE);
         peMesh.position.y = 0.006;
+        registerBimPart(peMesh, "Film de Polietileno 200 micrones", "Barrera impermeable contra humedad ascendente de cimientos", 0);
         g1.add(peMesh);
 
         // Losa platea H-21 con corte escalonado en esquina frontal izquierda (x: -4.2 a -1.8, z: 1.0 a 3.1)
@@ -2267,18 +2742,21 @@
         slabMain.position.set(houseWidth * 0.15, slabThickness / 2, 0);
         slabMain.castShadow = true;
         slabMain.receiveShadow = true;
+        registerBimPart(slabMain, "Platea Hormigón Elaborado H-21", "Espesor 22cm • Hormigón f'c=21 MPa con aditivo antisol CIRSOC 201", 0, cadEdgeDark);
         g1.add(slabMain);
 
         const slabLeftBack = new THREE.Mesh(new THREE.BoxGeometry(houseWidth * 0.30, slabThickness, houseLength * 0.65), matConcrete);
         slabLeftBack.position.set(-houseWidth * 0.35, slabThickness / 2, -houseLength * 0.175);
         slabLeftBack.castShadow = true;
         slabLeftBack.receiveShadow = true;
+        registerBimPart(slabLeftBack, "Losa H°A° Sector Posterior", "Diafragma rígido continuo sismorresistente CIRSOC 201", 0, cadEdgeDark);
         g1.add(slabLeftBack);
 
         const slabStepCut = new THREE.Mesh(new THREE.BoxGeometry(houseWidth * 0.30, slabThickness * 0.45, houseLength * 0.35), matConcrete);
         slabStepCut.position.set(-houseWidth * 0.35, (slabThickness * 0.45) / 2, houseLength * 0.325);
         slabStepCut.castShadow = true;
         slabStepCut.receiveShadow = true;
+        registerBimPart(slabStepCut, "Corte Escalonado Platea H-21", "Detalle de espesor estructural y armadura electrosoldada", 0, cadEdgeDark);
         g1.add(slabStepCut);
 
         // Doble malla electrosoldada ADN 420 Q-188 visible en el corte escalonado
@@ -2287,12 +2765,14 @@
             const bar = new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.006, 2.0, 8), rebarMat);
             bar.rotation.x = Math.PI / 2;
             bar.position.set(rx, slabThickness * 0.55, 2.0);
+            registerBimPart(bar, "Malla Electrosoldada ADN 420 Q-188", "Doble capa superior/inferior para control de fisuración", 0);
             g1.add(bar);
         }
         for (let rz = 1.1; rz <= 2.9; rz += 0.14) {
             const bar = new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.006, 2.2, 8), rebarMat);
             bar.rotation.z = Math.PI / 2;
             bar.position.set(-houseWidth * 0.35, slabThickness * 0.55, rz);
+            registerBimPart(bar, "Malla Electrosoldada ADN 420 Q-188", "Doble capa con separadores plásticos de armadura", 0);
             g1.add(bar);
         }
 
@@ -2301,18 +2781,22 @@
         const drainMain = new THREE.Mesh(drainMainGeo, matPVC);
         drainMain.rotation.z = Math.PI / 2;
         drainMain.position.set(0.6, slabThickness * 0.5, -1.2);
+        registerBimPart(drainMain, "Cañería Cloacal Primaria PVC 110mm", "Pendiente 1:50 reglamentaria embutida en platea", 0, cadEdgeDark);
         g1.add(drainMain);
 
         const drainVertical1 = new THREE.Mesh(new THREE.CylinderGeometry(0.055, 0.055, 0.65, 16), matPVC);
         drainVertical1.position.set(2.4, slabThickness + 0.25, -1.2);
+        registerBimPart(drainVertical1, "Acometida Cloacal Baño Principal 110mm", "Codo a 90° con junta elástica estanca probada", 0, cadEdgeDark);
         g1.add(drainVertical1);
 
         const drainVertical2 = new THREE.Mesh(new THREE.CylinderGeometry(0.035, 0.035, 0.55, 16), matPVC);
         drainVertical2.position.set(2.9, slabThickness + 0.20, -0.6);
+        registerBimPart(drainVertical2, "Desagüe Secundario Lavatorio 63mm", "Tendido sanitario con trampa de olor embutida", 0, cadEdgeDark);
         g1.add(drainVertical2);
 
         const drainVertical3 = new THREE.Mesh(new THREE.CylinderGeometry(0.035, 0.035, 0.55, 16), matPVC);
         drainVertical3.position.set(1.9, slabThickness + 0.20, -1.8);
+        registerBimPart(drainVertical3, "Desagüe de Cocina y Lavadero 63mm", "Conexión a cámara de retención desgrasadora", 0, cadEdgeDark);
         g1.add(drainVertical3);
 
         const anchorCorners = [
@@ -2328,6 +2812,7 @@
         anchorCorners.forEach(([cx, cz]) => {
             const anchorBody = new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.26, 0.08), matSteel);
             anchorBody.position.set(cx, slabTop + 0.13, cz);
+            registerBimPart(anchorBody, "Anclaje Químico Hold-Down HTT22", "Varilla B7 y resina epoxi para absorción de tracción sísmica", 0, cadEdgeSteel);
             g1.add(anchorBody);
 
             const rod = new THREE.Mesh(new THREE.CylinderGeometry(0.009, 0.009, 0.35, 8), matSteel);
@@ -2344,12 +2829,13 @@
         const g2 = new THREE.Group();
         g2.userData = { stageId: 1, explodeY: 0, explodeRad: 0.35 };
 
-        function createStud(x, y, z, h = wallHeight, rotY = 0) {
+        function createStud(x, y, z, h = wallHeight, rotY = 0, name = "Montante Estructural PGC 100", spec = "Acero galvanizado Z275 e=0.94mm • Modulación 40cm CIRSOC 303") {
             const sGeo = new THREE.BoxGeometry(0.05, h, 0.1);
             const stud = new THREE.Mesh(sGeo, matSteel);
             stud.position.set(x, y + h / 2, z);
             stud.rotation.y = rotY;
             stud.castShadow = true;
+            registerBimPart(stud, name, spec, 1, cadEdgeSteel, 20);
             g2.add(stud);
             return stud;
         }
@@ -2360,20 +2846,24 @@
         [-houseLength / 2 + 0.05, houseLength / 2 - 0.05].forEach(zPos => {
             const bot = new THREE.Mesh(new THREE.BoxGeometry(pguLenX, 0.04, 0.1), matSteel);
             bot.position.set(0, slabTop + 0.02, zPos);
+            registerBimPart(bot, "Solera Inferior Guía PGU 100", "Fijada a platea con anclajes cada 60cm CIRSOC 303", 1, cadEdgeSteel, 20);
             g2.add(bot);
 
             const top = new THREE.Mesh(new THREE.BoxGeometry(pguLenX, 0.04, 0.1), matSteel);
             top.position.set(0, slabTop + wallHeight - 0.02, zPos);
+            registerBimPart(top, "Solera Superior de Cierre PGU 100", "Vincula cabezas de montantes para apoyo de cabriadas", 1, cadEdgeSteel, 20);
             g2.add(top);
         });
 
         [-houseWidth / 2 + 0.05, houseWidth / 2 - 0.05].forEach(xPos => {
             const bot = new THREE.Mesh(new THREE.BoxGeometry(0.1, 0.04, pguLenZ), matSteel);
             bot.position.set(xPos, slabTop + 0.02, 0);
+            registerBimPart(bot, "Solera Lateral Inferior PGU 100", "Fijada con anclajes mecánicos expansivos", 1, cadEdgeSteel, 20);
             g2.add(bot);
 
             const top = new THREE.Mesh(new THREE.BoxGeometry(0.1, 0.04, pguLenZ), matSteel);
             top.position.set(xPos, slabTop + wallHeight - 0.02, 0);
+            registerBimPart(top, "Solera Lateral Superior PGU 100", "Cierre axial de panelización portante sismorresistente", 1, cadEdgeSteel, 20);
             g2.add(top);
         });
 
@@ -2382,8 +2872,8 @@
         // Muro Trasero (Z = -houseLength / 2 + 0.05)
         for (let x = -houseWidth / 2 + 0.2; x <= houseWidth / 2 - 0.2; x += studSpacing) {
             if (x > 1.5 && x < 2.9) {
-                createStud(x, slabTop, -houseLength / 2 + 0.05, 0.95);
-                createStud(x, slabTop + 2.15, -houseLength / 2 + 0.05, 0.65);
+                createStud(x, slabTop, -houseLength / 2 + 0.05, 0.95, 0, "Montante Cripple Stud Bajo Vano", "Perfil PGC 100 bajo antepecho de ventana");
+                createStud(x, slabTop + 2.15, -houseLength / 2 + 0.05, 0.65, 0, "Montante Cripple Stud Sobre Dintel", "Perfil PGC 100 sobre dintel viga-cajón");
             } else {
                 createStud(x, slabTop, -houseLength / 2 + 0.05, wallHeight);
             }
@@ -2392,8 +2882,8 @@
         // Muro Lateral Izquierdo (X = -houseWidth / 2 + 0.05)
         for (let z = -houseLength / 2 + 0.4; z <= houseLength / 2 - 0.4; z += studSpacing) {
             if (z > -0.9 && z < 0.9) {
-                createStud(-houseWidth / 2 + 0.05, slabTop, z, 0.95, Math.PI / 2);
-                createStud(-houseWidth / 2 + 0.05, slabTop + 2.15, z, 0.65, Math.PI / 2);
+                createStud(-houseWidth / 2 + 0.05, slabTop, z, 0.95, Math.PI / 2, "Montante Cripple Stud Lateral", "PGC 100 bajo antepecho");
+                createStud(-houseWidth / 2 + 0.05, slabTop + 2.15, z, 0.65, Math.PI / 2, "Montante Cripple Stud Sobre Dintel", "PGC 100 sobre dintel");
             } else {
                 createStud(-houseWidth / 2 + 0.05, slabTop, z, wallHeight, Math.PI / 2);
             }
@@ -2407,13 +2897,13 @@
         // Muro Frontal (Z = houseLength / 2 - 0.05)
         for (let x = -houseWidth / 2 + 0.2; x <= houseWidth / 2 - 0.2; x += studSpacing) {
             if (x > -3.6 && x < -1.8) {
-                createStud(x, slabTop, houseLength / 2 - 0.05, 0.95);
-                createStud(x, slabTop + 2.2, houseLength / 2 - 0.05, 0.60);
+                createStud(x, slabTop, houseLength / 2 - 0.05, 0.95, 0, "Montante Cripple Stud Ventana", "PGC 100 bajo vano frontal");
+                createStud(x, slabTop + 2.2, houseLength / 2 - 0.05, 0.60, 0, "Montante Cripple Stud Superior", "PGC 100 sobre dintel frontal");
             } else if (x > -0.9 && x < 0.6) {
-                createStud(x, slabTop + 2.25, houseLength / 2 - 0.05, 0.55);
+                createStud(x, slabTop + 2.25, houseLength / 2 - 0.05, 0.55, 0, "Montante Sobre Puerta Principal", "PGC 100 sobre dintel de acceso");
             } else if (x > 1.4 && x < 3.8) {
-                createStud(x, slabTop, houseLength / 2 - 0.05, 0.45);
-                createStud(x, slabTop + 2.35, houseLength / 2 - 0.05, 0.45);
+                createStud(x, slabTop, houseLength / 2 - 0.05, 0.45, 0, "Montante Antepecho Ventanal DVH", "PGC 100 bajo antepecho panorámico");
+                createStud(x, slabTop + 2.35, houseLength / 2 - 0.05, 0.45, 0, "Montante Superior Ventanal DVH", "PGC 100 sobre ventanal panorámico");
             } else {
                 createStud(x, slabTop, houseLength / 2 - 0.05, wallHeight);
             }
@@ -2421,14 +2911,17 @@
 
         const lintelWinL = new THREE.Mesh(new THREE.BoxGeometry(1.7, 0.20, 0.1), matSteel);
         lintelWinL.position.set(-2.7, slabTop + 2.25, houseLength / 2 - 0.05);
+        registerBimPart(lintelWinL, "Dintel Viga-Cajón Ventana Izquierda", "Doble perfil PGC 100 enfrentado con presillas", 1, cadEdgeSteel, 20);
         g2.add(lintelWinL);
 
         const lintelDoor = new THREE.Mesh(new THREE.BoxGeometry(1.4, 0.20, 0.1), matSteel);
         lintelDoor.position.set(-0.15, slabTop + 2.30, houseLength / 2 - 0.05);
+        registerBimPart(lintelDoor, "Dintel Viga-Cajón Puerta Principal", "Calculado para salvar luz de vano de 1.15m sin flecha", 1, cadEdgeSteel, 20);
         g2.add(lintelDoor);
 
         const lintelWinR = new THREE.Mesh(new THREE.BoxGeometry(2.3, 0.20, 0.1), matSteel);
         lintelWinR.position.set(2.6, slabTop + 2.40, houseLength / 2 - 0.05);
+        registerBimPart(lintelWinR, "Dintel Portante Ventanal Panorámico", "Viga armada en perfiles PGC para vano de 2.10m", 1, cadEdgeSteel, 20);
         g2.add(lintelWinR);
 
         const strapMat = new THREE.MeshStandardMaterial({ color: 0x94a3b8, metalness: 0.9, roughness: 0.2 });
@@ -2436,15 +2929,17 @@
         const s1 = new THREE.Mesh(strapGeo, strapMat);
         s1.position.set(-houseWidth / 2 + 0.08, slabTop + wallHeight / 2, -1.8);
         s1.rotation.set(0, Math.PI / 2, Math.PI / 4);
+        registerBimPart(s1, "Cruz de San Andrés Antivuelco", "Fleje de acero galvanizado tensado a 45° contra corte", 1, cadEdgeSteel, 20);
         g2.add(s1);
 
         const s2 = new THREE.Mesh(strapGeo, strapMat);
         s2.position.set(-houseWidth / 2 + 0.08, slabTop + wallHeight / 2, -1.8);
         s2.rotation.set(0, Math.PI / 2, -Math.PI / 4);
+        registerBimPart(s2, "Cruz de San Andrés Antivuelco", "Rigidización sismorresistente contra deformación romboidal", 1, cadEdgeSteel, 20);
         g2.add(s2);
 
         for (let z = -houseLength / 2 + 0.4; z <= 0.8; z += studSpacing) {
-            createStud(0.8, slabTop, z, wallHeight, Math.PI / 2);
+            createStud(0.8, slabTop, z, wallHeight, Math.PI / 2, "Montante Tabique Interior PGC 100", "Estructura divisoria sismorresistente");
         }
 
         // Tímpano posterior con montantes
@@ -2453,6 +2948,7 @@
             if (gableHeight > 0.08) {
                 const gStud = new THREE.Mesh(new THREE.BoxGeometry(0.05, gableHeight, 0.09), matSteel);
                 gStud.position.set(x, roofBaseY + gableHeight / 2, -houseLength / 2 + 0.05);
+                registerBimPart(gStud, "Montante de Tímpano PGC 100", "Encuentro en cumbrera modulado cada 40cm", 1, cadEdgeSteel, 20);
                 g2.add(gStud);
             }
         }
@@ -2471,40 +2967,49 @@
         const osbBack = new THREE.Mesh(new THREE.BoxGeometry(houseWidth, wallHeight, osbThick), matOSB);
         osbBack.position.set(0, slabTop + wallHeight / 2, -houseLength / 2 - 0.01);
         osbBack.castShadow = true;
+        registerBimPart(osbBack, "Tablero OSB Estructural 11.1mm Posterior", "Diafragma rígido contra viento y sismo APA trabado", 2, cadEdgeDark, 25);
         g3.add(osbBack);
 
         const tyvekBack = new THREE.Mesh(new THREE.BoxGeometry(houseWidth + 0.02, wallHeight, 0.005), matTyvek);
         tyvekBack.position.set(0, slabTop + wallHeight / 2, -houseLength / 2 - 0.025);
+        registerBimPart(tyvekBack, "Membrana DuPont Tyvek HomeWrap Posterior", "Barrera de agua y viento 100% transpirable con solape 15cm", 2, cadEdgeWhite, 25);
         g3.add(tyvekBack);
 
         const osbRight = new THREE.Mesh(new THREE.BoxGeometry(osbThick, wallHeight, houseLength), matOSB);
         osbRight.position.set(houseWidth / 2 + 0.01, slabTop + wallHeight / 2, 0);
         osbRight.castShadow = true;
+        registerBimPart(osbRight, "Tablero OSB Estructural Lateral Derecho", "Fijación con tornillos T2 punta broca cada 15cm", 2, cadEdgeDark, 25);
         g3.add(osbRight);
 
         const tyvekRight = new THREE.Mesh(new THREE.BoxGeometry(0.005, wallHeight, houseLength + 0.02), matTyvek);
         tyvekRight.position.set(houseWidth / 2 + 0.025, slabTop + wallHeight / 2, 0);
+        registerBimPart(tyvekRight, "Membrana DuPont Tyvek Lateral Derecha", "Envolvente hidrófuga continua sellada con Tyvek Tape", 2, cadEdgeWhite, 25);
         g3.add(tyvekRight);
 
         const osbLeftA = new THREE.Mesh(new THREE.BoxGeometry(osbThick, wallHeight, 2.2), matOSB);
         osbLeftA.position.set(-houseWidth / 2 - 0.01, slabTop + wallHeight / 2, -2.0);
+        registerBimPart(osbLeftA, "Tablero OSB Estructural Lateral Izquierdo", "Rigidización perimetral de paño ciego", 2, cadEdgeDark, 25);
         g3.add(osbLeftA);
 
         const osbLeftB = new THREE.Mesh(new THREE.BoxGeometry(osbThick, wallHeight, 2.2), matOSB);
         osbLeftB.position.set(-houseWidth / 2 - 0.01, slabTop + wallHeight / 2, 2.0);
+        registerBimPart(osbLeftB, "Tablero OSB Estructural Lateral Izquierdo", "Diafragma de cierre rígido con fijaciones T2", 2, cadEdgeDark, 25);
         g3.add(osbLeftB);
 
         const tyvekLeft = new THREE.Mesh(new THREE.BoxGeometry(0.005, wallHeight, 2.22), matTyvek);
         tyvekLeft.position.set(-houseWidth / 2 - 0.025, slabTop + wallHeight / 2, -2.0);
+        registerBimPart(tyvekLeft, "Membrana Tyvek Lateral Izquierda", "Barrera de vapor exterior continua", 2, cadEdgeWhite, 25);
         g3.add(tyvekLeft);
 
         // Fachada Frontal en Corte Escalonado (Cutaway Didáctico):
         const osbFrontRight = new THREE.Mesh(new THREE.BoxGeometry(houseWidth * 0.44, wallHeight, osbThick), matOSB);
         osbFrontRight.position.set(houseWidth * 0.26, slabTop + wallHeight / 2, houseLength / 2 + 0.01);
+        registerBimPart(osbFrontRight, "Tablero OSB Estructural Frontal", "Rigidización frontal con corte escalonado para inspección", 2, cadEdgeDark, 25);
         g3.add(osbFrontRight);
 
         const tyvekFrontRight = new THREE.Mesh(new THREE.BoxGeometry(houseWidth * 0.44 + 0.02, wallHeight, 0.005), matTyvek);
         tyvekFrontRight.position.set(houseWidth * 0.26, slabTop + wallHeight / 2, houseLength / 2 + 0.025);
+        registerBimPart(tyvekFrontRight, "Membrana DuPont Tyvek Frontal", "Capa protectora hidrófuga continua", 2, cadEdgeWhite, 25);
         g3.add(tyvekFrontRight);
 
         stageGroups.push(g3);
@@ -2522,23 +3027,27 @@
             // Cordón inferior horizontal de cabriada PGC 100
             const bottomChord = new THREE.Mesh(new THREE.BoxGeometry(houseWidth, 0.08, 0.06), matSteel);
             bottomChord.position.set(0, roofBaseY + 0.04, zTruss);
+            registerBimPart(bottomChord, "Cordón Inferior de Cabriada PGC 100", "Tirante horizontal de tracción axial modulado a 40cm", 3, cadEdgeSteel, 20);
             g4.add(bottomChord);
 
             // Cordón superior izquierdo (sube desde el alero izquierdo hasta la cumbrera)
             const leftChord = new THREE.Mesh(new THREE.BoxGeometry(rafterLength, 0.08, 0.06), matSteel);
             leftChord.position.set(-totalHalfSpan / 2, (roofBaseY + roofPeakY) / 2, zTruss);
             leftChord.rotation.z = slopeAngle;
+            registerBimPart(leftChord, "Cordón Superior de Cabriada Howe", "Pendiente 18° para escurrimiento pluvial óptimo CIRSOC 102", 3, cadEdgeSteel, 20);
             g4.add(leftChord);
 
             // Cordón superior derecho (baja desde la cumbrera hasta el alero derecho)
             const rightChord = new THREE.Mesh(new THREE.BoxGeometry(rafterLength, 0.08, 0.06), matSteel);
             rightChord.position.set(totalHalfSpan / 2, (roofBaseY + roofPeakY) / 2, zTruss);
             rightChord.rotation.z = -slopeAngle;
+            registerBimPart(rightChord, "Cordón Superior Derecho Cabriada", "Reticulado estructural de acero galvanizado Z275", 3, cadEdgeSteel, 20);
             g4.add(rightChord);
 
             // Montante central King Post vertical
             const kingPost = new THREE.Mesh(new THREE.BoxGeometry(0.06, ridgeH, 0.06), matSteel);
             kingPost.position.set(0, roofBaseY + ridgeH / 2, zTruss);
+            registerBimPart(kingPost, "Montante Central King Post Cabriada", "Eje vertical portante en cumbrera", 3, cadEdgeSteel, 20);
             g4.add(kingPost);
 
             // Montantes y diagonales intermedias
@@ -2546,6 +3055,7 @@
                 const hPost = (roofPeakY - slope * Math.abs(xPost)) - roofBaseY;
                 const postMesh = new THREE.Mesh(new THREE.BoxGeometry(0.06, hPost, 0.05), matSteel);
                 postMesh.position.set(xPost, roofBaseY + hPost / 2, zTruss);
+                registerBimPart(postMesh, "Montante Intermedio de Cabriada", "Reticulado Howe de absorción de cargas de viento y granizo", 3, cadEdgeSteel, 20);
                 g4.add(postMesh);
             });
         });
@@ -2556,27 +3066,32 @@
             const py = roofPeakY - slope * Math.abs(px) + 0.04;
             const purlin = new THREE.Mesh(new THREE.BoxGeometry(0.045, 0.045, totalRoofLengthZ), matSteel);
             purlin.position.set(px, py, 0);
+            registerBimPart(purlin, "Correa Omega Galvanizada 0.89mm", "Perfil Omega apoyado sobre cordones superiores con fijaciones T1", 3, cadEdgeSteel, 20);
             g4.add(purlin);
         });
 
         // Faldón izquierdo: Manta aislante térmica aluminizada de doble foil bajo chapa
         const foilLeft = createRoofSlopeMesh(0, roofPeakY, -totalHalfSpan, aleroY, zMinRoof, zMaxRoof, matAlumFoil, { thickness: 0.01 });
         foilLeft.position.y += 0.01;
+        registerBimPart(foilLeft, "Aislamiento Térmico Doble Foil Aluminio", "Manta reflectiva de 10mm que frena 97% de radiación solar bajo chapa", 3, cadEdgeWhite, 25);
         g4.add(foilLeft);
 
         // Faldón izquierdo: Cubierta de Chapa Cincalum C-25 Gris Grafito COMPLETA (ondas corren de cumbrera a alero)
         const roofLeft = createRoofSlopeMesh(0, roofPeakY, -totalHalfSpan, aleroY, zMinRoof, zMaxRoof, matRoof, { thickness: 0.035 });
         roofLeft.position.y += 0.02;
+        registerBimPart(roofLeft, "Cubierta Chapa Cincalum C-25 Gris Grafito", "Acero aluminizado prepintado sinusoidal estanco", 3, cadEdgeDark, 25);
         g4.add(roofLeft);
 
         // Faldón derecho: Corte didáctico escalonado (cubre de zMinRoof a 0.2 para mostrar cabriadas y correas por dentro)
         const roofRightDemo = createRoofSlopeMesh(0, roofPeakY, totalHalfSpan, aleroY, zMinRoof, 0.2, matRoof, { thickness: 0.035 });
         roofRightDemo.position.y += 0.02;
+        registerBimPart(roofRightDemo, "Chapa Cincalum Faldón Derecho (Corte)", "Muestra la estructura interna de cabriadas y correas Omega", 3, cadEdgeDark, 25);
         g4.add(roofRightDemo);
 
         // Cumbrera metálica superior plegada (zinguería de remate estanco)
         const ridgeMesh = new THREE.Mesh(new THREE.BoxGeometry(0.38, 0.07, totalRoofLengthZ + 0.04), matRoof);
         ridgeMesh.position.set(0, roofPeakY + 0.06, 0);
+        registerBimPart(ridgeMesh, "Cumbrera Metálica Plegada Ventilada", "Zinguería de remate superior con sello hermético y desfogue térmico", 3, cadEdgeDark, 20);
         g4.add(ridgeMesh);
 
         // Cenefas perimetrales de zinguería en los aleros
@@ -2584,6 +3099,7 @@
             const cy = aleroY + 0.04;
             const facia = new THREE.Mesh(new THREE.BoxGeometry(0.04, 0.16, totalRoofLengthZ), matRoof);
             facia.position.set(cx, cy, 0);
+            registerBimPart(facia, "Cenefa Perimetral de Zinguería", "Cierre estanco en alero contra ráfagas de viento y aves", 3, cadEdgeDark, 20);
             g4.add(facia);
         });
 
@@ -2599,34 +3115,41 @@
         const waterMain = new THREE.Mesh(new THREE.CylinderGeometry(0.016, 0.016, 4.8, 12), matPPRWater);
         waterMain.rotation.z = Math.PI / 2;
         waterMain.position.set(-1.8, slabTop + 0.65, houseLength / 2 - 0.05);
+        registerBimPart(waterMain, "Cañería de Agua Fría/Caliente PP-R Termofusión Verde 20mm", "Tendido continuo embutido por punch-holes sin picar paredes", 4, cadEdgeDark, 16);
         g5.add(waterMain);
 
         const waterRiser = new THREE.Mesh(new THREE.CylinderGeometry(0.016, 0.016, 2.2, 12), matPPRWater);
         waterRiser.position.set(0.8, slabTop + 1.1, -0.6);
+        registerBimPart(waterRiser, "Montante Vertical PP-R Baño Principal", "Alimentación a lavatorio y ducha con accesorios de bronce", 4, cadEdgeDark, 16);
         g5.add(waterRiser);
 
         const gasMain = new THREE.Mesh(new THREE.CylinderGeometry(0.014, 0.014, 4.4, 12), matGas);
         gasMain.rotation.z = Math.PI / 2;
         gasMain.position.set(-1.8, slabTop + 0.40, houseLength / 2 - 0.05);
+        registerBimPart(gasMain, "Cañería de Gas Sigas Termofusión Amarilla 25mm", "Acero recubierto en polietileno termofusionable s/ NAG-200", 4, cadEdgeGold, 16);
         g5.add(gasMain);
 
         const elecLine1 = new THREE.Mesh(new THREE.CylinderGeometry(0.012, 0.012, 3.6, 12), matElectric);
         elecLine1.rotation.z = Math.PI / 2;
         elecLine1.position.set(-2.2, slabTop + 1.25, houseLength / 2 - 0.05);
+        registerBimPart(elecLine1, "Canalización Eléctrica Ignífuga de Iluminación", "Caño corrugado extra pesado autoextinguible s/ AEA 90364", 4, cadEdgeBlue, 16);
         g5.add(elecLine1);
 
         const switchBoxGeo = new THREE.BoxGeometry(0.06, 0.11, 0.05);
         const sBox1 = new THREE.Mesh(switchBoxGeo, matElecBox);
         sBox1.position.set(-1.8, slabTop + 1.15, houseLength / 2 - 0.04);
+        registerBimPart(sBox1, "Caja Rectangular Embutida 10×5", "Caja metálica estampada para llaves de luz y tomas", 4, cadEdgeDark, 20);
         g5.add(sBox1);
 
         const sBox2 = new THREE.Mesh(switchBoxGeo, matElecBox);
         sBox2.position.set(-3.2, slabTop + 1.15, houseLength / 2 - 0.04);
+        registerBimPart(sBox2, "Caja Rectangular Embutida 10×5", "Punto y toma con puesta a tierra normalizada", 4, cadEdgeDark, 20);
         g5.add(sBox2);
 
         const panelBoardGeo = new THREE.BoxGeometry(0.32, 0.44, 0.08);
         const panelBoard = new THREE.Mesh(panelBoardGeo, matElecBox);
         panelBoard.position.set(-1.2, slabTop + 1.6, houseLength / 2 - 0.06);
+        registerBimPart(panelBoard, "Tablero Seccional Eléctrico Embutido", "Gabinete DIN con interruptor termomagnético y disyuntor bipolar", 4, cadEdgeDark, 20);
         g5.add(panelBoard);
 
         stageGroups.push(g5);
@@ -2641,12 +3164,14 @@
         for (let x = -houseWidth / 2 + 0.4; x <= -0.4; x += 0.8) {
             const woolBatt = new THREE.Mesh(new THREE.BoxGeometry(0.36, wallHeight - 0.1, 0.09), matWool);
             woolBatt.position.set(x, slabTop + wallHeight / 2, houseLength / 2 - 0.05);
+            registerBimPart(woolBatt, "Colchoneta Lana de Vidrio Isover 100mm", "Aislante mineral continuo sin puentes térmicos K < 0.35 W/m²K", 5, cadEdgeGold, 20);
             g6.add(woolBatt);
         }
 
         for (let z = -houseLength / 2 + 0.6; z <= houseLength / 2 - 0.6; z += 0.8) {
             const woolBattL = new THREE.Mesh(new THREE.BoxGeometry(0.09, wallHeight - 0.1, 0.36), matWool);
             woolBattL.position.set(-houseWidth / 2 + 0.05, slabTop + wallHeight / 2, z);
+            registerBimPart(woolBattL, "Lana de Vidrio Muro Lateral 100mm", "Aislación acústica de 48 dB en tabique perimetral", 5, cadEdgeGold, 20);
             g6.add(woolBattL);
         }
 
@@ -2658,6 +3183,7 @@
         });
         const vaporFilm = new THREE.Mesh(new THREE.BoxGeometry(houseWidth * 0.45, wallHeight, 0.005), matVaporFilm);
         vaporFilm.position.set(-houseWidth * 0.25, slabTop + wallHeight / 2, houseLength / 2 - 0.11);
+        registerBimPart(vaporFilm, "Barrera de Vapor Polietileno 200 micrones", "Sellado hermético continuo en cara interior caliente para evitar condensación", 5, cadEdgeWhite, 20);
         g6.add(vaporFilm);
 
         stageGroups.push(g6);
@@ -2671,19 +3197,23 @@
 
         const gypsumBack = new THREE.Mesh(new THREE.BoxGeometry(houseWidth * 0.65, wallHeight, 0.015), matGypsum);
         gypsumBack.position.set(-houseWidth * 0.15, slabTop + wallHeight / 2, -houseLength / 2 + 0.12);
+        registerBimPart(gypsumBack, "Placa Durlock Standard ST 12.5mm", "Placa de yeso con cinta de papel microperforada y masilla nivel Q4", 6, cadEdgeDark, 25);
         g7.add(gypsumBack);
 
         const gypsumRH = new THREE.Mesh(new THREE.BoxGeometry(houseWidth * 0.32, wallHeight, 0.015), matGypsumRH);
         gypsumRH.position.set(houseWidth * 0.32, slabTop + wallHeight / 2, -houseLength / 2 + 0.12);
+        registerBimPart(gypsumRH, "Placa Durlock Verde RH Antihumedad 12.5mm", "Yeso con silicona hidrófuga para baños y cocina s/ IRAM 11.643", 6, cadEdgeDark, 25);
         g7.add(gypsumRH);
 
         const ceilingMesh = new THREE.Mesh(new THREE.BoxGeometry(houseWidth - 0.3, 0.02, houseLength - 0.3), matGypsum);
         ceilingMesh.position.set(0, slabTop + wallHeight - 0.03, 0);
+        registerBimPart(ceilingMesh, "Cielorraso Suspendido Durlock Junta Tomada", "Estructura suspendida F-47 con aislación acústica continua", 6, cadEdgeDark, 25);
         g7.add(ceilingMesh);
 
         const floorMesh = new THREE.Mesh(new THREE.BoxGeometry(houseWidth - 0.2, 0.015, houseLength - 0.2), matTile);
         floorMesh.position.set(0, slabTop + 0.01, 0);
         floorMesh.receiveShadow = true;
+        registerBimPart(floorMesh, "Piso Porcelanato Antracita Rectificado 60×120", "Porcelanato esmaltado satinado de alto tránsito con pastina gris perla", 6, cadEdgeDark, 25);
         g7.add(floorMesh);
 
         stageGroups.push(g7);
@@ -2699,27 +3229,33 @@
         // 1. Fachada Frontal Completa en EIFS Texturado
         const eifsFrontL_Complete = new THREE.Mesh(new THREE.BoxGeometry(houseWidth * 0.44, wallHeight, 0.06), matEIFS);
         eifsFrontL_Complete.position.set(-houseWidth * 0.26, slabTop + wallHeight / 2, houseLength / 2 + 0.05);
+        registerBimPart(eifsFrontL_Complete, "Fachada EIFS Multicapa Frontal Izquierda", "EPS Isopor 50mm + Malla 160g + Base Coat + Revestimiento Revear Arena", 7, cadEdgeDark, 25);
         g8.add(eifsFrontL_Complete);
 
         const eifsFrontR_Pillar = new THREE.Mesh(new THREE.BoxGeometry(0.9, wallHeight, 0.06), matEIFS);
         eifsFrontR_Pillar.position.set(houseWidth / 2 - 0.45, slabTop + wallHeight / 2, houseLength / 2 + 0.05);
+        registerBimPart(eifsFrontR_Pillar, "Pilar EIFS Esquina Frontal Derecha", "Aislación perimetral continua sin puentes térmicos", 7, cadEdgeDark, 25);
         g8.add(eifsFrontR_Pillar);
 
         const eifsMidPillar = new THREE.Mesh(new THREE.BoxGeometry(0.8, wallHeight, 0.06), matEIFS);
         eifsMidPillar.position.set(0.9, slabTop + wallHeight / 2, houseLength / 2 + 0.05);
+        registerBimPart(eifsMidPillar, "Pilar Central EIFS Entre Vano y Puerta", "Revestimiento plástico elastomérico impermeable", 7, cadEdgeDark, 25);
         g8.add(eifsMidPillar);
 
         const eifsSill = new THREE.Mesh(new THREE.BoxGeometry(2.2, 0.45, 0.06), matEIFS);
         eifsSill.position.set(2.4, slabTop + 0.225, houseLength / 2 + 0.05);
+        registerBimPart(eifsSill, "Antepecho Aislado EIFS Ventanal", "Aislación térmica continua bajo carpintería de aluminio", 7, cadEdgeDark, 25);
         g8.add(eifsSill);
 
         const eifsHeader = new THREE.Mesh(new THREE.BoxGeometry(2.2, 0.45, 0.06), matEIFS);
         eifsHeader.position.set(2.4, slabTop + wallHeight - 0.225, houseLength / 2 + 0.05);
+        registerBimPart(eifsHeader, "Dintel EIFS Sobre Ventanal Panorámico", "Envolvente continua con malla de fibra azul embutida", 7, cadEdgeDark, 25);
         g8.add(eifsHeader);
 
         // Dintel macizo cerrado sobre la puerta principal
         const doorOverHeader = new THREE.Mesh(new THREE.BoxGeometry(1.25, wallHeight - 2.20, 0.06), matEIFS);
         doorOverHeader.position.set(-0.15, slabTop + 2.20 + (wallHeight - 2.20) / 2, houseLength / 2 + 0.05);
+        registerBimPart(doorOverHeader, "Dintel EIFS Sobre Puerta de Acceso", "Cierre térmico superior en vano de puerta", 7, cadEdgeDark, 25);
         g8.add(doorOverHeader);
 
         // TÍMPANO TRIANGULAR FRONTAL EXACTO EN EIFS TEXTURADO
@@ -2734,6 +3270,7 @@
         gableFrontMesh.position.set(0, roofBaseY, houseLength / 2 + 0.03);
         gableFrontMesh.castShadow = true;
         gableFrontMesh.receiveShadow = true;
+        registerBimPart(gableFrontMesh, "Tímpano Triangular Frontal EIFS", "Cierre atérmico superior de cumbrera a dos aguas", 7, cadEdgeDark, 25);
         g8.add(gableFrontMesh);
 
         // 2. PAREDES LATERALES Y POSTERIOR EN EIFS (Cierre total de la vivienda llave en mano)
@@ -2742,6 +3279,7 @@
         eifsRightWall.position.set(houseWidth / 2 + 0.04, slabTop + wallHeight / 2, 0);
         eifsRightWall.castShadow = true;
         eifsRightWall.receiveShadow = true;
+        registerBimPart(eifsRightWall, "Muro Exterior Lateral Derecho EIFS", "Barrera térmica envolvente continua Clase A", 7, cadEdgeDark, 25);
         g8.add(eifsRightWall);
 
         // Pared lateral izquierda
@@ -2749,6 +3287,7 @@
         eifsLeftWall.position.set(-houseWidth / 2 - 0.04, slabTop + wallHeight / 2, 0);
         eifsLeftWall.castShadow = true;
         eifsLeftWall.receiveShadow = true;
+        registerBimPart(eifsLeftWall, "Muro Exterior Lateral Izquierdo EIFS", "Revestimiento texturado acrílico hidrorepelente", 7, cadEdgeDark, 25);
         g8.add(eifsLeftWall);
 
         // Pared posterior completa
@@ -2756,6 +3295,7 @@
         eifsBackWall.position.set(0, slabTop + wallHeight / 2, -houseLength / 2 - 0.04);
         eifsBackWall.castShadow = true;
         eifsBackWall.receiveShadow = true;
+        registerBimPart(eifsBackWall, "Muro Posterior Completo EIFS", "Aislación EPS 50mm con base coat elastomérico", 7, cadEdgeDark, 25);
         g8.add(eifsBackWall);
 
         // Tímpano posterior triangular
@@ -2763,12 +3303,14 @@
         gableBackMesh.position.set(0, roofBaseY, -houseLength / 2 - 0.08);
         gableBackMesh.castShadow = true;
         gableBackMesh.receiveShadow = true;
+        registerBimPart(gableBackMesh, "Tímpano Triangular Posterior EIFS", "Remate triangular atérmico de techo", 7, cadEdgeDark, 25);
         g8.add(gableBackMesh);
 
         // 3. CUBIERTA COMPLETA LLAVE EN MANO: Cierre frontal del faldón derecho (0.2 a zMaxRoof)
         // Las ondas caen en el mismo sentido de cumbrera a aleros con continuidad absoluta
         const roofRightFrontCover = createRoofSlopeMesh(0, roofPeakY, totalHalfSpan, aleroY, 0.2, zMaxRoof, matRoof, { thickness: 0.035 });
         roofRightFrontCover.position.y += 0.02;
+        registerBimPart(roofRightFrontCover, "Cubierta Cincalum C-25 Llave en Mano", "Cierre completo del faldón con zinguería de cumbrera y aleros", 7, cadEdgeDark, 25);
         g8.add(roofRightFrontCover);
 
         // 3. Carpinterías de aluminio negro anodizado A30 New y DVH
@@ -2781,30 +3323,37 @@
 
         const winFrameTop = new THREE.Mesh(new THREE.BoxGeometry(winW, 0.06, 0.08), matAlumBlack);
         winFrameTop.position.set(2.4, winCenterY + winH / 2, winZ);
+        registerBimPart(winFrameTop, "Marco Superior Ventanal A30 New", "Aluminio negro anodizado de alta prestación", 7, cadEdgeDark, 20);
         g8.add(winFrameTop);
 
         const winFrameBot = new THREE.Mesh(new THREE.BoxGeometry(winW, 0.06, 0.08), matAlumBlack);
         winFrameBot.position.set(2.4, winCenterY - winH / 2, winZ);
+        registerBimPart(winFrameBot, "Umbral Inferior con Desagüe Ventanal A30", "Guías con rodamientos a rulemán regulables", 7, cadEdgeDark, 20);
         g8.add(winFrameBot);
 
         const winFrameL = new THREE.Mesh(new THREE.BoxGeometry(0.06, winH, 0.08), matAlumBlack);
         winFrameL.position.set(2.4 - winW / 2, winCenterY, winZ);
+        registerBimPart(winFrameL, "Jamba Lateral Izquierda A30 New", "Perfil perimetral con felpa de hermeticidad", 7, cadEdgeDark, 20);
         g8.add(winFrameL);
 
         const winFrameR = new THREE.Mesh(new THREE.BoxGeometry(0.06, winH, 0.08), matAlumBlack);
         winFrameR.position.set(2.4 + winW / 2, winCenterY, winZ);
+        registerBimPart(winFrameR, "Jamba Lateral Derecha A30 New", "Cierre perimetral estanco", 7, cadEdgeDark, 20);
         g8.add(winFrameR);
 
         const winMullion = new THREE.Mesh(new THREE.BoxGeometry(0.05, winH, 0.08), matAlumBlack);
         winMullion.position.set(2.4, winCenterY, winZ);
+        registerBimPart(winMullion, "Parante Central Encuentro Hojas A30", "Cierre hermético central doble contacto", 7, cadEdgeDark, 20);
         g8.add(winMullion);
 
         const glass1 = new THREE.Mesh(new THREE.BoxGeometry((winW - 0.12) / 2, winH - 0.1, 0.015), matDVHGlass);
         glass1.position.set(2.4 - winW * 0.24, winCenterY, winZ);
+        registerBimPart(glass1, "Vidrio DVH 4/12/4 Hoja Izquierda", "Vidrio Doble Hermético con cámara estanca de 12mm de argón seco", 7, cadEdgeWhite, 20);
         g8.add(glass1);
 
         const glass2 = new THREE.Mesh(new THREE.BoxGeometry((winW - 0.12) / 2, winH - 0.1, 0.015), matDVHGlass);
         glass2.position.set(2.4 + winW * 0.24, winCenterY, winZ);
+        registerBimPart(glass2, "Vidrio DVH 4/12/4 Hoja Derecha", "Atenuación acústica del 80% y máxima eficiencia energética Clase A", 7, cadEdgeWhite, 20);
         g8.add(glass2);
 
         // Puerta Principal Pivotante de Madera Maciza
@@ -2815,23 +3364,28 @@
 
         const doorFrameT = new THREE.Mesh(new THREE.BoxGeometry(doorW + 0.1, 0.06, 0.08), matAlumBlack);
         doorFrameT.position.set(-0.15, doorCenterY + doorH / 2, doorZ);
+        registerBimPart(doorFrameT, "Marco Superior Puerta Principal", "Marco de aluminio anodizado negro con burlete", 7, cadEdgeDark, 20);
         g8.add(doorFrameT);
 
         const doorFrameL = new THREE.Mesh(new THREE.BoxGeometry(0.06, doorH, 0.08), matAlumBlack);
         doorFrameL.position.set(-0.15 - doorW / 2, doorCenterY, doorZ);
+        registerBimPart(doorFrameL, "Marco Lateral Puerta", "Jamba con cerradura de seguridad multipunto", 7, cadEdgeDark, 20);
         g8.add(doorFrameL);
 
         const doorFrameR = new THREE.Mesh(new THREE.BoxGeometry(0.06, doorH, 0.08), matAlumBlack);
         doorFrameR.position.set(-0.15 + doorW / 2, doorCenterY, doorZ);
+        registerBimPart(doorFrameR, "Marco Lateral Pivotante", "Caja pivotante oculta de piso a dintel", 7, cadEdgeDark, 20);
         g8.add(doorFrameR);
 
         const doorLeaf = new THREE.Mesh(new THREE.BoxGeometry(doorW - 0.04, doorH - 0.04, 0.045), matDoorWood);
         doorLeaf.position.set(-0.15, doorCenterY, doorZ);
+        registerBimPart(doorLeaf, "Hoja Puerta Principal Pivotante 1.15×2.20m", "Madera maciza lustrada con protección UV y núcleo termoaislante", 7, cadEdgeDark, 20);
         g8.add(doorLeaf);
 
         const handleMat = new THREE.MeshStandardMaterial({ color: 0xf1f5f9, roughness: 0.15, metalness: 0.95 });
         const doorHandle = new THREE.Mesh(new THREE.CylinderGeometry(0.014, 0.014, 0.90, 16), handleMat);
         doorHandle.position.set(-0.15 + 0.42, doorCenterY, doorZ + 0.045);
+        registerBimPart(doorHandle, "Barral Puerta Acero Inoxidable 90cm", "Herraje arquitectónico contemporáneo satinado", 7, cadEdgeSteel, 16);
         g8.add(doorHandle);
 
         // Ventana Frontal Izquierda
@@ -2841,22 +3395,27 @@
 
         const winL_FrameT = new THREE.Mesh(new THREE.BoxGeometry(winL_W, 0.05, 0.08), matAlumBlack);
         winL_FrameT.position.set(-2.7, winL_CenterY + winL_H / 2, winZ);
+        registerBimPart(winL_FrameT, "Marco Superior Ventana Dormitorio", "Carpintería A30 New hermética", 7, cadEdgeDark, 20);
         g8.add(winL_FrameT);
 
         const winL_FrameB = new THREE.Mesh(new THREE.BoxGeometry(winL_W, 0.05, 0.08), matAlumBlack);
         winL_FrameB.position.set(-2.7, winL_CenterY - winL_H / 2, winZ);
+        registerBimPart(winL_FrameB, "Umbral Inferior Ventana Dormitorio", "Desagüe pluvial con deflectores de viento", 7, cadEdgeDark, 20);
         g8.add(winL_FrameB);
 
         const winL_FrameL = new THREE.Mesh(new THREE.BoxGeometry(0.05, winL_H, 0.08), matAlumBlack);
         winL_FrameL.position.set(-2.7 - winL_W / 2, winL_CenterY, winZ);
+        registerBimPart(winL_FrameL, "Jamba Ventana Dormitorio", "Perfil de aluminio anodizado", 7, cadEdgeDark, 20);
         g8.add(winL_FrameL);
 
         const winL_FrameR = new THREE.Mesh(new THREE.BoxGeometry(0.05, winL_H, 0.08), matAlumBlack);
         winL_FrameR.position.set(-2.7 + winL_W / 2, winL_CenterY, winZ);
+        registerBimPart(winL_FrameR, "Jamba Ventana Dormitorio", "Cierre hermético con felpas", 7, cadEdgeDark, 20);
         g8.add(winL_FrameR);
 
         const winL_Glass = new THREE.Mesh(new THREE.BoxGeometry(winL_W - 0.08, winL_H - 0.08, 0.015), matDVHGlass);
         winL_Glass.position.set(-2.7, winL_CenterY, winZ);
+        registerBimPart(winL_Glass, "Vidrio DVH 4/12/4 Ventana Dormitorio", "Aislación termoacústica para confort de descanso", 7, cadEdgeWhite, 20);
         g8.add(winL_Glass);
 
         // Vereda perimetral de acceso en hormigón peinado
@@ -2864,6 +3423,7 @@
         const walkwayMesh = new THREE.Mesh(walkwayGeo, matConcrete);
         walkwayMesh.position.set(0, 0.04, houseLength / 2 + 0.7);
         walkwayMesh.receiveShadow = true;
+        registerBimPart(walkwayMesh, "Vereda Perimetral de Acceso", "Hormigón peinado antideslizante con juntas de dilatación", 7, cadEdgeDark, 25);
         g8.add(walkwayMesh);
 
         // Iluminación arquitectónica cálida encendida
@@ -3411,12 +3971,431 @@
         if (btnResetView) {
             btnResetView.onclick = () => {
                 const scale = getCameraScaleFactor();
-                const defaultPos = { x: 7.5, y: 4.5, z: 8.5 };
-                const defaultTgt = { x: 0, y: 1.8, z: 0 };
+                const curStage = STAGES_DATA[currentStageId] || STAGES_DATA[0];
+                const defaultPos = curStage.focusCam || { x: 11.5, y: 6.8, z: 12.8 };
+                const defaultTgt = curStage.target || { x: 0, y: 1.9, z: 0 };
                 applyCamFraming(defaultPos, defaultTgt, scale, false);
                 updateZoomUI();
             };
         }
+
+        /* =========================================================================
+           7. PLANO DE CORTE ARQUITECTÓNICO BIM EN TIEMPO REAL (CLIPPING PLANES)
+           ========================================================================= */
+        const clipPlanes = {
+            off: null,
+            y: new THREE.Plane(new THREE.Vector3(0, -1, 0), roofPeakY + 0.4),
+            x: new THREE.Plane(new THREE.Vector3(-1, 0, 0), houseWidth / 2 + 0.4),
+            z: new THREE.Plane(new THREE.Vector3(0, 0, -1), houseLength / 2 + 0.4)
+        };
+        let activeClipMode = 'off';
+        let clipDepthPercent = 100;
+
+        const bimCutPanel = document.getElementById('bim-cut-panel');
+        const btnToggleBimCut = document.getElementById('btn-toggle-bim-cut');
+        const btnClipHud = document.getElementById('btn-clip-hud');
+        const btnCloseBimCut = document.getElementById('btn-close-bim-cut');
+        const badgeCutStatus = document.getElementById('badge-cut-status');
+
+        const btnCutOff = document.getElementById('btn-cut-off');
+        const btnCutY = document.getElementById('btn-cut-y');
+        const btnCutX = document.getElementById('btn-cut-x');
+        const btnCutZ = document.getElementById('btn-cut-z');
+        const cutSliderContainer = document.getElementById('cut-slider-container');
+        const cutDepthSlider = document.getElementById('cut-depth-slider');
+        const cutHeightLabel = document.getElementById('cut-height-label');
+
+        function updateClippingPlane() {
+            if (activeClipMode === 'off') {
+                renderer.clippingPlanes = [];
+                if (cutSliderContainer) cutSliderContainer.classList.add('hidden');
+                if (badgeCutStatus) {
+                    badgeCutStatus.classList.add('hidden');
+                }
+            } else {
+                const p = clipDepthPercent / 100;
+                let cotaText = `${clipDepthPercent}%`;
+
+                if (activeClipMode === 'y') {
+                    // Corte de planta cenital (de techo a platea)
+                    const minY = slabTop;
+                    const maxY = roofPeakY + 0.3;
+                    const curY = minY + (maxY - minY) * p;
+                    clipPlanes.y.constant = curY;
+                    renderer.clippingPlanes = [clipPlanes.y];
+                    cotaText = `Y: +${curY.toFixed(2)} m (${clipDepthPercent}%)`;
+                } else if (activeClipMode === 'x') {
+                    // Corte transversal (de lateral a lateral)
+                    const minX = -houseWidth / 2 - 0.2;
+                    const maxX = houseWidth / 2 + 0.4;
+                    const curX = minX + (maxX - minX) * p;
+                    clipPlanes.x.constant = curX;
+                    renderer.clippingPlanes = [clipPlanes.x];
+                    cotaText = `X: ${curX >= 0 ? '+' : ''}${curX.toFixed(2)} m (${clipDepthPercent}%)`;
+                } else if (activeClipMode === 'z') {
+                    // Corte longitudinal (de posterior a frente)
+                    const minZ = -houseLength / 2 - 0.2;
+                    const maxZ = houseLength / 2 + 0.4;
+                    const curZ = minZ + (maxZ - minZ) * p;
+                    clipPlanes.z.constant = curZ;
+                    renderer.clippingPlanes = [clipPlanes.z];
+                    cotaText = `Z: ${curZ >= 0 ? '+' : ''}${curZ.toFixed(2)} m (${clipDepthPercent}%)`;
+                }
+
+                if (cutSliderContainer) cutSliderContainer.classList.remove('hidden');
+                if (cutHeightLabel) cutHeightLabel.innerText = cotaText;
+                if (badgeCutStatus) {
+                    badgeCutStatus.classList.remove('hidden');
+                    badgeCutStatus.innerText = activeClipMode.toUpperCase();
+                }
+            }
+
+            // Actualizar estilo visual de los botones de corte
+            const cutButtons = { off: btnCutOff, y: btnCutY, x: btnCutX, z: btnCutZ };
+            Object.keys(cutButtons).forEach(k => {
+                const b = cutButtons[k];
+                if (!b) return;
+                if (k === activeClipMode) {
+                    b.className = 'px-2 py-1.5 rounded-lg text-[10px] sm:text-xs font-label-bold bg-primary text-white border border-blue-400/50 shadow flex flex-col items-center justify-center cursor-pointer';
+                } else {
+                    b.className = 'px-2 py-1.5 rounded-lg text-[10px] sm:text-xs font-label-bold bg-white/10 hover:bg-white/20 text-slate-300 hover:text-white border border-white/10 flex flex-col items-center justify-center cursor-pointer';
+                }
+            });
+        }
+
+        function setClipMode(mode) {
+            activeClipMode = mode;
+            clipDepthPercent = 100;
+            if (cutDepthSlider) cutDepthSlider.value = 100;
+            updateClippingPlane();
+        }
+
+        if (btnCutOff) btnCutOff.onclick = () => setClipMode('off');
+        if (btnCutY) btnCutY.onclick = () => setClipMode('y');
+        if (btnCutX) btnCutX.onclick = () => setClipMode('x');
+        if (btnCutZ) btnCutZ.onclick = () => setClipMode('z');
+
+        if (cutDepthSlider) {
+            cutDepthSlider.oninput = (e) => {
+                clipDepthPercent = parseFloat(e.target.value);
+                updateClippingPlane();
+            };
+        }
+
+        function toggleBimCutPanel() {
+            if (bimCutPanel) {
+                const willOpen = bimCutPanel.classList.contains('hidden');
+                bimCutPanel.classList.toggle('hidden');
+                if (willOpen && lightingEnvPanel) {
+                    lightingEnvPanel.classList.add('hidden');
+                }
+            }
+        }
+        if (btnToggleBimCut) btnToggleBimCut.onclick = toggleBimCutPanel;
+        if (btnClipHud) btnClipHud.onclick = toggleBimCutPanel;
+
+        if (btnCloseBimCut) {
+            btnCloseBimCut.onclick = () => {
+                if (bimCutPanel) bimCutPanel.classList.add('hidden');
+            };
+        }
+
+        /* =========================================================================
+           8. AMBIENTES E ILUMINACIÓN GLOBAL DINÁMICA ARCHVIZ (CLIMA SOLAR)
+           ========================================================================= */
+        const LIGHTING_PRESETS = {
+            dark: {
+                id: 'dark',
+                name: 'Estudio CAD',
+                bg: 0x060a12,
+                sunColor: 0xfffbeb,
+                sunIntensity: 3.2,
+                sunPos: [12.0, 18.0, 14.0],
+                hemiSky: 0xdbeafe,
+                hemiGround: 0x1e293b,
+                hemiIntensity: 0.55,
+                ambientColor: 0xffffff,
+                ambientIntensity: 0.35,
+                rimColor: 0x38bdf8,
+                rimIntensity: 1.6,
+                gridVisible: true,
+                nightLights: false
+            },
+            day: {
+                id: 'day',
+                name: 'Día Soleado',
+                bg: 0x7dd3fc,
+                sunColor: 0xffffff,
+                sunIntensity: 3.8,
+                sunPos: [8.0, 22.0, 12.0],
+                hemiSky: 0xbae6fd,
+                hemiGround: 0x64748b,
+                hemiIntensity: 0.85,
+                ambientColor: 0xffffff,
+                ambientIntensity: 0.45,
+                rimColor: 0x38bdf8,
+                rimIntensity: 1.2,
+                gridVisible: false,
+                nightLights: false
+            },
+            golden: {
+                id: 'golden',
+                name: 'Golden Hour',
+                bg: 0x451a03,
+                sunColor: 0xfbbf24,
+                sunIntensity: 4.2,
+                sunPos: [-18.0, 6.0, 10.0],
+                hemiSky: 0xfed7aa,
+                hemiGround: 0x431407,
+                hemiIntensity: 0.70,
+                ambientColor: 0xffedd5,
+                ambientIntensity: 0.40,
+                rimColor: 0xec4899,
+                rimIntensity: 1.8,
+                gridVisible: false,
+                nightLights: true
+            },
+            night: {
+                id: 'night',
+                name: 'Noche ArchViz',
+                bg: 0x020617,
+                sunColor: 0x60a5fa,
+                sunIntensity: 0.7,
+                sunPos: [-10.0, 16.0, -10.0],
+                hemiSky: 0x1e293b,
+                hemiGround: 0x020617,
+                hemiIntensity: 0.35,
+                ambientColor: 0x38bdf8,
+                ambientIntensity: 0.20,
+                rimColor: 0x818cf8,
+                rimIntensity: 1.1,
+                gridVisible: true,
+                nightLights: true
+            }
+        };
+
+        let currentLighting = 'dark';
+        const lightingEnvPanel = document.getElementById('lighting-env-panel');
+        const btnToggleLighting = document.getElementById('btn-toggle-lighting');
+        const btnEnvHud = document.getElementById('btn-env-hud');
+        const btnCloseLightingEnv = document.getElementById('btn-close-lighting-env');
+        const textLightingLabel = document.getElementById('text-lighting-label');
+
+        const btnEnvDark = document.getElementById('btn-env-dark');
+        const btnEnvDay = document.getElementById('btn-env-day');
+        const btnEnvGolden = document.getElementById('btn-env-golden');
+        const btnEnvNight = document.getElementById('btn-env-night');
+
+        function setLightingPreset(presetId) {
+            const p = LIGHTING_PRESETS[presetId] || LIGHTING_PRESETS.dark;
+            currentLighting = presetId;
+            scene.background = new THREE.Color(p.bg);
+
+            mainSunLight.color.setHex(p.sunColor);
+            mainSunLight.intensity = p.sunIntensity;
+            mainSunLight.position.set(p.sunPos[0], p.sunPos[1], p.sunPos[2]);
+
+            hemiLight.color.setHex(p.hemiSky);
+            hemiLight.groundColor.setHex(p.hemiGround);
+            hemiLight.intensity = p.hemiIntensity;
+
+            ambientLight.color.setHex(p.ambientColor);
+            ambientLight.intensity = p.ambientIntensity;
+
+            rimSkyLight.color.setHex(p.rimColor);
+            rimSkyLight.intensity = p.rimIntensity;
+
+            gridHelper.visible = p.gridVisible;
+
+            if (warmLightExterior && warmLightInterior) {
+                warmLightExterior.intensity = p.nightLights ? 4.5 : 2.2;
+                warmLightInterior.intensity = p.nightLights ? 3.8 : 1.8;
+            }
+
+            if (textLightingLabel) textLightingLabel.innerText = p.name;
+
+            // Actualizar botones de iluminación
+            const envButtons = { dark: btnEnvDark, day: btnEnvDay, golden: btnEnvGolden, night: btnEnvNight };
+            Object.keys(envButtons).forEach(k => {
+                const b = envButtons[k];
+                if (!b) return;
+                if (k === presetId) {
+                    b.className = 'p-2 rounded-xl text-left border border-blue-400/60 bg-primary/20 text-white flex items-center gap-2 cursor-pointer transition-all shadow';
+                } else {
+                    b.className = 'p-2 rounded-xl text-left border border-white/10 bg-white/5 hover:bg-white/10 text-slate-200 flex items-center gap-2 cursor-pointer transition-all';
+                }
+            });
+        }
+
+        if (btnEnvDark) btnEnvDark.onclick = () => setLightingPreset('dark');
+        if (btnEnvDay) btnEnvDay.onclick = () => setLightingPreset('day');
+        if (btnEnvGolden) btnEnvGolden.onclick = () => setLightingPreset('golden');
+        if (btnEnvNight) btnEnvNight.onclick = () => setLightingPreset('night');
+
+        function toggleLightingEnvPanel() {
+            if (lightingEnvPanel) {
+                const willOpen = lightingEnvPanel.classList.contains('hidden');
+                lightingEnvPanel.classList.toggle('hidden');
+                if (willOpen && bimCutPanel) {
+                    bimCutPanel.classList.add('hidden');
+                }
+            }
+        }
+        if (btnToggleLighting) btnToggleLighting.onclick = toggleLightingEnvPanel;
+        if (btnEnvHud) btnEnvHud.onclick = toggleLightingEnvPanel;
+
+        if (btnCloseLightingEnv) {
+            btnCloseLightingEnv.onclick = () => {
+                if (lightingEnvPanel) lightingEnvPanel.classList.add('hidden');
+            };
+        }
+
+        /* =========================================================================
+           9. RAYCASTER INTERACTIVO EN TIEMPO REAL: HOVER HIGHLIGHT & INSPECCIÓN BIM
+           ========================================================================= */
+        const raycaster = new THREE.Raycaster();
+        const mousePointer = new THREE.Vector2(-9999, -9999);
+        let currentHoveredMesh = null;
+        let originalEmissiveHex = 0x000000;
+        let originalEmissiveIntensity = 0.0;
+        let rayInactivityTimer = null;
+
+        const rayTooltip = document.getElementById('raycast-tooltip');
+        const rayStageBadge = document.getElementById('ray-stage-badge');
+        const rayMaterialTag = document.getElementById('ray-material-tag');
+        const rayPartTitle = document.getElementById('ray-part-title');
+        const rayPartSpec = document.getElementById('ray-part-spec');
+
+        if (rayTooltip) {
+            rayTooltip.classList.add('opacity-0', 'hidden');
+        }
+
+        function resetRayInactivity() {
+            clearTimeout(rayInactivityTimer);
+            rayInactivityTimer = setTimeout(() => {
+                mousePointer.set(-9999, -9999);
+                clearHoverHighlight();
+                if (rayTooltip) {
+                    rayTooltip.classList.add('opacity-0');
+                    setTimeout(() => {
+                        if (rayTooltip && rayTooltip.classList.contains('opacity-0')) {
+                            rayTooltip.classList.add('hidden');
+                        }
+                    }, 200);
+                }
+            }, 2500);
+        }
+
+        function onPointerMoveRaycast(e) {
+            if (!container) return;
+            resetRayInactivity();
+            const rect = canvas.getBoundingClientRect();
+            mousePointer.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+            mousePointer.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+
+            if (rayTooltip) {
+                const xPos = Math.min(Math.max(110, e.clientX - rect.left), rect.width - 110);
+                const yPos = Math.max(70, e.clientY - rect.top - 16);
+                rayTooltip.style.left = `${xPos}px`;
+                rayTooltip.style.top = `${yPos}px`;
+            }
+        }
+
+        container.addEventListener('pointermove', onPointerMoveRaycast, { passive: true });
+        container.addEventListener('pointerleave', () => {
+            clearTimeout(rayInactivityTimer);
+            mousePointer.set(-9999, -9999);
+            clearHoverHighlight();
+            if (rayTooltip) {
+                rayTooltip.classList.add('opacity-0', 'hidden');
+            }
+        }, { passive: true });
+
+        function clearHoverHighlight() {
+            if (currentHoveredMesh && currentHoveredMesh.material) {
+                const m = currentHoveredMesh.material;
+                if (m.emissive) {
+                    m.emissive.setHex(originalEmissiveHex);
+                    m.emissiveIntensity = originalEmissiveIntensity;
+                }
+            }
+            currentHoveredMesh = null;
+            canvas.style.cursor = '';
+        }
+
+        function updateRaycastInspection() {
+            if (mousePointer.x < -1 || mousePointer.x > 1 || mousePointer.y < -1 || mousePointer.y > 1) {
+                return;
+            }
+
+            raycaster.setFromCamera(mousePointer, camera);
+            const candidates = [];
+            stageGroups.forEach(g => {
+                if (g.visible) {
+                    g.traverse(child => {
+                        if (child.isMesh && child.visible && child.userData.partInfo) {
+                            candidates.push(child);
+                        }
+                    });
+                }
+            });
+
+            const intersects = raycaster.intersectObjects(candidates, false);
+
+            if (intersects.length > 0) {
+                const hitMesh = intersects[0].object;
+                if (hitMesh !== currentHoveredMesh) {
+                    clearHoverHighlight();
+                    currentHoveredMesh = hitMesh;
+
+                    const m = hitMesh.material;
+                    if (m && m.emissive) {
+                        originalEmissiveHex = m.emissive.getHex();
+                        originalEmissiveIntensity = m.emissiveIntensity;
+                        m.emissive.setHex(0x38bdf8);
+                        m.emissiveIntensity = 0.22;
+                    }
+                }
+
+                const info = hitMesh.userData.partInfo;
+                if (info && rayTooltip) {
+                    if (rayStageBadge) rayStageBadge.innerText = `Fase ${info.stageId + 1}`;
+                    if (rayMaterialTag) rayMaterialTag.innerText = STAGES_DATA[info.stageId].badge;
+                    if (rayPartTitle) rayPartTitle.innerText = info.name;
+                    if (rayPartSpec) rayPartSpec.innerText = info.spec;
+                    rayTooltip.classList.remove('hidden');
+                    requestAnimationFrame(() => {
+                        if (rayTooltip) rayTooltip.classList.remove('opacity-0');
+                    });
+                    canvas.style.cursor = 'pointer';
+                }
+            } else {
+                clearHoverHighlight();
+                if (rayTooltip) {
+                    rayTooltip.classList.add('opacity-0');
+                    setTimeout(() => {
+                        if (rayTooltip && rayTooltip.classList.contains('opacity-0')) {
+                            rayTooltip.classList.add('hidden');
+                        }
+                    }, 200);
+                }
+            }
+        }
+
+        // Clic directo sobre cualquier pieza de la casa para inspeccionar su fase
+        let pointerDownPos = { x: 0, y: 0 };
+        container.addEventListener('pointerdown', (e) => {
+            pointerDownPos = { x: e.clientX, y: e.clientY };
+        }, { passive: true });
+
+        container.addEventListener('pointerup', (e) => {
+            const dist = Math.hypot(e.clientX - pointerDownPos.x, e.clientY - pointerDownPos.y);
+            if (dist < 6 && currentHoveredMesh && currentHoveredMesh.userData.partInfo) {
+                const sId = currentHoveredMesh.userData.partInfo.stageId;
+                if (isPlaying) pauseTimelapse();
+                selectStage(sId, true);
+            }
+        }, { passive: true });
 
         setTimeout(() => {
             if (loadingOverlay) {
@@ -3426,7 +4405,7 @@
         }, 300);
 
         /* =========================================================================
-           7. BUCLE DE RENDERIZADO 3D CON VECTORES DE DESPIECE EXACTOS
+           10. BUCLE DE RENDERIZADO 3D CON VECTORES DE DESPIECE EXACTOS & RAYCASTER
            ========================================================================= */
         const camDirVec = new THREE.Vector3();
 
@@ -3453,6 +4432,7 @@
             camera.position.copy(controls.target).addScaledVector(camDirVec, currentDistance);
 
             controls.update();
+            updateRaycastInspection();
             renderer.render(scene, camera);
         }
 
@@ -3471,8 +4451,8 @@
 
             const scale = getCameraScaleFactor();
             const curStage = STAGES_DATA[currentStageId] || STAGES_DATA[0];
-            const basePos = curStage.focusCam || { x: 7.5, y: 4.5, z: 8.5 };
-            const baseTgt = curStage.target || { x: 0, y: 1.8, z: 0 };
+            const basePos = curStage.focusCam || { x: 11.5, y: 6.8, z: 12.8 };
+            const baseTgt = curStage.target || { x: 0, y: 1.9, z: 0 };
             applyCamFraming(basePos, baseTgt, scale, true);
             updateZoomUI();
         }
