@@ -36,6 +36,17 @@ Este documento contiene la especificación técnica completa, catálogo de servi
   2. *Montaje:* Paneles estructurales de perfiles de acero galvanizado (PGU y PGC de 100mm).
   3. *Aislamiento:* Placas de OSB exteriores, barrera de agua y viento (Tyvek), placa de EPS (Poliestireno Expandido), base coat con malla de fibra de vidrio y terminación con revestimiento plástico texturado. En el interior, lana de vidrio de 50mm a 100mm y placas de roca de yeso (Durlock).
   4. *Terminaciones:* Cielorrasos suspendidos, carpintería DVH (Doble Vidriado Hermético) de aluminio o PVC, y revestimientos porcelánicos premium.
+- **Paquete Constructivo Exterior Oficial (8 Capas Normalizadas - K = 0.31 W/m²K):**
+  - Ver despiece interactivo 3D en: https://constructorabyb.com.ar/casas-steel-framing/capas-muro-tabique-3d/
+  - *Capa 1:* Placa de yeso Durlock interior (12.5 mm, λ = 0.24 W/mK, norma IRAM 11643).
+  - *Capa 2:* Barrera de vapor de polietileno virgen (200 μm, norma IRAM 11559).
+  - *Capa 3:* Perfiles portantes PGC 100 x 0.94 mm Z275 sismorresistentes (normas CIRSOC 303 e IRAM IAS U 500-205).
+  - *Capa 4:* Aislación termoacústica de lana de vidrio (100 mm, 14 kg/m³, λ = 0.040 W/mK, Euroclase A1).
+  - *Capa 5:* Diafragma rigidizador de placas OSB estructural (11.1 mm APA).
+  - *Capa 6:* Membrana hidrófuga respirable Tyvek / Wichi (100% estanca a lluvia y permeable al vapor).
+  - *Capa 7:* Aislamiento térmico exterior continuo EIFS con EPS de alta densidad (50 mm, 20 kg/m³, norma IRAM 1738 / 11605).
+  - *Capa 8:* Terminación EIFS con Base Coat cementicio, malla de fibra de vidrio 160 g/m² y revoque plástico Travertino.
+  - *Desempeño Térmico:* Espesor total 178 mm (~18 cm), Transmitancia Térmica K = 0.31 W/m²K (Nivel A IRAM 11605 para Zona Bioambiental IIa en Tucumán), Resistencia Térmica Rt = 3.23 m²K/W. Aísla casi 6 veces más que una pared tradicional de ladrillo hueco (K = 1.85 W/m²K).
 
 ### 2.2 Casas Modernas / Arquitectura Minimalista
 - **Descripción:** Diseños contemporáneos con énfasis en volúmenes puros, planos de hormigón visto, amplias aberturas y fluidez espacial.

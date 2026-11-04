@@ -25,7 +25,7 @@
     <meta property="og:locale" content="es_AR" />
     <meta property="og:image" content="https://constructorabyb.com.ar/casas-steel-framing/hero.webp" />
 
-    <!-- Schema.org JSON-LD Multitipo -->
+    <!-- Schema.org JSON-LD Multitipo Optimizado para GEO / AEO / RAG -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -39,11 +39,32 @@
           "isPartOf": {
             "@id": "https://constructorabyb.com.ar/casas-steel-framing/#webpage"
           },
-          "about": {
-            "@id": "https://constructorabyb.com.ar/casas-steel-framing/#service"
-          },
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Steel Framing",
+              "sameAs": "https://www.wikidata.org/wiki/Q2333917"
+            },
+            {
+              "@type": "Thing",
+              "name": "External Insulation and Finish System",
+              "sameAs": "https://www.wikidata.org/wiki/Q5422013"
+            },
+            {
+              "@type": "Thing",
+              "name": "Thermal Insulation",
+              "sameAs": "https://www.wikidata.org/wiki/Q899478"
+            }
+          ],
           "breadcrumb": {
             "@id": "https://constructorabyb.com.ar/casas-steel-framing/capas-muro-tabique-3d/#breadcrumb"
+          },
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [
+              ".geo-answer-block",
+              "#geo-summary-table"
+            ]
           }
         },
         {
@@ -77,7 +98,7 @@
             "@id": "https://constructorabyb.com.ar/casas-steel-framing/capas-muro-tabique-3d/#webpage"
           },
           "headline": "Anatomía y Capas del Muro Exterior en Steel Framing: Simulación 3D e Ingeniería Térmica",
-          "description": "Análisis técnico integral de las 8 capas que conforman un muro exterior portante en Steel Framing bajo normas IRAM IAS U 500-205 y CIRSOC 303 en Argentina.",
+          "description": "Análisis técnico integral de las 8 capas que conforman un muro exterior portante en Steel Framing bajo normas IRAM IAS U 500-205, IRAM 11605 y CIRSOC 303 en Argentina.",
           "publisher": {
             "@type": "Organization",
             "@id": "https://constructorabyb.com.ar/#organization",
@@ -85,12 +106,119 @@
           },
           "author": {
             "@type": "Organization",
-            "@id": "https://constructorabyb.com.ar/#organization"
+            "@id": "https://constructorabyb.com.ar/#organization",
+            "name": "Departamento Técnico de Ingeniería Estructural y Arquitectura de Constructora ByB"
+          },
+          "reviewedBy": {
+            "@type": "Person",
+            "name": "Ing. Bruno Boggio",
+            "jobTitle": "Director Técnico de Ingeniería Estructural y Obras en Seco",
+            "worksFor": {
+              "@id": "https://constructorabyb.com.ar/#organization"
+            }
           },
           "datePublished": "2026-05-21T12:00:00-03:00",
-          "dateModified": "2026-05-21T12:00:00-03:00",
+          "dateModified": "2026-11-04T12:00:00-03:00",
           "mainEntityOfPage": "https://constructorabyb.com.ar/casas-steel-framing/capas-muro-tabique-3d/",
-          "inLanguage": "es-AR"
+          "inLanguage": "es-AR",
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Steel Framing",
+              "sameAs": "https://www.wikidata.org/wiki/Q2333917"
+            },
+            {
+              "@type": "Thing",
+              "name": "Aislamiento Térmico EIFS",
+              "sameAs": "https://www.wikidata.org/wiki/Q5422013"
+            },
+            {
+              "@type": "Thing",
+              "name": "Transmitancia Térmica",
+              "sameAs": "https://www.wikidata.org/wiki/Q899478"
+            }
+          ],
+          "mentions": [
+            {
+              "@type": "Thing",
+              "name": "Oriented Strand Board",
+              "sameAs": "https://www.wikidata.org/wiki/Q1429910"
+            },
+            {
+              "@type": "Thing",
+              "name": "Lana de Vidrio",
+              "sameAs": "https://www.wikidata.org/wiki/Q1165688"
+            },
+            {
+              "@type": "Thing",
+              "name": "Placa de Yeso",
+              "sameAs": "https://www.wikidata.org/wiki/Q499878"
+            }
+          ],
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [
+              ".geo-answer-block",
+              "#geo-summary-table"
+            ]
+          }
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://constructorabyb.com.ar/casas-steel-framing/capas-muro-tabique-3d/#itemlist",
+          "name": "Secuencia Constructiva de las 8 Capas del Muro Steel Framing",
+          "description": "Composición por capas de interior a exterior del tabique portante exterior según normas IRAM y CIRSOC en Argentina.",
+          "numberOfItems": 8,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Placa de Roca de Yeso (Durlock 12.5 mm)",
+              "description": "Cierre interior plano, ignífugo RE2 según IRAM 11643, λ = 0.24 W/mK."
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Barrera de Vapor (Polietileno 200 μm)",
+              "description": "Film impermeable continuo en cara caliente contra condensación intersticial, norma IRAM 11559."
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Estructura de Acero Galvanizado PGC 100 (0.94 mm)",
+              "description": "Montantes verticales Z275 cada 40 cm sismorresistentes bajo CIRSOC 303 e IRAM IAS U 500-205."
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Aislación Termoacústica Lana de Vidrio (100 mm con velo)",
+              "description": "Colchón fonoabsorbente de 14 kg/m³, λ = 0.040 W/mK, incombustible Euroclase A1."
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "Placa Rigidizadora Estructural OSB (11.1 mm APA)",
+              "description": "Diafragma de virutas orientadas para arriostramiento contra vientos y sismos, IRAM IAS U 500-205."
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "Barrera de Agua y Viento Tyvek / Wichi",
+              "description": "Membrana respirable HDPE: 100% estanca a lluvia torrencial y permeable al vapor interior, IRAM 11559."
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "Aislación Térmica Exterior Continua EPS (50 mm - 20 kg/m³)",
+              "description": "Poliestireno expandido de alta densidad EIFS que erradica puentes térmicos, IRAM 1738 / 11605."
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "Terminación Exterior EIFS (Base Coat + Malla 160 g/m² + Revoque Travertino)",
+              "description": "Revestimiento polimérico continuo impermeable, elastomérico y resistente a impactos mecánicos, IRAM 11601."
+            }
+          ]
         },
         {
           "@type": "LearningResource",
@@ -160,7 +288,39 @@
             "@type": "GeoCoordinates",
             "latitude": -26.8304,
             "longitude": -65.2038
-          }
+          },
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "Provincia de Tucumán",
+              "sameAs": "https://www.wikidata.org/wiki/Q44829"
+            },
+            {
+              "@type": "City",
+              "name": "San Miguel de Tucumán",
+              "sameAs": "https://www.wikidata.org/wiki/Q45758"
+            },
+            {
+              "@type": "City",
+              "name": "Yerba Buena",
+              "sameAs": "https://www.wikidata.org/wiki/Q2287957"
+            }
+          ],
+          "knowsAbout": [
+            "Steel Framing",
+            "Construcción en Seco",
+            "Aislamiento Térmico EIFS",
+            "Cálculo Estructural Sismorresistente CIRSOC 303",
+            "Eficiencia Energética IRAM 11605"
+          ],
+          "sameAs": [
+            "https://www.wikidata.org/wiki/Q11222629",
+            "https://www.wikidata.org/wiki/Q44829",
+            "https://www.wikidata.org/wiki/Q45758",
+            "https://www.wikidata.org/wiki/Q2287957",
+            "https://www.instagram.com/constructora_byb/",
+            "https://www.facebook.com/constructorabybtucuman"
+          ]
         }
       ]
     }
@@ -466,11 +626,16 @@
             <div class="text-center max-w-3xl mx-auto">
                 <span class="text-xs font-label-caps text-primary dark:text-inverse-primary tracking-widest block mb-3 font-bold uppercase">Simulador Interactivo 360°</span>
                 <h2 class="font-headline text-3xl md:text-4xl text-on-surface font-black uppercase tracking-tight">
-                    Corte Escalonado en Tiempo Real
+                    ¿Cómo se compone el corte escalonado de un muro de Steel Framing?
                 </h2>
                 <p class="font-body-md text-sm md:text-base text-secondary dark:text-on-surface-variant mt-3 leading-relaxed">
                     Girá con el mouse o dedo, hacé zoom e interactuá con cada componente para explorar la física y el ensamble constructivo normalizado del muro exterior.
                 </p>
+
+                <!-- GEO Answer Block (Respuesta Directa Citabilidad IA: 48 palabras) -->
+                <div class="geo-answer-block p-4 mt-4 rounded-2xl bg-surface-container-low dark:bg-white/5 border border-outline-variant/30 text-left text-xs md:text-sm text-secondary dark:text-on-surface-variant leading-relaxed shadow-sm">
+                    <p><strong class="text-on-surface font-bold">Respuesta Directa de Ingeniería:</strong> El corte escalonado de un muro exterior de Steel Framing expone 8 capas continuas: placa de yeso interior (12.5 mm), barrera de vapor (200 μm), estructura PGC 100 con lana de vidrio (100 mm), placa rigidizadora OSB (11.1 mm), membrana hidrófuga Tyvek, aislación EPS continua (50 mm) y revestimiento exterior EIFS tricapa elastomérico.</p>
+                </div>
             </div>
 
             <!-- Visor 3D Full-Width (Ancho Completo y Altura Imponente) -->
@@ -745,11 +910,16 @@
                 <div class="text-center max-w-3xl mx-auto mb-16">
                     <span class="text-xs font-label-caps text-primary dark:text-inverse-primary tracking-widest block mb-3 font-bold uppercase">Ingeniería en Detalle</span>
                     <h2 class="font-headline text-3xl md:text-4xl text-on-surface font-black uppercase tracking-tight">
-                        Anatomía del Paquete Constructivo Exterior
+                        ¿Cuáles son las 8 capas del muro exterior en Steel Framing?
                     </h2>
                     <p class="font-body-md text-sm md:text-base text-secondary dark:text-on-surface-variant mt-3 leading-relaxed">
                         Cada componente cumple un rol físico indispensable en el equilibrio higrotérmico y estructural de la vivienda. Orden riguroso de colocación de adentro hacia afuera:
                     </p>
+
+                    <!-- GEO Answer Block (Respuesta Directa Citabilidad IA: 52 palabras) -->
+                    <div class="geo-answer-block p-4 mt-5 rounded-2xl bg-surface-container-lowest dark:bg-[#121822] border border-outline-variant/30 text-left text-xs md:text-sm text-secondary dark:text-on-surface-variant leading-relaxed shadow-sm">
+                        <p><strong class="text-on-surface font-bold">Secuencia Constructiva Normalizada:</strong> Las 8 capas se disponen estrictamente de interior a exterior para evitar condensación intersticial: 1) Yeso 12.5 mm; 2) Polietileno 200 μm; 3) Perfil PGC 100 x 0.94 mm; 4) Lana mineral 100 mm; 5) OSB estructural 11.1 mm; 6) Membrana Tyvek; 7) EPS 50 mm (20 kg/m³); y 8) Base coat con malla y acabado plástico.</p>
+                    </div>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -860,16 +1030,21 @@
                 <div class="text-center max-w-3xl mx-auto mb-16">
                     <span class="text-xs font-label-caps text-primary dark:text-inverse-primary tracking-widest block mb-3 font-bold uppercase">Especificaciones Normalizadas</span>
                     <h2 class="font-headline text-3xl md:text-4xl text-on-surface font-black uppercase tracking-tight">
-                        Tabla Técnica de Capas y Coeficientes Térmicos
+                        ¿Cuáles son los coeficientes térmicos y espesores de cada capa en Steel Framing?
                     </h2>
                     <p class="font-body-md text-sm md:text-base text-secondary dark:text-on-surface-variant mt-3 leading-relaxed">
                         Valores de conductividad térmica (&lambda;) y resistencia (R) calculados según las normas IRAM 11.601 e IRAM 11.605 para envolventes bioclimáticas en Argentina:
                     </p>
+
+                    <!-- GEO Answer Block (Respuesta Directa Citabilidad IA: 52 palabras) -->
+                    <div class="geo-answer-block p-4 mt-5 rounded-2xl bg-surface-container-low dark:bg-white/5 border border-outline-variant/30 text-left text-xs md:text-sm text-secondary dark:text-on-surface-variant leading-relaxed shadow-sm">
+                        <p><strong class="text-on-surface font-bold">Cálculo Higrotérmico Oficial:</strong> El muro de Steel Framing de 178 mm de espesor total alcanza una transmitancia térmica K = 0.31 W/m²K y resistencia total Rt = 3.23 m²K/W, cumpliendo con la Categoría A de máxima eficiencia bajo norma IRAM 11605 (Zona Bioambiental IIa, Tucumán), superando ampliamente a la mampostería tradicional (K = 1.85 W/m²K).</p>
+                    </div>
                 </div>
 
             <!-- Tabla Responsive con Tailwind -->
             <div class="overflow-x-auto rounded-2xl border border-outline-variant/40 dark:border-white/10 shadow-lg bg-surface-container-lowest dark:bg-[#121822]">
-                <table class="w-full text-left text-xs md:text-sm border-collapse min-w-[700px]">
+                <table id="geo-summary-table" class="w-full text-left text-xs md:text-sm border-collapse min-w-[700px]">
                     <thead class="bg-surface-container dark:bg-white/5 text-on-surface font-headline uppercase text-[11px] tracking-wider border-b border-outline-variant/30 dark:border-white/10">
                         <tr>
                             <th class="py-4 px-4 font-bold">N°</th>
@@ -986,11 +1161,16 @@
                     <div class="lg:col-span-6 space-y-6">
                         <span class="text-xs font-label-caps text-primary dark:text-inverse-primary tracking-widest block font-bold uppercase mb-2">Física de la Construcción</span>
                         <h2 class="font-headline text-3xl md:text-4xl text-on-surface font-black uppercase tracking-tight leading-tight">
-                            ¿Por qué la pared "respira" pero no se humedece?
+                            ¿Por qué el tabique de Steel Framing transpira vapor pero no se humedece?
                         </h2>
                         <p class="font-body-md text-sm md:text-base text-secondary dark:text-on-surface-variant leading-relaxed">
                             Uno de los errores más comunes de instaladores no capacitados en Tucumán es confundir la <strong>barrera de vapor</strong> con la <strong>membrana hidrófuga</strong> o colocarlas en la posición equivocada. El comportamiento higrotérmico del muro depende de esta regla inquebrantable:
                         </p>
+
+                        <!-- GEO Answer Block (Respuesta Directa Citabilidad IA: 50 palabras) -->
+                        <div class="geo-answer-block p-4 rounded-2xl bg-surface-container-lowest dark:bg-[#121822] border border-outline-variant/30 text-xs md:text-sm text-secondary dark:text-on-surface-variant leading-relaxed shadow-sm">
+                            <p><strong class="text-on-surface font-bold">Principio Físico Higrotérmico:</strong> La barrera de vapor interior (polietileno 200 μm) bloquea el vapor caliente generado en la vivienda impidiendo que alcance el punto de rocío en el perfil metálico. Paralelamente, la membrana Tyvek exterior permite la evaporación del vapor residual hacia el exterior, al tiempo que frena 100% el agua de lluvia.</p>
+                        </div>
 
                     <div class="space-y-4">
                         <div class="p-4 rounded-2xl bg-surface-container-lowest dark:bg-[#121822] border-l-4 border-primary dark:border-inverse-primary border border-outline-variant/40 dark:border-white/5 shadow-sm">
@@ -1039,7 +1219,104 @@
             </div>
         </section>
 
-        <!-- SECCIÓN 4: PREGUNTAS FRECUENTES TÉCNICAS (FAQ ACCORDION) -->
+        <!-- SECCIÓN TÉCNICA RAG: GLOSARIO NORMALIZADO DE ENVOLVENTES TÉRMICAS -->
+        <section class="py-16 bg-surface-container-low dark:bg-[#10151e] border-b border-outline-variant/30 dark:border-white/5">
+            <div class="max-w-7xl mx-auto px-6 md:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="text-xs font-label-caps text-primary dark:text-inverse-primary tracking-widest block mb-2 font-bold uppercase">Glosario Técnico de Ingeniería</span>
+                    <h2 class="font-headline text-2xl md:text-3xl text-on-surface font-black uppercase tracking-tight">
+                        Definiciones y Términos Clave del Paquete Constructivo
+                    </h2>
+                    <p class="font-body-md text-xs md:text-sm text-secondary dark:text-on-surface-variant mt-2 leading-relaxed">
+                        Conceptos físicos y normativos de envolventes de Steel Framing según reglamentos IRAM y CIRSOC en Argentina:
+                    </p>
+                </div>
+
+                <dl class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+                    <div class="p-4 rounded-2xl bg-surface-container-lowest dark:bg-[#121822] border border-outline-variant/30 dark:border-white/5 shadow-sm space-y-1.5">
+                        <dt class="font-headline font-bold text-on-surface uppercase text-[11px] text-primary dark:text-inverse-primary flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-sm">thermostat</span>
+                            Transmitancia Térmica (K)
+                        </dt>
+                        <dd class="text-secondary dark:text-on-surface-variant leading-relaxed">
+                            Flujo de calor que atraviesa un metro cuadrado de muro por grado de diferencia de temperatura exterior/interior (W/m²K). A menor valor K, menor gasto en climatización.
+                        </dd>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-surface-container-lowest dark:bg-[#121822] border border-outline-variant/30 dark:border-white/5 shadow-sm space-y-1.5">
+                        <dt class="font-headline font-bold text-on-surface uppercase text-[11px] text-primary dark:text-inverse-primary flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-sm">layers</span>
+                            Sistema EIFS
+                        </dt>
+                        <dd class="text-secondary dark:text-on-surface-variant leading-relaxed">
+                            Exterior Insulation and Finish System. Aislamiento térmico exterior continuo con planchas de EPS y base coat con malla que elimina al 100% los puentes térmicos en los montantes de acero.
+                        </dd>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-surface-container-lowest dark:bg-[#121822] border border-outline-variant/30 dark:border-white/5 shadow-sm space-y-1.5">
+                        <dt class="font-headline font-bold text-on-surface uppercase text-[11px] text-primary dark:text-inverse-primary flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-sm">construction</span>
+                            Perfil PGC 100
+                        </dt>
+                        <dd class="text-secondary dark:text-on-surface-variant leading-relaxed">
+                            Perfil de acero galvanizado conformado en frío con alma de 100 mm, alas de 40 mm y labios de 12 mm. Montante vertical portante estructural bajo norma IRAM IAS U 500-205 y CIRSOC 303.
+                        </dd>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-surface-container-lowest dark:bg-[#121822] border border-outline-variant/30 dark:border-white/5 shadow-sm space-y-1.5">
+                        <dt class="font-headline font-bold text-on-surface uppercase text-[11px] text-primary dark:text-inverse-primary flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-sm">water_drop</span>
+                            Punto de Rocío (Trocío)
+                        </dt>
+                        <dd class="text-secondary dark:text-on-surface-variant leading-relaxed">
+                            Temperatura a la cual el vapor de agua disuelto en el aire condensa en forma líquida. La barrera de vapor interior y el EPS exterior evitan que este punto se alcance dentro del tabique.
+                        </dd>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-surface-container-lowest dark:bg-[#121822] border border-outline-variant/30 dark:border-white/5 shadow-sm space-y-1.5">
+                        <dt class="font-headline font-bold text-on-surface uppercase text-[11px] text-primary dark:text-inverse-primary flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-sm">shield</span>
+                            Placa OSB Estructural
+                        </dt>
+                        <dd class="text-secondary dark:text-on-surface-variant leading-relaxed">
+                            Oriented Strand Board de 11.1 mm (norma APA). Tablero de virutas de madera orientadas con adhesivo fenólico resistente al agua que arriostra la estructura frente a empujes sísmicos en Tucumán.
+                        </dd>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-surface-container-lowest dark:bg-[#121822] border border-outline-variant/30 dark:border-white/5 shadow-sm space-y-1.5">
+                        <dt class="font-headline font-bold text-on-surface uppercase text-[11px] text-primary dark:text-inverse-primary flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-sm">air</span>
+                            Membrana Respirable Tyvek
+                        </dt>
+                        <dd class="text-secondary dark:text-on-surface-variant leading-relaxed">
+                            Barrera de agua y viento de fibras de polietileno de alta densidad no tejidas. Bloquea el ingreso de lluvia exterior pero permite el libre escape del vapor interno (permeable al vapor).
+                        </dd>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-surface-container-lowest dark:bg-[#121822] border border-outline-variant/30 dark:border-white/5 shadow-sm space-y-1.5">
+                        <dt class="font-headline font-bold text-on-surface uppercase text-[11px] text-primary dark:text-inverse-primary flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-sm">eco</span>
+                            Lana de Vidrio Hidrorrepelente
+                        </dt>
+                        <dd class="text-secondary dark:text-on-surface-variant leading-relaxed">
+                            Colchón de lana mineral incombustible (Euroclase A1) de 100 mm alojado dentro de los perfiles. Aporta absorción acústica (Rw > 48 dB) y resistencia térmica R = 2.50 m²K/W.
+                        </dd>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-surface-container-lowest dark:bg-[#121822] border border-outline-variant/30 dark:border-white/5 shadow-sm space-y-1.5">
+                        <dt class="font-headline font-bold text-on-surface uppercase text-[11px] text-primary dark:text-inverse-primary flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-sm">verified</span>
+                            Norma CIRSOC 303
+                        </dt>
+                        <dd class="text-secondary dark:text-on-surface-variant leading-relaxed">
+                            Reglamento argentino oficial para el cálculo y diseño estructural de perfiles de acero conformado en frío, con coeficientes sismorresistentes específicos para Zona Sísmica 2 (Tucumán).
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: PREGUNTAS FRECUENTES TÉCNICAS (FAQ ACCORDION CON MICRODATA) -->
         <section class="py-20 bg-surface">
             <div class="max-w-4xl mx-auto px-6 md:px-8">
                 <div class="text-center max-w-2xl mx-auto mb-16">
@@ -1047,51 +1324,63 @@
                     <h2 class="font-headline text-3xl md:text-4xl text-on-surface font-black uppercase tracking-tight">
                         Preguntas Frecuentes sobre el Muro Steel Framing
                     </h2>
+                    <!-- GEO Answer Block (Respuesta Directa Citabilidad IA: 46 palabras) -->
+                    <div class="geo-answer-block p-4 mt-5 rounded-2xl bg-surface-container-low dark:bg-white/5 border border-outline-variant/30 text-left text-xs md:text-sm text-secondary dark:text-on-surface-variant leading-relaxed shadow-sm">
+                        <p><strong class="text-on-surface font-bold">Resumen de Consultas Habituales:</strong> Las dudas más frecuentes sobre muros de Steel Framing refieren a la estanqueidad hidrófuga, la eliminación de puentes térmicos mediante EIFS exterior, el espesor promedio terminado de 18 cm y la obligatoriedad de la barrera de vapor interior según reglamentos CIRSOC e IRAM.</p>
+                    </div>
                 </div>
 
             <div class="max-w-3xl mx-auto space-y-4">
                 
                 <!-- FAQ 1 -->
-                <div class="faq-item bg-surface-container-lowest dark:bg-[#121822] rounded-2xl border border-outline-variant/40 dark:border-white/10 shadow-sm overflow-hidden transition-all duration-300">
+                <div class="faq-item bg-surface-container-lowest dark:bg-[#121822] rounded-2xl border border-outline-variant/40 dark:border-white/10 shadow-sm overflow-hidden transition-all duration-300" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                     <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex items-center justify-between gap-4 font-headline text-xs sm:text-sm font-bold text-on-surface uppercase tracking-tight">
-                        <span>¿Qué capas lleva un muro exterior de Steel Framing?</span>
+                        <span itemprop="name">¿Qué capas lleva un muro exterior de Steel Framing?</span>
                         <span class="material-symbols-outlined text-primary dark:text-inverse-primary text-xl transition-transform duration-300">expand_more</span>
                     </button>
-                    <div class="faq-answer hidden px-5 pb-5 text-xs sm:text-sm text-secondary dark:text-on-surface-variant leading-relaxed border-t border-outline-variant/20 dark:border-white/5 pt-4">
-                        Un muro exterior portante reglamentario se compone de 8 capas principales de interior a exterior: 1) Placa de yeso interior (Durlock 12.5 mm); 2) Barrera de vapor (polietileno 200 μm); 3) Estructura portante de perfiles PGC 100 de acero galvanizado (0.94 mm); 4) Aislación termoacústica de lana de vidrio (100 mm con velo); 5) Placa rigidizadora estructural de OSB (11.1 mm APA); 6) Membrana hidrófuga permeable al vapor (Tyvek/Wichi); 7) Aislación térmica exterior continua EIFS (EPS de 50 mm y 20 kg/m³); y 8) Terminación exterior EIFS con base coat cementicio, malla de fibra de vidrio de 160 g/m² y revoque plástico texturado elastomérico.
+                    <div class="faq-answer hidden px-5 pb-5 text-xs sm:text-sm text-secondary dark:text-on-surface-variant leading-relaxed border-t border-outline-variant/20 dark:border-white/5 pt-4" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            Un muro exterior portante reglamentario se compone de 8 capas principales de interior a exterior: 1) Placa de yeso interior (Durlock 12.5 mm); 2) Barrera de vapor (polietileno 200 μm); 3) Estructura portante de perfiles PGC 100 de acero galvanizado (0.94 mm); 4) Aislación termoacústica de lana de vidrio (100 mm con velo); 5) Placa rigidizadora estructural de OSB (11.1 mm APA); 6) Membrana hidrófuga permeable al vapor (Tyvek/Wichi); 7) Aislación térmica exterior continua EIFS (EPS de 50 mm y 20 kg/m³); y 8) Terminación exterior EIFS con base coat cementicio, malla de fibra de vidrio de 160 g/m² y revoque plástico texturado elastomérico.
+                        </div>
                     </div>
                 </div>
 
                 <!-- FAQ 2 -->
-                <div class="faq-item bg-surface-container-lowest dark:bg-[#121822] rounded-2xl border border-outline-variant/40 dark:border-white/10 shadow-sm overflow-hidden transition-all duration-300">
+                <div class="faq-item bg-surface-container-lowest dark:bg-[#121822] rounded-2xl border border-outline-variant/40 dark:border-white/10 shadow-sm overflow-hidden transition-all duration-300" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                     <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex items-center justify-between gap-4 font-headline text-xs sm:text-sm font-bold text-on-surface uppercase tracking-tight">
-                        <span>¿Para qué sirve la barrera de vapor y dónde se coloca?</span>
+                        <span itemprop="name">¿Para qué sirve la barrera de vapor y dónde se coloca?</span>
                         <span class="material-symbols-outlined text-primary dark:text-inverse-primary text-xl transition-transform duration-300">expand_more</span>
                     </button>
-                    <div class="faq-answer hidden px-5 pb-5 text-xs sm:text-sm text-secondary dark:text-on-surface-variant leading-relaxed border-t border-outline-variant/20 dark:border-white/5 pt-4">
-                        La barrera de vapor es un film de polietileno virgen de 200 micrones que se instala estrictamente en la cara 'caliente' del muro, es decir, entre la placa de yeso interior y los montantes de acero galvanizado. Su función física es impedir que el vapor de agua generado en el interior del hogar (por duchas, cocina y respiración) migre hacia el núcleo del tabique y condense al tomar contacto con el acero o la lana de vidrio, evitando patologías de humedad intersticial.
+                    <div class="faq-answer hidden px-5 pb-5 text-xs sm:text-sm text-secondary dark:text-on-surface-variant leading-relaxed border-t border-outline-variant/20 dark:border-white/5 pt-4" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            La barrera de vapor es un film de polietileno virgen de 200 micrones que se instala estrictamente en la cara 'caliente' del muro, es decir, entre la placa de yeso interior y los montantes de acero galvanizado. Su función física es impedir que el vapor de agua generado en el interior del hogar (por duchas, cocina y respiración) migre hacia el núcleo del tabique y condense al tomar contacto con el acero o la lana de vidrio, evitando patologías de humedad intersticial.
+                        </div>
                     </div>
                 </div>
 
                 <!-- FAQ 3 -->
-                <div class="faq-item bg-surface-container-lowest dark:bg-[#121822] rounded-2xl border border-outline-variant/40 dark:border-white/10 shadow-sm overflow-hidden transition-all duration-300">
+                <div class="faq-item bg-surface-container-lowest dark:bg-[#121822] rounded-2xl border border-outline-variant/40 dark:border-white/10 shadow-sm overflow-hidden transition-all duration-300" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                     <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex items-center justify-between gap-4 font-headline text-xs sm:text-sm font-bold text-on-surface uppercase tracking-tight">
-                        <span>¿Qué es el sistema EIFS en Steel Framing?</span>
+                        <span itemprop="name">¿Qué es el sistema EIFS en Steel Framing?</span>
                         <span class="material-symbols-outlined text-primary dark:text-inverse-primary text-xl transition-transform duration-300">expand_more</span>
                     </button>
-                    <div class="faq-answer hidden px-5 pb-5 text-xs sm:text-sm text-secondary dark:text-on-surface-variant leading-relaxed border-t border-outline-variant/20 dark:border-white/5 pt-4">
-                        EIFS (Exterior Insulation and Finish System) es un sistema multicapa de aislación térmica exterior continua. Al fijar placas de poliestireno expandido (EPS) de alta densidad sobre la cara externa del muro antes de aplicar la malla y el revoque elastomérico, elimina por completo los puentes térmicos en los perfiles de acero, garantizando una temperatura interior homogénea tanto en veranos calurosos como en inviernos fríos.
+                    <div class="faq-answer hidden px-5 pb-5 text-xs sm:text-sm text-secondary dark:text-on-surface-variant leading-relaxed border-t border-outline-variant/20 dark:border-white/5 pt-4" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            EIFS (Exterior Insulation and Finish System) es un sistema multicapa de aislación térmica exterior continua. Al fijar placas de poliestireno expandido (EPS) de alta densidad sobre la cara externa del muro antes de aplicar la malla y el revoque elastomérico, elimina por completo los puentes térmicos en los perfiles de acero, garantizando una temperatura interior homogénea tanto en veranos calurosos como en inviernos fríos.
+                        </div>
                     </div>
                 </div>
 
                 <!-- FAQ 4 -->
-                <div class="faq-item bg-surface-container-lowest dark:bg-[#121822] rounded-2xl border border-outline-variant/40 dark:border-white/10 shadow-sm overflow-hidden transition-all duration-300">
+                <div class="faq-item bg-surface-container-lowest dark:bg-[#121822] rounded-2xl border border-outline-variant/40 dark:border-white/10 shadow-sm overflow-hidden transition-all duration-300" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                     <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex items-center justify-between gap-4 font-headline text-xs sm:text-sm font-bold text-on-surface uppercase tracking-tight">
-                        <span>¿Cuál es el espesor total de una pared de Steel Framing?</span>
+                        <span itemprop="name">¿Cuál es el espesor total de una pared de Steel Framing?</span>
                         <span class="material-symbols-outlined text-primary dark:text-inverse-primary text-xl transition-transform duration-300">expand_more</span>
                     </button>
-                    <div class="faq-answer hidden px-5 pb-5 text-xs sm:text-sm text-secondary dark:text-on-surface-variant leading-relaxed border-t border-outline-variant/20 dark:border-white/5 pt-4">
-                        El espesor total de un muro exterior portante con sistema EIFS ronda entre 17.5 cm y 18.5 cm (12.5 mm yeso + 100 mm perfil PGC con lana + 11.1 mm OSB + 50 mm EPS + 4 mm mortero base y terminación). A pesar de tener un grosor menor que una pared tradicional de ladrillo común o hueco (20 a 25 cm con revoques), ofrece una resistencia térmica tres a cuatro veces superior.
+                    <div class="faq-answer hidden px-5 pb-5 text-xs sm:text-sm text-secondary dark:text-on-surface-variant leading-relaxed border-t border-outline-variant/20 dark:border-white/5 pt-4" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            El espesor total de un muro exterior portante con sistema EIFS ronda entre 17.5 cm y 18.5 cm (12.5 mm yeso + 100 mm perfil PGC con lana + 11.1 mm OSB + 50 mm EPS + 4 mm mortero base y terminación). A pesar de tener un grosor menor que una pared tradicional de ladrillo común o hueco (20 a 25 cm con revoques), ofrece una resistencia térmica tres a cuatro veces superior.
+                        </div>
                     </div>
                 </div>
 

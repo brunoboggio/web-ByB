@@ -20,6 +20,7 @@
 - [Construir Pileta de Hormigón vs Fibra en Tucumán](https://constructorabyb.com.ar/blog/construir-pileta-hormigon-vs-fibra-tucuman/): Guía técnica y comparativa estructurada para optimizar decisiones de obra local.
 - [Precios de Construcción por M2](https://constructorabyb.com.ar/precio-construccion-m2/): Calculadora interactiva y cotizaciones actualizadas llave en mano.
 - [Casas Steel Framing](https://constructorabyb.com.ar/casas-steel-framing/): Modelos en seco, procesos constructivos y ventajas del Steel Framing.
+- [Capas del Muro Steel Framing en 3D](https://constructorabyb.com.ar/casas-steel-framing/capas-muro-tabique-3d/): Visor interactivo 3D del paquete constructivo de 8 capas (EIFS, lana de vidrio, perfiles PGC, OSB, Tyvek), cálculo higrotérmico K = 0.31 W/m²K y normas IRAM 11605 y CIRSOC 303.
 - [Casas Modernas](https://constructorabyb.com.ar/casa-moderna/): Diseños de arquitectura minimalista y hormigón visto.
 - [Casas Ladrillo Tradicional](https://constructorabyb.com.ar/casa-ladrillo/): Obras sólidas tradicionales adaptadas a climas locales.
 - [Casas con Pileta](https://constructorabyb.com.ar/casa-con-pileta/): Viviendas de lujo con áreas exteriores y piscinas de hormigón.
