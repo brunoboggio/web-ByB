@@ -163,8 +163,7 @@
     </noscript>
 
     <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="../css/tailwind.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="../css/tailwind.min.css"></noscript>
+    <link rel="stylesheet" href="../css/tailwind.min.css">
 
     <style>
         body {
@@ -290,7 +289,7 @@
         /* === END FIX === */</style>
 
     <!-- Preload Hero Image -->
-    <link rel="preload" as="image" href="../Logo.webp" fetchpriority="high"/>
+    <link rel="preload" as="image" href="img/seco-finished-hero.webp" fetchpriority="high"/>
     <!-- Load components as non-blocking deferred scripts -->
     <script src="../components/header.min.js?v=1.5" defer></script>
     <script src="../components/footer.min.js?v=1.5" defer></script>
@@ -355,7 +354,7 @@
         <section class="relative w-full min-h-[640px] flex items-center overflow-hidden bg-blueprint">
             <!-- Background Image overlay with smooth gradient -->
             <div class="absolute inset-0 z-0">
-                <img fetchpriority="high" src="img/seco-finished-hero.webp" alt="Interior moderno terminado con construcción en seco y Durlock en Tucumán" class="w-full h-full object-cover" />
+                <img fetchpriority="high" loading="eager" width="960" height="540" src="img/seco-finished-hero.webp" alt="Interior moderno terminado con construcción en seco y Durlock en Tucumán" class="w-full h-full object-cover" />
                 <div class="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/75 to-transparent dark:from-black/95 dark:via-black/80 dark:to-transparent"></div>
             </div>
 
