@@ -20,4 +20,5 @@ _original_assets_backup/
 # Temporary audit outputs
 scripts/*.json
 scripts/*.md
+geogrid_*
 

@@ -41,7 +41,7 @@
                                 </div>
                                 <div>
                                     <span class="block text-xs text-on-tertiary-container uppercase font-label-bold">Dirección Oficial</span>
-                                    <span>Crisóstomo Alvarez 1584, San Miguel de Tucumán</span>
+                                    <a href="https://maps.google.com/?cid=3910709653407139774" target="_blank" rel="noopener" class="hover:underline">Crisóstomo Álvarez 1584, San Miguel de Tucumán</a>
                                 </div>
                             </li>
                             <li class="flex items-center gap-4">
@@ -82,6 +82,10 @@
                                 <span class="material-symbols-outlined text-base">chat</span>
                                 WhatsApp
                             </a>
+                            <a href="https://maps.google.com/?cid=3910709653407139774" target="_blank" rel="noopener noreferrer" class="bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-on-tertiary border border-outline-variant/30 px-5 py-3.5 font-label-bold text-label-bold rounded-DEFAULT transition-colors shadow-md inline-flex items-center gap-2 text-xs uppercase tracking-wider">
+                                <span class="material-symbols-outlined text-base text-inverse-primary">star</span>
+                                Ver en Google Maps / Reseñas
+                            </a>
                         </div>
                     </div>
 
@@ -106,8 +110,8 @@
                         <div class="p-4 bg-surface-container-lowest/95 backdrop-blur-md border-t border-outline-variant/30 text-center relative z-20">
                             <p class="font-label-bold text-label-bold text-on-surface mb-0.5">Crisóstomo Alvarez 1584</p>
                             <p class="text-xs text-on-surface-variant">A pasos de las principales avenidas de la capital tucumana.</p>
-                            <a href="https://maps.google.com/?q=Crisostomo+Alvarez+1584+San+Miguel+de+Tucuman" target="_blank" rel="noopener noreferrer" class="mt-2.5 inline-block text-xs font-label-bold text-primary dark:text-inverse-primary hover:underline">
-                                Abrir en Google Maps →
+                            <a href="https://maps.google.com/?cid=3910709653407139774" target="_blank" rel="noopener noreferrer" class="mt-2.5 inline-block text-xs font-label-bold text-primary dark:text-inverse-primary hover:underline">
+                                Abrir en Google Maps / Ver Reseñas →
                             </a>
                         </div>
                     </div>
@@ -148,6 +152,7 @@
                     <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors font-body-md text-sm flex items-center gap-2" href="${basePath}#servicios"><span class="w-1.5 h-1.5 bg-outline-variant rounded-full"></span> Modelos y Servicios</a></li>
                     <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors font-body-md text-sm flex items-center gap-2" href="${basePath}blog/"><span class="w-1.5 h-1.5 bg-outline-variant rounded-full"></span> Blog de Construcción</a></li>
                     <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors font-body-md text-sm flex items-center gap-2" href="${basePath}construccion-casas/"><span class="w-1.5 h-1.5 bg-outline-variant rounded-full"></span> Construcción de Casas</a></li>
+                    <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors font-body-md text-sm flex items-center gap-2 font-semibold text-inverse-primary" href="${basePath}construccion-casas-yerba-buena/"><span class="w-1.5 h-1.5 bg-inverse-primary rounded-full"></span> Construcción en Yerba Buena</a></li>
                     <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors font-body-md text-sm flex items-center gap-2" href="${basePath}casas-steel-framing/"><span class="w-1.5 h-1.5 bg-outline-variant rounded-full"></span> Steel Framing</a></li>
                     <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors font-body-md text-sm flex items-center gap-2" href="${basePath}construccion-en-seco/"><span class="w-1.5 h-1.5 bg-outline-variant rounded-full"></span> Construcción en Seco</a></li>
                     <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors font-body-md text-sm flex items-center gap-2" href="${basePath}credito-hipotecario/"><span class="w-1.5 h-1.5 bg-outline-variant rounded-full"></span> Crédito Hipotecario</a></li>

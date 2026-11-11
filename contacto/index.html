@@ -29,95 +29,116 @@
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "ContactPage",
+      "@id": "https://constructorabyb.com.ar/contacto/#webpage",
+      "url": "https://constructorabyb.com.ar/contacto/",
+      "name": "Contacto | Constructora ByB | Empresa Constructora en Tucumán",
+      "description": "Página de contacto oficial de Constructora ByB para cotizaciones, consultas generales y atención personalizada en Tucumán.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://constructorabyb.com.ar/#website",
+        "name": "Constructora ByB",
+        "url": "https://constructorabyb.com.ar/"
+      },
+      "about": {
+        "@id": "https://constructorabyb.com.ar/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://constructorabyb.com.ar/#organization"
+      }
+    },
+    {
+      "@type": [
+        "ConstructionCompany",
+        "GeneralContractor",
+        "HomeAndConstructionBusiness"
+      ],
+      "@id": "https://constructorabyb.com.ar/#organization",
+      "name": "Constructora ByB",
+      "legalName": "Constructora ByB SRL",
+      "url": "https://constructorabyb.com.ar/",
+      "logo": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMBcZANJm3oeoVAGJIs-woKOe6eQrLsVE-YNFXkIIoVQiBuOkivEIz6S2x1llkHH1a6JpuNpnQP2muFMPXYZAXo2vpUALvnSsD46p-cf8YD1qu3Fav3rqbFsWRQzm1H5ZGHBas_rR__iHTFvOIYYp_Sa3FYU2Gmd5E87Lyju84JFH6f4gRzC1ZkW3Xkc8_2q9ODc3F6MA3APtXlOkmZ3qbr6wmUrjHJXHEdXMPOWwxb1k3ELSIfpvaaSNP79OQHk7GqfWNLg4I2h9W",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuANcRehKX9SWaqrkO9y-2GakMt8vC3zfHRB-XlMgTgNH8bALgXaN1NzetPkSCdcad02K0-uZFWvz3OUNgp8uEZ7XOOLKx0U5IsKwpINdgKZQgqZEbgi7kJHWhVu2YsEdu6hisdLh7_TphwlxhXAKQcYF7s-EQWK2E9PsuF6xCstYNeLOlmXXxn4YWBPeYVH6FXP_yNo9zZj0GFcTwfR5jv8syBmkTFQkX4KymNNa57RgYd1jxn4ykbkgmx3WuuJpst0ml6hAzqysz-i",
+      "description": "Empresa constructora líder en Tucumán con más de 10 años de experiencia. Especialistas en diseño, arquitectura y construcción llave en mano de casas modernas, steel framing, dúplex y refacciones residenciales.",
+      "sameAs": [
+        "https://maps.google.com/?cid=3910709653407139774",
+        "https://www.google.com/maps?cid=3910709653407139774",
+        "https://www.facebook.com/constructorabyb",
+        "https://www.instagram.com/constructorabyb"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Crisóstomo Alvarez 1584",
+        "addressLocality": "San Miguel de Tucumán",
+        "addressRegion": "Tucumán",
+        "postalCode": "T4000",
+        "addressCountry": "AR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -26.8290033,
+        "longitude": -65.221878
+      },
+      "areaServed": [
         {
-          "@type": "ContactPage",
-          "@id": "https://constructorabyb.com.ar/contacto/#webpage",
-          "url": "https://constructorabyb.com.ar/contacto/",
-          "name": "Contacto | Constructora ByB | Empresa Constructora en Tucumán",
-          "description": "Página de contacto oficial de Constructora ByB para cotizaciones, consultas generales y atención personalizada en Tucumán.",
-          "isPartOf": {
-            "@type": "WebSite",
-            "@id": "https://constructorabyb.com.ar/#website",
-            "name": "Constructora ByB",
-            "url": "https://constructorabyb.com.ar/"
-          },
-          "about": {
-            "@id": "https://constructorabyb.com.ar/#organization"
-          },
-          "mainEntity": {
-            "@id": "https://constructorabyb.com.ar/#organization"
-          }
+          "@type": "State",
+          "@id": "https://www.wikidata.org/wiki/Q44829",
+          "name": "Tucumán",
+          "sameAs": "https://www.wikidata.org/wiki/Q44829"
         },
         {
-          "@type": "ConstructionCompany",
-          "@id": "https://constructorabyb.com.ar/#organization",
-          "name": "Constructora ByB",
-          "legalName": "Constructora ByB SRL",
-          "url": "https://constructorabyb.com.ar/",
-          "logo": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMBcZANJm3oeoVAGJIs-woKOe6eQrLsVE-YNFXkIIoVQiBuOkivEIz6S2x1llkHH1a6JpuNpnQP2muFMPXYZAXo2vpUALvnSsD46p-cf8YD1qu3Fav3rqbFsWRQzm1H5ZGHBas_rR__iHTFvOIYYp_Sa3FYU2Gmd5E87Lyju84JFH6f4gRzC1ZkW3Xkc8_2q9ODc3F6MA3APtXlOkmZ3qbr6wmUrjHJXHEdXMPOWwxb1k3ELSIfpvaaSNP79OQHk7GqfWNLg4I2h9W",
-          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuANcRehKX9SWaqrkO9y-2GakMt8vC3zfHRB-XlMgTgNH8bALgXaN1NzetPkSCdcad02K0-uZFWvz3OUNgp8uEZ7XOOLKx0U5IsKwpINdgKZQgqZEbgi7kJHWhVu2YsEdu6hisdLh7_TphwlxhXAKQcYF7s-EQWK2E9PsuF6xCstYNeLOlmXXxn4YWBPeYVH6FXP_yNo9zZj0GFcTwfR5jv8syBmkTFQkX4KymNNa57RgYd1jxn4ykbkgmx3WuuJpst0ml6hAzqysz-i",
-          "description": "Empresa constructora líder en Tucumán con más de 10 años de experiencia. Especialistas en diseño, arquitectura y construcción llave en mano de casas modernas, steel framing, dúplex y refacciones residenciales.",
-          "sameAs": [
-            "https://maps.google.com/?q=Crisostomo+Alvarez+1584+San+Miguel+de+Tucuman",
-            "https://www.facebook.com/constructorabyb",
-            "https://www.instagram.com/constructorabyb"
-          ],
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Crisóstomo Alvarez 1584",
-            "addressLocality": "San Miguel de Tucumán",
-            "addressRegion": "Tucumán",
-            "postalCode": "T4000",
-            "addressCountry": "AR"
-          },
-          "geo": {
+          "@type": "City",
+          "@id": "https://www.wikidata.org/wiki/Q45758",
+          "name": "San Miguel de Tucumán",
+          "sameAs": "https://www.wikidata.org/wiki/Q45758"
+        },
+        {
+          "@type": "City",
+          "@id": "https://www.wikidata.org/wiki/Q2287957",
+          "name": "Yerba Buena",
+          "sameAs": "https://www.wikidata.org/wiki/Q2287957"
+        },
+        {
+          "@type": "City",
+          "@id": "https://www.wikidata.org/wiki/Q1017657",
+          "name": "Tafí Viejo",
+          "sameAs": "https://www.wikidata.org/wiki/Q1017657"
+        },
+        {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
             "@type": "GeoCoordinates",
-            "latitude": -26.8304,
-            "longitude": -65.2038
+            "latitude": -26.8290033,
+            "longitude": -65.221878
           },
-          "areaServed": [
-            {
-              "@type": "State",
-              "@id": "https://www.wikidata.org/wiki/Q44829",
-              "name": "Tucumán",
-              "sameAs": "https://www.wikidata.org/wiki/Q44829"
-            },
-            {
-              "@type": "City",
-              "@id": "https://www.wikidata.org/wiki/Q45758",
-              "name": "San Miguel de Tucumán",
-              "sameAs": "https://www.wikidata.org/wiki/Q45758"
-            },
-            {
-              "@type": "City",
-              "@id": "https://www.wikidata.org/wiki/Q2287957",
-              "name": "Yerba Buena",
-              "sameAs": "https://www.wikidata.org/wiki/Q2287957"
-            }
-          ],
-          "telephone": "+5493813604822",
-          "email": "construccionesbybsrl@gmail.com",
-          "openingHoursSpecification": [
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday"
-              ],
-              "opens": "09:00",
-              "closes": "18:00"
-            }
-          ],
-          "priceRange": "$$$"
+          "geoRadius": "25000"
         }
-      ]
+      ],
+      "telephone": "+5493813604822",
+      "email": "construccionesbybsrl@gmail.com",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "priceRange": "$$",
+      "hasMap": "https://maps.google.com/?cid=3910709653407139774"
     }
+  ]
+}
     </script>
 
     <!-- Fuentes y Recursos -->
@@ -384,6 +405,99 @@
 
                 </div>
 
+            </div>
+        </section>
+
+            <!-- Sección Google Maps Interactivo y Verificación Local NAP -->
+        <section class="py-16 bg-surface-container-low border-t border-outline-variant/30 relative">
+            <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="mb-10 text-center max-w-2xl mx-auto">
+                    <span class="text-xs font-label-bold text-primary dark:text-inverse-primary px-3 py-1 bg-primary/10 dark:bg-inverse-primary/10 rounded-full mb-3 inline-block uppercase tracking-widest">
+                        Ubicación Central
+                    </span>
+                    <h2 class="font-headline-md text-2xl md:text-headline-md text-on-surface uppercase tracking-tight mb-3">
+                        Encuéntranos en Google Maps
+                    </h2>
+                    <p class="text-sm font-body-md text-on-surface-variant">
+                        Oficina técnica y de atención comercial en el corazón de San Miguel de Tucumán con cobertura en todo el Gran Tucumán y Yerba Buena.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                    <!-- Tarjeta NAP Verificada -->
+                    <div class="lg:col-span-5 bg-surface p-8 rounded-2xl border border-outline-variant/40 shadow-xl flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="w-12 h-12 bg-primary/10 dark:bg-inverse-primary/15 rounded-xl flex items-center justify-center text-primary dark:text-inverse-primary">
+                                    <span class="material-symbols-outlined text-2xl">verified</span>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-on-surface leading-tight">Constructora ByB SRL</h3>
+                                    <p class="text-xs text-primary dark:text-inverse-primary font-semibold">Perfil Oficial Verificado en Google Maps</p>
+                                </div>
+                            </div>
+
+                            <ul class="space-y-5 text-sm font-body-md text-on-surface-variant mb-8">
+                                <li class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-primary dark:text-inverse-primary mt-0.5 text-xl">location_on</span>
+                                    <div>
+                                        <span class="block text-xs font-label-bold text-on-surface uppercase">Dirección Física (NAP)</span>
+                                        <span class="text-on-surface font-medium">Crisóstomo Álvarez 1584, T4000 San Miguel de Tucumán, Argentina</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-primary dark:text-inverse-primary mt-0.5 text-xl">phone</span>
+                                    <div>
+                                        <span class="block text-xs font-label-bold text-on-surface uppercase">Teléfono / WhatsApp</span>
+                                        <a href="tel:03813604822" class="text-on-surface font-medium hover:underline">+54 9 381 360-4822</a>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-primary dark:text-inverse-primary mt-0.5 text-xl">mail</span>
+                                    <div>
+                                        <span class="block text-xs font-label-bold text-on-surface uppercase">Correo Electrónico</span>
+                                        <a href="mailto:construccionesbybsrl@gmail.com" class="text-on-surface font-medium hover:underline">construccionesbybsrl@gmail.com</a>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <span class="material-symbols-outlined text-primary dark:text-inverse-primary mt-0.5 text-xl">schedule</span>
+                                    <div>
+                                        <span class="block text-xs font-label-bold text-on-surface uppercase">Horarios de Atención</span>
+                                        <span class="text-on-surface font-medium">Lunes a Viernes de 9:00 a 18:00 hs</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-3 pt-6 border-t border-outline-variant/30">
+                            <a href="https://maps.google.com/?cid=3910709653407139774" target="_blank" rel="noopener noreferrer"
+                                class="flex-1 bg-primary text-on-primary text-center py-3 px-4 rounded-lg font-label-bold text-xs uppercase tracking-wider hover:bg-primary-container transition-colors flex items-center justify-center gap-2 shadow-md">
+                                <span class="material-symbols-outlined text-base">directions</span>
+                                Cómo Llegar
+                            </a>
+                            <a href="https://search.google.com/local/writereview?placeid=ChIJ-c0kdDpdIpQRvgcGv7WhRTY" target="_blank" rel="noopener noreferrer"
+                                class="flex-1 bg-amber-500 hover:bg-amber-600 text-white text-center py-3 px-4 rounded-lg font-label-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2 shadow-md">
+                                <span class="material-symbols-outlined text-base">star</span>
+                                Dejar Reseña Google
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Iframe Interactivo de Google Maps -->
+                    <div class="lg:col-span-7 bg-surface rounded-2xl overflow-hidden border border-outline-variant/40 shadow-xl min-h-[380px] relative">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1064290748123!2d-65.2240666!3d-26.8290033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3a7424cdf9%3A0x3645a1b5bf0607be!2sConstructora%20ByB!5e0!3m2!1ses!2sar!4v1715000000000!5m2!1ses!2sar" 
+                            width="100%" 
+                            height="100%" 
+                            class="w-full h-full min-h-[380px]"
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Ubicación oficial de Constructora ByB en San Miguel de Tucumán">
+                        </iframe>
+                    </div>
+                </div>
             </div>
         </section>
 
