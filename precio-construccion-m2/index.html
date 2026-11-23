@@ -170,7 +170,7 @@
     <noscript><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=ac_unit,account_balance_wallet,add,air,analytics,architecture,arrow_back,arrow_downward,arrow_drop_down,arrow_forward,article,aspect_ratio,assignment_turned_in,bathtub,bed,bolt,border_color,border_outer,broken_image,build,cabin,calculate,calendar_month,calendar_today,call,camera_alt,chair,change_history,chat,chat_bubble,check,check_circle,chevron_left,chevron_right,cleaning_services,close,compare_arrows,construction,cottage,countertops,dark_mode,dashboard_customize,deck,delete_sweep,description,design_services,diamond,diversity_3,domain,done,door_open,eco,edit_calendar,energy_savings_leaf,engineering,expand_more,explore,face_nod,fact_check,filter_drama,folder_open,forest,format_paint,foundation,garage,gavel,graphic_eq,grid_on,grid_view,holiday_village,home,home_repair_service,home_work,house,humidity_percentage,info,insights,key,kitchen,landscape,layers,layers_clear,light_mode,line_style,list_alt,local_fire_department,location_on,lock,mail,menu,monetization_on,nature_people,nest_thermostat_sensor,opacity_off,outdoor_grill,palette,payments,phone,photo_size_select_large,photo_size_select_small,plumbing,pool,precision_manufacturing,privacy_tip,quiz,request_quote,restart_alt,restore,roofing,rounded_corner,savings,schedule,search,security,send,shield,shield_with_house,solar_power,space_bar,space_dashboard,speed,splitscreen,star,store,straighten,style,support_agent,swap_horiz,task_alt,thermostat,thumb_up,thumbs_up_down,timer,trending_down,trending_up,tune,update,verified,verified_user,view_in_ar,view_quilt,view_stream,villa,visibility,wall,warning,water_damage,water_drop,water_drop_off,water_lux,wb_sunny,whatsapp,window&display=swap" rel="stylesheet"/></noscript>
     
     <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="../css/tailwind.min.css">
+    <link rel="stylesheet" href="../css/tailwind.min.css?v=20261123"/>
     <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -523,8 +523,8 @@
                     </div>
 
                     <!-- Fila 5: Resultado Dinámico -->
-                    <div class="bg-surface-container-low dark:bg-tertiary p-6 sm:p-8 rounded-xl border border-outline-variant/40 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-6 mt-8 shadow-inner">
-                        <div class="text-left space-y-2">
+                    <div class="bg-surface-container-low dark:bg-tertiary p-6 sm:p-8 rounded-xl border border-outline-variant/40 flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-6 mt-8 shadow-inner">
+                        <div class="text-left space-y-2 min-w-0 flex-1">
                             <div class="flex flex-wrap items-center gap-2">
                                 <span class="text-xs uppercase font-label-bold text-on-surface-variant">Inversión Base Estimada</span>
                                 <span id="calc-summary" class="text-xs font-label-bold px-2.5 py-0.5 rounded-full bg-surface-container-lowest dark:bg-surface/10 text-on-surface border border-outline-variant/40">Steel Framing · 120 m²</span>
@@ -541,8 +541,8 @@
                                 *Valores referenciales calculados a precio de mercado actual. Sujeto a cotización formal de ingeniería.
                             </span>
                         </div>
-                        <div class="w-full md:w-80 flex flex-col gap-2.5 shrink-0">
-                            <span class="text-xs font-label-bold text-on-surface text-center md:text-left">¿Querés avanzar con este presupuesto?</span>
+                        <div class="w-full lg:w-80 flex flex-col gap-2.5 shrink-0">
+                            <span class="text-xs font-label-bold text-on-surface text-center lg:text-left">¿Querés avanzar con este presupuesto?</span>
                             <button type="button" id="send-estimate-btn" aria-expanded="false" aria-controls="coupled-contact-form" class="w-full bg-primary text-on-primary dark:bg-inverse-primary dark:text-on-primary-fixed px-5 py-3.5 font-label-bold text-sm rounded-xl hover:bg-primary-container dark:hover:bg-primary-fixed hover:-translate-y-0.5 active:translate-y-0 transition-all shadow-lg hover:shadow-xl flex items-center justify-between gap-3 group">
                                 <span class="flex items-center gap-2.5">
                                     <span class="material-symbols-outlined text-lg">request_quote</span>
@@ -552,7 +552,7 @@
                             </button>
                             <a id="whatsapp-estimate-btn" href="https://wa.me/5493813604822?text=Hola%20Constructora%20ByB%2C%20cotic%C3%A9%20Steel%20Framing%20(Obra%20Llave%20en%20Mano)%20de%20120%20m%C2%B2%20a%20USD%201%2C100%2Fm%C2%B2.%20Total%20estimado%3A%20USD%20132%2C000." target="_blank" rel="noopener noreferrer" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-3.5 font-label-bold text-sm rounded-xl hover:-translate-y-0.5 active:translate-y-0 transition-all shadow-lg hover:shadow-emerald-700/25 flex items-center justify-between gap-3 group">
                                 <span class="flex items-center gap-2.5">
-                                    <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                                    <svg class="w-5 h-5 fill-current shrink-0" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
                                         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.882-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.577-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                                     </svg>
                                     <span>Consultar por WhatsApp</span>
