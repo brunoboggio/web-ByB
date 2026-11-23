@@ -41,7 +41,7 @@
                                 </div>
                                 <div>
                                     <span class="block text-xs text-on-tertiary-container uppercase font-label-bold">Dirección Oficial</span>
-                                    <a href="https://maps.google.com/?cid=3910709653407139774" target="_blank" rel="noopener" class="hover:underline">Crisóstomo Álvarez 1584, San Miguel de Tucumán</a>
+                                    <a href="https://maps.google.com/?cid=3910709653407139774" target="_blank" rel="noopener noreferrer" class="hover:underline">Crisóstomo Álvarez 1584, San Miguel de Tucumán</a>
                                 </div>
                             </li>
                             <li class="flex items-center gap-4">
@@ -68,7 +68,7 @@
                                 </div>
                                 <div>
                                     <span class="block text-xs text-on-tertiary-container uppercase font-label-bold">Correo Electrónico</span>
-                                    <a href="mailto:construccionesbybsrl@gmail.com" class="hover:underline">construccionesbybsrl@gmail.com</a>
+                                    <!--email_off--><a href="mailto:construccionesbybsrl@gmail.com" class="hover:underline">construccionesbybsrl@gmail.com</a><!--/email_off-->
                                 </div>
                             </li>
                         </ul>
@@ -78,7 +78,7 @@
                                 <span class="material-symbols-outlined text-base">call</span>
                                 Llamar Ahora
                             </a>
-                            <a href="https://wa.me/5493813604822?text=Hola%20Constructora%20ByB,%20deseo%20consultar%20sobre%20un%20proyecto%20de%20construcción" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 text-white px-6 py-3.5 font-label-bold text-label-bold rounded-DEFAULT hover:bg-emerald-700 transition-colors shadow-lg inline-flex items-center gap-2">
+                            <a href="https://wa.me/5493813604822?text=Hola%20Constructora%20ByB,%20deseo%20consultar%20sobre%20un%20proyecto%20de%20construcción" target="_blank" rel="noopener noreferrer" class="bg-emerald-700 text-white px-6 py-3.5 font-label-bold text-label-bold rounded-DEFAULT hover:bg-emerald-800 transition-colors shadow-lg inline-flex items-center gap-2">
                                 <span class="material-symbols-outlined text-base">chat</span>
                                 WhatsApp
                             </a>
@@ -90,9 +90,10 @@
                     </div>
 
                     <!-- Interfaz de Mapa Digital Estilizado -->
-                    <div class="bg-surface-container-lowest rounded-xl overflow-hidden h-[280px] md:h-[450px] border border-outline/20 shadow-2xl relative flex flex-col justify-between" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqZCKsEQuYk1WQTCRX5bdkXLEjM__n6zhSPE9GuYyodLTOIzxXeNGVwptYj4wg5EsKLLEBhDd9I-PI4oEULA6ThYmSH6IGCYa65t9revCZMVspfXNnJy9IsOOpjglUbfJH6UnHV-gGBSTWhmwCe_KA2s6oIC_KV3O4EF0htqYZ3GAQqy2tCIgn-m_A1DAr-GNOYLQ6OJO8C_kA3d6nIDXH2ouX2VzUIIYjW3BsYU3cryUrdBss81t0BI8gLltIPFNOj6lnfQk9_IQN=w800-rw'); background-size: cover; background-position: center;">
+                    <div class="bg-surface-container-lowest rounded-xl overflow-hidden h-[280px] md:h-[450px] border border-outline/20 shadow-2xl relative flex flex-col justify-between">
+                        <img src="${basePath}img/mapa-oficinas.webp" alt="Ubicación de oficinas Constructora ByB en San Miguel de Tucumán" width="640" height="450" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover" />
                         
-                        <div class="p-4 bg-gradient-to-b from-black/60 to-transparent text-white">
+                        <div class="p-4 bg-gradient-to-b from-black/60 to-transparent text-white relative z-10">
                             <span class="font-label-bold text-xs uppercase tracking-wider opacity-90 block">Ubicación Estratégica</span>
                             <span class="text-sm font-bold">San Miguel de Tucumán</span>
                         </div>
@@ -133,9 +134,9 @@
             </div>
 
             <div>
-                <h4 class="font-label-bold text-label-bold text-on-tertiary mb-6 uppercase tracking-wider text-xs border-l-2 border-inverse-primary pl-2">
+                <h3 class="font-label-bold text-label-bold text-on-tertiary mb-6 uppercase tracking-wider text-xs border-l-2 border-inverse-primary pl-2">
                     PÁGINAS LEGALES
-                </h4>
+                </h3>
                 <ul class="space-y-3">
                     <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors font-body-md text-sm flex items-center gap-2" href="${basePath}politica-privacidad/"><span class="w-1.5 h-1.5 bg-inverse-primary rounded-full"></span> Políticas de Privacidad</a></li>
                     <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors font-body-md text-sm flex items-center gap-2" href="${basePath}politica-privacidad/#cookies"><span class="w-1.5 h-1.5 bg-inverse-primary rounded-full"></span> Políticas de Cookies</a></li>
@@ -144,9 +145,9 @@
             </div>
 
             <div>
-                <h4 class="font-label-bold text-label-bold text-on-tertiary mb-6 uppercase tracking-wider text-xs border-l-2 border-inverse-primary pl-2">
+                <h3 class="font-label-bold text-label-bold text-on-tertiary mb-6 uppercase tracking-wider text-xs border-l-2 border-inverse-primary pl-2">
                     ENLACES RÁPIDOS
-                </h4>
+                </h3>
                 <ul class="space-y-3">
                     <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors font-body-md text-sm flex items-center gap-2" href="${basePath}#nosotros"><span class="w-1.5 h-1.5 bg-outline-variant rounded-full"></span> Quiénes Somos</a></li>
                     <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors font-body-md text-sm flex items-center gap-2" href="${basePath}#servicios"><span class="w-1.5 h-1.5 bg-outline-variant rounded-full"></span> Modelos y Servicios</a></li>

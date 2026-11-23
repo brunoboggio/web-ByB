@@ -48,7 +48,7 @@
         if (!headerContainer) return;
 
         // Asegurar las clases del contenedor principal
-        headerContainer.className = "fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b border-outline-variant/60 bg-surface-container-lowest";
+        headerContainer.className = "fixed top-0 left-0 w-full z-50 transition-shadow duration-300 border-b border-outline-variant/60 bg-surface-container-lowest";
 
         // Estructura HTML unificada con fidelidad del 100% al diseño premium y SEO original
         headerContainer.innerHTML = `
